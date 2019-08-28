@@ -7,7 +7,9 @@ stop_words = corpus.stopwords.words("english")
 
 
 class Paper:
-    def __init__(self, pid, title, abstract, authors, unknown=None, affiliations=None, title_tokenized=None, title_pos=None):
+    def __init__(self, pid, title, abstract, authors, unknown=None, affiliations=None, title_tokenized=None,
+                 sections=None, sections_tokenized=None, citations=None, citations_tokenized=None, title_pos=None):
+
         self.pid = pid
         self.title = title
         self.abstract = abstract
@@ -16,13 +18,24 @@ class Paper:
         self.affiliations = affiliations if affiliations else {}
         self.pid_sortable = convertPaperToSortable(pid)
         self.coauthors = {}
-        if not title_tokenized or not title_pos:
+        if not title_tokenized:
             self.title_tokenized = []
-            self.title_pos = []
         else:
             self.title_tokenized = title_tokenized
-            self.title_pos = title_pos
+        if not citations:
+            self.citations = []
+            self.citations_tokenized = []
+        else:
+            self.citations = citations
+            self.citations_tokenized = citations_tokenized
 
+        if sections is None:
+            self.sections = {}
+            self.sections_tokenized = []
+        else:
+            self.sections = sections
+            self.sections_tokenized = sections_tokenized if sections_tokenized else []
+        self.title_pos = title_pos
     def addAffiliations(self, affiliations):
         if affiliations:
             raise ValueError("affiliations is not empty")
@@ -50,7 +63,10 @@ class Paper:
             "unknown": self.unknown,
             "affiliations": self.affiliations,
             "title_tokenized": self.title_tokenized,
-            "title_pos": self.title_pos
+            "citations": self.citations,
+            "citations_tokenized": self.citations_tokenized,
+            "sections": self.sections,
+            "sections_tokenized": self.sections_tokenized
         }
 
     def copy(self, memodict={}):
@@ -58,8 +74,19 @@ class Paper:
 
     def createPOS(self, remove_stops=True):
         title_tokenized = word_tokenize(remove_punct.sub(" ", cleanName(self.title,replace_punct=False)))
-        title_pos = pos_tag(title_tokenized)
         for i, w in enumerate(title_tokenized):
             if w not in stop_words and remove_stops:
                 self.title_tokenized.append(w)
-            self.title_pos.append(title_pos[i][1])
+        citation_titles = [word_tokenize(x["title"]) for x in self.citations if x["title"]]
+        for c in citation_titles:
+            for i, w in enumerate(c):
+                if w not in stop_words and remove_stops:
+                    self.citations_tokenized.append(w)
+
+        self.citations_tokenized = list(set(self.citations_tokenized))
+        section_words = []
+        for k,info in self.sections.items():
+            for n,sent in info.items():
+                section_words.extend(word_tokenize(sent.lower()))
+        section_words = list(set(section_words))
+        self.sections_tokenized = [w for w in section_words if w not in stop_words]

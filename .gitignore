@@ -14,3 +14,4 @@ saved_pairs.pickle
 tagged_pairs.pickle
 
 data/pdf_xml
+src/__pycache__/

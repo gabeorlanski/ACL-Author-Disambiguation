@@ -17,10 +17,11 @@ import yaml
 import logging
 import sys
 from src.paper import Paper
+import warnings
 
 
 class ACLParser:
-    def __init__(self, xpath_config, save_data=False, save_dir="/data", ext_directory=False):
+    def __init__(self, xpath_config, save_data=False, save_path="/data", ext_directory=False):
         self.aliases = {}
         self.same_name = []
         self.similar_names = {}
@@ -42,7 +43,7 @@ class ACLParser:
         self.check_volume = etree.XPath(xpath_config["check_volume"])
 
         self.save_data = save_data
-        self.save_dir = save_dir
+        self.save_dir = save_path
         self.ext_directory = ext_directory
 
     def __call__(self, xml_path, variant_path):
@@ -135,7 +136,7 @@ class ACLParser:
             root = None
             with open(xml_path + f, "rb") as fb:
                 root = etree.XML(fb.read())
-            if not root:
+            if root is None:
                 raise pbar.write("{} could not be read".format(f))
             for v in self.get_volumes(root):
                 parsed.extend(self.get_papers(v))
@@ -161,7 +162,7 @@ class ACLParser:
             pbar.update()
         pbar.close()
 
-        self.conflicts, resolved = self._creatNewID(people_no_id)
+        self.conflicts, resolved = self._createNewID(people_no_id)
         results = [
             ["Total Papers Parsed", total_papers],
             ["Successes", total_papers - papers_failed],
@@ -248,7 +249,7 @@ class ACLParser:
         return [Paper(pid, title=title, abstract=abstract, authors=authors), new_ids,
                 aliases_found, no_ids], 0, None
 
-    def _creatNewID(self, people_no_id):
+    def _createNewID(self, people_no_id):
         id_to_people = defaultdict(list)
         conflicts = []
         conflict_ids = defaultdict(list)
@@ -295,7 +296,7 @@ class ACLParser:
                 key = conflict if people_count == 0 else conflict + str(people_count)
                 for p in people_no_id[a[0]]:
                     self.papers[p].authors[key] = nameFromDict(name)
-                conflict_ids[conflict].append(name)
+                conflict_ids[conflict].append((key," ".join(a[0])))
                 people_count += 1
 
         return conflict_ids, resolved

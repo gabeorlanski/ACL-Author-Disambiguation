@@ -6,7 +6,7 @@ import yaml
 import json
 import re
 from lxml import etree
-from collections import defaultdict, Counter
+from collections import Counter
 import fuzzysearch
 import unidecode
 from html import unescape
@@ -32,6 +32,8 @@ def ignore_warnings(test_func):
 class TestPDFParser(TestCase):
     @ignore_warnings
     def setUp(self):
+        if "/tests" in os.getcwd():
+            os.chdir("..")
         self.config = json.load(open("/home/gabe/Desktop/research-main/config.json"))
         test_paper_path = os.getcwd() + "/tests/pdfParserTests/"
         data_path = os.getcwd() + "/data"
@@ -46,13 +48,21 @@ class TestPDFParser(TestCase):
         self.test_paper4_root = etree.XML(open(test_paper_path + "test_4.tei.xml", "rb").read())
 
         self.aliases = json.load(open(data_path + "/json/aliases.json"))
-        self.papers = json.load(open(data_path + "/json/acl_papers.json"))
+        papers_tmp = json.load(open(data_path + "/json/acl_papers.json"))
+        self.papers ={x:Paper(**v) for x,v in papers_tmp.items()}
         self.id_to_name = json.load(open(data_path + "/json/id_to_name.json"))
         self.same_names = [x.strip() for x in open(data_path + "/txt/same_names.txt").readlines()]
+        self.default_args = {
+            "aliases":self.aliases,
+            "papers":self.papers,
+            "id_to_name":self.id_to_name,
+            "same_names":self.same_names,
+            "sim_cutoff":.75
+        }
 
     @ignore_warnings
     def test_getOrganizations(self):
-        parser = PDFParser(self.config["parsed pdf path"])
+        parser = PDFParser(**self.default_args)
         a = parser.getOrganizations(self.test_paper1_root)
 
         self.assertEqual(len(a), 1)
@@ -90,7 +100,7 @@ class TestPDFParser(TestCase):
 
     @ignore_warnings
     def test_matchNames(self):
-        parser = PDFParser(self.config["parsed pdf path"])
+        parser = PDFParser(**self.default_args)
         test_a = [
             [("john-smith", "john smith"), ("william-west", "william west"), ("robert-john", "robert john")],
             [("john-smith", "john smith"), ("will-west", "will west"), ("robert-j-john", "robert j jogn")]
@@ -105,8 +115,7 @@ class TestPDFParser(TestCase):
 
     @ignore_warnings
     def test_parseAuthors(self):
-        parser = PDFParser(self.config["parsed pdf path"])
-        parser.loadData(self.papers, self.aliases, self.id_to_name, self.same_names)
+        parser = PDFParser(**self.default_args)
         test_a = {
             "yang-liu-icsi": "Yang Liu",
             "xian-qian": "Xian Qian"
@@ -219,11 +228,11 @@ class TestPDFParser(TestCase):
 
     @ignore_warnings
     def test_parsePaper(self):
-        parser = PDFParser(self.config["parsed pdf path"])
-        parser.loadData(self.papers, self.aliases, self.id_to_name, self.same_names)
+        parser = PDFParser(**self.default_args)
         a = parser.papers[self.test1_key]
-        rtr, status, errors = parser._parsePaper(a, self.test_paper1_xml, {})
-        a_res, manual_fixes = rtr
+        a_args = a, self.test_paper1_xml, {}
+        rtr, status, errors = parser(a_args)
+        a_res, manual_fixes,_,_ = rtr
         a_aff = {
             'xian-qian': {
                 'email': None,
@@ -261,8 +270,9 @@ class TestPDFParser(TestCase):
         self.assertDictEqual(a_res.affiliations, a_aff)
 
         b = parser.papers[self.test2_key]
-        rtr, status, errors = parser._parsePaper(b, self.test_paper2_xml, {})
-        b_res, manual_fixes = rtr
+        b_args = b, self.test_paper2_xml, {}
+        rtr, status, errors = parser(b_args)
+        b_res, manual_fixes,_,_ = rtr
         b_aff = {
             "farah-nadeem": {
                 'email': "farahn@uw.edu",
@@ -341,8 +351,186 @@ class TestPDFParser(TestCase):
                 else:
                     self.assertEqual(res_aff[k], true_aff[k])
 
-    # @ignore_warnings
-    # def test_parallelCall(self):
-    #     parser = PDFParser(self.config["parsed pdf path"], cores=2, in_parallel=True)
-    #     parser.loadData(self.papers, self.aliases, self.id_to_name, self.same_names)
-    #     parser(os.getcwd() + "/data/pdf_xml", 200)
+    @ignore_warnings
+    def test_parseCitations(self):
+        parser = PDFParser(**self.default_args)
+        a = parser.papers[self.test1_key]
+        test_1 = [
+            {
+                "title":"An additive algorithm for solving linear programs with zero-one variables",
+                "type":"a",
+                "authors":[
+                    "Egon Balas"
+                ],
+                "pub_type":"j",
+                "pub_title":"Operations Research",
+                "volume":None,
+                "issue":4,
+                "date":1965,
+                "date_type":"published",
+            },
+            {
+                "title":"The best of bothworlds -a graph-based completion model for transition-based parsers",
+                "type":"a",
+                "authors":[
+                    "Bernd Bohnet",
+                    "Jonas Kuhn"
+                ],
+                "pub_type":"m",
+                "pub_title":"Proc. of EACL",
+                "volume":None,
+                "issue":None,
+                "date":"2012",
+                "date_type":"published",
+            },
+            {
+                "title": "A transitionbased system for joint part-of-speech tagging and labeled non-projective dependency parsing",
+                "type":"a",
+                "authors":[
+                    "Bernd Bohnet",
+                    "Joakim Nivre"
+                ],
+                "pub_type":"m",
+                "pub_title":"Proc. of EMNLP-CoNLL",
+                "volume":None,
+                "issue":None,
+                "date":2012,
+                "date_type":"published",
+            },
+            {
+                "title":"Projected gradient methods for linearly constrained problems",
+                "type":"a",
+                "authors":[
+                    "Paul Calamai",
+                    "Jorge More"
+                    ],
+                "pub_type":"j",
+                "pub_title":"Mathematical Programming",
+                "volume":None,
+                "issue":1,
+                "date":1987,
+                "date_type":"published",
+            },
+            {
+                "title":"Experiments with a higher-order projective dependency parser",
+                "type":"a",
+                "authors":[
+                    "Xavier Carreras"
+                ],
+                "pub_type":"m",
+                "pub_title":"Proc. of EMNLPCoNLL",
+                "volume":None,
+                "issue":None,
+                "date":2007,
+                "date_type":"published",
+            },
+            {
+                "title":"Coarse-tofine n-best parsing and maxent discriminative reranking",
+                "type":"a",
+                "authors":[
+                    "Eugene Charniak",
+                    "Mark Johnson"
+                ],
+                "pub_type":"m",
+                "pub_title":"Proc. of ACL",
+                "volume":None,
+                "issue":None,
+                "date":2005,
+                "date_type":"published",
+            },
+            {
+                "title":"Utilizing dependency language models for graph-based dependency parsing models",
+                "type":"a",
+                "authors":[
+                    "Wenliang Chen",
+                    "Min Zhang",
+                    "Haizhou Li"
+                ],
+                "pub_type":"m",
+                "pub_title":"Proc. of ACL",
+                "volume":None,
+                "issue":None,
+                "date":"2012",
+                "date_type":"published",
+            },
+        ]
+        test_titles = [x["title"] for x in test_1]
+        res, errors = parser._parseCitations("test1",self.test_paper1_root)
+        for i in res:
+            self.assertTrue("title" in i)
+            self.assertTrue("type" in i)
+            self.assertTrue("authors" in i)
+            self.assertTrue("pub_type" in i)
+            self.assertTrue("pub_title" in i)
+            self.assertTrue("volume" in i)
+            self.assertTrue("issue" in i)
+            self.assertTrue("date" in i)
+            self.assertTrue("date_type" in i)
+            if i["title"] in test_titles:
+                test_index = test_titles.index(i["title"])
+                self.assertDictEqual(i,test_1[test_index])
+
+    @ignore_warnings
+    def test_parseSections(self):
+        parser = PDFParser(**self.default_args)
+        a = parser.papers[self.test1_key]
+        expected = {
+            "1":{
+                "title":"Introduction"
+            },
+            "2":{
+                "title":"Graph Based Parsing",
+                "1":"Problem Definition",
+                "2":"Dynamic Programming for Local Models",
+            },
+            "3":{
+                "title":"The Proposed Method",
+                "1":"Basic Idea",
+                "2":"The Upper Bound Function",
+                "3":"Branch and Bound Based Parsing",
+                "4":"Lower Bound Initialization",
+                "5":"Summary"
+            },
+            "4":{
+                "title":"Experiments",
+                "1":"Experimental Settings",
+                "2":"Baseline DP Based Second Order Parser",
+                "3":"BB Based Parser with Non local Features",
+                "4":"Implementation Details",
+                "5":"Main Result",
+                "6":"Tradeoff Between Accuracy and Speed"
+            },
+            "5":{
+                "title":"Discussion",
+                "1":"Polynomial Non local Factors",
+                "2":"k Best Parsing",
+            },
+            "6":{
+                "title":"Conclusion"
+            }
+
+        }
+        missing =[]
+        incorrect = []
+        res, rv = parser._parseSections(self.test_paper1_root)
+        self.assertEqual(rv,0)
+        for k,info in expected.items():
+            if k not in res:
+                missing.append(k)
+                continue
+            res_k = res[k]
+            if len(res_k) != len(info):
+                incorrect.append([k+" len",len(res_k),len(info)])
+                continue
+            for t in info.keys():
+                if t not in res_k:
+                    missing.append(k+"."+t)
+                    continue
+                expected_val = info[t]
+                actual_val = res_k[t]
+                if expected_val != actual_val:
+                    incorrect.append([k+"."+t,actual_val,expected_val])
+                    continue
+
+        self.assertEqual(missing,[])
+        self.assertEqual(incorrect,[])
