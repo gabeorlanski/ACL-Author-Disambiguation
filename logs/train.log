@@ -1,0 +1,85 @@
+2019-08-27 11:11:56,877|   DEBUG|     vote_classifier|            __init__: seed is 4143
+2019-08-27 11:11:56,877|    INFO|     vote_classifier|    _createTrainTest: Creating train and test
+2019-08-27 11:11:59,554|   DEBUG|     vote_classifier|     _splitTrainTest: Creating train and test
+2019-08-27 11:11:59,555|   DEBUG|     vote_classifier|     _splitTrainTest: # of same = 15175
+2019-08-27 11:11:59,559|   DEBUG|     vote_classifier|     _splitTrainTest: # of different = 15175
+2019-08-27 11:11:59,564|   DEBUG|     vote_classifier|     _splitTrainTest: # of special same = 6704
+2019-08-27 11:11:59,568|   DEBUG|     vote_classifier|     _splitTrainTest: # of special diff= 6704
+2019-08-27 11:11:59,587|   DEBUG|     vote_classifier|     _splitTrainTest: Creating train and test
+2019-08-27 11:11:59,588|   DEBUG|     vote_classifier|     _splitTrainTest: # of same = 6704
+2019-08-27 11:11:59,589|   DEBUG|     vote_classifier|     _splitTrainTest: # of different = 6704
+2019-08-27 11:11:59,595|    INFO|     vote_classifier|    _createTrainTest: Splitting non-special pairs
+2019-08-27 11:11:59,596|    INFO|     vote_classifier|    _createTrainTest: Splitting special pairs
+2019-08-27 11:11:59,602|    INFO|     vote_classifier|         createModel: Creating model
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: 7 estimators
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: n=Nearest Neighbors
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: m=KNeighborsClassifier
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: n=Decision Tree
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: m=DecisionTreeClassifier
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: n=Random Forest
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: m=RandomForestClassifier
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: n=AdaBoost
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: m=AdaBoostClassifier
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: n=Naive Bayes
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: m=GaussianNB
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: n=QDA
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: m=QuadraticDiscriminantAnalysis
+2019-08-27 11:11:59,602|   DEBUG|     vote_classifier|         createModel: n=Neural Net
+2019-08-27 11:11:59,603|   DEBUG|     vote_classifier|         createModel: m=MLPClassifier
+2019-08-27 11:11:59,603|    INFO|     vote_classifier|          trainModel: Training model
+2019-08-27 11:11:59,603|   DEBUG|     vote_classifier|          trainModel: Training on all data
+2019-08-27 11:11:59,603|   DEBUG|     vote_classifier|          trainModel: Test cases: 38288
+2019-08-27 11:12:02,013|    INFO|     vote_classifier|          trainModel: Finished fitting classifier Nearest Neighbors in 2.41s
+2019-08-27 11:12:02,057|    INFO|     vote_classifier|          trainModel: Finished fitting classifier Decision Tree in 0.04s
+2019-08-27 11:12:02,475|    INFO|     vote_classifier|          trainModel: Finished fitting classifier Random Forest in 0.42s
+2019-08-27 11:12:08,502|    INFO|     vote_classifier|          trainModel: Finished fitting classifier AdaBoost in 6.03s
+2019-08-27 11:12:08,525|    INFO|     vote_classifier|          trainModel: Finished fitting classifier Naive Bayes in 0.02s
+2019-08-27 11:12:08,618|    INFO|     vote_classifier|          trainModel: Finished fitting classifier QDA in 0.09s
+2019-08-27 11:12:11,534|    INFO|     vote_classifier|          trainModel: Finished fitting classifier Neural Net in 2.92s
+2019-08-27 11:12:11,534|    INFO|     vote_classifier|          trainModel: Fitting the VotingClassifier Model
+2019-08-27 11:12:21,345|    INFO|     vote_classifier|          trainModel: Finished fitting model
+2019-08-27 11:12:21,345|    INFO|     vote_classifier|            evaluate: Evaluating model
+2019-08-27 11:12:21,346|   DEBUG|     vote_classifier|            evaluate: Making predictions for Nearest Neighbors
+2019-08-27 11:12:52,882|   DEBUG|     vote_classifier|            evaluate: Making predictions for Decision Tree
+2019-08-27 11:12:52,884|   DEBUG|     vote_classifier|            evaluate: Making predictions for Random Forest
+2019-08-27 11:12:52,903|   DEBUG|     vote_classifier|            evaluate: Making predictions for AdaBoost
+2019-08-27 11:12:53,056|   DEBUG|     vote_classifier|            evaluate: Making predictions for Naive Bayes
+2019-08-27 11:12:53,063|   DEBUG|     vote_classifier|            evaluate: Making predictions for QDA
+2019-08-27 11:12:53,077|   DEBUG|     vote_classifier|            evaluate: Making predictions for Neural Net
+2019-08-27 11:12:53,093|    INFO|     vote_classifier|            evaluate: Results for all estimators
+2019-08-27 11:12:53,093|    INFO|     vote_classifier|            evaluate:                             precision      recall    f1-score
+2019-08-27 11:12:53,099|    INFO|     vote_classifier|            evaluate: Nearest Neighbors:               0.84        0.70        0.76
+2019-08-27 11:12:53,107|    INFO|     vote_classifier|            evaluate: Nearest Neighbors:               0.85        0.67        0.75
+2019-08-27 11:12:53,113|    INFO|     vote_classifier|            evaluate: Decision Tree:                   0.90        0.72        0.80
+2019-08-27 11:12:53,125|    INFO|     vote_classifier|            evaluate: Decision Tree:                   0.95        0.58        0.72
+2019-08-27 11:12:53,131|    INFO|     vote_classifier|            evaluate: Random Forest:                   0.94        0.81        0.87
+2019-08-27 11:12:53,142|    INFO|     vote_classifier|            evaluate: Random Forest:                   0.90        0.67        0.77
+2019-08-27 11:12:53,149|    INFO|     vote_classifier|            evaluate: AdaBoost:                        0.89        0.88        0.89
+2019-08-27 11:12:53,160|    INFO|     vote_classifier|            evaluate: AdaBoost:                        0.78        0.74        0.76
+2019-08-27 11:12:53,166|    INFO|     vote_classifier|            evaluate: Naive Bayes:                     0.94        0.66        0.77
+2019-08-27 11:12:53,177|    INFO|     vote_classifier|            evaluate: Naive Bayes:                     0.91        0.49        0.64
+2019-08-27 11:12:53,184|    INFO|     vote_classifier|            evaluate: QDA:                             0.94        0.75        0.84
+2019-08-27 11:12:53,193|    INFO|     vote_classifier|            evaluate: QDA:                             0.91        0.60        0.73
+2019-08-27 11:12:53,198|    INFO|     vote_classifier|            evaluate: Neural Net:                      0.81        0.84        0.83
+2019-08-27 11:12:53,206|    INFO|     vote_classifier|            evaluate: Neural Net:                      0.75        0.66        0.70
+2019-08-27 11:13:04,505|    INFO|     vote_classifier|            evaluate: Model stats on test data
+2019-08-27 11:13:04,515|    INFO|     vote_classifier|            evaluate:               precision    recall  f1-score   support
+
+   Different       0.83      0.95      0.89      2718
+        Same       0.95      0.80      0.87      2752
+
+    accuracy                           0.88      5470
+   macro avg       0.89      0.88      0.88      5470
+weighted avg       0.89      0.88      0.88      5470
+
+2019-08-27 11:13:28,191|    INFO|     vote_classifier|            evaluate: Model stats on special cases data
+2019-08-27 11:13:28,213|    INFO|     vote_classifier|            evaluate:               precision    recall  f1-score   support
+
+   Different       0.73      0.94      0.82      5896
+        Same       0.91      0.65      0.76      5836
+
+    accuracy                           0.79     11732
+   macro avg       0.82      0.79      0.79     11732
+weighted avg       0.82      0.79      0.79     11732
+
+2019-08-27 11:13:28,254|    INFO|     vote_classifier|                save: Saved model HardVoting to /home/gabe/Desktop/research-main/models/HardVoting

@@ -1,0 +1,14 @@
+
+.idea/
+
+*.ipynb
+
+venv/
+
+test_papers.json
+
+test_results.ods
+
+saved_pairs.pickle
+
+tagged_pairs.pickle

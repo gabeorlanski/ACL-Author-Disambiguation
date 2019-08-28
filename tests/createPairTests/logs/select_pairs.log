@@ -1,0 +1,20 @@
+2019-08-24 18:18:10,080|    INFO|create_training_data|   _selectPairsToUse: Selecting pairs to use
+2019-08-24 18:18:10,080|   DEBUG|create_training_data|   _selectPairsToUse: len(same) -> 25
+2019-08-24 18:18:10,080|   DEBUG|create_training_data|   _selectPairsToUse: len(different) -> 100
+2019-08-24 18:18:10,080|   DEBUG|create_training_data|   _selectPairsToUse: pair_count -> 50
+2019-08-24 18:18:10,081|    INFO|create_training_data|   _selectPairsToUse: Using random selection
+2019-08-24 18:18:10,081|    INFO|create_training_data|   _selectPairsToUse: Selecting pairs to use
+2019-08-24 18:18:10,081|   DEBUG|create_training_data|   _selectPairsToUse: len(same) -> 100
+2019-08-24 18:18:10,082|   DEBUG|create_training_data|   _selectPairsToUse: len(different) -> 25
+2019-08-24 18:18:10,082|   DEBUG|create_training_data|   _selectPairsToUse: pair_count -> 50
+2019-08-24 18:18:10,082|    INFO|create_training_data|   _selectPairsToUse: Using random selection
+2019-08-24 18:18:10,082|    INFO|create_training_data|   _selectPairsToUse: Selecting pairs to use
+2019-08-24 18:18:10,083|   DEBUG|create_training_data|   _selectPairsToUse: len(same) -> 100
+2019-08-24 18:18:10,083|   DEBUG|create_training_data|   _selectPairsToUse: len(different) -> 20
+2019-08-24 18:18:10,083|   DEBUG|create_training_data|   _selectPairsToUse: pair_count -> 30
+2019-08-24 18:18:10,083|    INFO|create_training_data|   _selectPairsToUse: Using random selection
+2019-08-24 18:18:10,084|    INFO|create_training_data|   _selectPairsToUse: Selecting pairs to use
+2019-08-24 18:18:10,084|   DEBUG|create_training_data|   _selectPairsToUse: len(same) -> 20
+2019-08-24 18:18:10,085|   DEBUG|create_training_data|   _selectPairsToUse: len(different) -> 100
+2019-08-24 18:18:10,085|   DEBUG|create_training_data|   _selectPairsToUse: pair_count -> 30
+2019-08-24 18:18:10,086|    INFO|create_training_data|   _selectPairsToUse: Using random selection

@@ -1,0 +1,3897 @@
+University of Perugia
+Technische Universitat Darmstadt Research Training Group AIPHES
+Universidad Politecnica de Valencia
+INRIA Nancy Grand Est Nancy
+KDDI RD Labs
+GE Corporate Research  Development Schenectady
+University of Arizona Tucson
+Applied Computational Linguistics Lab Goethe University
+Aylien Ltd
+University of Saarland
+  Leibniz ScienceCampus Empirical Linguistics and Computational Language Modeling  Heidelberg University
+KEBB
+EECS Department University of Michigan Ann Arbor
+Key Laboratory of Computational Linguistics Peking University
+Language Processing LMU Munich
+Universite Cote dAzur
+Association for Computational Linguistics
+University College London
+CUNY Krasnoff Quality Management Institute Northwell Health
+Universite Paris Ouest Nanterre  MoDyCo
+Universitat zu Lubeck
+Human Language Technology Center Hong Kong University of Science and Technology
+University of Grenoble Alps
+University of Oslo
+Universitat Stuttgart
+Universitat Pompeu Fabra Barcelona
+University of Technology Wyb
+MTA PPKE Hungarian Language Technology Research Group Prater u
+Georg Eckert Institute for International Textbook Research
+USC Information Sciences Institute
+Univ Paris Sud
+ILK Computational Linguistics Tilburg University
+Jean Jaures
+Tohoku University
+Watt University Edinburgh
+Centre for Computational Linguistics CCL
+IBM Research AI Yorktown Heights
+Norwegian University of Science and Technology
+University of Maryland College Park
+University of Copenhagen Rued
+IRISA University of Rennes
+Ludong University
+Chung Hwa Telecom Laboratories
+University of Sassari
+Hitachi Ltd HATOYAMA SAITAMA
+Technical University of Kaiserslautern
+ICNC
+Amazon Seattle
+University of Technology Sydney
+NIT Durgapur
+Sorbonne Nouvelle  CNRS  Loria
+Columbia University Dept of Computer Science New York
+KTH Stockholm
+San Diego State University San Diego
+LexiCon Research Group Maynooth University Maynooth
+Human Language Technology Center Hong Kong University of Science and Technology Clear Water Bay
+University of Illinois
+Alibaba Inc
+Meertens Institute Amsterdam
+Twitter Inc
+George Washington University
+LMU Munchen
+TJ Watson Research Center IBM
+George Washington University Washington
+Kings College Road Toronto
+University of Geneva
+Toshiba China Research
+IRIT  University of Toulouse
+UNC Charlotte
+University of the Basque Country Donostia
+University of Texas at Dallas Texas
+MMCI Cluster of Excellence
+University of Massachusetts
+University of Sheffield Sheffield
+Research Institute for Linguistics
+eBay Inc
+Leshan Normal University
+National Center for Scientific Research Demokritos
+ATR Interpreting Telephony Research Laboratories Seika chou
+Lenovo Corporation
+Nara Institute of Science and Technology Hitachi Ltd
+Universite dOrleans laboratoire LLL
+University of Alberta
+Ben Gurion University Beer Sheva
+Technion  Israel Institute of Technology
+UAM Atzcapotzalco
+University of Dusseldorf
+Aalto University
+NAVER Labs Europe 
+Osaka University
+Saud University Saudi Arabia
+Computational Linguist ezDI Inc Kentucky
+Computational Lexicology and Terminology Lab Vrije Universiteit Amsterdam De Boelelaan
+Rutgers University New
+University of Heidelberg
+National University of Singapore I nstitute for Infocomm Research
+USC Information Sciences Institute Marina de1 Rey
+Shahid Beheshti University
+Sabancl University
+KTH Royal Institute of Technology Stockholm
+Computer Science Georgetown University
+Inria Nancy Grand EstLORIA
+CSIE
+ALTISSIA International
+Honda Research Institute Japan Co Ltd Wako
+NEC Laboratories America
+University of Vienna
+Macquarie University Sydney
+IBM Research Yorktown
+Institut fur Germanistik Alpen Adria Universitat Klagenfurt
+LIASD  Universit Paris 8
+University of Texas Health Science Center at Houston Houston TX
+NLP  IR Group UNED IMIENS
+Complutense University of Madrid
+Indiana University
+Studies Stanford University
+Cornell University Ithaca
+Alta Institute Computer Laboratory University of Cambridge
+HKUST Human Language Technology Center
+Hakuhodo Inc RD Division
+Universite de Lorraine LORIA
+Japan Science and Technology Agency JST
+University of Chinese Academy of Science
+National Information Processing Institute al Niepodleglosci 188b
+Language Science and Technology Saarland University
+IIT Hyderabad
+Tyumen State University Tyumen
+Tokyo Inst of Tech
+Nanyang Technological University
+Thomson Reuters
+University of Delaware  AIduPont Institute Newark
+Korea University Seoul
+Rashtirya Sanskrit Vidyapeetha
+National Institute of Information and Communications Technology Sorakugun
+Vanderbilt University Nashville
+ILS Institute University at Albany
+Rutgers University
+Qatar Computing Research Institute HBKU
+Siteimprove Sankt Annae
+Language Technology DFKI GmbH
+The University of Illinois at Urbana Champaign Shanghai Jiao Tong University Amazon Inc
+Elsevier Labs
+Universitat Hamburg Institute for German Language and Literature
+Peng Cheng Laboratory
+University of Pittsburgh Pittsburgh PA
+Dublin City University Dublin
+Maana Inc
+Ben Gunon University m the Negev Beer Sheva
+The Network Institute Vrije Universiteit Amsterdam
+Universitat Karlsruhe
+P e r r a u l t and James F A l l e n Dept of Computer Science U n i v e r s i t y of Toronto Toronto
+Lewis University Romeoville
+University of the Basque Country
+KOREA
+Kyoto University Kyoto
+Technical University of Kosice
+The Institute of Behavioral Sciences Communications Research Laboratory
+CyberAgent
+University of Amsterdam ILLC
+University of Pennsylvani
+IBM Research AI New Delhi
+Universite du Quebec
+Oxford University Press Oxford
+Computational Linguistics University of Potsdam
+Kyoto University Yoshida Honmachi
+The City University of New York
+TU Berlin
+INESC ID
+University Library Svetozar Markovic
+New Mexico State University
+Texas Tech University
+CIS
+Universidade de Santiago de Compostela
+Bell Laboratories
+Sentim LLC
+Preferred Networks Inc
+University of Kurdistan Hewler Sarajevo School of Science and Technology
+IBM Research India New Delhi
+Speech Disorders  Technology Lab
+NATURAL LANGUAGE UNDERSTAND I NG SYSTEMS
+jobpal Ltd
+Universite de Caen Normandie
+UACh
+Lago Language Institute Shiga
+University of Belgrade
+Dept of Computer Science  Engineering Jadavpur Univeristy IIT Patna Kolkata
+Universitetet i Oslo
+CLST
+Adobe Systems
+Beijing University of Technology
+Text Technology Lab Goethe University Frankfurt
+IBM Research Ireland
+University of New South Wales
+University of Southern California Information Sciences Institute Marina del Rey
+ILLC University of Amsterdam
+ASAPP Inc
+Reed College
+Kyushu University Hospital
+ARC Centre of Excellence in Mathematical and Statistical Frontiers
+Shenyuan Honors College
+University of Uppsala
+Virgina Tech
+IBM Research Brazil
+Institut National de lAudiovisuel
+University of Haifa University of Haifa
+Universitat Osnabruck Institut fur Kognitionswissenschaft
+CAS University of Chinese Academy of Sciences
+CEA Saclay  Nano INNOV
+University of Bucharest Academiei 14
+Technion  Israel Institute of Technology Haifa
+DiDi Labs and University of Southern California
+Research Institute in Information and Language Processing
+University of Memphis Memphis
+National Tsing Hua University
+Open University of Israel
+CCLS Columbia University
+Kyoto University Sakyo
+Indian Institute of Technology Guwahati Guwahati
+Francois Rabelais University of Tours
+University of Piraeus  Data Science Lab Piraeus
+The University of Sydney
+Language Technologies Research Centre
+Ulm University
+Qatar Computing Research Institute QCRI
+FX Palo Alto Laboratory Inc
+Google AI
+Thomson Reuters Corporation St
+Technische Universitit Berlin Projektgruppe
+Delft University of Technology Delft
+Napier University Edinburgh
+EURA NOVA Marseille
+Computer Science and Technology
+The University of Hong Kong  New York University
+Computational Linguistics Group National Institute of Information and Communications Technology
+Carnegie Mellon University University of Karlsruhe
+University of Norway
+Chinmaya Vishwavidyapeeth CEG Campus
+Hong Kong Polytechnic University
+University of New
+Microsoft Research in Asia
+Technische Universitt Darmstadt 
+ICCS Division of Informatics
+University of Potsdam
+Grupo LyS
+Cognitive Science Department Rensselaer Polytechnic Institute Troy
+Computerlinguistik Universitat des Saarlandes
+The Swedish Language Bank
+State University of New York  University of Albany
+Caritas Institute of Higher Education
+University of Oxford United Kingdom
+Temple University Philadelphia
+The State University of New York at Albany
+Universidad Nacional de Colombia  Instituto Nacional de Astrofisica
+Tokushima University
+and Institute for Research in Fundamental Sciences IPM
+University for Foreigners of Perugia
+Universidad Calos III de Madrid
+Norwegian Univ of Science and Technology Univ of Tampere Kista
+Korea Advanced Institute of Science and Technology Taejon
+State University of New York  University at Albany 2 Sarah M Taylor Consulting LLC
+NTT Corporation
+Oregon Health  Science University Portland
+Princeton University Princeton
+Pacific Northwest National Laboratory Richland
+Chul Min Sire
+Monash University Clayton
+American University of Beirut Beirut
+Leiden University Centre for Linguistics Leiden University
+RALI  DIRO Universite de Montreal
+MILA
+IIT Guwahati
+Spoken Language University of Colorado Boulder
+Nanfang College of Sun Yat Sen University
+University of Illinois at Urbana
+Sabanci University
+The University of Hong
+National Technical University Kharkiv Polytechnic Institute
+Artificial Intelligence Laboratory Universita degli Studi di Udine
+University of Foreign Studies
+Vicomtech IK4 Mikeletegi Pasalekua
+Technology Tianjin University
+Bilkent University
+San Diego State University
+Princeton University
+Polykarpos Meladianos Ecole Polytechnique  AUEB
+Kate Gleason College of Engineering
+Behavior Design Corporation
+Universite Paul Sabatier
+Turku Centre for Computer Science  TUCS
+Holmes Semantic Solutions Grenoble
+SCSS Trinity College Dublin
+AWS AI
+University of Texas Health Science Center at Houston
+Hanoi Univ of Science and Technology
+Friedrich Schiller University
+The Open University of Israel
+Carnegie Mellon University Qatar Doha
+Fraunhofer IAIS
+Berlin and Heidelberg University
+Normandy University
+VNU University of Science
+University of Trento  ILLC  Institute for Logic
+Union College Schenectady
+CEA
+Kansai Gaidai University Hirakata
+Universitat Dusseldorf Dusseldorf
+Samsung HSE Laboratory
+National Taiwan Ocean University Keelung
+Human Intelligence and Language Technologies Lab University of North Texas
+University of Rochester Rochester NY 14627
+Linkoping University
+Universitit Stuttgart
+Chinese Academy of Sciences University of Chinese Academy of Sciences
+Ghent University  imec
+Computer Languages and Systems IXA group UPVEHU Computer Languages and Systems IXA group UPVEHU
+Cornell University
+Laboratory for Linguistic Information Processing BLLIP Brown University Providence
+University of North Carolina at Charlotte North Carolina
+UMD iSchool
+Sony Computer Science Laboratory Paris
+Google AI Language
+URI Octogone Lordat Universit de Toulouse
+Indian Institute of Technology BHU
+Universidad Politecnica Salesiana
+University of Wisconsin  Parkside Kenosha
+IBM Research India
+Heinrich Heine University of Dusseldorf Universitatsstrasse 1
+University of the Basque Country UPVEHU
+University of Waterloo  ByteDance AI Lab
+Sint Maartenskliniek
+Sorbonne Universite
+University of Tsukuba
+Koc University
+IXA NLP Group University of Basque Country Donostia
+University of Freiburg
+Texas AM University
+University of Arminia Bielefeld
+Qatar Computing Research Institute
+Charge de recherche FNRS
+Computer Science University of Illinois Chicago
+University of Houston Houston
+LTH
+Universidade do AlgarveFCHS
+UMR 7114  Modeles
+Virginia Commonwealth University
+MTA PPKE Hungarian Language Technology Research Group
+ICNC The Hebrew University Jerusalem
+Universita degli Studi di Udine  Universita degli Studi di Modena e Reggio Emilia
+LPC UMR
+CICS
+Yuan Ze University
+Language Computer Corporation Richardson
+Computer Science University of Rochester Rochester
+Sun Yat Sen University
+Chongqing University Microsoft Research Asia
+CSIRO Data61
+EPITA
+CLSP Johns Hopkins University
+Universidade do Porto
+University of Sussex
+University of Washington Allen Institute for Artificial Intelligence
+Athena Language Learning Project Massachusetts Institute of Technology
+High Institute of Technology Ibn Zohr University
+Univ of Quebec
+University of Cambridge Computer Laboratory
+Humboldt Universitat
+Saagie  LITIS
+LPP
+Universite Laval
+Beta wetenschappen VU Amsterdam
+Cognition University of Groningen
+Ludwig Maximilian University of Munich
+ALTA Institute
+University of California San Diego
+Jozef Stefan Institute
+Harbin Institute of Technology MOE MS Key Laboratory of Natural Lan guage Processing and Speech
+Columbia University New York
+DIS University of Melbourne VIC 3010
+IRST
+KU Leuven Leuven
+Universite dAvignon et des Pays de Vaucluse
+JD Intelligent Cities Business Unit  4 JD Intelligent Cities Research
+ILIT University of Maryland
+CCLS LTI Columbia U CMU
+LT Lab
+ATT Shannon Labs
+Umea University
+Dept of Enterprise Engineering
+CLiPS CL University of Antwerp
+Amazon Research Cambridge 
+University of North Texas Dallas
+UMR CNRS 8163  STL
+Universitat Hildesheim  Institute for Information Science and Natural Language Processing
+FBK  irst and Uni of Trento Povo Trento
+SUTD
+CNRS  LORIA
+University of Dundee Dundee
+Augsburg University Augsburg
+Paderborn University Heinz Nixdorf Institute
+Ursinus College
+National Central University
+Technology University of Cambridge Cambridge
+Nanjing University
+IBM Nederland
+University of Pennsylvania Philadelphia PA
+National Institute of Informatics Tokyo
+Humboldt University of Berlin
+The Hang Seng University of Hong Kong
+Georgia Tech
+University of California at Berkeley Berkeley
+Xerox Research Centre Europe Kemal Oflazer
+Carnegie Mellon University Pittsburgh
+Beijing University of Posts and Telecommunications
+NEC Knowledge Discovery Research Laboratories
+IBM Research  Tokyo  Tohoku University
+Engineering University of Washington Seattle
+University of Science and Technology of China Hefei
+University of Delaware Natural Language Generation and Assistive Technologies
+The Johns Hopkins University
+Xerox Research Centre Europe Meylan
+Singapore University of Technology and Design  Northeastern University
+NCLT
+University of Illinois at Chicago Morgan 
+Northeastern University
+The University of the Basque Country Donostia San Sebastian
+Universitat Hamburg  Nordakademie
+LTRC
+Universite Francois Rabelais de Tours
+Language Language Technologies Institute Carnegie Mellon University Pittsburgh
+Universita Cattolica del Sacro Cuore
+The University of Tokyo  Shanghai Jiao Tong University SS Microsoft Research Asia P Institute of Industrial Science
+Refinitiv 30 South Colonnade Canary Wharf London E145EP
+CMU
+City University of Hong Kong
+University of Toronto
+University of Melbourne Carlton
+The Open University of Hong Kong
+Ehara NLP Research Laboratory Seijo
+Centro Nacional de Investigaciones Oncologicas CNIO
+The University of Texas at Arlington
+University of Leeds Woodhouse Lane Leeds
+Bar Ilan University Ramat Gan
+Qatar Computing Research Institute Qatar Foundation
+BCN RUG Groningen
+Universite Le Mans
+University of Science and Technology of China
+Communications  Entertainment Institute Technological University Dublin
+Carnegie Mellon University Petuum Inc Pittsburgh
+Universidade Federal do Rio de Janeiro
+LORIA URM 7503
+Academia Siniea
+Swarthmore College Swarthmore
+East Technical University Ankara
+Iryna Gurevych SS 
+Brandeis University Waltham
+Universite de Montreal Montreal
+University of Regensburg
+Forschungszentrum Deutscher Sprachatlas
+Universitat des Saarlandes  DFKI
+KTH Spech Music and Hearing Lindstedtsvagen 24
+Renmin University of China
+ShanghaiTech University
+Google Zurich
+ Language Technologies Institute Carnegie Mellon University
+Nara Institute of Science and Technology NAIST
+Sohu Inc RD center
+CIC
+Inria Lille  Nord Europe
+COmputational INtelligence Laboratory Toyota Technological Institute
+Universtity of Maryland Baltimore County
+JSTJapan Science and Technology Agency
+ETH Zurich
+National Chia Yi University
+ToNIC University of Toulouse
+IRHT CNRS
+MahindraEcole Centrale
+National Institute of Standards and Technology Gaithersburg
+Toyota Technological Institute  Toyota Motor Corporation 
+UCSC UARC
+NVIDIA
+The Hong Kong Polytechnic University Hong Hom
+Statistics Trinity College Dublin
+The University of CAS
+Leiden University
+The Hong Kong University of Science and Technology HKUST
+University of Massachsetts
+Amazon Inc
+Samsung RD Institute Bangalore
+Agile Knowledge Engineering and Semantic Web
+National University of Ireland Galway
+Sogou Inc
+CONICETUniv Nacional de Cordoba Cordoba
+Corpus Linguistics Group Friedrich Alexander Universitat Erlangen Nurnberg
+INRIA  University of Grenoble Alpes
+Czechoslovak Academy of Sciences Pod vodfunskou v
+University of Santiago de Compostela Galiza
+Observatoire de linguistique Sens Texte OLST
+IIIT
+University of British Columbia Vancouver
+Computer Laboratory University of Cambridge United Kingdom Computer Laboratory University of Cambridge United Kingdom
+Universite de Lorraine
+Courant Institute of Mathematical Sciences New York University
+University of Toulouse
+Inner Mongolia University Huhhot
+Qatar Computing Research Institute Hamad bin Khalifa University Doha
+LIP6  Sorbonne Universites reciTAL
+Carnegie Mellon University Baker Hall 135F Pittsburgh
+Beijing University of Posts and Telecommunications  Department of Microelectronic
+The Arab College for Education
+Sana Labs
+Alfa informatica University of Groningen Groningen
+CSIRO
+UCLA
+University of Oslo Pb
+Universite de Montreal  University of Washington
+Hacettepe University
+Cisco Systems
+Indiana University  Bloomington
+Human Robot Interaction Laboratory Tufts University
+University of Duisburg Essen
+Bhimrao Ambedkar University Agra
+Petuum Inc
+Information and Communications Technologies National Research Council Canada Ottawa
+CCLS Columbia University New York
+Technische Universitgt Berlin Projektgruppe
+NazarBin
+Boston University BBN Inc
+Beijing YanZhiYouWu Technology Co LTD
+Simon Fraser University School of Computing Science
+Toyota Technological Institute
+Jawaharlal Nehru University
+LIG GETALP Univ Grenoble Alpes
+Innopois University Innopolis
+ School of GeoSciences
+University of Pisa Pisa
+Communication Technologies Universitat Pompeu Fabra Carrer Tanger
+University of Wroclaw
+Harvey Mudd College
+Technological University Dublin Dublin
+Baccleuch Place Edinburgh
+Hub University of Sydney
+Natural Language and Dialogue Systems Lab University of California
+North Ryde
+IIT
+Microsoft Research
+University of the Basque Country UPVEHU  
+Laboratorio de Tecnologias del Lenguaje INAOE Puebla
+Language and Translation Technology Team LT3 Ghent University
+Inc
+HTC Beijing Advanced Technology and Research Center
+Informatics University of Oslo
+Tallinn University of Technology
+Brno University of Technology
+Microsoft Research China No
+IICT BAS
+Apple Inc
+China Agricultural University  Leshan Teachers College
+DFKI
+Aarhus University Aarhus
+Centre for Language Studies Radboud University
+Rutgers University Newark
+Intel Corporation Istanbul
+SpinningBytes AG
+SAS Inst
+Key Lab of Intelligent Information Processing  Key Lab of Computer System and Architecture
+University of North Carolina Greensboro Greensboro
+UNSW
+Language Weaver Inc
+University of the Aegean 83200
+High Institute of Technology
+Kazan Federal University
+The Chinese University of Hong Kong Shatin
+Rutgers University Princeton University Newark
+Carnegie Mellon Universit
+Universite de Caen Normandie GREYC CNRS
+Hefei Innovation Research Institute
+US
+Human Speech and Language Technology Group
+Kyoto University  CREST
+Saint Petersburg State University
+Technical University of Moldova
+Information Technologies Institute
+Indian Institute of Technology Delhi New Delhi
+Universit6 Blaise Pascal  Clermont II and University of Edinburgh
+University of Pisa Largo B Pontecorvo
+Systems University of the Fraser Valley
+Iprova SA
+Friedrich Alexander Universitat Erlangen Nurnberg
+CSIRO Sydney
+SNHCC
+University of California Berkeley
+The Hong Kong Polytechnic University
+Lockheed Martin Corporation
+Babbel Lesson Nine GmbH
+Heidelberg Institute for Theoretical Studies gGmbH
+Victoria University
+ALTA Institute University of Cambridge United Kingdom
+Qatar Computing Research Institute Tornado Tower
+Turku Institute for Advanced Studies TIAS
+University Paris
+OGI School of Science  Engineering Oregon Health  Science University Beaverton
+JAIST
+Huazhong University of Science and Technology
+Tubingen University Institute of Linguistics
+Precognox Ltd
+Radboud University Nijmegen
+ATR RWTH Aachen University
+University of Pittsburgh Learning Research and Development Center Pittsburgh PA
+University of Berlin
+Freie Universitat Berlin
+National Centre for Text Mining NaCTeM
+Rhodes College Memphis
+Inria Paris
+ICMC  University of Sao
+Stanford University
+Artificial Intelligence Lab Lenovo Research Lenovo
+Shizuoka University
+Newcastle University
+Tufts University Human Robot Interaction Laboratory Medford
+University of Defence
+Hasso Plattner Institute at University of Potsdam
+NAVER LABS
+International Institute of Information Technology  Hyderabad Hyderabad
+Universidad Nacional de Colombia Bogota
+Vrije Universiteit
+Naval Academy
+Univ Grenoble Alpes
+IMS
+Lab Yonsei University
+The Hebrew University Jerusalem
+Tokyo University of Technology
+CNRSLORIA
+Osaka University of Foreign Studies
+IBM Watson V
+TiCC University of Tilburg Tilburg
+Jozef Stefan Institute Ljubljana
+Google Inc
+Universit de Montreal CP 6128
+Sanae Fujita NTT Communications Science Laboratory
+Jose State University
+Universitat des Saarlandes Campus
+Circadia Labs
+University of Belgrade Bulevar kralja Aleksandra 73
+Dong A University
+University of Leeds
+Shenyang Aerospace University
+Czech Technical University
+Science University o Pen nsylvanh Ihiladelphia
+National Tsing Hua University HsinChu
+Karlsruhe Institute of Technology
+The Islamic University of Gaza
+University of Washington  University College London Seattle WA London
+Stony Brook University Stony Brook
+Tsinghua University Institute for Artificial Intelligence
+University of California Santa Cruz Santa Cruz
+Aix Marseille University LIS UMR
+Ghent University LT3
+Southwark Bridge Rd London
+RALI
+Auburn University
+NICT
+Manila University
+Centre for Computational Linguistics KU Leuven University of Leuven
+Carnegie Mellon University Human Computer Interaction Institute Pittsburgh
+University of Oxford 1
+NFI University of Copenhagen Njalsgade
+Pierre and Marie Curie University
+EECS
+Wittenberg University
+IRISA CNRS
+Fraser University Burnaby
+Digital Humanities Paderborn University
+University of Alicante
+Laboratoire Hubert Curien Jean Monnet University Saint Etienne
+Macquarie University Sydney NSW
+Computational Linguistics Saarland University
+INSA
+University of Amsterdam Science
+Florida Institute for Human and Machine Cognition IHMC
+Aksum University
+Human Computer Interaction National Research Council
+Intelligent Advertising Lab JDcom
+BBN Corporation
+MIT BCS
+Research Institute for Advanced Computer Science RIACS
+City University of New
+Universite de Lyon
+Netaji Subhas Institute of Technology
+Multilingual Text Processing Information  Communication NRC Canada
+Brown University Providence
+Universidad Nacional de Educacion a Distancia UNED
+LexiCon Research Group University of Granada Granada
+Normal University
+University of New York Stony Brook
+Microsoft Research Microsoft Research Microsoft Research
+Sorbonne Universite CNRS
+University of Tartu
+The Moore School University of Pennsylvania Philadelphia
+University of China
+Universita di Trento
+Computational Linguistics University of the Saarland Postfach
+Machine Translation Science Lab eBay Inc Kasernenstrasse 25
+University of California Los Angeles
+Jena University
+University of Massachusetts Amherst Amherst
+National Taiwan Ocean University
+University of Birmingham Birmingham
+ILS
+Institute for Information Technology National Research Council Canada
+University of Oregon Eugene
+University of Twente
+NICTA Victoria Research Laboratories University of Melbourne
+IXA NLP Group University of the Basque Country
+University of Rome
+IBM Germany Research and Development GmbH
+University of Manchester
+University of North Carolina at Chapel Hill
+IBM Rochester Data Science Team
+Universita di Roma
+TALP Research Center Universitat Politecnica de Catalunya Jordi Girona Salgado
+University of Wisconsin Milwaukee
+Cognitive Computing Lab CCL Baidu Research
+Hasso Plattner Institute University of Potsdam
+Research Training Group AIPHES Ubiquitous Knowledge Processing UKP Lab Technische Universitat Darmstadt
+Universite de LorraineLORIA Nancy
+The MITRE Corporation
+University of Mainz
+ALPAGE INRIA
+PolyAI Limited
+Bielefeld University Inspiration 1
+University of Illinois at Chicago Chicago
+New York University
+Stockholm University
+Siteimprove
+The University of Hong Kong
+University of Colorado School of Medicine
+ICFAI Institute of Science  Technology Utkal University Fortune Tower
+SSLMIT University of Bologna
+CLCG University of Antwerp University of Groningen Prinsstraat
+Uppsala University
+Hunter College of CUNY
+ATT Bell Laboratories Murray Hill
+The University of Western Ontario
+University of Trento
+Computer Science and Artificial Intelligence Laboratory MIT
+National Institute of Informatics NII
+Tilburg University University of Antwerp
+Adekunle Ajasin University
+Wellesley College Wellesley
+The Chinese University of Hong Kong  AI Lab
+UFS Cognitive Science University of Potsdam
+University of Pittsburgh LRDC Pittsburgh PA
+InfAI
+Instituto Politecnico Nacional Mexico City
+University of Pennsylvania and CoGenTex Inc
+Winterlight Labs
+The University of Texas Health Science Center at Houston
+Courant Institute of Mathematical Sciences  New York University
+Hasso Plattner Institute August Bebel Str 88
+Vienna University of Economics and Business
+HKUST Human Language Technology Center Electrical  Electronic Engineering University of Science and Technology Clear Water Bay
+Big Data Experience Lab Adobe Research
+University of Dundee
+CoGenTex Inc Ithaca
+Open University
+Selcuk University
+University of Utah
+Speech Technology Group  Toshiba Research Europe
+Research Institute for Linguistics of the Hungarian Academy of Sciences
+CLiPS  University of Antwerp Antwerp
+Grammarly New York City
+eBay Research
+University of Nantes
+University of Dayton
+University of Illinois Urbana Champaign
+Universidad de Buenos Aires
+UNIVERSITY OF ILLINOIS AT URBANA CHAMPAIGN
+Temple University
+Human Language Technology Research Institute
+Technological University
+Laboratoire Parole et Langage  UMR
+University of Technology Sydney Capital Markets CRC
+Technische Universitat
+Institute for Information Technology National Research Council Canada Ottawa
+NAS RA
+Gyrfalcon Technology Inc
+  Saarland University
+TALP Research Center Universitat Politecnica de Catalunya Jordi Girona
+National Research University Higher School of Economics HSE
+Yik Yak Inc
+CBS
+Budapest University of Technology and Econ
+The Hebrew Univeristy
+Natural Institute of Informatics
+Orange
+La Salle University
+Tokyo Metropolitan University Hino City
+EURA NOVA
+Machine Reading Lab KAIST Republic
+Tencent Lingo Lab
+Universitat Politecnica de Catalunya Barcelona
+Universidad Autonoma de Yucatan Merida
+IRISA  Univ of Rennes
+Japan Patent Information Organiza tion
+IIT BHU Varanasi
+Microsoft AI and Research 
+Microsoft Research Asia University of Sheffield
+Australian National University Data61
+Napier University
+Samsung Research America
+China Development Lab
+University of Tokyo  Interfaculty Initiative in Information Studies University of Tokyo
+Telia Research AB
+University of Sheffield Regent Court
+University of Science 
+University of Bremen formerly Karlsruhe Institute of Technology
+IIIT Hyderabad Gachibowli
+Wroclaw University of Science and Technology
+University of Edinburgh  Microsoft Research
+IIIT H
+University of Cambridge University of Sussex Pembroke Street
+Altorientalische Philologie Institut fr Altertumswissenschaften Johannes Gutenberg Universitat Mainz P Akademie der Wissenschaften und der Literatur Mainz Philipps Universitat Marburg
+University of Science and Technology Beijing
+Ursuline University of Languages
+L3S Research Center
+University of Edinburgh ILLC
+University of Sussex Brighton
+Kangnam Univ
+NCLT Dublin City University
+Key Laboratory of Speech Language Information Processing of Xinjiang
+Microsoft One Microsoft Way Redmond
+Nanyang Technological University Singapore H130030
+Hong Kong University of Science and Technology
+Pohang University of Science and Technology POSTECH Pohang
+the Institute for Research
+Tencent Technology Co
+University of Lethbridge Lethbridge
+ShannonAI and Renmin University of China
+University of Graz
+UFRL
+University of Applied Sciences Chur
+CoGenTex
+Charles University MFFUFAL
+Facebook Inc
+Spectrum Centre for Mental Health Research Lancaster University United Kingdom
+Churchill College Cambridge University Cambridge
+National Centre for Language Technology Dublin City University Ireland
+Syracuse University Syracuse
+US Department of Defense Ft George G Meade
+Universite Sorbonne nouvelle  USPC
+KTH Royal Institute of Technology
+University of Minnesota Duluth
+Swedish Defence Research Agency Stockholm
+Philips Research North America
+VNUHCM  University of Science
+Seoul National University Seoul
+LIRIS
+Nara Institute of Science and Technology Takayama
+NTT
+KU Leuven Celestijnenlaan 200A
+Echahid Hamma Lakhdar University
+CNRS Universite de Toulouse
+University of Delaware Newark
+Independent Researcher
+McGill University
+Stanford University Stanford
+Samsung Semiconductor India RD
+Stanford NLP Group Stanford University
+Tufts University Playa Vista
+Florida Institute for Cybersecurity University of Florida
+Airbnb AI Lab San Francisco
+Innopolis University
+EURAC research
+The Institute of Scientific and Industrial Research
+CoOenTex Inc
+Universit6 Libre de Bruxelles Carnegie Mellon University
+Indian Institute of Science Bangalore
+University of Queensland
+Technologies Institute University of Southern California Carnegie Mellon University
+Cyberspace Laboratories Nippon Telegraph and Telephone Corporation
+National Chengchi University
+Polish Academy of Science ul
+Chiba Institute of Technology
+Accenture Labs
+NTT Media Intelligence Laboratories
+Kyoto University  National Institute of Information and Communications Technology
+Civil Aviation University of China
+National Polytechnic School of Ecuador
+Univ Paris Diderot
+University of Windsor
+University of Debrecen
+University of Passau
+Alfa informatica
+Kirby Institute
+National Taipei University of Technology Taipei
+Inria
+Logworks Co Ltd Tokyo
+International Computer Science Institute Berkeley
+NIST Gaithersburg
+Nara Institute of Science and Technology Ikoma
+University of Oxford
+Multilingual Text Processing National Research Council Ottawa
+UGA
+Lithium Technologies  Klout San Francisco
+Universitat Internacional de Catalunya
+Computer Science and Electrical Engineering University of Maryland
+BITS Pilani Hyderabad Campus
+Google AI Venice
+University of Rochester
+University of Twente Enschede
+Universitat Munchen
+Jena University Language  Information Engineering JULIE
+Carnegie Mellon Universiy Pittsburgh
+University of Milano Bicocca
+The Australian e Health Research Centre
+Middle East Technical University Ankara
+Amazon Research Cambridge Cambridge
+Neuromation OU
+Universitat Rovira i Virgili
+Rensselaer Polytechnic Institute
+ADAPT Centre Trinity College Dublin
+Jordan University of Science and Technology
+The University of Manchester United Kingdom
+Kung University Tainan
+CITEC
+University of Oslo Oslo
+Humboldt Universitat zu Berlin Berlin
+Knowledge Trail Inc San Jose CA
+University of the Philippines Los
+SFB991
+Verona Univerisity Verona
+University of Essex Colchester
+UIN Sultan Syarif Kasim Riau
+Sungkyunkwan University Suwon si
+Pohang University of Science and Technology
+Microsoft Way Redmond
+National Chiao Tung University
+University of Science and Technology Clear Water Bay
+Yale University New Haven
+Brandeis University
+Yandex LLC
+Uppsala University University of Copenhagen Uppsala
+Institute for Language  Communication ILC
+University of New York New York
+Centre for English Corpus Linguistics Universite catholique de Louvain Place Cardinal Mercier
+University of Liverpool Liverpool
+Microsoft Research  Shandong University
+IBM Research AI University of Michigan
+Telecom ParisTech
+ECE Seoul National University
+IBM Research  Yorktown Heights
+Universidad de Chile
+TCS Research Noida
+Institute for Natural Language Processing Universitaet Stuttgart
+Bogazici University Istanbul
+CLUL
+Universite Paris Diderot ALPAGE INRIA
+Nextremer Co Ltd
+Language Technology Group
+FG Language Technology
+University of Bari A MORO Dept Computer Science E
+University of Tehran UT
+Baidu Inc No
+EML Research gGmbH Schloss
+Peking University Shenzhen Graduate School
+IBM TJ Watson Research Center
+SCI Institute
+University of Pennsylvanla
+Tilburg University Tilburg
+McGill Unviersity
+TCTS lab  University of Mons
+Methodius University
+Linguistics Stanford University
+Microsoft Research Asia
+The Education University of Hong Kong
+IIT Kharagpur India
+Universite Laval Quebec City
+Interactions Corporation New York
+USCInformation Sciences Institute Admiralty Way
+Microsoft Research India Bangalore
+Universidad Nacional de Colombia
+Tractament Automatic del Llenguatge Natural
+George Washington University  Google Inc
+Georgetown University Medical Center
+Ecole Polytechnique Federale de Lausanne EPFL
+University of Sao Paulo Sao CarlosSP
+Alexandru Ioan Cuza University of Iasi
+University of Padua via Gradenigo
+AIST
+Fujitsu Laboratories Ltd Kamikodanaka
+Hunter College and the Graduate Center
+Chongqing University
+Nanyang Technological University psd AStar
+IFISC UIB CSIC
+Tokyo University of Agriculture and Technology
+Joint Research Centre of the European
+University of Cambridge
+Huawei Inc
+IBM Watson Yorktown Heights
+Federal University of Rio Grande do Sul Av Bento Goncalves
+Poznan University of Technology  Adam Mickiewicz University
+USC ISI
+Google Research
+Applications National Tsing Hua University
+AI Minds Vianden
+GREYC
+Indian Institute of Technology Kanpur
+Fudan University  New York University
+University of West
+Salesforce Research
+Artificial Intelligence and Machine Learning Group  Swisscom AG
+Universitat Leipzig
+Tokyo Institute of Technology
+Perry World House University of Pennsylvania
+Ohio State University
+Nanyang Technological Univerisity
+Univ of Santiago de Compostela Galiza
+Universite Cote dAzur Inria
+QiLu University of Technology
+City University of New York
+University of Goias
+Fujitsu Laboratories Ltd
+Microsoft Research Microsoft Corporation Redmond
+UniversitPSt Tfibingcn Kleine Wilhelmstrate
+Thomson Reuters RD
+Ain Shams University
+Dublin City University Glasnevin Dublin
+Iwate Prefectural University
+CSAIL MIT
+University of Colorado
+iSchool
+Teradata India Pvt Ltd
+HELDIG University of Helsinki
+Huazhong Agricultural Univerisity
+Uppsala University  Appen Butler Hill  Bar Ilan University
+University of Bergen
+Samsung RD
+Cognitive Science University of Duisburg
+Jason Mars Clinc Inc Ann Arbor
+Innopolis University Innopolis
+Jawaharlal Nehru University New Delhi
+MIT Media Lab
+National Institute of Astrophysics
+University of Wolverhampton
+University of Helsinki Basement AI
+Honda Research Institute Japan Co Ltd
+University of Massachusetts Lowell
+University of Groningen University of the Basque Country
+LORIA
+Moscow Institute of Physics and Technology
+Spoken Language Systems Saarland University
+Michigan Technological University Houghton
+Universitat Politecnica de Valencia
+Technische Universitat Dresden
+East China Normal University
+Microsoft Speech and Dialogue Research Group
+The University of Waikato
+James A Haley VA Hospital
+University of Latvia
+University of Southern California Marina del Rey
+Sprakbanken University of Gothenburg
+Wolkite University
+Language Technology Lab DFKI
+Federal University of Rio Grande do Sul Brazil
+INRIA Nancy Grand Est  LORIA CNRS Universite de Lorraine
+University of Le Mans
+NCLT School of Computing
+Institute for Information Technology National Research Council
+IBM Research  India
+VerticalScope Inc
+CLLE CNRS
+ITC irst Istituto per la Ricerca Scientifica e Tecnologica
+Instituto de Investigaciones en Matematicas Aplicadas y en Sistemas
+Wuhan University
+The University of Western Ontario London
+Multilingual Translation Lab
+CNGL Centre for Global Intelligent Content National Centre for Language Technology School of Computing Dublin City University Dublin
+Oxford University Computing Laboratory
+DWANGO Co Ltd
+Universitat Hamburg
+University of Lethbridge
+Sprachwissenschaft University of Tubingen
+Amazon AWS AI
+Potsdam University
+University of Maryland Institute for Advanced Computer Studies College Park
+Compass Inc 
+CNTS  Language Technology Group 
+N i Sun X in f an M eng Key Laboratory of Computational Linguistics Peking University Ministry of Education
+LEAD Universitat Tubingen
+The College of New Jersey Ewing
+ILS University at Albany
+Northwestern University  Duolingo
+AIPHES Heidelberg Institute for Theoretical Studies
+Microsoft AI  Research Sunnyvale
+Simon Fraser University
+University of Texas at Austin and Kent Wittenburg
+CKIP
+National Institute of Informatics
+SAAMA AI Research Lab
+Uiuversity of Toronto
+University of Turin
+University of the Fraser Valley
+University of Rome Tor Vergata Rome
+Bilkent Uniwrsity Ililkenl Ankara
+Baidu Research
+Bauhaus Universitat Weimar
+Toyota Technological Institute at Chicago Chicago
+Turku NLP Group
+University of York York
+Nehru University
+zNew York University
+Universita Karlova Praha
+ILC University of Louvain
+IBM Research  Tokyo Chuo ku
+CEATIC  Universidad de Jaen Las Lagunillas sn
+Tyumen State University
+Universite de Nantes
+University of North Texas Denton TX
+Brooklyn College CUNY
+Bayerische Staatsbibliothek Munchen
+University of the Saarland Saarbrucken
+Vulcan Inc Seattle
+University of Cambridge Computer Laboratory Corn Exchange Street
+University of Sydney NSW 2006
+Observatoire de linguistique Sens Texte OLST Universite de Montreal CP 6128 succ Centre ville Montreal Quebec H3C 3J7
+University of Technology
+Buccleuch Place University of Edinburgh Edinburgh
+SSN College of Engineering Kalavakkam
+Universite Paris Diderot Paris
+Koc University Artificial Intelligence Laboratory Istanbul
+Leiden Institute of Advanced Computer Science Leiden University
+Norwegian University of Science and Technology NTNU
+Army Research Lab
+Indian Institute of Technology
+University of Michigan IBM Research AI
+University of Cincinnati Cincinnati OH
+Communication University of Southern
+Bocconi University
+CooTek Inc
+Universite de La RochelleL3I
+IBM Research Yorktown Heights
+PLA Academy of Military Science
+Megvii Inc
+MIT Computer Science and Artificial Intelligence Laboratory
+The University of Texas at Dallas Richardson
+Yahoo Japan Corporation Midtown Tower
+Jadavpur University Kolkata
+National Institute of Advanced Industrial Science and Technology AIST
+CIMeC University of Trento Cso Bettini
+Univ Sheffield
+Tokyo Metropolitan University
+Oak Ridge National Laboratory Oak Ridge
+Saiseikai Kumamoto Hospital
+Universitas Indonesia
+IIT Kharagpur West Bengal
+Innovative Digitech Enabled Applications  Services Institute
+The Hong Kong Polytechnic University Hung Hom
+Addis Ababa University Addis Ababa
+Jena University Language  Information Engineering JULIE Lab Friedrich Schiller Universitat Jena Jena
+Ecole Superieure des Sciences Appliquees dAlger ESSA
+National Research Council
+Greedy Intelligence Ltd Hangzhou
+University of Edinburgh Edinburgh
+Univ of Massachusetts Amherst
+Chinese Information Processing Laboratory
+Oregon State University
+Clinc Inc Ann Arbor
+CLiC
+Universidad Nacional Autonoma de Mexico Ciudad de Mexico
+Tianjin University Microsoft Research Asia Tianjin
+EML Research gGmbH Heidelberg
+University of Pavia
+Universite Grenoble Alpes Computer Science Laboratory
+The University of Texas at Austin Austin
+Teesside University
+Bahir Dar University
+Indian Institute of Technology Banaras Hindu University Varanasi Varanasi
+University at Albany
+Rutgers University CoRE Building
+SeeByte Ltd
+RWTH Aachen University Templergraben 55
+Aylien Ltd Dublin
+Hugo Australia Sydney
+Zalando Research
+Oregon Health and Science University
+Max Planck Institute for the Science of Human History
+the University of Tokyo
+University of Limerick
+Human Computer Communications Laboratory  Stanley Ho Big
+Centre for Text Technology North West University
+Japan Science and Technology Agency
+Zhejiang University
+National Taiwan University National Taiwan University Academic Sinica
+University of Texas at Austin  University of Georgia
+UKP Technische Universitat Darmstadt
+Univ Geneva
+Fuji Xerox Co Ltd
+HEIG VD  HES SO
+imec
+Cookpad Inc Yebisu Garden Place Tower 12F
+Harbin Institute of Technology Harbin
+University of Roma Tor Vergata
+University of Roma
+University of Dusseldorf Universitatsstrasse 1
+Vicomtech IK4 Donostia  San Sebastian
+Informatics Institute University of Amsterdam
+IICT
+URPP Language and Space
+Leibniz ScienceCampus IDS Mannheim  ICL Heidelberg
+Allen Institute for AI
+NEC Laboratories Europe GmbH
+HSLT Group at Vicomtech
+University of Stuttgart Inst fur Maschinelle Sprachverarbeitung
+University of Coimbra
+Istanbul Technical University Maslak
+Linguistics Stanford University Stanford
+Habin Institute of Technology
+University of Delaware University of Delaware Newark
+Raytheon BBN Technologies
+Washington University
+University of Bielefeld
+University of Birmingham
+Calvin College Grand Rapids
+ICMC  University of Sao Paulo Av do Trabalhador Sao Carlense
+University College Dublin
+Center for Language and Cognition Groningen  Language Technology Rijksuniversiteit Groningen
+UPC
+Haifa University
+Universite de Technologie de Compiegne
+Naver Labs Europe
+NICT  Miyagi
+Language Technologies Institute
+Keihanna Science City
+University of Colorado Boulder
+the University of Sheffield
+National Scientific and Technical Research Council CONICET
+Toyohashi University of Technology Toyohashi Aichi
+RMIT University Melbourne
+MTA SZTE Research Group on Artificial Intelligence
+University of Georgia
+Heilongjiang University
+Diquest Inc
+Indiana University Bloomington
+IXA research group
+Expert System Calle Profesor Waksman
+University of Texas Health Science Center at Houston Houston
+University of Maryland Computer Science
+Artificial Intelligence Research Institute
+Bogazici University
+Stuttgart University
+ALTA Institute Computer Laboratory University of Cambridge Cambridge
+Fraser Valley Abbotsford
+SKI International Menlo Park
+Nara Institute of Science and Technology Microsoft Research
+German Research Center for Artificial Intelligence DFKI
+Ural Federal University
+University of Washington
+Korea Advanced Institute of Science and Technology
+the Ohio State University
+York University
+University of Hamburg Vogt Kolln Strasse 30
+NUS Interactive and Digital Media Institute
+University of Sfax
+Matsushita Electric Industrial Co Ltd
+University of Toronto and Vector Institute
+University of Yamanashi
+UNIST
+Kyoto University  Yoshida honmachi
+ISI  University of Southern California
+Research Training Group AIPHES Heidelberg Institute for Theoretical Studies
+Ibaraki University Nakanarusawa
+CNRS Universite de Lorraine
+University of Sao
+Moscow State University
+UPF
+PolyAI Limited London
+IBM Research Australia
+Agence Nationale de la Recherche ANR
+CAS
+University of Computer Studies Yangon
+The Graduate University For Advanced Studies
+Norwegian University of Science and Technology Trondheim
+Sapienza Universita di Roma
+Alfa Informatica University of Groningen
+LIUM  University of Le Mans
+Baidu Silicon Valley Artificial Intelligence Lab
+Universita degli Studi di Trento
+Nuance Communications  Institute for Computational Linguistics
+Lab University of Cambridge
+University of the Basque Country University of Barcelona
+University of Pittsburgh Pittsburgh
+Pompeu Fabra University
+Ege University
+Utrecht University Utrecht
+Allstate Insurance Company Seattle
+Hefei University of Technology
+The University of Texas
+Microsoft Research One Microsoft Way
+Centre national de la recherche scientifique CNRS Campus Scientifique
+SAIL
+Indian Institute of Technology Madras
+The Catholic University of America
+Universidad Nacional Autonoma de Mexico UNAM
+University of Zurich Institute of Computational Linguistics
+University of Tuebingen
+LSE
+Adam Mickiewicz University
+The Hebrew University
+Alfa informatica and Behavorial and Cognitive Neurosciences
+Beuth University of Applied Sciences
+UCLouvain
+Goethe University
+Sunway University
+CNTS
+Google DeepMind
+LIPN
+DISP University of Rome Tor Vergata Roma
+Instituto Politecnico Nacional
+Indian Institute of Technology Guwahati
+Course Hero
+Instituto de Tecnologia del Conocimiento Universidad Complutense de Madrid
+UFAL MFF UK
+George Fox University
+Insight  NUI
+IRCS University of Pennsylvania
+NII
+BBN Technologies
+University of Alabama at Birmingham
+Ludwig Maximilians University
+University of Zagreb Text Analysis and Knowledge Engineering Lab
+Lister Hill National Center for Biomedical Communications National Library of Medicine
+University of North Carolina at Charlotte
+Kyoto University Yoshida Nihonmatsu cho
+Universite du Quebeca Montreal
+ADAPT School of Computing Dublin City University
+Siberian State Aerospace University Ulm Germany
+Hochschule Hannover
+Microsoft Research Asia  National University of Singapore
+Humboldt Universitat zu Berlin
+NTT Advanced Technology Corporation
+Hallym University
+University of Belgrad
+Viseo Technologies
+University of Richmond Rhetoric and Communication Studies
+University Alexandru Ioan Cuza of Iasi
+Tencent Inc
+Microsoft Dynamics
+Academia Sinica Nankang
+IXA NLP Group University of the Basque Country Donostia
+Zhongnan Hospital of Wuhan University
+LIMSI CNRS
+National Institute of Information and Communications Technology NICT
+Universidade Federal do Rio Grande do Sul Porto Alegre
+North West University
+Bhim Rao Ambedkar University
+National Institute
+MoE Key Lab of High Confidence Software Technologies
+Halicioglu Data Science Institute
+SOCIUM
+Alpage Univ Paris Diderot  INRIA
+Beihang University
+Universitat Potsdam
+Linnaeus University
+Microsoft Language Development Centre
+CISUC
+University of Texas
+University of Turin Corso Svizzera
+Universitat Politcnica de Valncia
+Beijing Normal University  Hong Kong Baptist University United International College Zhuhai
+Yerevan State University
+Autohome Inc
+HAS Computer and Automation Research Institute HAS Research Institute for Linguistics H
+Computer Laboratory
+Republic University Montevideo
+University of Toronto and Vector Institute Toronto
+Advanced Research Lab Samsung RD Institute Indonesia
+ROIS
+MIT Laboratory for Computer Science
+New York University Computer Science
+Language Science and Technology
+University College London UCL
+ATT Labs Research Florham Park
+The University of the Basque Country UPVEHU
+CCLS
+University of Wisconsin
+Pontificial Catholic University  Rio
+Universidad Nacional de Cordoba
+Renmin University of China  Computer Center
+IBM Research TJ Watson Research Center
+University of Washington University of Albany
+Luminoso Technologies Inc
+The University of Queensland
+University of Lisbon
+Information Science University of Colorado Boulder
+Georgia Institute of Technology
+Changsha University of Science  Technology
+University of Malta
+Research Institute for Language and Speech
+ICT Centre  CSIRO Locked Bag
+China Normal University Wuhan
+Monmouth University
+TEG Analytics Sydney
+The Pennsylvania State University University Park
+Ochanomizu University
+CENTAL
+Beijing Jiaotong Univer sity
+University of Amsterdam Plantage Muidergracht 24
+Paoli Research Center Unlsys Corporation
+National Tsing tlua University Hsinchu
+LAIX Inc 
+Japan Science and Technology Agency   Kawaguchi shi
+The National Centre for Text Mining
+Darmstadt University of Technology
+Johns Hopkins University 
+Univ Politecnica de Valencia Cami de Vera sn
+University of Antwerp Antwerp
+Dalian Maritime University
+Unbabel
+Beijing Language and Culture University
+University of Notre Dame
+Institute for Human and Machine Cognition
+National Centre for Text Mining and University of Manchester
+Henan Institute of Science and Technology
+Korea Advanced Institute of Science  Technology KAIST
+Paypal Inc
+Communication University of Amsterdam
+Alibaba Group Hangzhou
+Universite Joseph Fourier
+University Of North Texas
+Behavioral Signal Technologies
+National Tsin Hua University
+Universiteit Leuven
+University of Helsinki Helsinki
+McGill University Computer Science
+CNRS ATILF
+Rotman Research Institute
+ESPOL University
+Ventura Hall Stanford
+LORIAINRIA
+Boston University
+UW  Madison
+Goethe University Frankfurt Text Technology Lab Robert
+IXA group Univ of the Basque Country UPVEHU
+EMRAI Inc
+Open University Raanana
+Lexical Computing Ltd
+Harbin Institute of Technology
+Institut fur maschinelle Sprachverarbeitung Universitat Stuttgart
+University of Colorado Baltimore
+Jacobs University
+Dept of CSE
+Research Group in Computational Linguistics University of Wolverhampton Stafford Street
+National Institute of Technology Karnataka
+Queens University Belfast
+Centre for Next Generation Localisation School of Computing Dublin City University
+Graz University of Technology
+Kotebe Metropolitan University
+Oregon Health  Science University
+University of Colorado Denver Stanford University Denver
+Johns Hopkins University  Human Language Technology Center of Excellence
+Natioual Taiwan University Taipei
+Computing Science University of Aberdeen
+Trost Humart Company Inc
+AU KBC Research Centre MIT Campus of Anna University Chromepet
+Universite Paris
+Research Training Group AIPHES
+HLTCOE Johns Hopkins University
+Huawei Turkey Research and Development Center
+MGH Institute of Health Professions
+TIB
+New Mexico State University Computing Research Lab
+SuzanUskudarli Bogazici University
+Mohit Bansal UNC Chapel Hill
+University of Turku
+Childrens National Health System
+Baidu Inc
+Communications Research Laboratory
+National Research Council Canada Ottawa
+Florida International University Dept of Modern Languages
+Noahs Ark Lab Huawei Technologies
+Tel Aviv University
+Norwegian University of Science and Technology NO
+Language Technologies Research Centre IIIT H
+Retrieva Inc
+Centre for Language Technology Macquarie University Sydney
+LinkedIn
+IBM Research Tokyo Tokyo
+Nankai University
+University of Pennsylvania Philadelphia
+University of the Pacific
+TCS Research and Innovations Mumbai
+IRIDIA Universit6 Libre de Bruxelles Sergei NIRENBURG Center for Machine Translation Carnegie Mellon University
+IAEPCS  Universidad de Ciencias Sociales y Empresariales Paraguay 1401 PB Bs As
+University of Pisa
+IXA group University of the Basque Country UPVEHU
+The University of Tokyo
+Hackley School
+Goethe Universitat Frankfurt am Main
+Istituto di Linguistica Computazionale A Zampolli
+ICL Univ Heidelberg  Leibniz ScienceCampus
+Chongqing University of Posts and Telecommunications
+Academia Militar INESC ID Lisbon
+Universidad Nacional Autonoma de Mexico Grupo de Ingenieria Linguistica MDorantesCR
+University at Buffalo
+LRDC University of Pittsburgh Pittsburgh
+University of Toronto Toronto
+Iryna Gurevych 
+Universite de Lorraine Nancy
+The University of Melbourne Victoria 3010
+SRM University
+Chew Lim Tan   Institute for Infocomm Research
+Rakuten Institute of Technology
+Canada University of Alberta
+Google Brain Mountain View
+University of British Columbia 
+Chinese Academy of Sciences No
+University College Dublin Dublin
+University of Wisconsin Milwaukee University of Pennsylvania
+GESIS  Leibniz Institute for the Social Sciences in Cologne Unter Sachsenhausen
+University of South Florida
+National Central University No
+Microsoft Research Redmond
+Lab University of Duisburg Essen
+Mike Conway Biomedical Informatics University of Utah
+University of Texas at Dallas Human Language Technology Research Institute Richardson
+INSA Rennes
+Montreal Institute for Learning Algorithms Universite de Montreal
+University of Brighton Brighton
+Taipei Medical University
+KU Leuven  Language Technology Lab
+National Research Council Ottawa
+The University of Manchester
+TCS Research Mumbai
+Universitat Passau  Rio de Janeiro
+Universite Aix Marseille
+Hikvision
+MIT CSAIL Cambridge
+Industry  Distribution Business Unit
+Laboratoire dInformatique Fondamentale dOrleans Batiment IIIA Rue Leonard de Vinci
+Brown University
+Computer Science Rutgers University
+Eindhoven University of Technology
+Mellon University Pittsburgh
+Ruhr Universitat Bochum
+University of Lincoln
+English University of Illinois
+Universite Paris Diderot
+Universidade de Lisboa
+Federal University of Rio Grande do Sul Brazil and Computer Science and Electronic Engineering
+Wayne State University
+USMBA Fes
+Carnegie Mellon University  University of Haifa
+NICTA Research Lab University of Melbourne
+Ecole Polytechnique Federale de Lausanne Digital Humanities Laboratory Lausanne
+Bloomberg LP
+Maynooth University
+SAP SE Machine Learning RD
+Hugging Face Inc 81 Prospect St
+USCICI Comp
+Linguistics
+El Colegio de Mexico
+Artificial Intelligence Group  Swisscom AG
+ICSI
+Vienna Univ
+Center for Health Communications Research
+Xerox Co Ltd
+University of St
+Universita di Pisa
+Nara Institute of Science and Technology
+University of Copenhagen University of Malta
+University of Szeged Institute of Informatics
+Itau Unibanco
+Alaska Native Language Center
+Yale University
+Federal University of Alagoas
+QUEENS COLLEGE AND GRADUATE CENTER
+SIMS
+EnvA
+Alpen Adria Universitat Klagenfurt
+University of Zagreb
+Tencent Corporation
+Oxford Man Institute University of Oxford
+Rajarambapu Institute of Technology Islampur
+Research Training Group AIPHES Heidelberg Institute for Theoretical Studies gGmbH Schloss Wolfsbrunnenweg
+University of Tromso
+Huawei Technologies CO LTD
+Microsoft Research Bangalore
+IBM Research IBM Research IIT Madras IBM Research
+ILSPATHENA RC
+AI Center
+AI Institute
+UPVEHU
+BASIS Oro Valley
+IRIT CNRS
+Watt University
+Nagaoka University of Technology
+eBay Inc Kasernenstr
+Deakin University
+UC Berkeley
+Tsinghua Univerisity
+Computational Intelligence Laboratory Toyota Technological Institute
+Birzeit University West Bank
+University of Sheffield Universite de Montreal
+Haidian District
+University of Venice
+Univ Bordeaux
+IXA Group University of the Basque Country UPVEHU
+Nile University Giza
+National Institute of Informatics  JST
+National Institute for Japanese Language and Linguistics Tachikawa
+Universidade Federal de Minas Gerais Minas Gerais
+Applied Computational Linguistics University of Potsdam
+Fayoum University
+The University of Western Australia
+Ionian University
+ATT Labs  Research Florham Park
+University of Pennsylvania Philadelphia PA 191Ct
+Democritus University of Thrace
+Lancaster University Bailrigg
+University of Pisa Via SMaria
+LT Lab  German Research Center for Artificial Intelligence
+IXA NLP group University of the Basque Country UPVEHU
+University of Florida
+Nara Institute of Science and Technology  Language Technologies Institute
+Microsoft India
+National Library of Finland
+Spoken Language Systems MIT CSAIL Cambridge
+ICCS School of Informatics
+Eduardo Caianiello National Research Council
+Tooploox
+University of Brighton
+University of Alicante Apdo de correos
+The University of Rochester Rochester
+Qatar Computing Research Institute 1
+University of the Basque Country  Google Inc
+Computing Laboratory University of Oxford
+University of Innsbruck
+University of Science and Technology
+University of Melbourne
+Heilongjiang Institute of Technology
+Nagoya University
+Tepper School of Business Carnegie Mellon University Pittsburgh
+University of Cape Town Cape Town South Africa
+Intel AI Lab
+Tricorn Beijing Technology Co
+Saarland University and German Research Center for Artificial Intelligence DFKI
+Mawdoo3 Ltd
+University of Southern California Information Sciences Institute
+NICTA VRL University of Melbourne VIC 3010
+Bilkent University Bilkent
+University of Washinton
+Microsoft Research AI University of Rochester Redmond
+Universite Toulouse
+Universidade de Vigo
+Brigham Young University
+Artificial Intelligence Group Sogou
+Academia Sinica Kch jiann Chen
+Sweden Centre for Speech Technology Royal Institute of Technology
+Smith Hall University of Delaware Newark
+Southwestern University of Finance and Economics
+Amazon Research Berlin
+NTT Machine Translation Research Group NTT Communication Science Laboratories Nippon Telephone and Telegraph Corporation
+State University of New York  University at Albany
+Bosch Research and Technology Center Sunnyvale
+Goethe University Frankfurt Text Technology Lab
+University of Konstanz
+University of Luxembourg
+Daido University
+Universita Politecnica delle Marche
+Manipal Institute of Technology
+Idio Ltd
+CRPCC
+Universite de Geneve Alpage
+Boeing Research and Technology Huntsville
+RJ Research Consulting Tarrytown
+RALI DIRO Universite de Montreal CP
+Linguistic Data Consortium University of Pennsylvania
+Shamoon College of Engineering Beer Sheva Israel
+University of Ghent
+Recruit Technologies Co Ltd
+Oracle Corp
+LINA  University of Nantes
+IIT BHU  Varanasi
+MobilePay
+Amazon Alexa AI
+Universite catholique de Louvain Louvain la Neuve
+The University of Melbourne University of Southern California VIC 3010
+Idiap Research Institute J Priberam Informatica SA s University College London  University of Sheffield  Qatar Computing Research Institute
+Computational Linguistics University of Saarbruecken
+ATR Spoken Language Translation Research Laboratories
+Novosibirsk State University
+Noureddine Ennahnahi USMBA
+Applied Machine Learning
+University of Macau
+Nazarbayev University
+University of Helsinki SICS
+CLIP
+Warsaw University of Technology
+Simon Fraser University British Columbia
+Technische Universitat Darmstadt
+Universidad Nacional Autonoma de Mexico Grupo de Ingenieria Linguistica
+University of Illinois at Urbana Champaign Urbana
+Information Retrieval Lab Harbin Institute of technology Harbin
+IBM Research  Robert Bosch
+University of Munich
+Emerging Technologies National Research Council
+GPLSI Group University of Alicante
+The University of Edinburgh
+Universite de Lyon Laboratoire Hubert Curien Saint Etienne
+Air Force Research Laboratory Wright Patterson AFB
+Texas Neurology
+VU University Amsterdam De Boelelaan
+Northwestern University
+University of Paderborn
+Moscow Institute of Physics
+UC Davis
+Polish Academy of Sciences ul
+Bilkent University Ankara
+University of Sao Paulo USP Sao Carlos
+Tong University Saarland University Shanghai
+Luheng He
+Fitchburg State University Fitchburg
+NHK Science  Technology Research Laboratories
+Universite Libre de Bruxelles
+Minority Rights Group
+STM AS
+Universitat Bochum Bochum
+Toronto Rehabilitation Institute  UHN
+Tohoku University Graduate School of Information Sciences Sendai
+University of Houston
+SP Global New York
+UHN University of Toronto Toronto
+University of Sheffield England
+Bhimrao Ambedkar University
+German Institute for Educational Research
+University of Sussex Falmer
+ExaWizards Inc  Tokyo
+Human Language Technology Center
+Dusseldorf University
+Research Group in Computational Linguistics University of Wolverhampton
+Drexel University
+Polish Academy of Sciences
+Humboldt University Berlin
+Seernet Technologies
+LIF UMR 7279
+Chulalongkorn university
+Nanjing University of Science  Technology
+ANSES
+Humanities Computing
+INESC TEC
+Carnegie Mellon University in Qatar
+Indian Institute of Science
+University of Sheffield University of Sheffield Regent Court 211
+Katholieke Universiteit Leuven
+Ohio University
+Indian Institute of Technology Patna Bihta
+Google Japan Inc
+National Technical University of Athens
+LTCICNRS
+Indian Institute of Technology Guwahati Assam
+HLT Fondazione Bruno Kessler Trento
+European Commission  Joint Research Centre JRC
+and Engineering National Sun Yat sen University Kaohsiung
+Beijing University of Post and Telecommunication
+University of Wuerzburg
+Istituto di Linguistica Computazionale Antonio Zampolli ILC CNR via G Moruzzi
+Management University
+LIG GETALP
+University of Tubingen Collaborative Research Center
+Wluper Ltd London
+AIPHES Institute for Computational Linguistics Heidelberg University
+NTT Communication Science Lab
+Assistance Publique  Hopitaux de Paris  Departement de Biomathematiques
+University of Szeged Arpad ter
+Istanbul Technical University Istanbul
+LAIX Inc
+Human Communication Research Centre University of Edinburgh Edinburgh
+The University of Hong Kong  Microsoft Research
+Jerusalem College of Technology
+University of Maryland Baltimore County
+HKUST
+University of Alabama at Birmingham Birmingham
+Universidad Catolica del Peru Av Universitaria
+Universitat Politcnica de Catalunya UPC Jordi Girona
+MPT
+Ni Sun Key Laboratory of Computational Linguistics Peking University Ministry of Education
+Dublin City University
+University of Southern CaliforniaInformation Sciences Institute
+Purdue University SS IBM TJ Watson Research Center
+Simon Fraser Univ Burnaby
+Universidad de Jaen
+ERTIM
+University of Trento Fondazione Bruno Kessler
+Bloomberg London United Kingdom
+University Hospital
+Eric de La Clergerie Benoit Sagot Djame Seddah Inria
+ICMC USP
+Universita
+The Johns Hopkins University Baltimore
+National Institute of Genetics Mishima
+Ehime University
+University Station A4800 Austin
+Universitat Darmstadt Heidelberg University
+Kong Polytechnic University
+RIACS NASA Ames Research Center
+IXA NLP group University of the Basque Country
+University of Maroe la Vallee
+University of Southern California Stanford University
+Catholic University of Louvain
+University of Central Florida
+University of Alberta Edmonton
+BCL Technologies San Jose
+UMass Lowell
+University of Gothenburg
+University of Avignon
+LORIA Inria
+WhizBang Labs Research
+Boston University SRI International Boston
+FICLIT  University of Bologna
+Aston University Birmingham
+Dublin Institute of Technology
+K Dictionaries
+New York State Psychiatric Institute at Columbia University
+National University of Ireland
+CoAStaL DIKU University of Copenhagen University
+Sabanci University Istanbul
+Centre for Next Generation Localisation School of Computing Dublin City University Dublin 9
+Hasso Plattner Institute Prof
+Sharif University of Technology
+TiCC
+Universitat Rovira i Virgili Tarragona
+INRIALORIAUHP Nancy
+IXA NLP group UPVEHU
+PRHLT Research Center
+Arizona State University Tempe
+Beijing University of Posts and Telecommunications BUPT
+AGH University of Science and Technology
+Chalmers University of Technology
+Ryukoku University Seta
+Interactions LLC Bengaluru
+LIASD
+The Asahi Shimbun Company
+KU Leuven
+ATT Bell Laboratories
+Technische Universitat Darmstadt Hochschulstrasse 10
+Teradata India Pvt Ltd Hyderabad
+Fujitsu Laboratories Ltd  NIFTY Corporation
+ITCS
+University of Kent Kent
+UPenn
+iFLYTEK Research
+Mannheim University
+ICREA and Universitat
+AIPHES
+Free University of Bozen Bolzano
+Centre for Language Technology Macquarie University
+Beuth University of Applied Sciences Luxemburger Strasse
+Big Data Institute Hong Kong University of Science and Technology Hong Kong
+University of Liverpool
+University of Sussex United Kingdom
+University College London United Kingdom
+Escola Superior de Enxenaria Informatica Universidade de Vigo
+Ryukoku University Otsu
+Heriot Watt University Edinburgh
+University of Turku Turku Centre for Computer Science TUCS
+Florida International University Miami FL
+LHNCBC US National Library of Medicine
+University of Cote dAzur
+National Institute of Information and Communications Technology  Tohoku University  Kyoto University
+NICT  Kyoto
+National University of Singapore
+WebSpellChecker LLC
+Cooperative State University
+Weihua Luo  
+Leibniz University of Hannover Hannover
+Toshiba China RD Center Beijing
+Linagora
+Tilde
+University of Sydney Capital Markets CRC
+Alibaba Zhejiang University Frontier Technology Research Center
+Universite Francois Rabelais Tours
+University of Bahrain
+Arcispedale SMaria Nuova
+Knowledge Technology University of Hamburg
+Santa Fe Institute
+Yunnan University Kunming
+University of Jordan
+Nuance Communications
+University of Cambridge Cambridge
+National University of Singapore Singapore
+BBN Systems and Technologies Inc
+University of Manouba
+NIT Mizoram
+XTM International Ltd
+US National Library of Medicine
+Watson Group IBM Corporation Research Triangle Park
+HCRC
+University of California at Berkeley
+Purdue University West Lafayette
+University of Edinburgh University of Sussex
+Vytautas Magnus University
+Fudan University
+Sprakbanken Text
+Georgetown University luca
+Erasmus Mundus European Program in Language and Communication Technology  University of Malta
+Hitachi India Pvt Ltd
+Ghent University  iMinds Ghent
+CUNY
+Ecole Normale Superieure  PSL Univ Univ Sorbonne nouvelle  USPC Paris
+Univ of Washington
+University of Manchester Kilburn Building
+Kumamoto University
+University of Notre Dame Notre Dame
+Ghent University Groot Brittannielaan
+University of North Texas
+University of Zurich
+SICS East Swedish ICT AB
+Huggingface Inc
+University of Nijmegen
+Martin Luther Universitat Halle Wittenberg
+Universidad Catolica del Peru
+Universitgt Stuttgart tXerox Fesearch Centre Europe Dublin City University Azenbergstr
+Soochow University
+Universidad Carlos III de Madrid
+Communication Technologies Universitat Pompeu Fabra CTanger
+Toshiba Research
+ETS
+Gwangju Institute of Science and Technology
+Freiburg University
+University of Texas at Austin
+Technische Universitat Darmstadt  Research Training Group AIPHES
+Univ of Groningen
+University of Salento
+Qatar University Doha
+University of Tubingen Wilhelmstr
+Centre for English Corpus Linguistics Universite catholique de Louvain Place du cardinal Mercier
+University of Brighton Lewes Road
+University of Melbourne  NICTA Victoria Research Laboratory  Lexical Computing Ltd
+Universidad Nacional Autonoma de Mexico Grupo de Ingeniera Linguistica
+Universitat Politcnica de Catalunya Barcelona
+Harbin Institute of Technology HIT
+University of Xian Jiaotong University of Xian Jiaotong
+Universita di Roma La Sapienza Roma
+YingKou Institute of Technology
+Fondazione Bruno Kessler
+University of Glasgow
+Cognitive Computing Lab
+University of Bamberg and University College London
+University of Pennsylvania University of Maryland Philadelphia
+DTIC  Universitat Pompeu Fabra Calle Tanger
+IRCS
+LDRP ITR
+Idio Ltd  The Cursitor
+RWTH Aachen University Ahornstrasse
+University of Cambridge Computer
+Universita di Roma Viale Regina Elena
+University of Cologne
+Telecommunications National Center for Scientific Research NCSR Demokritos Athens
+Arizona State University
+Salesforce Research Palo Alto
+Emory University Atlanta
+ETH Zurich Zurich
+Istituto di Linguistica Computazionale Antonio Zampolli ILC CNR ItaliaNLP Lab  wwwitalianlpit
+Ludwig Maximilian University
+Macalester College Saint Paul
+The ALTA Institute
+University of Alabama
+Columbia University
+Virginia Tech
+University of Rome Tor Vergata
+Vrije Univ Amsterdam Amsterdam
+ILLC
+University Hospital Heidelberg
+Development Division SDC   A Burroughs Company
+WeBank Inc 
+Aix Marseille Universite LPC CNRS UMR 7290
+University of Tehran
+European Language Equality Network
+Labex Les Passes dans le Present
+Microsoft Translator One Microsoft Way Redmond
+University of Lynchburg
+Electrical Engineering University of Maryland Baltimore County
+Vrije Universiteit Amsterdam
+INSA Rouen Normandie
+University of California Irvine
+Technische Universitat Darmstadt  UKP Lab
+Universite Amar Telidji Laghouat
+University of Duisburg Essen Lotharstr
+The University of the Basque Country
+ADAPT Centre at Trinity College Dublin
+Southwest Jiaotong University
+Jena University Language and Information Engineering JULIE
+Courant Institute of Mathematical Sciences New York University New York
+Xian Jiaotong University Xian Jiaotong University
+Guangzhou University of Chinese Medicine
+Colorado State University
+The University of New South Wales
+Charles University in Prague Malostranske namesti 25
+Institue University of Virginia
+Fraser University
+EURA NOVA Rue Emile Francqui
+Michigan State University
+Dublin City University 15902803
+Arcada University of Applied Sciences Jan Magnus Janssonin aukio 1
+ICMC USP  Sao Carlos
+IBM Watson TJ Watson Research Ctr Yorktown Heights
+University of Delaware
+Massachusetts Institute of Technology United States
+Leibniz ScienceCampus Universitat Heidelberg
+Natural Language Processing Lab University of British Columbia
+Cognitive  Computing Sciences University of Sussex
+ATT Labs Research
+IIT Hyderabad Hyderabad
+Marseille University LPL
+Istituto di Linguistica Computazionale Antonio Zampolli  CNR
+Technische Universitat Berlin
+EECSKORTERM KAIST
+Technische Universitat Darmstadt Hochschulstrasse
+RDI
+University of the Basque Country and Sharp Laboratories of Europe
+Razvan BU N ESC U
+UAB VTeX
+Universitat Dusseldorf
+The MITRE Corporatio n
+University of Kurdistan
+University of Hamburg Natural Language Systems Division
+FICLIT
+DATA61
+INRIA
+Omrop Fryslan
+ Global Asia
+Laboratory of Machine Perception Peking University
+UMR CNRS 8163  STL F 59000
+The University of Hong Kong  Carnegie Mellon University  New York University
+Universitat Politecnica de Catalunya
+IXA NLP Group Basque Country Univ
+Turku Centre for Computer Science TUCS
+Regent Court
+IBM Watson Group
+Universidad Nacional Autonoma de Mexico Dominic Forest Universite de Montreal EBSI
+University of Tartu Tartu
+University of North Texas HiLT Lab
+Dharmsinh Desai University
+Universitat zu Berlin
+Bulgarian Academy of Sciences
+Universitat Tubingen LEAD Graduate School
+Google Inc New York City NY
+City University
+Universidad Politecnica de Madrid
+The University of Texas at Austin Universitat Stuttgart
+Roskilde University Roskilde
+LIACS
+ICS PAS
+Vrije Universiteit Amsterdam Netherlands
+Stanford University  Google Inc   University of Edinburgh
+Universidade de Santiago de Compostela Galiza
+Human Language Technology
+Kansai University
+PLUM Research Group BBN Systems and Technologies
+Logworks Co Ltd
+St Michaels Hospital
+Fondazione Bruno KesslerUniversity of Trento
+University of Essex
+Microsoft Corporation
+Computational Linguistics UniversitPSt des Saarlandes D Saarbriicken
+Universita degli Studi di Milano
+Language Technologies Institute and Human Computer Interaction Institute Carnegie Mellon University
+Universite du Maine
+The University of Sheffield
+Universitat Mannheim L13
+Slovak University of Technology
+Talla Inc
+Cambridge University Engineering Department
+University of Melbourne Melbourne
+USA  Research Training Group AIPHES  Heidelberg University
+Monica Monachini   Istituto di Linguistica Computazionale Antonio Zampolli Via G Moruzzi 1
+Samsung RD Institute China  Beijing
+Heinrich Heine University
+BUTE
+Dept of Computer Science and Engineering Minneapolis
+LIMSI CNRS  Univ Paris Sud
+TTI Chicago
+The University of Texas at Austin
+NLP Centre
+FBK irst
+ASTREC
+Research Center for Information Retrieval MOE Microsoft Key Laboratory of Natural Language Processing and Speech
+University of Montreal
+Google Research Mountain View
+University of Dundee University of Aberdeen University of Dundee
+Harbin Institute of Technology  Microsoft Research
+University of Copenhagen
+Universidad Nacional Autonoma de Mexico
+University of Sydney Sydney
+Stanford NLP Group
+FBK  irst Povo Trento
+Cognitive Systems Labs Universitat Karlsruhe
+NEC Laboratories America Inc
+Toronto General Hospital
+Bell Laboratories Murray Hill
+IBM Almaden Research Center San Jose
+Data Sciences and Analytics Pacific Northwest National Laboratory
+IBM Research  Tokyo
+Busra Celikkaya Amazon
+Chinese Academy of Sciences
+Rensselaer Polytechnic Institute Troy
+Tianjin University
+GozdeOzbal FBK irst Trento
+University of Warwick
+National Taitung University
+AGH University of Science and Technology Cracow
+Toshiba China Research and Development Center
+University of Trento 3
+IRIT Toulouse University
+Toyohashi University of Technology
+Universita della Svizzera italiana USI
+Technion
+The University of Electro Communications
+EPFL
+University of Wales Aberystwyth Dyfed
+Hebrew University of Jerusalem
+Microsoft Research and AI Group
+University of the Aegean
+IIIT H Hyderabad
+The Australian National University ANU
+NIH Bethesda
+University of Tubingen
+IIIT Hyderabad
+Institut flir Maschinelle Sprachverarbeitung Universitat Stuttgart
+University of Haifa IBM Research  Language Technologies Institute
+Auckland University of Technology
+Kata Research Team Kataai Jakarta
+Chinese Academy of Sciences ICTCAS
+Universite de Franche Comte
+Cuny University of New York
+National Library of Medicine National Institutes of Health Bethesda
+Columbia University University of Maryland Columbia University
+Peking University
+Osaka University Osaka
+EyeJustRead
+Academia Rd
+Uppsala University Uppsala
+University of Virginia
+IRISA  CNRS
+University of Texas Austin
+Xinjiang University
+Engineering University of Gothenburg
+University of Helsinki
+Universita degli Studi di Genova Istituto di Linguistica Computazionale Antonio Zampolli ILC CNR
+Chungnam National University
+Thomson Reuters Research  Development
+Bonn University
+Ecole Polytechnique de Montreal
+Universitat Tubingen
+Indian Institute of Technology Patna Bihar
+University of Copenhagen Njalsgade
+Research Unit Languages and Literature
+Natural Language Processing Group Swedish
+University of Massachusetts Amherst
+Harbin Inst of Tech Harbin
+University of California
+LIRMM
+Johns Hopkins University Baltimore MD
+Heidelberg University Research Training Group AIPHES Heidelberg University
+Language Technologies Institute Carnegie Mellon Univeristy Pittsburgh
+Concord Repatriation General Hospital
+Lebanese University
+Instituto Superior Tecnico
+Oregon State University Corvallis
+Collins Publishers Glasgow
+Aix Marseille Univ
+Universitat Darmstadt Hochschulstrasse
+Language Technology Institute Carnegie Mellon University Pittsburgh
+Microsoft AI  Research
+Allameh Tabatabai University
+Microsoft AI and Research Group
+University of Rome Sapienza
+Siemens Medical Solutions USA  Malvern
+LUCL Leiden University
+IRISA
+Scuola Normale Superiore
+Massachusetts Institute of Technology
+Universitat Darmstadt
+USCISI
+Athens University of Economics and Business
+Human Language Technology Institute for Infocomm Research
+Marius Pasca Google Inc University of Rochester University of Rochester Google Inc Mountain View Rochester Rochester Mountain View CA
+Carnegie Mellon University
+Copenhagen Business School Idiap Research Institute Dalgas Have
+SDL Language Weaver
+Dublin City University Dublin City University
+Montreal Institute for Learning Algorithms
+FX Palo Alto Laboratory
+Cognitive Sciences University of Potsdam
+IT University of Copenhagen Copenhagen
+Toulouse University
+Trento RISE
+Federal University of Goias Goiania  Goias
+Nagoya University Furo cho
+Amsterdam Public Health
+IXA group
+UET
+McGovern Institute for Brain Research Massachusetts Institute of Technology
+Indian Institute of Information Technology Sri City Satyavedu Mandal Chittoor District Andhra Pradesh  517588
+Big Data Experience Lab Adobe Research Bangalore
+Harbin Institute of Technology IBM Watson
+Harbin Institute of Technology Shenzhen
+MPI Informatics  Spoken Language Systems LSV
+University of Rochester Stanford University
+Research Centre Judaism
+DIT University of Trento Povo di Trento
+Heidelberg Institute for Theoretical Studies gGmbH Heidelberg
+MOE Peking University
+Ubiquitous Knowledge Processing UKP Lab Technische Universitt
+Intuit AI
+Institute for Human and Machine Cognition IHMC
+Univ of Pittsburgh Pittsburgh
+DeustoTech  Fundacion Deusto Avda Universidades
+Texas AM Health Science Center College of Medicine Biomedical Informatics Research group College Station
+Tokyo Institute of Technology Tokyo
+Universidade do Vale do Rio dos Sinos
+Simon Fraser University Buranby
+Shandong University
+Pontifical Catholic University of Rio Grande do Sul Porto Alegre
+Cognitive and Linguistic Sciences Brown University
+Universitat Stuttgart Pfaffenwaldring 5B
+Disney Research Los Angeles
+Similari
+Florida International University Miami
+UW Madison
+Inria ALMAnaCH
+Friedrich Schiller Universitat Jena Jena
+University of Pittsburgh
+Research Organization of Information and Systems
+Informatics University College Dublin Dublin
+KIT  Karlsruhe Institute of Technology
+Machine Reading Laboratory Semantic Web Research Center
+Qatar Computing Research Institute  HBKU
+Universitat Politecnica de Valencia Cami de Vera sn
+IBM Research
+Psychology University of Utah
+University of Vigo
+University of Pennsylvania
+University of Canterbury
+Brook University Stony Brook
+University of Modena and Reggio Emilia
+Stanford University and Roam Analytics
+University of Strathclyde Glasgow
+University of New York
+KDD Kamifukuoka RD Labs
+Pingan Health Tech
+Edinburgh University Rutgers University
+QARMA
+ByteDance AI Lab
+European Commission Joint Research Centre Directorate I
+University of Goettingen
+Harbin Institute of Technology Harbin China
+DLSI
+Universitat Heidelberg 
+University of Antwerp Antwerpen
+Allen Institute for Artificial Intelligence
+IBM Research AI Knowledge Induction and Reasoning
+National Centre for Language Technology School of Computing Dublin City University
+The Romantic Model
+Universite Amar Telidji de Laghouat
+GoDaddy Inc
+Language Science and Technology Universitat des Saarlandes Saarbrucken
+Australian National University ITMO University
+Rocio University Hospital
+Hiroya Takamura Tokyo Institute of Technology
+Tsinghua University  Microsoft Research Asia
+ILK
+Nihon Unisys Ltd
+Insight Centre for Data Analytics NUI Galway
+Human Language Technology Center Hong Kong University of Science and Technology HKUST
+Friedrich Alexander Universitat Erlangen Nurnberg Lehrstuhl fur Korpus und Computerlinguistik
+University of Malta Msida
+University of Sistan and Baluchestan
+Heidelberg University
+UC San Diego
+DSI
+University of Economics
+INRIA Paris
+Ecole normale superieure
+IIIS
+Institute for Artificial Intelligence State Key Lab on Intelligent Technology and Systems
+Indian Institute of Technology Kharagpur
+Univ Lille
+Utrecht University
+Ilan University
+University of Zaragoza
+ICNC The Hebrew University of Jerusalem
+Adeptmind Inc
+The University of Manchester Manchester
+University of Edinburgh
+Microsoft Natural
+Processing Dublin City University Institute of Computing Technology
+University of Arizona
+University of Stuttgart
+Universitas Gadjah Mada
+University of Leipzig
+IMRSV Data Labs Ottawa
+Korea Advanced Institute of Science and Technology KAIST
+Union College
+Yahoo Labs
+Samsung RD Institute India
+Binyam Ephrem Seyoum Addis Ababa University
+LMU
+Zalando Research Muhlenstrasse 25
+National Institute of Japanese
+University of Alicante Apdo de Correos
+University of Oxford Wolfson Building
+NAIST
+Speech Ltd Malvern
+National Institute of Technology Agartala
+Boise State University Boise
+University of Illinois at Urbana Champaign 3 iFLYTEK Research
+Ghent University Ghent
+Jordan University of Science and Technology Irbid
+Jena University Language  Information Engineering JULIE Lab Friedrich Schiller Universitat Jena
+University of Kassel
+Austrian Academy of Sciences OAW AC
+University of Sussex University of Cambridge
+CoGenTex Inc
+Queens University Belfast Belfast
+Antwerp University Antwerpen
+CLTL Lab
+Dalhousie University
+Harvard University Cambridge
+NEC Corporation
+Edinburgh University
+Inria Rennes
+Westlake University
+German Federal Institute for Risk Assessment BfR
+Languageai Chicago
+CIMeC
+Wroclaw University of Technology
+University of Huelva
+ICREA and DTIC
+Philips Research High Tech
+Natural Language Processing Lab The University of British Columbia
+UC Santa Cruz
+Microsoft Research Institute Macquarie University North Ryde
+Centre Cochrane francais
+Universitat des Saarlandes
+PUCRS University  Porto Alegre
+University of Information Technology VNU HCM
+Univeristy of Pennsylvania
+Kyoto University
+Inftrmation Science University of Pennsylvania Philadelphia
+University of London
+Chinese Academy of Science
+Microsoft Research and AI Group SS
+AI I
+IIT Madras
+KULeuven CNTS  Language Technology Group ESAT Universiteitsplein
+Huawei Noahs Ark Lab
+Hebrew University Jerusalem
+Ramaiah Institute of Technology
+International Institute of Information Technology
+The Graduate Center
+Tilburg centre for Cognition and Communication Tilburg University Tilburg
+DFKI  Saarland University
+University of Science and Technology HKUST
+Federal University of Rio Grande do Sul
+Samsung RD Institute of China
+Nanjing University of Science and Technology
+Massachusetts Institute of Technology Cambridge
+Academia
+Text and Data Mining Unit European Commission Joint Research Centre
+Vienna University of Technology
+KDDI Research Inc
+CEA Saclay Gif sur Yvette 91191 France     
+New York University 
+CED Applied Research Bose Corporation
+Vivace Health Solutions Cardiff
+ Pompeu Fabra University Carrer de Roc Boronat 138
+Universitas Indonesia Kampus UI
+Universidad de la Republica
+Nanjing Normal University
+The Alan Turing Institute
+International Institute of Information Technology Hyderabad
+Kent State University
+Northeastern University of China Shenyang
+DHLab KNAW Humanities Cluster Oudezijds Achterburgwal
+Tohoku University SSLanguage Craft Inc
+Academia Sinica Institute of History  Philology
+ICS PAS Jana Kazimierza
+National Institute of Information and Communications Technology
+University of Stuttgart Institute for Natural Language Processing
+Didi Labs and University of Southern California
+Jilin University
+University of Haifa Mount Carmel
+Yunnan University Chenggong Campus
+Molecular Health GmbH
+University of Southern California Los Angeles
+George Mason University
+Instituto de Telecomunicacoes
+Univeristy of California
+Welocalize Inc Frederick
+ANLP RG
+Meertens Institute
+Sprakbanken
+Tilburg center for Cognition and Communication TiCC Tilburg University
+China Multilingual  Multimodal Corpora and Big Data Research Centre
+Aix Marseille University
+Universitat Bochum
+NTT Corporation 
+The Australian National University
+SHIMANO INC
+Japan Advanced Institute of Science and Technology Ishikawa
+Research Circle Niskayuna
+Universite Paris Nord
+University of New Brunswick  VerticalScope
+Linguistic Data Consortium
+Indraprastha Institute of Information Technology
+CVIT
+University of Michigan Ann Arbor
+Arria NLG PLC
+Peking University Institute of Computer Science and Technology
+Auckland University of Technology Auckland
+University of Trento Fondazione Bruno Kessler Trento
+Hello Customer
+Neuroscience of Language Lab New York University Abu Dhabi
+Syracuse University Syracuse University Syracuse University
+Bangladesh University of Engineering and Technology BUET
+The University of Memphis Memphis
+Federal University of Sao Carlos
+The University of Melbourne VIC
+Kyoto University Mathematical Statistics Team
+University of Rochester Rochester
+of Physics University Federico II via Cinthia
+Cambridge Johns Hopkins Northwestern College Sydney
+Inria Alpage
+Johns Hopkins University Baltimore
+Knowledge Trail Inc San Jose
+Chengdu University of Information Technology
+Ukrainian Catholic University
+National University of Singapore  River Valley High School
+McLean Hospital
+Ghent University Groot
+University of Mannheim B6
+University of Aberdeen Aberdeen
+Universite du Quebec a
+Harbin Institute of Technology 321 Harbin
+INIST CNRS
+Zhengzhou University
+Washington State University
+Sprakbanken Text University of Gothenburg
+Universita di Pisa  DIBRIS
+Pazmany Peter Catholic University
+Masaryk University
+Shandong University  Jinan
+IIT Bombay
+University of Melbourne VIC
+Technical University of Berlin When
+Australian National University
+Microsoft Search
+Weifeng SU Marine CARPUAT
+Ludwig Maximilians Universitat Munchen
+Universite Paris Sud
+Universitfit des Saarlandes
+ESAT  PSI
+Google
+University of Washington Carnegie Mellon University Seattle
+LIMSI CNRS and ENSIIE
+Google Research Tel Aviv
+Universite Grenoble Alpes
+LIMSICNRS
+University of Milan
+Xerox Research Centre Europe
+University of New York at Buffalo
+UPenn danroth
+Hub University of Sydney Sydney
+IBM Research Almaden
+Wuhan University of Technology
+Queens University
+Universite Paris Diderot  CNRS
+Seoul National University
+Universite
+McMaster University Hamilton
+Northeastern University Boston
+University of Victoria
+Tohoku University  IBM Research  Tokyo 
+University of Gottingen
+Washington University in St Louis
+National Laboratory Astana
+LNE
+UGA G INP
+Natural Language and Dialogue Systems University of California
+New Mexico State University Las Cruces
+Kazakh National University
+RALI DIRO Montreal
+Umm Al Qura University Mecca
+PUC Rio  Linguateca
+Singapore University of Technology and Design
+Technical University of Catalunya
+Indian Institute of Technology Bombay
+Escola de Enxenaria de Telecomunicacion Universidade de Vigo
+SUNY at Buffalo
+Universite de Montreal
+University of Massachusetts Lowell  Lowell
+University of Durham
+U of Michigan
+University of Adelaide
+Medical University of Vienna
+Research Institute for Artificial Intelligence Mihai Draganescu
+Erasmus University Rotterdam
+The Ohio State University Columbus
+National Research Council Canada Information and Communications Technologies Ottawa
+Harvard University
+Ibaraki University
+Renmin University of China Key laboratory of Data Engineering and Knowledge Engineering
+The University of Melbourne
+Universidade de Lisboa  FLULCLUL Alameda da Universidade
+AI Tilburg University Tilburg
+Computer Science University of Colorado Boulder
+Coimbatore Amrita Vishwa Vidyapeetham
+University of Bergen 1
+Pontificia Universidad Catolica del Peru
+Simon Fraser University Burnaby
+Universidade de Vigo Campus Universitario
+Friedrich Schiller Universitat Jena
+IBM
+CAMMS
+HLT  MT Fondazione Bruno Kessler
+Penn State University
+Natural Language Processing team
+RMIT University
+Research Group
+Sarah M Taylor Consulting LLC
+University of Texas at Dallas
+Carnegie Mellon Uniersity
+Hitachi Ltd
+KISTI  DaeJeon
+IPS
+University of Leon
+University of Electronic Science
+Montana State University Bozeman
+University of Illinois Urbana
+University of Missouri Kansas
+Vietnam National University Hanoi
+Samsung Electronics Co
+Anticipatory Computing Lab Intel Labs
+Analytics University College Dublin
+Chinese Academy of Science CAS
+Florida Gulf Coast University Fort Myers
+Robert Bosch GmbH MichaelDorna
+Badji Mokhtar University Annaba
+Harbin University of Technology
+Heinrich Heine University Dusseldorf
+Amazoncom Inc
+Eurac Research Bolzano Bozen
+University of Chicago Chicago
+Unisys Defense Systems
+Marie Catherine de Marneffe   Ohio State University
+Universidad Carlos III de Madrid Leganes 28911
+TCS Research New Delhi
+University of Havana
+Universidad de Buenos Aires CONICET
+Uppsala University Bar Ilan University Uppsala
+Yelp San Francisco
+Carnegie Mellon University Carnegie Mellon University Carnegie Mellon University Language Technologies Institute Language Technologies Institute Language Technologies Institute Pittsburgh
+Maria Nadejde   University of Edinburgh Middle East Technical University  New York University P Heidelberg University SS University of Zurich
+Sprachverarbeitung Universitat Stuttgart
+Hungarian Academy of Sciences
+Team Lead
+Jena University Language
+Xerox Research Center India
+Genome Sciences Centre
+The University of Texas at Dallas Richardson TX
+Toyota Central RD Labs
+Universite de Toulouse
+ATR Trek Co Ltd
+Mayo Clinic Rochester
+National Taiwan University
+University of Oviedo
+Key Laboratory of Computational LinguisticsPeking University
+Harvey Mudd College Claremont
+University of Sheffield
+Imperial College London
+East Technical University
+Key Laboratory of Computational Linguistics Peking University Ministry of Education
+Sumaya University for Technology Amman
+Tokyo Institute of technology 4295
+University of Groningen Oude Kijk in t Jatstraat
+Northwestern Polytechnical University
+University of Cape Town
+Peking University Collaborative Innovation Center for Language Ability
+VU University Amsterdam  De
+University of Rennes 1
+Pohang University of Science and Technology POSTECH
+Universite Paris 13  SPC
+RIT Tokyo
+LIMSI
+Kyoto University Yoshida honmachi
+Shanghai Jiao Tong University Shanghai
+Hochschule fur Technik Stuttgart Schellingstr
+The Romantic Model Variation  Scope  Relevance Friedrich Schiller Universitat Jena Jena
+Alibaba Group Inc Bellevue
+Duquesne University
+Fuji Xerox Co Ltd  Tokyo Institute of Technology
+IIT Patna
+Information Sciences Institute Univ of Southern California Marina del Rey
+IBM Research  Ireland Dublin
+1SRI International
+Istituto di Linguistica Computazionale A  Zampolli CNR Pisa
+Tulane University
+Computational Linguistics Gerhard Mercator Universit Duisburg
+Telecommunications National Centre for Scientific Research NCSR Demokritos GR
+University of Tokyo Hongo
+Illinois Institute of Technology
+Carnegie Mellon University  University of Pittsburgh Pittsburgh
+InteractiveSystemsLabsCarnegieMellonUniversity
+Universitat Stuttgart Centrum fur Informations und Sprachverarbeitung
+Changwon National University
+Computers University Politehnica of Bucharest
+University of Colorado Denver Anschutz Medical Campus Aurora
+Darmstadt University of Applied Sciences
+Figure Eight Inc San Francisco
+Univ of Pennsylvania
+The Moore School University of Pennsylvania
+Humanities Computing University of Groningen
+Ludwig Maximilians Universitat Munchen Schellingstr 3
+UNAM
+HLT COE Johns Hopkins University
+University of Campinas Linguistics Department Campinas
+Korea University
+Institute for Infocomm Research A STAR
+Submission of University of Colorado
+Lorraine University  LORIA Nancy
+Brain Science Institute
+Vrije Universiteit Amsterdam IBM CAS Benelux
+Michigan State University  Microsoft Research
+Hofstra University Hempstead
+Johns Hopkins University Human Language Technology Center of Excellence
+Drexel University Philadelphia
+Universitat de Barcelona
+Universidad Autonoma de Madrid
+Khoury College of Computer Sciences Northeastern University
+INRIA Sophia Antipolis
+Saarland University
+PRIS
+Queensland University of Technology QUT
+Beijing University of Aeronautics and Astronautics
+Universitat Pompeu Fabra
+University of Massachusetts Lowell Lowell
+University of Cambridge Trumpington St
+Williams Hall University of Pennsylvania Philadelphia
+Macquarie University
+Universita di Bologna
+Robert Bosch GmbH
+ACT
+Sheffield University
+Yahoo Research
+Montana State University
+University of Southern California  Robotics Institute
+and Engineering National Sun Yat sen University
+United States Naval Academy
+Key Lab of Computer Network and Information Integration Southeast University
+University of Malaga
+Tsinghua University State Key
+PAS Jana Kazimierza
+Vaxjo University
+The University of Lahore
+IXA group University of the Basque Country
+MODUL University Vienna
+University of Rome 
+Courant Institute of Mathematical Sciences
+Polish Academy of Sciences University of Warsaw
+the Hong Kong Polytechnic University
+INSA Rouen Avenue de lUniversite
+Keio University
+University of Minnesota Duluth Duluth
+University of Electronic Science and Technology of China
+Ohio State University Columbus
+Middle East Technical University
+Trinity College
+Aix Marseille Universite
+Microsoft RD
+Capital One Conversation Research Vienna VA
+LMU Munich Munich
+National Security Directorate Pacific Northwest National Laboratory
+Nanyang Technological University OO oOO
+Alfa informatica University of Groningen
+Institute for Human and Machine Cognition IHMC Pensacola
+Shanghai Jiaotong University
+Higher Functions Sistemas Inteligentes
+Google AI Mountain View
+Ra mathibodi Hospital
+Language Technologies Research Center
+ISMB
+University of Michigan Ann Arbor Ann Arbor
+The MOE Key Laboratory of Computational Linguistics Peking University
+Universitat Pompeu Fabra Roc
+The George Washington University
+Lund University Lund
+University Abou Bekr Belkaid Tlemcen
+Saarbrucken Graduate School of Computer Science
+Language Technology Lab DFKI GmbH Stuhlsatzenhausweg
+Dmitry Ilvovsky National Research University Higher School of Economics Moscow
+IBM Research Zurich
+ATT Labs  Research Inc
+Tsinghua University
+University of the Basque Country 20018
+ITMO University
+Queens University National Research Council
+Michigan State University East Lansing
+University of Padua
+University of Texas at Austin Austin
+TALN Research Group Universitat Pompeu Fabra C
+UT Austin Austin
+ITC irst Povo  Trento
+The University of Melbourne Victoria
+OCLC Research
+LaTICE Laboratory Monastir
+SINAI
+Brain Science and Technology Research Center
+Hangzhou Normal University
+Behavior Design Corporation Hsinchu
+Research  Development Group
+Universitas Indonesia Depok 16424
+Yahoo Japan Corporation
+Inner Mongolia University
+Aix Marseille Universite LIF CNRS
+The Ohio State University   Nationwide Childrens Hospital
+Beuth University of Applied Sciences Berlin
+Samsung RD Institute
+ATT Labs  Research
+University of Oregon
+The Hong Kong Polytechnic University Kowloon
+McGill University Montreal
+Leibniz ScienceCampus HeidelbergMannheim
+The Chinese University of Hong Kong
+Visual Meta GmbH
+Wright State University
+University of Kurdistan Hewler Kurdistan Region
+Google Inc New York
+McGill University  Montreal Institute for Learning Algorithms
+Logan Hospital
+ILLC The University of Amsterdam
+Natural Language Processing Group Heidelberg Institute for Theoretical Studies gGmbH
+Amobee Inc
+PT Telekomunikasi Indonesia
+LTRC IIIT Hyderabad
+AI Core Team Samsung Research Seoul
+CS
+ATT
+Normandie University
+University of Haifa
+University of Richmond
+IIT Bombay Mumbai
+University of York
+Academia Sinica
+Deutsches Forschungszentrum fur Kunstliche Intelligenz GmbH
+Konan University
+Queen Mary University of London
+Kobe College
+University of Dusseldorf IVS
+ENS
+Mitsubishi Electric Research Laboratories MERL
+ILCC
+Hokkaido University Sapporo
+Communication University of China
+US Army Research Laboratory
+University of International Relations
+UC
+University of California at Berkeley Soda Hall Berkeley
+Academia Sinica Institute of Linguistics
+University of Pennsylvania  LIMSI
+Technische Universitat Darmstadt  Bar Ilan University
+CNGL
+University of West Bohemia
+National Taiwan University No
+Allen Institute for Artificial Intelligence  University of Washington  Stanford University
+FireEye LLC
+Ionut Teodor Sorodoc 
+University College London a
+FBK  irst Istituto per la Ricerca Scientifica e Tecnologica I 38050
+University of Maryland Linguistics
+University of Sheffield United Kingdom
+Regensburg University
+Singapore Management University
+psyML Inc
+Microsoft Research  Dept of Electrical Engineering One Microsoft Way University of Washington Redmond
+myTomorrows Delft University of Technology
+Portland State University
+University of Stuttgart Stuttgart
+Allen Institute for Artificial Intelligence   Paul G Allen School of Computer Science  Engineering
+ICNC The Hebrew University
+Nile University Juhayna Square
+University of Washington University of Washington Seattle
+Harbin Institute of Microsoft Research
+Soochow Univ Suzhou
+Beijing Institute of Technology
+EHU University of the Basque Country Donostia
+ICTUSC
+Universitat Stuttgart Ludwig Maximilians Universitat Munchen
+The Graduate University for Advanced Studies
+Language Technologies Institute Carnegie Mellon University Pittsburgh
+The University of Edinburgh Edinburgh
+National Taiwan Normal University
+Chaoyang University of Technology
+University of New Hampshire
+Universidade de Santiago de Compostela Centro Singular de Investigacion en Tecnoloxias da Informacion CiTIUS
+Karolinska Institute
+Language Technology Lab German Research Center for Artificial Intelligence DFKI GmbH
+Bangor University Bangor
+University of Victoria British Columbia
+Johns Hopkins Human Lang Tech Ctr of Excellence  U of Maryland
+Beuth University of Applied
+Slovak Academy of Sciences
+University of Notre
+Xia Song and Saurabh Tiwary Microsoft  Bellevue
+LETA
+AIPHES Technische Universitat Darmstadt
+Information Sciences Institute
+Alibaba Group Inc
+Oxford University Computing Laboratory Wolfson Building
+University of Bari
+PLA Academy of Military
+TALP Research Centre Technical University of Catalonia UPC
+University of Athens
+Cornell Unversity Ithaca
+Scientific Data Mining National Research Council
+Johns Hopkins University
+DISI
+University of New Brunswick Fredericton
+Cognitive Science University of Potsdam
+Kyoto University  Yahoo Japan Corporation
+Intel Corporation
+Cognitive Engineering Shanghai Jiao Tong University
+University of Maryland Maryland
+SDL Research
+University of Sydney
+University of Beirut
+BenevolentAI
+ICMC University of Sao
+BSOResearch
+USC Information Sciences Institute Marina del Rey
+Sothern University
+University of Salford Salford
+University of Manchester Institute of Science and Technology
+University of Florida Gainesville
+ETS Technologies Rosedale Road Princeton
+Hiroshima City University
+Google Brain London
+National University of Singapore 13 Computing Link
+Nara Institute of Science and TechnologT
+ARC Centre of Excellence for Mathematical and Statistical Frontiers ACEMS
+University of Malta Msida MSD 2080
+Microsoft Inc Redmond
+EECS University of California
+VIB
+NSIT Delhi
+Imperial College
+Research Institute for Artificial Intelligence 
+Karlsruhe Institute of Technology KIT
+NII National Institute of Informatics
+Knorex Pte Ltd
+Chung Hwa Telecomm Laboratories
+Gothenburg University
+University of Zagreb Ivana Lucica 3
+Computational Linguistics University of Heidelberg
+Adobe Research Big data Experience Lab Bangalore
+UMass Amherst
+Cork Institute of Technology
+USC Institute for Creative Technologies Marina del Rey
+Idiap Research Institute
+Shanxi University Taiyuan
+Ghent University  imec Ghent
+Autodesk Inc
+Tokyo Institute of Technology  Yahoo Japan Corporation
+National Institute of Information and Communication Technology
+Universite Catholique de Louvain UCL
+Vassar College
+The Hebrew University of Jerusalem
+CIS LMU Munich
+Waseda University
+International Institute of Information Technology  Hyderabad Telangana
+University of Bucharest
+Instituto Politecnico Nacional IPN
+IULA
+Cognitive Science University of Potsdam Karl Liebknecht Strasse
+Addis Ababa UniversityAddis Ababa
+Information Access Division National Institute of Standards and Technology
+Heriot Watt University
+Universitat Mannheim
+Integrative Biomedical Informatics Group IBI Research Programme on Biomedical Informatics GRIB IMIM UPF
+Hitachi Central Research Laboratory
+COMSATS Institute of Information Technology
+Saarland University and DFKI GmbH
+Edinburgh University Edinburgh
+Nile University
+Universite du Quebec a Montreal
+University of Valladolid
+Retresco GmbH
+FaMAF UNC
+Academia Sinica Taipei
+El Mahraz Sidi Mohammed Ben Abdellah University Fez
+Boston Childrens Hospital
+UNC Chapel Hill
+University of Pavia Pavia
+Saarland University Saarland Informatics Campus
+Recruit Co Ltd  Megagon Labs Tokyo
+IDIAP Research Institute Martigny
+LPL Aix Marseille Universite
+Nehru University New Delhi
+Communication and Cognition Tilburg University
+Beijing Normal University
+Dept of Electrical Engineering National Tsing Hua University Hsinchu
+Microsoft Maluuba Montreal
+Fuzhou University
+UBTECH Sydney AI Center
+Concordia University
+Microsoft Research  One Microsoft Way Redmond
+Amazon Alexa
+BeVocal Inc
+Garvan Institute of Medical Research
+Ohio University Athens
+ILC CNR Pisa
+Mircosoft Research
+University of Stirling Stirling
+National Institutes of Health
+INRIAUniversite de Nancy
+Ghent University
+Budapest University of Technology and Economics
+PolyAI Ltd London
+Universidade do Minho
+Siemens Corporate Technology Munich
+Gurion University of the Negev
+University of Manchester MIB
+Cochrane France
+University of Applied Sciences
+Open University Ra
+Human Language Technologies Research Center
+AI Lab LG Electronics
+University of Gondar
+Universite de Lorraine  ATILF
+European Commission Joint Research Centre Ispra
+Priberam Labs
+KU
+Sapienza University of Rome
+Instituto de Literatura y Ciencias del Lenguaje Pontificia Universidad Catolica de Valparaiso AvEl Bosque
+University of South Australia
+The University of Texas at Dallas
+Ontological Semantic Technology Lab Texas AM University Commerce
+Language Technologies Institute Language Technologies Institute Carnegie Mellon University Carnegie Mellon University Pittsburgh
+Howard University
+University American College Skopje UACS
+Indian Institute of Technology Patna Patna
+Viseo RD Grenoble
+Heidelberg University Institute of German Language
+Oxford University
+Universitaet Konstanz Informationswissenschaft ProJekt TOPIC
+Aston University Aston Triangle Birmingham
+Allen Institute for Artificial Intelligence Seattle
+Samsung Research
+MIT CSAIL
+Beihang Unviersity
+Computer Laboratory Cambridge University
+Ilan University Ramat Gan
+information Science National Chia Yi University Chiayi
+University of Santiago de Compostela
+Japan Corporation Midtown Tower
+ATT Labs   Research
+LIMSI  CNRS Campus universitaire Batiment
+Leipzig University
+SRM Institute of Science  Technology
+Universidad Nacional de Rosario Entre Rios
+Eberhard Karls University of Tubingen
+China Normal University Shanghai
+The George Washington University Washington
+The University of Queensland Brisbane
+University of Ottawa
+CSLI Stanford University Stanford
+RIKEN AIP
+Mahidol University International College Mahidol University
+Microsoft Research AI
+Bloomberg New York
+Universit di Padova via Gradenigo
+University of Cyprus Nicosia
+Childrens Hospital of Philadelphia
+Wroclaw University of Technology Wyb
+Loyola University
+Cardiff University
+Kansai Gaidai University Ryukoku University
+Al Baha University
+DIMAp Federal University of Rio Grande do Norte  UFRN Natal
+University of Edinburgh Informatics Forum
+Instituto Caro y Cuervo Bogota
+Shiraz University
+FOI  Swedish Defence Research Agency
+Adobe Research
+DeepMind
+Chalmers Univ of Tech
+University of North Carolina at Asheville Asheville
+ATR SLC
+National Research University Higher School of Economics Moscow
+Technische Universitit Berlin
+Language Technologies Research Centre IIIT Hyderabad
+The University of Sydney NSW 2006
+USC Institute for Creative Technologies
+Universita di Pisa Scuola Normale Superiore
+North Carolina State University
+ Institute for German Language
+National Library of Medicine
+IIT Gandhinagar Gujarat
+University of Tokyo
+SYSTRAN Software Inc
+IXA Group Basque Country University San Sebastian
+UNSW Sydney
+Doshisha University
+CNTS  Language Technology Group University of Antwerp
+AIPHES Heidelberg University
+Cecile Paris  Centre for Language Technology Macquarie University North Ryde 2109
+Beijing Jiaotong University
+NTT Communication Science Laboratories
+University of the Basque Country Donostia  San Sebastian
+CEIEC
+Kings College London
+DFKI GmbH
+CSIRO Mathematical and Information Sciences Locked Bag
+NICE Systems Ltd
+Mbarara Univ of Sci  Tech
+Ecole nationale Superieure dInformatique
+Microsoft Research Cambridge
+CSLI
+Mount Holyoke College South Hadley
+University of Illinois at Urbana Champaign
+National Taiwan University of Science and Technology
+IDS Mannheim  Paris Descartes  WWU Munster Centre for Language and Communication Studies
+University of Copenhagen Njalsgade 140
+University of Colorado Colorado Springs
+Charles University
+CLCG
+Victoria University of Wellington Te Whare Wananga o teUpoko o te Ika a Maui
+ITC Irst
+IBM Research  Haifa Haifa 31905
+National Institute of Technology
+NEC Labs Europe
+Pennsylvania State University
+Web Research Group
+Biodesign Center for Environmental Health Engineering
+University of La Rochelle
+Shenzhen University
+University of Texas at Dallas Emerging Technology Lab Samsung RD  Dallas University of Texas at Dallas
+UESTC
+CVTE Central RD Institute
+Alexa Machine Learning
+NLM
+BBN Systems and Technologies Cambridge
+Vienna University of Economics Inst for Inf Business Vienna
+University of Nottingham Ningbo
+BPPT
+University of Groningen
+University of Mannheim
+Universite de Montreal 3E cole Polytechnique de Montreal 4 Google Research
+Computer Science
+Intuit India Development Center Bangalore
+Leidos Inc
+University of Utah Salt Lake City
+University of Chinese Academy of Sciences
+RusProfiling Lab
+Bar Ilan University  Information Systems Engineering
+IISER
+Laboratoire LATTICE CNRS ENS  U Paris 3  CNRS PSL and USPC
+ICTEAM
+Center for Health Communications Research University of Michigan
+Speech Communication Lab Trinity College Dublin
+Research Training Group AIPHES Leibniz ScienceCampus Empirical Linguistics and Computational Language Modeling Department for Computational Linguistics
+Universitat Oberta de Catalunya
+Montclair State University
+Fryske Akademy
+University of Washington  IBM Research  Almaden
+Harbin Institute of Technology China
+Amazon Research Cambridge
+Katholieke Universiteit Leuven Celestijnenlaan 200A
+CNRS LORIA
+Research Training School AIPHES  Research Training School AIPHES
+SICS
+The University of Illinois at Urbana Champaign
+University of Iowa Iowa City
+German Research Center for Artificial Intelligence DFKI Speech and Language Technology Lab
+Nanjing University of Posts and Telecommunications
+Real Time Systems Lab
+Nara Institute of Science and Technology Computational Linguistics Laboratory
+National Institure of Information and Communications Technology
+Human Media Interaction University of Twente Enschede
+NAVER Corporation
+DISI University of Trento Trento
+Lab University of Duisburg
+IRIT
+National Taiwan University Taipei
+Universitat Karlsruhe TH
+Language Technologies Institute Carnegie Mellon University
+Paralledots Inc
+Hochschule Hannover Hanover
+Universityof Cambridge Corn Exchange Street
+Human Computer Interaction Institute Language Technologies Institute Carnegie Mellon University
+Microsoft Research One Microsoft Way Redmond
+Sun Yat sen University
+Florida Institute for Human and Machine Cognition
+Otaru University of Commerce
+Karls Universitat Tubingen
+U of Brighton
+Vanderbilt University
+Qatar University
+Zhejiang University of Technology
+Inria Lille
+KDDI RD
+IIS
+London School of Economics
+Cairo University
+Applied Computational Linguistics  FSP Cognitive Science Universitat Potsdam
+Alt Inc Hanoi
+RWTH Aachen University
+University of Hertfordshire
+Fraunhofer Heinrich Hertz Institute
+ISI
+ALTA Institute University of Cambridge
+IBM Research Tokyo
+Stefan Institute
+Nara Advanced Institute of Science and Technology Takayama
+Bandung Institute of Technology
+BBN Systems and Technologies
+UMIACS University of Maryland
+Information Systems Research Group Computational Llngmstlcs Group CLIF
+Center for Language Studies  Donders Institute Radboud University Nijmegen the Netherlands MPI for Psycholinguistics Nijmegen
+MIT Lincoln Laboratory Lexington
+Universitit Stuttgart tXerox Research Centre Europe Dublin City University Azenbergstr
+Natural Language Processing Lab School of Computer Science and Technology Soochow University
+RCEAL
+Mayo Clinic College of Medicine
+NLP University of Stuttgart
+MASTAR Project
+Ben Gurion University
+Rochester Institute of Technology  College of Liberal Arts
+Swarthmore College
+NTNU
+University of Colorado at Boulder
+LIA University of Avignon Avignon
+University of Munich  frasercis
+Beijing Ultrapower Software Co Ltd
+National Research Council Canada Multilingual Text Processing
+Samsung Electronics Co Ltd
+UC Irvine
+Universit6 Blaise Pascal  Clermont II
+DSO National Laboratories
+DGA
+Hamad Bin Khalifa University
+English School of Humanities Nanyang Technological University
+IT University Copenhagen
+Tokyo Metropolitan University Tokyo
+Human Language Technologies
+Computer Laboratory University of Cambridge Cambridge
+Natural Language and Dialogue Systems Lab UC
+Computational Linguistics Heidelberg University
+Chung Hwa Telecomm Laboratories University
+Cognitive Studies Centre University of Essex
+Synyi LLC
+Northwestern University Evanston
+The University of Chicago Chicago
+UMR TETIS
+Multilingual Text Processing National Research Council
+Language Computer Corp Richardson
+Computer Vision and Pattern Recognition Unit Indian Statistical Institute
+Google Inc Zurich
+Shanghai Institute of Intelligent Electronics  Systems
+University of British
+College of Sciences and Human Studies Prince Mohammad Bin Fahd University
+Loria  Univ Lorraine Nancy
+CEDRIC
+Toyota Technological Institute at Chicago
+UniversitPS di Padova
+Tohoku University  Miyagi
+Samsung Research China  Beijing SRC B
+Maharaja Surajmal Institute of Technology
+National University of Defense Technology
+CSIRO ICT Centre Locked Bag
+University of Milano Bicocca  Milano
+Buccleuch Place University of Edinburgh
+VU University Amsterdam
+Univ
+INSAT
+Xian Jiaotong University
+University of Saarbrticken
+Speech Technology Group
+Japan Advanced Institute of Science and Technology
+Goethe University of Frankfurt 1
+Singapore MIT Alliance
+Tohoku University   Japan Science and Technology Agency JST
+University of Amsterdam Amsterdam
+Numediart Institute
+University of Lancaster Bailrigg
+IBM Thomas J Watson Research Center
+New York University Abu Dhabi
+Carnegie Mellon University  Stanford University  Mila
+AT T Labs  Research
+Guangdong University of Foreign Studies
+NICTA Victoria Research Laboratory
+SRI International
+National Institutes of Health Bethesda
+Cornell Tech
+Institute National University of Ireland Galway IDA Business Park
+Valparaiso University Valparaiso
+The Hong Kong University of Science and Technology
+Human Intelligence and Language Technologies Lab University of North Texas Denton
+NLP department University of Leipzig Augustusplatz
+Universite Nice Sophia Antipolis
+Crimson Interactive Pvt Limited
+LMU Munich
+Nara Institute of Science  Technology
+University of Granada
+National Yunlin University of Science and Technology Douliou
+Technical University of Catalonia
+AHOLAB
+Universitat Erlangen
+Statistics Stanford University
+University of South Africa
+UA Language Centre University of Alicante
+IBM T J Watson Research Center Yorktown Heights
+Cornell Tech Cornell University
+Alibaba Group
+UNSILO AS and Aarhus University Aarhus
+The University of Memphis
+Universite Paris Saclay
+DTAL University of Cambridge
+Johns Hopkins University University of Alberta
+Bielefeld University
+Harvard Medical School
+IBM Research Haifa
+University of Colorado Boulder Boulder
+Phillips Academy Andover
+Universitat Heidelberg
+Universita di Salerno
+Lancaster University
+Universitat Stuttgart Princeton
+ELDAELRA
+Universitat Pompeu Fabra UPF
+Communications Technical University of Kosice
+Hua University
+Sydney University
+University of Barcelona
+CLTL Vrije Universiteit Amsterdam Amsterdam
+SSN College of Engineering
+Google Research London
+University of Lisbon Lisbon
+CLiPS
+Saarland University Saarland Informatic Campus
+Universite de Paris
+Romanian Academy Bucharest
+University of Massachusetts at Amherst
+CIMEC
+Google Mountain View
+Monash University
+ICREA and UPF
+LIUM
+Nara Institute of Science and Technology Graduate School of Information Science Takayama
+Carnegie Mellon University Language Technologies Institute
+Tokyo Information and Communications Research Laboratory Matsushita Electric Industrial Co
+Language Technology Lab German Research Center for Artificial Intelligence DFKI
+National Research University Higher
+Engineeering University of Notre Dame
+Mayo Clinic
+Manchester Metropolitan University
+Google Inc London
+DISI University of Bologna
+Language Technologies Research Center KCIS
+Columbia University New York City
+Human Robot Interaction Laboratory Tufts University Medford
+Universidad Cooperativa de Colombia Bogota
+University of Patras
+University of Trento Rovereto TN
+Lorraine UniversityLORIA Nancy
+IXA NLP Group University of the Basque Country UPVEHU
+NIHRIO
+University of Washington Seattle
+University of Trento Trento
+The Viterbi School of Engineering University of Southern California
+Brown Laboratory for Linguistic Information Processing BLLIP Brown University Providence
+University of Maribor
+IBM T J Watson Research Center
+Universidade Nova de Lisboa
+University of Pittsburgh Intelligent Systems Program Pittsburgh PA
+ADAPT Centre Dublin City University
+Key Lab of Intelligent Info Processing
+University of Manchester National Centre for Text Mining NaCTeM Manchester Interdisciplinary Biocentre
+Hildesheim University
+NUI Galway  Aylien Ltd
+PolyAI Ltd
+Instituto Universitario de Lisboa ISCTE IUL
+ATT Labs  Research Shannon Laboratory
+Universidade do Vale do Rio dos Sinos Av
+MMCI Cluster of Excellence Saarland University
+National Information Processing Institute Natural Language Processing Laboratory
+Idiap Research Institute Centre du Parc
+University of Delaware University of Delaware
+Peddie School Hightstown
+Vrije Universiteit Amsterdam De
+University of York2 York
+Universitat Bielefeld Postfach 100131
+Computer Science and Artificial Intelligence Laboratory Massachusetts Institute of Technology
+Singsound Inc
+University of Southern Denmark
+Sofia University
+National Laboratory of Pattern Recognition
+University of Applied Science
+FUJITSU LABORATORIES LTD 
+High Institute of Technology Ibn Zohr University  Agadir
+ATT Labs   Research IPO
+SICS East Swedish ICT AB Linkoping
+New York University New York
+Computer Science University of Maryland College Park
+CISCO
+NTT Information and Communication Systems Laboratories
+Georgia State University
+Khoury College of CS Northeastern University
+Infosys Limited Pune
+IBM Research AI
+Norwegian Computing Center Oslo
+Chaoyang University of Technology 168
+Tsurumi University Tsurumi
+The Open University Milton Keynes
+Amazon Research
+University of Rome La Sapienza
+Capital Normal University
+Southern Methodist University Dallas
+Purdue University
+IICT BAS Sofia
+Nara Institute of Science and Technology  Artificial Intelligence Research Center
+CIMeC  University of Trento
+IIT BHU
+Jena University Language  Information Engineering JULIE Lab Friedrich Schiller Universitat Jena Furstengraben 30
+CNR
+Toyohashi University of Technology Aichi
+University of California Santa Cruz
+Agro Know
+Florida International University
+Univ Lyon
+IBM Research Labs New Delhi
+Aichi Prefectural University
+T J Watson Research Center
+Universite de LorraineLORIA
+Chengdu University of Traditional Chinese Medicine
+Takenobu Tokunaga   Tokyo Institute of Technology
+Yamagata University
+Indian Institute of Technology Bangalore
+Brugmann Software GmbH
+Tongji University
+UMR 5141
+Microsoft Corporation Redmond
+Microsoft Microsoft Microsoft
+ITEC imec
+University of North
+Indian Institute of Technology Banaras Hindu University Varanasi
+Shanghai Jiao Tong University Artificial Intelligence Institute
+Univ of Washington Seattle
+Technologies University of Maryland
+DHA Suffa University
+Kangwon National University
+Queens College and the Graduate Center
+The Interdisciplinary Center Herzeliya
+The University of Chicago
+University of Library and Information Science
+University College London London
+Sogang University
+Aoife Cahill
+Simon Fraser University Burnaby BC
+Queensland University of Technology
+University of Antwerp
+Microsoft Redmond
+USC
+University of Wollongong
+Universite de La Rochelle
+Hermes Traducciones
+Orange Labs
+Carnegie Mellon University Pttsburgh
+Jadavpur University Shillong 793001
+TCS Innovation Lab
+University of British Columbia
+Computational Linguistics Carnegie Mellon University Pittsburgh
+Harbin Institute of Technolgy Harbin
+CUNY Graduate Center
+Xian Jiaotong Liverpool University
+Electrotechnical Laboratory
+Interactions Corporation
+University of Porto
+CFILT IIT Bombay prajdabre
+Hasso Plattner Institute at University of Potsdam August Bebel Strasse 88
+AI Lab Tencent Inc
+Bar Ilan Univesity
+University of Michigan  Ann Arbor
+Carnegie Mellon Univeristy
+Johannes Gutenberg Universitat Mainz  Forschungs  und Lehrbereich Sprachen Nordeuropas
+Centro de Investigacion en Matematicas CIMAT
+UMIACS
+National Tsing Hua University Hsinchu
+ICME Stanford University
+UBA
+INESC ID Lisboa
+LIFO  Universite dOrleans
+Neurology Emory University Atlanta
+University of Paris VII
+Universita 
+IBM Watson
+ATILF Universite de Lorraine CNRS UMR 7118
+Shamoon College of Engineering Beer Sheva
+Adam Mickiewicz University in Poznan ul
+Universidad Complutense de Madrid
+University of Illinois Urbana Champaign  Urbana
+The University of Tokyo Tokyo
+Lomonosov Moscow State University
+University of Texas Southwestern Medical Center
+Huazhong Agricultural University
+Georgia Institute of Technology Atlanta
+Friedrich Schiller University Jena
+University of Waterloo
+Goethe Universitat
+The Pennsylvania State University
+Saarland University Saarbrucken
+Battushig Myanganbayar CSAIL
+Universidade da Coruna
+ICT Centre Locked
+Inria SaclayTAO
+University of Hong Kong t
+IIT Kharagpur Kharagpur
+Alexandria University
+Sofia University St Kliment Ohridski 5
+Information Engineering College Capital Normal University
+Yuanfudao Research
+CNRS
+Universite Paris Sorbonne
+Ochanomizu University Tokyo
+MIN Faculty Universitat Hamburg
+University of the Basque Country Basque Country
+University of HongKong
+ICME
+Informatics Institute Middle East Technical University
+Natural Language Engineering Lab  PRHLT Research Center Universitat Politecnica de Valencia
+University of Groningen Groningen
+Dehong Gao and Wenjie Li are from the Department of Computing the Hong Kong Polytechnic University
+ELDA
+StrideAI
+Voronezh State Pedagogical University 86 Lenina ul
+Preschool Lab
+MIT
+The RAN D Corporation
+University of Aberdeen
+Indian Institute of Technology Patna
+University of Sydney NSW
+National Research Council of Canada
+Samsung Research Institute China  Beijing SRC B
+King Saud University
+Radboud University
+III University of Madrid Leganes 28911
+LTI  Carnegie Mellon University
+Virginia Commonwealth University Richmond
+Universitat Autonoma de Barcelona
+Loyola University Chicago
+Beijing Film Academy
+BBN Raytheon Technologies
+NAVER Corp
+Universita della Svizzera italiana
+KAIST
+Yellow Pages Group Montreal
+Bogazici University Bebek
+Computer Science and Artificial Intelligence Laboratory
+Montreal Research Center
+IT University of Copenhagen
+Systems University of the Basque Country
+TERAI Asuka KURIYAMA Naoko
+Beijing Institute of Big Data Research
+RALI DIRO Universite de Montreal Montreal
+TCS Research
+TU Delft
+South China Normal University
+Artificial Intelligence Laboratory
+University of the Saarland Postfach
+Indian Institute of Technology Roorkee
+University of Oxford Oxford
+Ben Gurion University of the Negev
+The University of Sheffield Sheffield
+NIT Meghalaya
+Iowa State University
+DFKI Language Technology Lab
+Lorraine University Nancy
+HSL fakultehta
+Natural Language Systems Division  University of Hamburg
+San Jose State University San Jose
+Sprachwissenschaft Universitat Tubingen
+Tencent Robotics X
+Stuttgart Media University
+Universitat des Saarlandes Universitat
+Fudan University Shanghai
+University of Illinois Chicago
+CNRS  LORIA 615
+RaRe Technologies
+University of Maryland Johns Hopkins University
+Hebrew University
+University of Maryland
+National Chiao Tung University Hsinchu
+University of Bremen
+TALP Research Center Universitat Politecnica de Catalunya
+Google Inc Mountain View
+Technische Universitat Darmstadt  Smart Data Analytics
+the Annotation Group BBN Technologies
+NTT Communication Science Laboratories Tohoku University
+University of Paris Ouest Nanterre
+Singapore University of Technology
+Samsung Research Institute
+University of Wisconsin Madison
+Xiamen University
+Universidad Nacional Autonoma de Mexico Mexico City
+Delhi Technological University New Delhi
+IDC Herzliya
+Istanbul Technical University
+Beckman Research Institute
+National Key Laboratory for Novel Software Technology
+National Institute of Information and Communications Technology Kyoto
+Aix Marseille University CNRS
+Gianforte School of Computing Montana State University Bozeman
+CASIA
+Yunnan University
+Capital Markets CRC
+University of Kent Canterbury
+NLPR
+Rijksuniversiteit Groningen
+Ruhr University Bochum
+Universitat Hildesheim Universitatsplatz 1
+University of San Francisco
+RIKEN Head Office for Information Systems and Cybersecurity Computational Engineering Applications Unit
+Aix Marseille Universite Universite de Toulon CNRS
+IISc Bangalore
+Lund University
+Meiya Pico information Co
+Kyushu Institute of Technology
+Comcast Labs
+University of Washington Seattle WA
+University of Applied Sciences and Arts Hanover
+German Institute for Educational Research and Educational Information
+University of Michigan
+Machine Learning and Optimization Laboratory EPFL
+National Institute for Japanese Language and Linguistics
+University of Adelaide Adelaide
+WuHan University
+American University of Beirut
+UMIACS University of Maryland College Park
+University of Salford
+Mitsubishi Electric Research Laboratories 201
+National Centre for Text Mining
+Capital University of Science and Technology
+Universitat
+DICII
+INRA
+Telecooperation Division Darmstadt University of Technology
+Queens College
+Universitat Tubingen Tubingen
+RACAI
+University of Minnesota
+orbisai Inc
+University of Namur  rue de Bruxelles
+ER TIM
+Tilburg University ILK  Computational Linguistics and AI Tilburg
+FPT University Hanoi
+University of Szeged
+University of Tartu Liivi 2
+Jazan University Jazan
+DISP
+University of Sao Paulo
+Technische Universitat Darmstadt Hochschulstr
+CIRCSE Research Centre Universita Cattolica del Sacro Cuore Largo Gemelli
+Research Institute in Information and Language Processing University of Wolverhampton
+Jiao Tong University Shanghai
+University of Waterloo Waterloo
+MIT Laboratory for Computer Science Cambridge
+Institut fur Linguistik Universitat Potsdam Potsdam
+CLSP Johns Hopkins University Baltimore
+Aston University
+University of Rome Dept of Computer Control and Management Engineering Antonio Ruberti  University of Roma
+Carol Van Ess Dykema t t Computational Linguistics Program Carnegie Mellon University Pittsburgh
+CSAIL
+University of Washington  Language Technologies Institute
+Univ of Edinburgh
+DI  ECT  Universidade deEvora Rua Romao Ramalho
+TALP Research Center Universitat Politecnica de Catalunya Barcelona
+Darmstadt University of Technology Hochschulstr
+University of Bristol
+CNRSLORIA Nancy
+American University of Madaba Madaba
+UAB
+Telekom Innovation Laboratories
+University of Cambridge United Kingdom
+Content and Innovation Group Operations Division Elsevier BV
+University of Geneva 24
+Google LLC New York
+University of Illinois at Urbana Champaign Champaign
+IMS  University of Stuttgart
+AI Labs
+Toshiba Corporation
+SiteGround Hosting EOOD
+University of South Carolina
+Hasso Plattner Institute
+The University of Melbourne 
+Huawei Technologies
+Language Technology Lab University of Cambridge
+IPO
+University of West Bohemia Univerzitni
+SRI International AI Center
+Jadavpur University
+Google Cambridge
+University of Cambridge  COMHIS
+IRCS  Institute for Research
+University of Chinese Academy of Sciences No
+Suwon University Kyungki
+LINA
+University of North Texas Norwegian University of Science and Technology Denton
+Lister Hill National Center for Biomedical Communications US National Library of Medicine
+Kyushu University
+Microsoft Research Montreal
+University of Science  Technology HKUST
+LLC Murray Hill
+Georgetown University
+Sony Corporation
+University of Hamburg
+Universidad San Francisco de Quito
+Understanding Oregon Health  Science University Portland
+NiuTrans Co Ltd
+Shanghai Jiao Tong University
+Telecommunication Labs Chunghwa Telecom Co Ltd Chungli
+Skolkovo Institute of Science and Technology
+University of Houston Downtown
+Stanford University Stanford University Stanford
+Kyungpook National University Daegu
+Text and Data Mining Unit Directorate I Competencies Joint Research Centre of the European Commission Via Enrico Fermi 2749
+Nanyang Technological University ps AStar
+Ryerson University
+Natural Language and dialogue Systems Lab University of California
+University of Stirling
+FH Aachen Julich
+Jiao Tong University
+Tubitak Bilgem
+City University ofHong Kong
+CiTIUS Univ of Santiago de Compostela Galiza
+NOVA LINCS
+University of Sussex University of Sussex
+Microsoft
+FiscalNote Inc Washington DC
+Information Sciences Institute Viterbi School of Engineering University of Southern California
+University of Salerno
+University of Western Ontario
+AI Lab
+University of Hildesheim
+Qatar Computing Research Institute Hamad Bin Khalifa University HBKU
+University of Amsterdam
+Charite Universitatsmedizin
+Addis Ababa University
+The Ohio State University
+National Institute of Technology Goa
+ILS Institute
+BBN Systems and Technologies Cambridge MA
+Uppsala University  IBM Research AI
+Heinrich Heine Universitat Dusseldorf
+University of Duisburg
+MIT Lincoln Laboratory
+NILC
+Seoul National University 1
+University of Southern
+Ruxandra Burtica
+Cambridge University
+LTH Lund University
+Carnegie Mellon University  Qatar Doha
+Nara Institute of Science and Technology Takayamacho
+Queen Mary University of London School of Electronic Engineering and Computer Science Mile End Road
+University of Edinburgh  Adam Mickiewicz University  Tilde P Universitat dAlacant
+Tottori University
+ELIS
+KingSoft Corp
+Ecole Polytechnique
+Oregon Health  Sciences University j Williams College
+Univerisity of Illinois at Urbana Champaign
+Middle East Technical University METU
+SAP Technology and Innovation Platform
+University of Victoria Victoria
+Tilburg University
+University of Bucharest Human Language Technologies Research Center
+Technische Universitat Darmstadt Hochschulstr 10
+Microsoft Research Institute
+Human Language Technology Research Institute University of Texas at Dallas
+Ubiquitous Knowledge Processing Lab Technische Universitat
+CLSP
+Benemerita Universidad Autonoma de Puebla
+University of Hertfordshire Hatfield
+Universitat Hildesheim Hildesheim
+National Cheng Kung University Tainan
+Technical University of Munich
+Computer Science Univ Sheffield
+Freiburg University  Computational Linguistics
+University of Cambridge Computer Laboratory United Kingdom
+Agency for the Assessment and Application of Technology BPPT
+Delegation generale a la langue francaise et aux langues de France
+ITC irst
+National University of Ireland Galway Galway
+HK Polytechnic University
+University of Manchester Oxford Road
+Indian Institute of Technology Banaras Hindu University
+FBK Povo
+Compilatio
+University of Minnesota Minneapolis
+Human Language Technology Research Institute University of Texas at Dallas Richardson
+University of Southern California Institute for Creative Technologies
+Computational Linguistics University of Zurich
+Washington University Washington
+University of Hong Kong
+Telecommunication Laboratories
+Chinese University of HongKong
+Joint Research Centre European Commission Ispra
+Digital Humanities Lab Utrecht University
+National Tslng Hua University
+STOR i Centre for Doctoral Training
+University of Copenhagen Copenhagen
+University of Southampton
+Centre for Next Generation Localisation Dublin City University Dublin 9
+Jinsik Lee SK T Brain
+University of North Texas Denton
+Universite catholique de Louvain UCL
+Chungbuk National University
+University of Moratuwa Sri Lanka
+Universite Paris Ouest
+Bangor University
+Spoken Language Systems Saarland University Saarland Informatics Campus
+Yonsei University
+Harbin Institute of Technology Shenzhen Graduate School
+Ney Christoph Tillmann Lehrstuhl ffir Informatik V
+Leiden University Niels
+Queen Mary University of London  Tilburg University
+Tufts University
+Industrialization Soochow University
+Trinity College Dublin
+Stony Brook University SS University of Pennsylvania
+Microsoft Reserach Asia
+University of Florence
+National Research Council Canada
+Sen University
+Sao Carlos Institute of Physics
+University of Gabes
+University of Tokyo  CREST
+University of Southern California
+Computer Laboratory University of Cambridge
+MASTAR Project National Institute of Information and Communications Technology
+Johns Hopkins University Balitmore
+Haverford College
+SAP Machine Learning Research
+Microsoft Development Co
+TIT
+University of Fribourg
+The University of Colorado
+AIREUPMC
+University of Cambridge Ann Copestake t CSLI
+University of Chicago
+Ivan Koychev FMI
+Dalian University of Technology
+Universitat Pompeu Fabra Roc Boronat
+Sami Shamoon College of Engineering Beer Sheva
+ISSCO
+Duke University
+University of Sydney University of Texas at Austin University of Cambridge NSW 2006
+Vector Lab JD Finance
+Rochester Institute of Technology
+CIRAD
+Zurich University of Applied Sciences
+LTL
+CVPR Unit
+DMIR Group University of Wuerzburg
+University of Chicago  Chicago
+BBN Technologies Cambridge
+Heidelberg Institute for Theoretical Studies gGmbH Schloss Wolfsbrunnenweg 35
+University of Illinois at Chicago
+Research  Development
+Tilde Vienibas gatve 75A
+CONACyT  INFOTEC
+LOA CNR  IRIT CNRS 118 route de Narbonne Toulouse F 31062
+INRIA  LORIA
+TALP Research Center
+Networks Inc
+Mayo Clinic Portland
+Universita degli Studi di Torino
+Yonsei University Seoul
+OGI School of Science  Engineering Oregon Health  Science University
+National Information Processing Institute al
+Universite Sorbonne nouvelle Paris
+Advanced Micro Devices IncShanghai
+InfAI at the University of Leipzig
+University of Southern California  Idiap Research Institute
+Meituan Dianping Group
+UFCSPA University  Porto Alegre
+Stony Brook University
+University of Edinburgh RWTH Aachen University
+City University of Hong
+Carnegie Mellon University  Google Translate
+University of Liverpool Science and Technology Facilities Council
+LT3 Language and Translation Technology Team Ghent University Groot Brittannielaan 45
+European Commission Joint Research Centre Institute for the Protection and Security of the Citizen
+University of Moratuwa
+Microsoft Research India
+Minjiang University
+IBM Research  Almaden
+Understanding Oregon Health  Science University
+Sorbonne University
+Technische Universitat Chemnitz
+Jena University Language and Information Engineering JULIE Lab Friedrich Schiller Universitat Jena
+Artificial Intelligence Laboratory Cambridge
+Constantine the Philosopher University in Nitra  Institute of Informatics
+Information Engineering National Cheng Kung University Tainan
+Universidade de Lisboa Alameda da Universidade
+Institute for Clinical  Translational Research
+Ecole Normale Superieure
+University Politehnica of Bucharest
+NLP Universitat Stuttgart
+New York University and Princeton Univerity
+University of Surrey
+CNTS Antwerp
+IBM Watson Health
+Ecole des Mines de Saint Etienne
+Rutgers University New Brunswick
+ICNC Hebrew University of Jerusalem
+University of Leeds 2
+Stony Brook University  Psychology
+University of Michigan 1
+Interactions LLC
+IBM TJ Watson Research Center Yorktown Heights
+Machine Reading Lab
+Adapt Centre Trinity College Dublin
+Mahidol University
+European Commission
+Universidade de Lisboa Lisboa
+Multimodal Technologies Inc PS Mobile Technologies Inc
+Institute for German Language
+III University of Madrid Madrid
+Research Institute for Linguistics Hungarian Academy of Sciences
+Neurochemistry University of Gothenburg
+Columbia University Center for Computational Learning Systems
+Universiteit van Amsterdam
+VI RWTH Aachen  University of Technology
+Isik University
+University of Sao Paulo Sao Carlos
+KAIST Republic of Korea
+BBN Systems and Technologies Corporation
+Russian Academy of Sciences
+IITB Monash Research Academy
+German Research Center for Artificial Intelligence MLT Lab Saarbrucken
+University of Catalonia
+University of Sao Paulo Sao Carlos  SP
+Microsoft Research University of Alberta
+Birla Institute of Technology and Science BITS
+NUI Galway
+Charite  Universitatsmedizin Berlin
+University of Houston Houston TX
+Computerlinguistik Universitit des Saarlandes
+NLP  IR Group UNED
+Bar Ilan University
+Georgetown University Washington
+Syracuse University
+University of Sharjah
+Universitat Pompeu
+University of Kentucky Lexington
+GE Corporate Research  Development
+Carnegie Mellon University NASA Research Park
+DFKI Language Technology Lab Stuhlsatzenhausweg
+Literature and Literary Theory UNED
+Emory University
+University of Sao Paulo Av do Trabalhador Saocarlense
+National Research University Higher School of Economics
+Lorraine University  LORIA
+IXA Taldea UPVEHU  Department of Electricity and Electronics   Department of Computer Languages and Systems
+Interaction Lab Heriot Watt University
+Izmir Institute of Technology
+NTT Communication Science Labortories Kyoto
+University of Catalonia cJordi
+Universidad Autonoma de Nuevo Leon
+University of Mons
+University College London One Euston Square
+ICE
+CLCG University of Groningen
+Vibhu Mittal t Jaime Carbonell Mark Kantrowitzt
+DIRO
+Pontificia Universidad Catolica del Peru  Instituto de Ciencias Matematicas e de Computacao
+Freiburg University Hospital
+SDL
+University Station C0500 Austin
+University of Science
+University of Trento Rovereto
+Universitat des Saarlandes Postbox
+Interactions LLC Indiana University
+University of Ulm
+Carnegie Mellon University  Petuum Inc
+RWTH Aachen  University of Technology

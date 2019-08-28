@@ -1,0 +1,965 @@
+S18-1168	milton-king	milton king	milton.king@unb.ca	aff0
+S18-1168	paul-cook	paul cook	paul.cook@unb.ca	aff0
+S18-1168	milton-king	milton king	None	None
+S18-1168	paul-cook	paul cook	None	None
+S19-2003	miriam-r-l-petruck	miriam r l petruck	miriamp@icsi.berkeley.edu	None
+S19-2003	laura-kallmeyer	laura kallmeyer	kallmeyer@phil.hhu.de	None
+S19-2003	marie-candito	marie candito	marie.candito@linguist.univ-paris-diderot.fr	None
+S19-2003	miriam-r-l-petruck	miriam r l petruck	None	None
+S19-2003	laura-kallmeyer	laura kallmeyer	None	None
+S19-2003	marie-candito	marie candito	None	None
+W17-1205	paolo-rosso	paolo rosso	prosso@dsic.upv.es	aff0
+W17-1205	paolo-rosso	paolo rosso	None	None
+Y10-1009	shouxun-liu	shouxun liu	None	None
+Y10-1009	lin	lin	None	None
+Y10-1009	shouxun-liu	shouxun liu	None	None
+Y10-1009	lin	lin	None	None
+Y15-1049	hong-kong	hong kong	None	aff0
+Y15-1049	hong-kong	hong kong	None	aff0
+W18-5422	eth-zurich	eth zurich	None	aff0
+W18-5422	switzerland	switzerland	None	aff0
+W18-5422	eth-zurich	eth zurich	None	aff0
+W18-5422	switzerland	switzerland	None	aff0
+W18-5422	eth-zurich	eth zurich	None	aff0
+W18-5422	switzerland	switzerland	None	aff0
+W19-2706	andrew-potter	andrew potter	apotter1@una.edu	aff0
+W19-2706	andrew-potter	andrew potter	None	None
+C16-1315			None	None
+C16-1315			None	None
+S19-2018	saba-anwar	saba anwar	None	None
+S19-2018	dmitry-ustalov	dmitry ustalov	None	aff2
+S19-2018	chris-biemann	chris biemann	None	None
+S19-2018	alexander-panchenko	alexander panchenko	None	None
+S19-2018	saba-anwar	saba anwar	None	None
+S19-2018	dmitry-ustalov	dmitry ustalov	None	None
+S19-2018	chris-biemann	chris biemann	None	None
+S19-2018	alexander-panchenko	alexander panchenko	None	None
+N19-1191	google-ai	google ai	None	None
+N19-1191	google-ai	google ai	None	None
+W16-4616	fabien-cromieres	fabien cromieres	fabien@pa.jst.jp	aff0
+W16-4616	sadao-kurohashi	sadao kurohashi	None	aff1
+W16-4616	fabien-cromieres	fabien cromieres	None	None
+W16-4616	sadao-kurohashi	sadao kurohashi	None	None
+W19-3008	taleen-nalabandian	taleen nalabandian	taleen.nalabandian@ttu.edu	aff0
+W19-3008	taleen-nalabandian	taleen nalabandian	None	None
+S19-2144	zeyad-el-zanaty	zeyad el zanaty	zeyadzanaty@gmail.com	aff0
+S19-2144	zeyad-el-zanaty	zeyad el zanaty	None	None
+W14-4312	david-schlangen	david schlangen	None	None
+W14-4312	david-schlangen	david schlangen	None	None
+W18-3604	thiago-castro-ferreira	thiago castro ferreira	None	aff0
+W18-3604	sander-wubben	sander wubben	s.wubben@tilburguniversity.edu	aff0
+W18-3604	emiel-krahmer	emiel krahmer	e.j.krahmer@tilburguniversity.edu	aff0
+W18-3604	thiago-castro-ferreira	thiago castro ferreira	None	None
+W18-3604	sander-wubben	sander wubben	None	None
+W18-3604	emiel-krahmer	emiel krahmer	None	None
+C16-1187			None	None
+C16-1187			None	None
+N19-1302			None	aff0
+N19-1302			None	aff0
+W18-3024			None	None
+W18-3024			None	None
+W18-3024			None	None
+D18-1406	google-brain	google brain	None	aff0
+D18-1406	google-brain	google brain	None	aff0
+D18-1406	google-brain	google brain	None	aff0
+W17-3011	ca-santa-clara	ca santa clara	None	None
+W17-3011	ca-santa-clara	ca santa clara	None	None
+W18-0538	alexander-gelbukh	alexander gelbukh	None	aff2
+W18-0538	alexander-gelbukh	alexander gelbukh	None	None
+P19-1314			None	aff0
+P19-1314			None	aff0
+S19-2111	himanshu-bansal	himanshu bansal	None	None
+S19-2111	daniel-nagel	daniel nagel	None	None
+S19-2111	himanshu-bansal	himanshu bansal	None	aff0
+S19-2111	daniel-nagel	daniel nagel	None	None
+W18-5209	vern-walker	vern r walker	vern.r.walker@hofstra.edu	None
+W18-5209	dina-foerster	dina foerster	None	None
+W18-5209	matthew-rosen	matthew rosen	None	None
+W18-5209	vern-walker	vern r walker	None	None
+W18-5209	dina-foerster	dina foerster	None	None
+W18-5209	matthew-rosen	matthew rosen	None	None
+P19-1002			None	None
+P19-1002			None	None
+P18-1117	russia	russia	None	None
+P18-1117	russia	russia	None	None
+N09-1025	david-chiang	david chiang	None	aff0
+N09-1025	kevin-knight	kevin knight	None	aff0
+N09-1025	wei-wang	wei wang	None	aff0
+N09-1025	david-chiang	david chiang	None	None
+N09-1025	kevin-knight	kevin knight	None	None
+N09-1025	wei-wang	wei wang	None	None
+W08-2308	emmy-nother-nachwuchsgruppe-sfb	emmy nother nachwuchsgruppe sfb	None	aff0
+W08-2308	emmy-nother-nachwuchsgruppe-sfb	emmy nother nachwuchsgruppe sfb	None	aff0
+D17-1265	rachel-bawden	rachel bawden	rachel.bawden@limsi.fr	aff0
+D17-1265	rachel-bawden	rachel bawden	None	None
+S19-2115	yaakov-hacohen-kerner	yaakov hacohen kerner	None	aff0
+S19-2115	ziv-ben-david	ziv ben david	None	aff0
+S19-2115	gal-didi	gal didi	galdd8@gmail.com	aff0
+S19-2115	eli-cahn	eli cahn	eli.cahn@gmail.com	aff0
+S19-2115	shalom-rochman	shalom rochman	shal.rochman@gmail.com	aff0
+S19-2115	elyashiv-shayovitz	elyashiv shayovitz	elyashiv12@gmail.com	aff0
+S19-2115	yaakov-hacohen-kerner	yaakov hacohen kerner	None	None
+S19-2115	ziv-ben-david	ziv ben david	None	None
+S19-2115	gal-didi	gal didi	None	None
+S19-2115	eli-cahn	eli cahn	None	None
+S19-2115	shalom-rochman	shalom rochman	None	None
+S19-2115	elyashiv-shayovitz	elyashiv shayovitz	None	None
+S18-1152	gabor-berend	gabor berend	berendg@inf.u-szeged.hu	None
+S18-1152	marton-makrai	marton makrai	makrai.marton@nytud.mta.hu	None
+S18-1152	peter-foldiak	peter foldiak	peter.foldiak@gmail.com	None
+S18-1152	gabor-berend	gabor berend	None	None
+S18-1152	marton-makrai	marton makrai	None	None
+S18-1152	peter-foldiak	peter foldiak	None	None
+W19-3520	lea-stahel	lea stahel	stahel@soziologie.uzh.ch	aff0
+W19-3520	sebastian-weingartner	sebastian weingartner	weingartner@soziologie.uzh.ch	aff1
+W19-3520	sebastian-weingartner	sebastian weingartner	None	None
+W19-3520	lea-stahel	lea stahel	None	None
+W19-1802	-	 	None	aff0
+W19-1802	-	 	None	aff0
+N19-1135			None	None
+N19-1135			None	None
+D13-1150	jun-seok-kang	jun seok kang	junkang@cs.stonybrook.edu	aff0
+D13-1150	polina-kuznetsova	polina kuznetsova	pkuznetsova@cs.stonybrook.edu	aff0
+D13-1150	michael-luca	michael luca	mluca@hbs.edu	aff0
+D13-1150	yejin-choi	yejin choi	ychoi@cs.stonybrook.edu	aff0
+D13-1150	jun-seok-kang	jun seok kang	None	None
+D13-1150	polina-kuznetsova	polina kuznetsova	None	None
+D13-1150	michael-luca	michael luca	None	None
+D13-1150	yejin-choi	yejin choi	None	None
+S19-2113	daniela-gifu	daniela gifu	None	aff0
+S19-2113	diana-trandabat	diana trandabat	None	aff0
+S19-2113	daniela-gifu	daniela gifu	None	None
+S19-2113	diana-trandabat	diana trandabat	None	None
+W17-4508	michael-volske	michael volske	None	aff0
+W17-4508	martin-potthast	martin potthast	None	aff0
+W17-4508	shahbaz-syed	shahbaz syed	None	aff0
+W17-4508	benno-stein	benno stein	None	aff0
+W17-4508	michael-volske	michael volske	None	None
+W17-4508	martin-potthast	martin potthast	None	None
+W17-4508	shahbaz-syed	shahbaz syed	None	None
+W17-4508	benno-stein	benno stein	None	None
+P19-1586			None	aff0
+P19-1586			None	aff0
+C14-1170	david-schlangen	david schlangen	None	None
+C14-1170	david-schlangen	david schlangen	None	None
+D18-1438	jingqiang-chen	jingqiang chen	None	aff0
+D18-1438	hai-zhuge	hai zhuge	haizhuge@gmail.com	aff0
+D18-1438	jingqiang-chen	jingqiang chen	None	None
+D18-1438	hai-zhuge	hai zhuge	None	None
+W17-5809	neha-warikoo	neha warikoo	None	None
+W17-5809	yung-chun-chang	yung chun chang	None	aff3
+W17-5809	wen-lian-hsu	wen lian hsu	None	aff2
+W17-5809	neha-warikoo	neha warikoo	None	None
+W17-5809	yung-chun-chang	yung chun chang	None	None
+W17-5809	wen-lian-hsu	wen lian hsu	None	None
+W19-2202	lisa-ferro	lisa ferro	lferro@mitre.org	aff0
+W19-2202	john-aberdeen	john aberdeen	aberdeen@mitre.org	aff0
+W19-2202	karl-branting	karl branting	lbranting@mitre.org	aff0
+W19-2202	craig-pfeifer	craig pfeifer	cpfeifer@mitre.org	aff0
+W19-2202	alexander-yeh	alexander yeh	None	aff0
+W19-2202	amartya-chakraborty	amartya chakraborty	achakraborty@mitre.org	aff0
+W19-2202	lisa-ferro	lisa ferro	None	None
+W19-2202	john-aberdeen	john aberdeen	None	None
+W19-2202	karl-branting	karl branting	None	None
+W19-2202	craig-pfeifer	craig pfeifer	None	None
+W19-2202	alexander-yeh	alexander yeh	None	None
+W19-2202	amartya-chakraborty	amartya chakraborty	None	None
+S18-1095	usman-ahmed	usman ahmed	usmanahmed189@gmail.com	aff0
+S18-1095	usman-ahmed	usman ahmed	None	None
+W19-1603	eugene-joseph	eugene joseph	None	aff0
+W19-1603	eugene-joseph	eugene joseph	None	None
+P19-1336	a--star	a  star	None	None
+P19-1336	a--star	a  star	None	None
+W19-3206	jun-yan	jun yan	junyan@yiducloud.cn	aff1
+W19-3206	buzhou-tang	buzhou tang	tangbuzhou@gmail.com	aff0
+W19-3206	jun-yan	jun yan	None	None
+W19-3206	buzhou-tang	buzhou tang	None	None
+W15-3025	bruno-kessler	bruno kessler	None	None
+W15-3025	bruno-kessler	bruno kessler	None	None
+L16-1693			None	None
+L16-1693			None	None
+W19-5046	huiwei-zhou	huiwei zhou	None	aff0
+W19-5046	xuefei-li	xuefei li	None	aff0
+W19-5046	huiwei-zhou	huiwei zhou	None	None
+W19-5046	xuefei-li	xuefei li	None	None
+P19-1344			None	None
+P19-1344			None	None
+P19-1344			None	None
+K18-1054			None	None
+K18-1054			None	None
+K18-1054			None	None
+D18-1206	shashi-narayan	shashi narayan	shashi.narayan@ed.ac.uk	aff0
+D18-1206	shay-b-cohen	shay b cohen	None	aff0
+D18-1206	mirella-lapata	mirella lapata	None	aff0
+D18-1206	shashi-narayan	shashi narayan	None	None
+D18-1206	shay-b-cohen	shay b cohen	None	None
+D18-1206	mirella-lapata	mirella lapata	None	None
+D12-1013			None	None
+D12-1013			None	None
+W19-4204	uygun-shadikhodjaev	uygun shadikhodjaev	ushadikhodjaev@gmail.com	aff0
+W19-4204	jae-sung-lee	jae sung lee	jasonlee@cbnu.ac.kr	aff0
+W19-4204	uygun-shadikhodjaev	uygun shadikhodjaev	None	None
+W19-4204	jae-sung-lee	jae sung lee	None	None
+W14-2603	lingjia-deng	lingjia deng	None	aff0
+W14-2603	janyce-wiebe	janyce wiebe	wiebe@cs.pitt.edu	aff0
+W14-2603	lingjia-deng	lingjia deng	None	None
+W14-2603	janyce-wiebe	janyce wiebe	None	None
+S18-1166	vivek-vinayan	vivek vinayan	None	aff0
+S18-1166	anand-kumar	anand kumar	manandkumar@cb.amrita.edu	aff0
+S18-1166	vivek-vinayan	vivek vinayan	None	None
+S18-1166	anand-kumar	anand kumar	None	None
+W19-3025	micah-iserman	micah iserman	None	aff0
+W19-3025	taleen-nalabandian	taleen nalabandian	None	aff0
+W19-3025	micah-iserman	micah iserman	None	None
+W19-3025	taleen-nalabandian	taleen nalabandian	None	None
+D12-1039			None	aff0
+D12-1039			None	aff0
+W16-3713	riyafa-abdul-hameed	riyafa abdul hameed	riyafa.12@cse.mrt.ac.lk	aff0
+W16-3713	nadeeshani-pathirennehelage	nadeeshani pathirennehelage	pnadeeshani.12@cse.mrt.ac.lk	aff0
+W16-3713	anusha-ihalapathirana	anusha ihalapathirana	anusha.12@cse.mrt.ac.lk	aff0
+W16-3713	gihan-dias	gihan dias	None	aff0
+W16-3713	sandareka-fernando	sandareka fernando	sandarekaf@cse.mrt.ac.lk	aff0
+W16-3713	riyafa-abdul-hameed	riyafa abdul hameed	None	None
+W16-3713	nadeeshani-pathirennehelage	nadeeshani pathirennehelage	None	None
+W16-3713	anusha-ihalapathirana	anusha ihalapathirana	None	None
+W16-3713	gihan-dias	gihan dias	None	None
+W16-3713	sandareka-fernando	sandareka fernando	None	None
+W19-3606	shenakht-pajouh	shenakht pajouh	None	aff0
+W19-3606	-sharif	 sharif	None	aff0
+W19-3606	shenakht-pajouh	shenakht pajouh	None	aff1
+W19-3606	-sharif	 sharif	None	aff1
+S19-2117	johnny-torres	johnny torres	None	aff0
+S19-2117	carmen-vaca	carmen vaca	cvaca@fiec.espol.edu.ec	aff0
+S19-2117	johnny-torres	johnny torres	None	None
+S19-2117	carmen-vaca	carmen vaca	None	None
+P19-2047	taiwo-kolajo	taiwo kolajo	taiwo.kolajo@stu.cu.edu.ng	None
+P19-2047	olawande-daramola	olawande daramola	daramolaj@cput.ac.za	None
+P19-2047	ayodele-adebiyi	ayodele adebiyi	ayo.adebiyi@covenantuniversity.edu.ng	None
+P19-2047	taiwo-kolajo	taiwo kolajo	None	None
+P19-2047	olawande-daramola	olawande daramola	None	None
+P19-2047	ayodele-adebiyi	ayodele adebiyi	None	None
+N19-1062	thomas-manzini	thomas manzini	thomas.manzini@microsoft.com	aff0
+N19-1062	yulia-tsvetkov	yulia tsvetkov	None	aff0
+N19-1062	alan-w-black	alan w black	None	aff0
+N19-1062	thomas-manzini	thomas manzini	None	None
+N19-1062	alan-w-black	alan w black	None	None
+N19-1062	yulia-tsvetkov	yulia tsvetkov	None	None
+W19-1305	rezvaneh-rezapour	rezvaneh rezapour	rezapou2@illinois.edu	aff0
+W19-1305	jana-diesner	jana diesner	jdiesner@illinois.edu	aff0
+W19-1305	rezvaneh-rezapour	rezvaneh rezapour	None	None
+W19-1305	jana-diesner	jana diesner	None	None
+S16-1211	jon-rusert	jon rusert	None	aff0
+S16-1211	ted-pedersen	ted pedersen	tpederse@d.umn.edu	aff0
+S16-1211	jon-rusert	jon rusert	None	None
+S16-1211	ted-pedersen	ted pedersen	None	None
+S19-2045	parag-agrawal	parag agrawal	paragag@microsoft.com	aff0
+S19-2045	anshuman-suri	anshuman suri	ansuri@microsoft.com	aff0
+S19-2045	parag-agrawal	parag agrawal	None	None
+S19-2045	anshuman-suri	anshuman suri	None	None
+W01-1510	hon-cho-kawaguchi	hon cho kawaguchi	None	None
+W01-1510	kawaguchi-shi	kawaguchi shi	None	None
+W01-1510	hon-cho-kawaguchi	hon cho kawaguchi	None	None
+W01-1510	kawaguchi-shi	kawaguchi shi	None	None
+W16-6206	stephen-wan	stephen wan	None	None
+W16-6206	stephen-wan	stephen wan	None	None
+C18-1068	adobe-research	adobe research	None	aff0
+C18-1068	adobe-research	adobe research	None	aff0
+Y09-1006	ming-zhou	ming zhou	mingzhou@microsoft.com	aff0
+Y09-1006	long-jiang	long jiang	longj@microsoft.com	aff0
+Y09-1006	jing-he	jing he	None	aff1
+Y09-1006	ming-zhou	ming zhou	None	None
+Y09-1006	long-jiang	long jiang	None	None
+Y09-1006	jing-he	jing he	None	None
+W09-1205	andrea-gesmundo	andrea gesmundo	None	aff0
+W09-1205	andrea-gesmundo	andrea gesmundo	None	aff0
+W09-1205	james-henderson	james henderson	None	aff0
+W09-1205	james-henderson	james henderson	None	aff0
+W09-1205	paola-merlo	paola merlo	None	aff0
+W09-1205	paola-merlo	paola merlo	None	aff0
+C92-1038	ehud-reiter	ehud reiter	None	aff0
+C92-1038	ehud-reiter	ehud reiter	None	None
+P19-1578			None	aff0
+P19-1578			None	aff0
+D17-1240	jasabanta-patro	jasabanta patro	1jasabantapatro@iitkgp.ac.in	None
+D17-1240	bidisha-samanta	bidisha samanta	None	None
+D17-1240	saurabh-singh	saurabh singh	None	None
+D17-1240	abhipsa-basu	abhipsa basu	None	None
+D17-1240	prithwish-mukherjee	prithwish mukherjee	None	None
+D17-1240	monojit-choudhury	monojit choudhury	3monojitc@microsoft.com	None
+D17-1240	animesh-mukherjee	animesh mukherjee	4animeshm@cse.iitkgp.ernet.in	None
+D17-1240	jasabanta-patro	jasabanta patro	None	None
+D17-1240	bidisha-samanta	bidisha samanta	None	None
+D17-1240	saurabh-singh	saurabh singh	None	None
+D17-1240	abhipsa-basu	abhipsa basu	None	None
+D17-1240	prithwish-mukherjee	prithwish mukherjee	None	None
+D17-1240	monojit-choudhury	monojit choudhury	None	None
+D17-1240	animesh-mukherjee	animesh mukherjee	None	None
+D18-1524	brain-toronto	brain toronto	None	None
+D18-1524	brain-toronto	brain toronto	None	None
+S18-1082	kevin-swanberg	kevin swanberg	swanb034@d.umn.edu	aff0
+S18-1082	madiha-mirza	madiha mirza	None	aff0
+S18-1082	ted-pedersen	ted pedersen	tpederse@d.umn.edu	aff0
+S18-1082	zhenduo-wang	zhenduo wang	None	aff0
+S18-1082	kevin-swanberg	kevin swanberg	None	None
+S18-1082	madiha-mirza	madiha mirza	None	None
+S18-1082	ted-pedersen	ted pedersen	None	None
+S18-1082	zhenduo-wang	zhenduo wang	None	None
+W13-2134	hareen-venigalla	hareen venigalla	hareen058@gmail.com	aff0
+W13-2134	barbara-di	barbara di	None	aff1
+W13-2134	eugenio	eugenio	None	aff1
+W13-2134	hareen-venigalla	hareen venigalla	None	None
+W13-2134	barbara-di	barbara di	None	None
+W13-2134	eugenio	eugenio	None	None
+W19-0509	hochschule-hannover	hochschule hannover	None	None
+W19-0509	hochschule-hannover	hochschule hannover	None	None
+W19-0509	hochschule-hannover	hochschule hannover	None	None
+C18-1325	leibnizsciencecampus-limo	leibnizsciencecampus limo	None	aff0
+C18-1325	leibnizsciencecampus-limo	leibnizsciencecampus limo	None	aff0
+N19-1001	eth-zurich	eth zurich	None	None
+N19-1001	eth-zurich	eth zurich	None	None
+N19-1397			None	None
+N19-1397			None	None
+S19-2075	yaakov-hacohen-kerner	yaakov hacohen kerner	None	aff0
+S19-2075	elyashiv-shayovitz	elyashiv shayovitz	elyashiv12@gmail.com	aff0
+S19-2075	shalom-rochman	shalom rochman	shal.rochman@gmail.com	aff0
+S19-2075	eli-cahn	eli cahn	eli.cahn@gmail.com	aff0
+S19-2075	yaakov-hacohen-kerner	yaakov hacohen kerner	None	None
+S19-2075	elyashiv-shayovitz	elyashiv shayovitz	None	None
+S19-2075	shalom-rochman	shalom rochman	None	None
+S19-2075	eli-cahn	eli cahn	None	None
+W16-2301	ondrej-bojar	ondrej bojar	None	None
+W16-2301	christian-federmann	christian federmann	None	None
+W16-2301	yvette-graham	yvette graham	None	None
+W16-2301	barry-haddow	barry haddow	None	None
+W16-2301	matthias-huck	matthias huck	None	None
+W16-2301	philipp-koehn	philipp koehn	None	None
+W16-2301	varvara-logacheva	varvara logacheva	None	None
+W16-2301	christof-monz	christof monz	None	None
+W16-2301	aurelie-neveol	aurelie neveol	None	None
+W16-2301	martin-popel	martin popel	None	None
+W16-2301	matt-post	matt post	None	None
+W16-2301	carolina-scarton	carolina scarton	None	None
+W16-2301	lucia-specia	lucia specia	None	None
+W16-2301	karin-verspoor	karin verspoor	None	None
+W16-2301	marcos-zampieri	marcos zampieri	None	None
+W16-2301	ondrej-bojar	ondrej bojar	None	None
+W16-2301	christian-federmann	christian federmann	None	None
+W16-2301	yvette-graham	yvette graham	None	None
+W16-2301	barry-haddow	barry haddow	None	None
+W16-2301	matthias-huck	matthias huck	None	None
+W16-2301	philipp-koehn	philipp koehn	None	None
+W16-2301	varvara-logacheva	varvara logacheva	None	None
+W16-2301	christof-monz	christof monz	None	None
+W16-2301	aurelie-neveol	aurelie neveol	None	None
+W16-2301	martin-popel	martin popel	None	None
+W16-2301	matt-post	matt post	None	None
+W16-2301	carolina-scarton	carolina scarton	None	None
+W16-2301	lucia-specia	lucia specia	None	None
+W16-2301	karin-verspoor	karin verspoor	None	None
+W16-2301	marcos-zampieri	marcos zampieri	None	None
+D18-1147	hamed-khanpour	hamed khanpour	hamed.khanpour@microsoft.com	aff0
+D18-1147	cornelia-caragea	cornelia caragea	ccaragea@ksu.edu	aff0
+D18-1147	hamed-khanpour	hamed khanpour	None	None
+D18-1147	cornelia-caragea	cornelia caragea	None	None
+W19-3627	yuling-gu	yuling gu	yuling.gu@nyu.edu	aff0
+W19-3627	yuling-gu	yuling gu	None	None
+W09-2905	hung-huu-hoang	hung huu hoang	hoanghuu@comp.nus.edu.sg	aff0
+W09-2905	min-yen-kan	min yen kan	None	aff0
+W09-2905	hung-huu-hoang	hung huu hoang	None	None
+W09-2905	min-yen-kan	min yen kan	None	None
+K17-3001	jan-hajic	jan hajic	None	aff0
+K17-3001	jan-hajic	jan hajic	None	aff0
+P13-1037	stephen-tratz	stephen tratz	stephen.c.tratz.civ@mail.mil	aff0
+P13-1037	stephen-tratz	stephen tratz	None	None
+W19-3015	sandra-just	sandra just	sandra-anna.just@charite.de	aff0
+W19-3015	erik-haegert	erik haegert	None	aff2
+W19-3015	nora-koranova	nora koranova	None	aff2
+W19-3015	anna-lena-brocker	anna lena brocker	None	aff0
+W19-3015	ivan-nenchev	ivan nenchev	None	aff0
+W19-3015	jakob-funcke	jakob funcke	None	aff0
+W19-3015	christiane-montag	christiane montag	None	aff0
+W19-3015	manfred-stede	manfred stede	None	aff2
+W19-3015	sandra-just	sandra just	None	None
+W19-3015	erik-haegert	erik haegert	None	None
+W19-3015	nora-koranova	nora koranova	None	None
+W19-3015	anna-lena-brocker	anna lena brocker	None	None
+W19-3015	ivan-nenchev	ivan nenchev	None	None
+W19-3015	jakob-funcke	jakob funcke	None	None
+W19-3015	christiane-montag	christiane montag	None	None
+W19-3015	manfred-stede	manfred stede	None	None
+C18-1054	bruno-kessler	bruno kessler	None	aff0
+C18-1054	bruno-kessler	bruno kessler	None	aff0
+P16-2028	nl	nl	None	aff0
+P16-2028	nl	nl	None	aff0
+S19-2213	sarthak-anand	sarthak anand	sarthaka.ic@nsit.net.in	aff1
+S19-2213	simra-shahid	simra shahid	simrashahidbt2k16@dtu.ac.in	aff0
+S19-2213	haimin-zhang	haimin zhang	None	None
+S19-2213	yaman-kumar	yaman kumar	ykumar@adobe.com	None
+S19-2213	karan-uppal	karan uppal	kuppal8@bloomberg.net	None
+S19-2213	sarthak-anand	sarthak anand	None	None
+S19-2213	simra-shahid	simra shahid	None	None
+S19-2213	haimin-zhang	haimin zhang	None	None
+S19-2213	yaman-kumar	yaman kumar	None	None
+S19-2213	karan-uppal	karan uppal	None	None
+S19-2180	michael-farber	michael farber	michael.faerber@cs.uni-freiburg.de	aff0
+S19-2180	agon-qurdina	agon qurdina	agon.qurdina@studentet.uni-pr.edu	aff1
+S19-2180	lule-ahmedi	lule ahmedi	lule.ahmedi@uni-pr.edu	aff2
+S19-2180	michael-farber	michael farber	None	None
+S19-2180	agon-qurdina	agon qurdina	None	None
+S19-2180	lule-ahmedi	lule ahmedi	None	None
+P17-2075	qiongkai-xu	qiongkai xu	None	None
+P17-2075	lizhen-qu	lizhen qu	None	None
+P17-2075	stephen-wan	stephen wan	None	None
+P17-2075	qiongkai-xu	qiongkai xu	None	None
+P17-2075	lizhen-qu	lizhen qu	None	None
+P17-2075	stephen-wan	stephen wan	None	None
+N18-1153	adobe-research	adobe research	None	None
+N18-1153	adobe-research	adobe research	None	None
+W19-5058	lung-hao-lee	lung hao lee	*lhlee@ee.ncu.edu.tw	aff0
+W19-5058	yi-lu	yi lu	None	aff0
+W19-5058	po-han-chen	po han chen	None	aff0
+W19-5058	po-lei-lee	po lei lee	None	aff0
+W19-5058	lung-hao-lee	lung hao lee	None	None
+W19-5058	yi-lu	yi lu	None	None
+W19-5058	po-han-chen	po han chen	None	None
+W19-5058	po-lei-lee	po lei lee	None	None
+W19-3201	kai-he	kai he	None	aff0
+W19-3201	jialun-wu	jialun wu	None	aff0
+W19-3201	chong-zhang	chong zhang	None	aff0
+W19-3201	ming-huang	ming huang	huang.ming@mayo.edu	aff2
+W19-3201	chen-li	chen li	None	aff0
+W19-3201	kai-he	kai he	None	None
+W19-3201	jialun-wu	jialun wu	None	None
+W19-3201	chong-zhang	chong zhang	None	None
+W19-3201	ming-huang	ming huang	None	None
+W19-3201	chen-li	chen li	None	None
+W18-6105	junchao-zheng	junchao zheng	None	None
+W18-6105	courtney-napoles	courtney napoles	None	None
+W18-6105	joel-tetreault	joel tetreault	None	None
+W18-6105	junchao-zheng	junchao zheng	None	None
+W18-6105	courtney-napoles	courtney napoles	None	None
+W18-6105	joel-tetreault	joel tetreault	None	None
+S19-2006	chenyang-huang	chenyang huang	chuang8@ualberta.ca	aff0
+S19-2006	amine-trabelsi	amine trabelsi	atrabels@ualberta.ca	aff0
+S19-2006	chenyang-huang	chenyang huang	None	None
+S19-2006	amine-trabelsi	amine trabelsi	None	None
+P19-1140	zhiyuan-liu	zhiyuan liu	None	None
+P19-1140	zhiyuan-liu	zhiyuan liu	None	aff1
+W19-2306	alexa-ai	alexa ai	None	None
+W19-2306	alexa-ai	alexa ai	None	None
+W19-2306	alexa-ai	alexa ai	None	None
+W18-5608	kohei-kajiyama	kohei kajiyama	1kajiyama.kohei.14@shizuoka.ac.jp2horiguchi-hiromasa@hosp.go.jp3tokumura@mail.kitami-it.ac.jp4mizuki@okayama-u.ac.jp5kano@inf.shizuoka.ac.jp	aff0
+W18-5608	hiromasa-horiguchi	hiromasa horiguchi	None	aff2
+W18-5608	takashi-okumura	takashi okumura	None	aff3
+W18-5608	mizuki-morita	mizuki morita	None	aff4
+W18-5608	yoshinobu-kano	yoshinobu kano	None	aff1
+W18-5608	kohei-kajiyama	kohei kajiyama	None	None
+W18-5608	hiromasa-horiguchi	hiromasa horiguchi	None	None
+W18-5608	takashi-okumura	takashi okumura	None	None
+W18-5608	mizuki-morita	mizuki morita	None	None
+W18-5608	yoshinobu-kano	yoshinobu kano	None	None
+W12-4515	olga-uryupina	olga uryupina	uryupina@gmail.com	aff0
+W12-4515	alessandro-moschitti	alessandro moschitti	moschitti@disi.unitn.it	aff0
+W12-4515	massimo-poesio	massimo poesio	massimo.poesio@unitn.it	aff0
+W12-4515	olga-uryupina	olga uryupina	None	None
+W12-4515	alessandro-moschitti	alessandro moschitti	None	None
+W12-4515	massimo-poesio	massimo poesio	None	None
+S18-1167	artur-kulmizev	artur kulmizev	a.kulmizev@student.rug.nl	None
+S18-1167	mostafa-abdou	mostafa abdou	m.abdou@student.rug.nl	None
+S18-1167	vinit-ravishankar	vinit ravishankar	vinit.ravishankar@gmail.com	None
+S18-1167	malvina-nissim	malvina nissim	m.nissim@rug.nl	None
+S18-1167	artur-kulmizev	artur kulmizev	None	None
+S18-1167	mostafa-abdou	mostafa abdou	None	None
+S18-1167	vinit-ravishankar	vinit ravishankar	None	None
+S18-1167	malvina-nissim	malvina nissim	None	None
+W19-3203	davy-weissenbacher	davy weissenbacher	None	None
+W19-3203	abeed-sarker	abeed sarker	None	None
+W19-3203	arjun-magge	arjun magge	amaggera@asu.edu	None
+W19-3203	ashlynn-daughton	ashlynn daughton	ashlynn.daughton@colorado.edu	aff2
+W19-3203	karen-oaposconnor	karen oaposconnor	None	None
+W19-3203	graciela-gonzalez	graciela gonzalez hernandez	None	None
+W19-3203	abeed-sarker	abeed sarker	None	None
+W19-3203	graciela-gonzalez	graciela gonzalez hernandez	None	None
+W19-3203	abeed-sarker	abeed sarker	None	None
+W19-3203	davy-weissenbacher	davy weissenbacher	None	None
+W19-3203	abeed-sarker	abeed sarker	None	None
+W19-3203	arjun-magge	arjun magge	None	None
+W19-3203	ashlynn-daughton	ashlynn daughton	None	None
+W19-3203	karen-oaposconnor	karen oaposconnor	None	None
+W19-3203	graciela-gonzalez	graciela gonzalez hernandez	None	None
+E17-2072	ecole-polytechnique	ecole polytechnique	None	aff0
+E17-2072	aueb	aueb	None	aff0
+E17-2072	ecole-polytechnique	ecole polytechnique	None	aff0
+E17-2072	aueb	aueb	None	aff0
+Q15-1003	new-york	new york	None	None
+Q15-1003	new-york	new york	None	None
+N18-2074	google-brain	google brain	None	None
+N18-2074	google-brain	google brain	None	None
+N18-1049	switzerland	switzerland	None	aff0
+N18-1049	switzerland	switzerland	None	aff0
+S19-2200	tuhin-chakrabarty	tuhin chakrabarty	None	aff0
+S19-2200	smaranda-muresan	smaranda muresan	None	aff0
+S19-2200	tuhin-chakrabarty	tuhin chakrabarty	None	None
+S19-2200	smaranda-muresan	smaranda muresan	None	None
+K17-2001	ryan-cotterell	ryan cotterell	None	None
+K17-2001	christo-kirov	christo kirov	None	None
+K17-2001	john-sylak-glassman	john sylak glassman	None	None
+K17-2001	geraldine-walther	geraldine walther	None	aff1
+K17-2001	ekaterina-vylomova	ekaterina vylomova	None	aff2
+K17-2001	patrick-xia	patrick xia	None	None
+K17-2001	manaal-faruqui	manaal faruqui	None	aff3
+K17-2001	sandra-kubler	sandra kubler	None	aff4
+K17-2001	david-yarowsky	david yarowsky	None	None
+K17-2001	jason-eisner	jason eisner	None	None
+K17-2001	mans-hulden	mans hulden	None	None
+K17-2001	ryan-cotterell	ryan cotterell	None	None
+K17-2001	christo-kirov	christo kirov	None	None
+K17-2001	john-sylak-glassman	john sylak glassman	None	None
+K17-2001	geraldine-walther	geraldine walther	None	None
+K17-2001	ekaterina-vylomova	ekaterina vylomova	None	None
+K17-2001	patrick-xia	patrick xia	None	None
+K17-2001	manaal-faruqui	manaal faruqui	None	None
+K17-2001	sandra-kubler	sandra kubler	None	None
+K17-2001	david-yarowsky	david yarowsky	None	None
+K17-2001	jason-eisner	jason eisner	None	None
+K17-2001	mans-hulden	mans hulden	None	None
+W19-3222	parsa-bagherzadeh	parsa bagherzadeh	None	aff0
+W19-3222	nadia-sheikh	nadia sheikh	None	aff0
+W19-3222	sabine-bergler	sabine bergler	bergler@encs.concordia.ca	aff0
+W19-3222	parsa-bagherzadeh	parsa bagherzadeh	None	None
+W19-3222	nadia-sheikh	nadia sheikh	None	None
+W19-3222	sabine-bergler	sabine bergler	None	None
+W19-4435	srikrishna-raamadhurai	srikrishna raamadhurai	None	aff0
+W19-4435	vikraman-poduval	vikraman poduval	None	aff0
+W19-4435	srikrishna-raamadhurai	srikrishna raamadhurai	None	None
+W19-4435	vikraman-poduval	vikraman poduval	None	None
+W17-5709	grad-sc	grad sc	None	None
+W17-5709	inf-sys	inf sys	None	None
+W17-5709	eng	eng	None	None
+W17-5709	grad-sc	grad sc	None	None
+W17-5709	inf-sys	inf sys	None	None
+W17-5709	eng	eng	None	None
+T87-1019	julia-hirschberg	julia hirschberg	None	aff0
+T87-1019	julia-hirschberg	julia hirschberg	None	None
+C16-1213	a	a	None	None
+C16-1213	a	a	None	None
+C16-1213	a	a	None	None
+P19-1577	alexander-panchenko	alexander panchenko	None	None
+P19-1577	natalia-loukachevitch	natalia loukachevitch	None	None
+P19-1577	alexander-panchenko	alexander panchenko	None	None
+P19-1577	natalia-loukachevitch	natalia loukachevitch	None	None
+P19-1577	natalia-loukachevitch	natalia loukachevitch	None	None
+W18-6002	aleksandrs-berdicevskis	aleksandrs berdicevskis	aleksandrs.berdicevskis@lingfil.uu.se	aff0
+W18-6002	Cagri-Coltekin	Cagri Coltekin	None	aff1
+W18-6002	katharina-ehret	katharina ehret	None	aff2
+W18-6002	daniel-ross	daniel ross	None	aff5
+W18-6002	bill-thompson	bill thompson	None	aff6
+W18-6002	vera-demberg	vera demberg	None	aff4
+W18-6002	gary-lupyan	gary lupyan	None	aff9
+W18-6002	taraka-rama	taraka rama	None	aff10
+W18-6002	christian-bentz	christian bentz	None	aff1
+W18-6002	aleksandrs-berdicevskis	aleksandrs berdicevskis	None	None
+W18-6002	Cagri-Coltekin	Cagri Coltekin	None	None
+W18-6002	katharina-ehret	katharina ehret	None	None
+W18-6002	daniel-ross	daniel ross	None	None
+W18-6002	bill-thompson	bill thompson	None	None
+W18-6002	vera-demberg	vera demberg	None	None
+W18-6002	gary-lupyan	gary lupyan	None	None
+W18-6002	taraka-rama	taraka rama	None	None
+W18-6002	christian-bentz	christian bentz	None	None
+S18-1161	ignacio-arroyo-fernandez	ignacio arroyo fernandez	None	aff0
+S18-1161	ivan-meza-ruiz	ivan meza	None	aff0
+S18-1161	ignacio-arroyo-fernandez	ignacio arroyo fernandez	None	None
+S18-1161	ivan-meza-ruiz	ivan meza	None	None
+P19-1129			None	None
+P19-1129			None	None
+P19-1129			None	None
+W19-2204	george-sanchez	george sanchez	fname.lname@tr.com	aff0
+W19-2204	george-sanchez	george sanchez	None	None
+N19-2013	alexa-ai	alexa ai	None	None
+N19-2013	alexa-ai	alexa ai	None	None
+N19-2013	alexa-ai	alexa ai	None	None
+W19-4444	yulia-clausen	yulia clausen	yulia.clausen@uni-potsdam.de	aff0
+W19-4444	vivi-nastase	vivi nastase	nastase@cl.uni-heidelberg.de	aff1
+W19-4444	yulia-clausen	yulia clausen	None	None
+W19-4444	vivi-nastase	vivi nastase	None	None
+S13-1030			None	aff0
+S13-1030			None	aff0
+S13-1030			None	aff0
+W19-0415	hochschule-hannover	hochschule hannover	None	None
+W19-0415	hochschule-hannover	hochschule hannover	None	None
+N19-4008	rebecca-sharp	rebecca sharp	bsharp@email.arizona.edu	None
+N19-4008	adarsh-pyarelal	adarsh pyarelal	adarsh@email.arizona.edu	None
+N19-4008	keith-alcock	keith alcock	None	None
+N19-4008	egoitz-laparra	egoitz laparra	None	None
+N19-4008	marco-a-valenzuela-escarcega	marco a valenzuela escarcega	None	None
+N19-4008	ajay-nagesh	ajay nagesh	None	None
+N19-4008	vikas-yadav	vikas yadav	None	None
+N19-4008	zheng-tang	zheng tang	None	None
+N19-4008	heather-lent	heather lent	None	None
+N19-4008	fan-luo	fan luo	None	None
+N19-4008	mithun-paul	mithun paul	None	None
+N19-4008	steven-bethard	steven bethard	None	None
+N19-4008	kobus-barnard	kobus barnard	None	None
+N19-4008	mihai-surdeanu	mihai surdeanu	None	None
+N19-4008	rebecca-sharp	rebecca sharp	None	None
+N19-4008	adarsh-pyarelal	adarsh pyarelal	None	None
+N19-4008	keith-alcock	keith alcock	None	None
+N19-4008	egoitz-laparra	egoitz laparra	None	None
+N19-4008	marco-a-valenzuela-escarcega	marco a valenzuela escarcega	None	None
+N19-4008	ajay-nagesh	ajay nagesh	None	None
+N19-4008	vikas-yadav	vikas yadav	None	None
+N19-4008	zheng-tang	zheng tang	None	None
+N19-4008	heather-lent	heather lent	None	None
+N19-4008	fan-luo	fan luo	None	None
+N19-4008	mithun-paul	mithun paul	None	None
+N19-4008	steven-bethard	steven bethard	None	None
+N19-4008	kobus-barnard	kobus barnard	None	None
+N19-4008	mihai-surdeanu	mihai surdeanu	None	None
+W19-5047	huiwei-zhou	huiwei zhou	zhouhuiwei@dlut.edu.cnleibzun	aff0
+W19-5047	bizun-lei	bizun lei	None	aff0
+W19-5047	zhe-liu	zhe liu	None	aff0
+W19-5047	zhuang-liu	zhuang liu	zhuangliu1992@mail.dlut.edu.cn	aff0
+W19-5047	huiwei-zhou	huiwei zhou	None	None
+W19-5047	bizun-lei	bizun lei	None	None
+W19-5047	zhe-liu	zhe liu	None	None
+W19-5047	zhuang-liu	zhuang liu	None	None
+W16-6203	ted-pedersen	ted pedersen	tpederse@d.umn.edu	None
+W16-6203	thamar-solorio	thamar solorio	solorio@cs.uh.edu	None
+W16-6203	prasha-shrestha	prasha shrestha	pshrestha3@uh.edu	None
+W16-6203	nicolas-rey-villamizar	nicolas rey villamizar	None	None
+W16-6203	steven-bethard	steven bethard	bethard@email.arizona.edu	None
+W16-6203	ted-pedersen	ted pedersen	None	None
+W16-6203	thamar-solorio	thamar solorio	None	None
+W16-6203	prasha-shrestha	prasha shrestha	None	None
+W16-6203	nicolas-rey-villamizar	nicolas rey villamizar	None	None
+W16-6203	steven-bethard	steven bethard	None	None
+P18-1131	brendan-oaposconnor	brendan oaposconnor	None	aff0
+P18-1131	brendan-oaposconnor	brendan oaposconnor	None	None
+W15-1003	federico-fancellu	federico fancellu	None	aff0
+W15-1003	bonnie-webber	bonnie webber	None	aff0
+W15-1003	federico-fancellu	federico fancellu	None	None
+W15-1003	bonnie-webber	bonnie webber	None	None
+S17-2164	isabel-segura-bedmar	isabel segura bedmar	None	aff0
+S17-2164	cristobal-colon-ruiz	cristobal colon ruiz	None	aff0
+S17-2164	paloma-martinez	paloma martinez	None	aff0
+S17-2164	isabel-segura-bedmar	isabel segura bedmar	None	None
+S17-2164	cristobal-colon-ruiz	cristobal colon ruiz	None	None
+S17-2164	paloma-martinez	paloma martinez	None	None
+D18-1207	salesforce-research	salesforce research	None	aff0
+D18-1207	salesforce-research	salesforce research	None	aff0
+D18-1207	salesforce-research	salesforce research	None	aff0
+C18-1166			None	aff0
+C18-1166			None	aff0
+N04-1021	johns-hopkins	johns hopkins	None	aff0
+N04-1021	johns-hopkins	johns hopkins	None	aff0
+N04-1021	johns-hopkins	johns hopkins	None	aff0
+W18-6129	daniel-hanson	daniel hanson	None	aff0
+W18-6129	andrea-simenstad	andrea simenstad	None	aff0
+W18-6129	daniel-hanson	daniel hanson	None	None
+W18-6129	andrea-simenstad	andrea simenstad	None	None
+C18-1255			None	None
+C18-1255			None	None
+W19-3014	min-faculty	min faculty	None	aff0
+W19-3014	min-faculty	min faculty	None	aff0
+S19-2222	yimeng-zhuang	yimeng zhuang	ym.zhuang@samsung.com	aff0
+S19-2222	yimeng-zhuang	yimeng zhuang	None	None
+P13-2111	yoav-goldberg	yoav goldberg	yoav.goldberg@gmail.com	aff0
+P13-2111	kai-zhao	kai zhao	kzhao@gc	aff1
+P13-2111	liang-huang	liang huang	lhuang@cs.qc.cuny.edu	aff1
+P13-2111	yoav-goldberg	yoav goldberg	None	None
+P13-2111	kai-zhao	kai zhao	None	None
+P13-2111	liang-huang	liang huang	None	None
+W17-1716	tiberiu-boros	tiberiu boros	None	aff0
+W17-1716	sonia-pipa	sonia pipa	None	aff0
+W17-1716	dan-tufis	dan tufis	tufis@racai.ro	aff0
+W17-1716	tiberiu-boros	tiberiu boros	None	None
+W17-1716	sonia-pipa	sonia pipa	None	None
+W17-1716	dan-tufis	dan tufis	None	None
+W19-2902	thomas-wasow	thomas wasow	wasow@stanford.edu	aff0
+W19-2902	thomas-wasow	thomas wasow	None	None
+N19-1150	google-ai	google ai	None	aff0
+N19-1150	google-ai	google ai	None	aff0
+W18-5114	borna-jafarpour	borna jafarpour	borna.jafarpour@huawei.com	aff1
+W18-5114	stan-matwin	stan matwin	None	aff2
+W18-5114	borna-jafarpour	borna jafarpour	None	None
+W18-5114	stan-matwin	stan matwin	None	None
+W11-1304	chris-biemann	chris biemann	None	aff0
+W11-1304	eugenie-giesbrecht	eugenie giesbrecht	giesbrecht@fzi.de	aff1
+W11-1304	chris-biemann	chris biemann	None	None
+W11-1304	eugenie-giesbrecht	eugenie giesbrecht	None	None
+D15-1037	jordan-boyd-graber	jordan boyd graber	None	None
+D15-1037	jordan-boyd-graber	jordan boyd graber	None	None
+W18-6013	youngbin-noh	youngbin noh	None	aff0
+W18-6013	hansaem-kim	hansaem kim	None	aff0
+W18-6013	youngbin-noh	youngbin noh	None	None
+W18-6013	hansaem-kim	hansaem kim	None	None
+S19-2013	tuan-dang	tuan dang	dangnt@uit.edu.vn	aff0
+S19-2013	tuan-dang	tuan dang	None	None
+N19-2002	alexa-ai	alexa ai	None	None
+N19-2002	alexa-ai	alexa ai	None	None
+N19-2002	alexa-ai	alexa ai	None	None
+P19-1597	hongyu-zang	hongyu zang	zanghy@pku.edu.cn	aff0
+P19-1597	hongyu-zang	hongyu zang	None	None
+W19-4635	mourad-abbas	mourad abbas	m.abbas@crstdla.dz	aff0
+W19-4635	mohamed-lichouri	mohamed lichouri	m.lichouri@crstdla.dz	aff0
+W19-4635	mourad-abbas	mourad abbas	None	None
+W19-4635	mohamed-lichouri	mohamed lichouri	None	None
+W16-5207	ho-chi	ho chi	None	aff0
+W16-5207	minh-city	minh city	None	aff0
+W16-5207	vietnam	vietnam	None	aff0
+W16-5207	ho-chi	ho chi	None	aff0
+W16-5207	minh-city	minh city	None	aff0
+W16-5207	vietnam	vietnam	None	aff0
+W09-3303	hong-kong	hong kong	None	aff0
+W09-3303	hong-kong	hong kong	None	aff0
+S19-2040	jasabanta-patro	jasabanta patro	None	None
+S19-2040	nitin-choudhary	nitin choudhary	None	None
+S19-2040	kalpit-chittora	kalpit chittora	3chittora.kalpit@iitkgp.ac.in	None
+S19-2040	animesh-mukherjee	animesh mukherjee	4animeshm@cse.iitkgp.ac.in	None
+S19-2040	jasabanta-patro	jasabanta patro	None	None
+S19-2040	nitin-choudhary	nitin choudhary	None	None
+S19-2040	kalpit-chittora	kalpit chittora	None	None
+S19-2040	animesh-mukherjee	animesh mukherjee	None	None
+W19-3217	v-g-vinod-vydiswaran	v g vinod vydiswaran	None	aff0
+W19-3217	grace-ganzel	grace ganzel	None	aff1
+W19-3217	bryan-romas	bryan romas	None	aff1
+W19-3217	neha-bhomia	neha bhomia	None	aff1
+W19-3217	socheatha-chan	socheatha chan	None	aff1
+W19-3217	aaron-miller	aaron miller	None	aff1
+W19-3217	olawunmi-oduyebo	olawunmi oduyebo	None	aff1
+W19-3217	radhika-sondhi	radhika sondhi	None	aff1
+W19-3217	danny-teng	danny teng	None	aff1
+W19-3217	hao-tseng	hao tseng	None	aff1
+W19-3217	kim-vuong	kim vuong	None	aff1
+W19-3217	stephanie-zimmerman	stephanie zimmerman	None	aff1
+W19-3217	v-g-vinod-vydiswaran	v g vinod vydiswaran	None	None
+W19-3217	grace-ganzel	grace ganzel	None	None
+W19-3217	bryan-romas	bryan romas	None	None
+W19-3217	neha-bhomia	neha bhomia	None	None
+W19-3217	socheatha-chan	socheatha chan	None	None
+W19-3217	aaron-miller	aaron miller	None	None
+W19-3217	olawunmi-oduyebo	olawunmi oduyebo	None	None
+W19-3217	radhika-sondhi	radhika sondhi	None	None
+W19-3217	danny-teng	danny teng	None	None
+W19-3217	hao-tseng	hao tseng	None	None
+W19-3217	kim-vuong	kim vuong	None	None
+W19-3217	stephanie-zimmerman	stephanie zimmerman	None	None
+S18-1096	edward-dearden	edward dearden	None	aff0
+S18-1096	alistair-baron	alistair baron	None	aff0
+S18-1096	edward-dearden	edward dearden	None	None
+S18-1096	alistair-baron	alistair baron	None	None
+W89-0210	quot	quot	None	None
+W89-0210	quot	quot	None	None
+W19-3207	zulfat-miftahutdinov	zulfat miftahutdinov	zulfatmi@gmail.com	None
+W19-3207	ilseyar-alimova	ilseyar alimova	isalimova@kpfu.ru	None
+W19-3207	elena-tutubalina	elena tutubalina	elvtutubalina@kpfu.ru	None
+W19-3207	zulfat-miftahutdinov	zulfat miftahutdinov	None	None
+W19-3207	ilseyar-alimova	ilseyar alimova	None	None
+W19-3207	elena-tutubalina	elena tutubalina	None	None
+W19-3509	bertie-vidgen	bertie vidgen	bvidgen@turing.ac.uk	aff0
+W19-3509	alex-harris	alex harris	aharris@turing.ac.uk	aff1
+W19-3509	dong-nguyen	dong nguyen	dnguyen@turing.ac.uk	aff2
+W19-3509	scott-hale	scott hale	shale@turing.ac.uk	aff3
+W19-3509	rebekah-tromble	rebekah tromble	rtromble@turing.ac.uk	aff4
+W19-3509	helen-margetts	helen margetts	hmargetts@turing.ac.uk	aff5
+W19-3509	bertie-vidgen	bertie vidgen	None	None
+W19-3509	alex-harris	alex harris	None	None
+W19-3509	dong-nguyen	dong nguyen	None	None
+W19-3509	rebekah-tromble	rebekah tromble	None	None
+W19-3509	scott-hale	scott hale	None	None
+W19-3509	helen-margetts	helen margetts	None	None
+W18-3506	hang-seng	hang seng	None	aff0
+W18-3506	hang-seng	hang seng	None	aff0
+W18-3506	hang-seng	hang seng	None	aff0
+D10-1104	xiaohua-liu	xiaohua liu	None	aff2
+D10-1104	bo-han	bo han	b.han@pgrad.unimelb.edu.ausstiller@stanford.edu	aff3
+D10-1104	kuan-li	kuan li	None	aff4
+D10-1104	ming-zhou	ming zhou	mingzhou@microsoft.com	None
+D10-1104	xiaohua-liu	xiaohua liu	None	None
+D10-1104	bo-han	bo han	None	None
+D10-1104	kuan-li	kuan li	None	None
+D10-1104	ming-zhou	ming zhou	None	None
+W18-6247	idiap	idiap	None	aff0
+W18-6247	epfl-switzerland	epfl switzerland	None	aff0
+W18-6247	idiap	idiap	None	aff0
+W18-6247	epfl-switzerland	epfl switzerland	None	aff0
+P19-1079	amazon-alexa	amazon alexa	None	aff0
+P19-1079	amazon-alexa	amazon alexa	None	aff0
+E17-3029	h	h	None	None
+E17-3029	h	h	None	None
+E17-3029	u	u	None	None
+E17-3029	u	u	None	None
+E17-3029	j	j	None	None
+E17-3029	j	j	None	None
+E17-3029	h	h	None	None
+E17-3029	u	u	None	None
+E17-3029	h	h	None	None
+E17-3029	h	h	None	None
+E17-3029			None	None
+E17-3029	u	u	None	None
+E17-3029	u	u	None	None
+E17-3029	h	h	None	None
+E17-3029			None	None
+E17-3029			None	None
+N19-1117	facebook-ai	facebook ai	None	aff0
+N19-1117	facebook-ai	facebook ai	None	aff0
+S17-2090	jonathan-may	jonathan may	jonmay@isi.edu	aff0
+S17-2090	jay-priyadarshi	jay priyadarshi	None	aff0
+S17-2090	jonathan-may	jonathan may	None	None
+S17-2090	jay-priyadarshi	jay priyadarshi	None	None
+W19-2305	bruno-kessler	bruno kessler	None	aff0
+W19-2305	bruno-kessler	bruno kessler	None	aff0
+W19-2305	bruno-kessler	bruno kessler	None	aff0
+W19-2305	bruno-kessler	bruno kessler	None	aff0
+W19-2305	bruno-kessler	bruno kessler	None	aff0
+W17-3004	straintek-athens	straintek athens	None	aff0
+W17-3004	greece	greece	None	aff0
+W17-3004	straintek-athens	straintek athens	None	aff0
+W17-3004	greece	greece	None	aff0
+W09-3426	kyoto-japan	kyoto japan	None	None
+W09-3426	kyoto-japan	kyoto japan	None	None
+D17-1214	google-research	google research	None	aff0
+D17-1214	google-research	google research	None	aff0
+P19-1470			None	None
+P19-1470			None	None
+W18-6431	weijia-xu	weijia xu	weijia@cs.umd.edu	aff0
+W18-6431	marine-carpuat	marine carpuat	marine@cs.umd.edu	aff0
+W18-6431	weijia-xu	weijia xu	None	None
+W18-6431	marine-carpuat	marine carpuat	None	None
+W17-2345	health-informatics	health informatics	None	aff0
+W17-2345	health-informatics	health informatics	None	aff1
+S19-2218	usman-ahmed	usman ahmed	usman.ahmed@cs.uol.edu.pkhumaira.699@gmail.com	aff0
+S19-2218	humera-liaquat	humera liaquat	None	aff1
+S19-2218	usman-ahmed	usman ahmed	None	None
+S19-2218	humera-liaquat	humera liaquat	None	None
+D18-1374	google-ai	google ai	None	None
+D18-1374	google-ai	google ai	None	None
+C18-1181	adobe-research	adobe research	None	None
+C18-1181	adobe-research	adobe research	None	None
+P88-1034	david-weir	david j weir	None	aff0
+P88-1034	aravind-joshi	aravind k joshi	None	aff0
+P88-1034	david-weir	david j weir	None	None
+P88-1034	aravind-joshi	aravind k joshi	None	None
+P19-1390	zixuan-ke	zixuan ke	zixuan@hlt.utdallas.edu	aff0
+P19-1390	hui-lin	hui lin	None	aff0
+P19-1390	vincent-ng	vincent ng	None	aff0
+P19-1390	zixuan-ke	zixuan ke	None	None
+P19-1390	hui-lin	hui lin	None	None
+P19-1390	vincent-ng	vincent ng	None	None
+W17-2629			None	aff0
+W17-2629			None	aff0
+D15-1006	jordan-boyd-graber	jordan boyd graber	None	aff0
+D15-1006	jordan-boyd-graber	jordan boyd graber	None	aff0
+C82-1020	donald-e-walker	donald e walker	None	aff0
+C82-1020	robert-a-amsler	robert a amsler	None	aff0
+C82-1020	donald-e-walker	donald e walker	None	None
+C82-1020	robert-a-amsler	robert a amsler	None	None
+J15-1002	furu-wei	furu wei	fuwei@microsoft.com.	None
+J15-1002	xiaohua-liu	xiaohua liu	None	None
+J15-1002	ming-zhou	ming zhou	mingzhou@microsoft.com.	None
+J15-1002	furu-wei	furu wei	None	None
+J15-1002	xiaohua-liu	xiaohua liu	None	None
+J15-1002	ming-zhou	ming zhou	None	None
+S19-2193	ipek-baris	ipek baris	ibaris@uni-koblenz.de	aff0
+S19-2193	lukas-schmelzeisen	lukas schmelzeisen	None	aff0
+S19-2193	steffen-staab	steffen staab	staab@uni-koblenz.de	aff0
+S19-2193	ipek-baris	ipek baris	None	None
+S19-2193	lukas-schmelzeisen	lukas schmelzeisen	None	None
+S19-2193	steffen-staab	steffen staab	None	None
+W19-3314	hyonsu-choe	hyonsu choe	choehyonsu@yonsei.ac.kr	aff0
+W19-3314	hansaem-kim	hansaem kim	None	aff2
+W19-3314	hyonsu-choe	hyonsu choe	None	None
+W19-3314	hansaem-kim	hansaem kim	None	None
+D17-1202	ecole-polytechnique	ecole polytechnique	None	aff0
+D17-1202	aueb	aueb	None	aff0
+D17-1202	ecole-polytechnique	ecole polytechnique	None	aff0
+D17-1202	aueb	aueb	None	aff0
+P10-2070	mijail-kabadjov	mijail kabadjov	None	None
+P10-2070	ralf-steinberger	ralf steinberger	None	None
+P10-2070	mijail-kabadjov	mijail kabadjov	None	None
+P10-2070	ralf-steinberger	ralf steinberger	None	None
+W19-4201	andreas-madsack	andreas madsack	None	aff0
+W19-4201	robert-weissgraeber	robert weissgraeber	None	aff0
+W19-4201	andreas-madsack	andreas madsack	None	None
+W19-4201	robert-weissgraeber	robert weissgraeber	None	None
+P19-3004			None	aff0
+P19-3004			None	aff0
+P19-3004			None	aff0
+N15-3006	lucy-vanderwende	lucy vanderwende	lucyv@microsoft.com	aff0
+N15-3006	arul-menezes	arul menezes	arulm@microsoft.com	aff0
+N15-3006	chris-quirk	chris quirk	chrisq@microsoft.com	aff0
+N15-3006	lucy-vanderwende	lucy vanderwende	None	None
+N15-3006	arul-menezes	arul menezes	None	None
+N15-3006	chris-quirk	chris quirk	None	None
+S19-2089	mihai-manolescu	mihai manolescu	mihai.manolescu@student.uni-tuebingen.de	aff0
+S19-2089	denise-lofflad	denise lofflad	denise.loefflad@student.uni-tuebingen.de	aff0
+S19-2089	adham-nasser	adham nasser	None	aff0
+S19-2089	mohamed-saber	mohamed saber	None	aff0
+S19-2089	mihai-manolescu	mihai manolescu	None	None
+S19-2089	denise-lofflad	denise lofflad	None	None
+S19-2089	adham-nasser	adham nasser	None	None
+S19-2089	mohamed-saber	mohamed saber	None	None
+D18-1394	bennett-kleinberg	bennett kleinberg	b.a.r.kleinberg@uva.nl	aff0
+D18-1394	maximilian-mozes	maximilian mozes	mozes@cs.tum.edu	aff0
+D18-1394	isabelle-van-der-vegt	isabelle van der vegt	isabelle.vegt.17@ucl.ac.uk	aff0
+D18-1394	bennett-kleinberg	bennett kleinberg	None	None
+D18-1394	maximilian-mozes	maximilian mozes	None	None
+D18-1394	isabelle-van-der-vegt	isabelle van der vegt	None	None
+W16-4602	grad-sc	grad sc	None	None
+W16-4602	inf-sys	inf sys	None	None
+W16-4602	eng	eng	None	None
+W16-4602	grad-sc	grad sc	None	None
+W16-4602	inf-sys	inf sys	None	None
+W16-4602	eng	eng	None	None
+S19-2209	tobias-cabanski	tobias cabanski	t.cabanski@posteo.de	None
+S19-2209	tobias-cabanski	tobias cabanski	None	None
+K18-1050	eth-zurich	eth zurich	None	aff0
+K18-1050	eth-zurich	eth zurich	None	aff0
+W18-4806	onkwawenna-maracle	onkwawenna maracle	None	None
+W18-4806	kentyohkwa	kentyohkwa	None	None
+W18-4806	onkwawenna-maracle	onkwawenna maracle	None	None
+W18-4806	kentyohkwa	kentyohkwa	None	None
+W18-3023	facebook-aml	facebook aml	None	None
+W18-3023	facebook-aml	facebook aml	None	None
+W18-3023	facebook-aml	facebook aml	None	None
+W19-3307	eva-hajicova	eva hajicova	hajicova@ufal.mff.cuni.cz	aff0
+W19-3307	eva-hajicova	eva hajicova	None	None
+Y12-1013	hao-li	hao li	None	None
+Y12-1013	yu-chen	yu chen	None	None
+Y12-1013	heng-ji	heng ji	None	None
+Y12-1013	smaranda-muresan	smaranda muresan	None	None
+Y12-1013	dequan-zheng	dequan zheng	dqzheng@mtlab.hit.edu.cnsmuresan@rci.rutgers.edu	None
+Y12-1013	hao-li	hao li	None	aff0
+Y12-1013	yu-chen	yu chen	None	aff1
+Y12-1013	heng-ji	heng ji	None	aff0
+Y12-1013	smaranda-muresan	smaranda muresan	None	aff2
+Y12-1013	dequan-zheng	dequan zheng	None	aff1
+Y09-2027	josef-van-genabith	josef van genabith	None	aff0
+Y09-2027	andy-way	andy way	away@computing.dcu.ie	aff0
+Y09-2027	josef-van-genabith	josef van genabith	None	aff0
+Y09-2027	andy-way	andy way	None	aff0
+D11-1109			None	aff0
+D11-1109			None	aff0
+W15-3601	min-yen-kan	min yen kan	kanmy@comp.nus.edu.sg	aff0
+W15-3601	min-yen-kan	min yen kan	None	None
+N19-1326	facebook-ai	facebook ai	None	aff0
+N19-1326	london	london	None	aff0
+N19-1326	facebook-ai	facebook ai	None	aff0
+N19-1326	london	london	None	aff0
+W19-3717	governance-analytics	governance analytics	None	None
+W19-3717	governance-analytics	governance analytics	None	None
+W18-5906	victoria-bobicev	victoria bobicev	victoria.bobicev@ia.utm.mdsokolova@uottawa.ca	aff0
+W18-5906	marina-sokolova	marina sokolova	None	aff0
+W18-5906	victoria-bobicev	victoria bobicev	None	None
+W18-5906	marina-sokolova	marina sokolova	None	None
+S19-2151	sapna-negi	sapna negi	None	None
+S19-2151	tobias-daudert	tobias daudert	tobias.daudert@insight-centre.org	None
+S19-2151	paul-buitelaar	paul buitelaar	paul.buitelaar@insight-centre.org	None
+S19-2151	sapna-negi	sapna negi	None	None
+S19-2151	tobias-daudert	tobias daudert	None	None
+S19-2151	paul-buitelaar	paul buitelaar	None	None
+D17-3004	diego-marcheggiani	diego marcheggiani	marcheggiani@uva.nl	aff0
+D17-3004	diego-marcheggiani	diego marcheggiani	None	aff0
+W18-0801	allen-schmaltz	allen schmaltz	schmaltz@fas.harvard.edu	aff0
+W18-0801	allen-schmaltz	allen schmaltz	None	None

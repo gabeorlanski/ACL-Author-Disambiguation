@@ -1,0 +1,7 @@
+2019-08-26 11:48:34,151| WARNING|author_disambiguation|     _getAuthorInfos: yang-liu is not in self.author_papers
+2019-08-26 11:48:51,164|   ERROR|author_disambiguation| _errorCheckCallArgs: abc-de is in override_authors and not in target_authors
+NoneType: None
+2019-08-26 11:48:51,167|   ERROR|author_disambiguation| _errorCheckCallArgs: 'abcsasd-adad not in author_papers'
+NoneType: None
+2019-08-26 11:48:54,421| WARNING|author_disambiguation|_makeAmbiguousAuthors: eugenio-martinez-camara is not in id_to_name
+2019-08-26 11:48:59,257| WARNING|author_disambiguation| _makeAmbiguousPairs: 8 errors getting known author papers

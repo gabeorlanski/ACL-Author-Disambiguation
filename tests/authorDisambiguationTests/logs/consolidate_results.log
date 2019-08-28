@@ -1,0 +1,22 @@
+2019-08-26 13:58:24,012|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-08-26 13:58:24,012|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-08-26 13:58:24,012|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-08-26 13:58:24,012|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-08-26 13:58:24,012|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
+2019-08-26 13:58:24,201|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-08-26 13:58:24,203|    INFO|author_disambiguation| _consolidateResults: Consolidating Compare results
+2019-08-26 13:58:24,205|   DEBUG|author_disambiguation| _consolidateResults: Converting to np arrays
+2019-08-26 13:58:24,205|   DEBUG|author_disambiguation| _consolidateResults: Converting yang-liu-georgetown results
+2019-08-26 13:58:24,205|   DEBUG|author_disambiguation| _consolidateResults: Consolidating results from yang-liu-edinburgh
+2019-08-26 13:58:24,205|   DEBUG|author_disambiguation| _consolidateResults: Converting yang-liu-edinburgh results
+2019-08-26 13:58:24,205|   DEBUG|author_disambiguation| _consolidateResults: Consolidating results from amir-zeldes

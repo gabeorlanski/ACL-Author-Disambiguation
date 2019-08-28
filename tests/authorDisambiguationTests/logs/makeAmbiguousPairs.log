@@ -1,0 +1,52 @@
+2019-08-26 11:55:47,667|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-08-26 11:55:47,667|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-08-26 11:55:47,667|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-08-26 11:55:47,668|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-08-26 11:55:47,668|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-08-26 11:55:47,859|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-08-26 11:55:47,860|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-08-26 11:55:47,860|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-08-26 11:55:47,860|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-08-26 11:55:47,861|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
+2019-08-26 11:55:47,861|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-08-26 11:55:47,861|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
+2019-08-26 11:55:47,861|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-08-26 11:55:47,861|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-08-26 11:55:47,861|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
+2019-08-26 11:55:47,861|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-08-26 11:55:47,862|    INFO|author_disambiguation| _makeAmbiguousPairs: Creating pairs for ambiguous authors
+2019-08-26 11:55:47,862|    INFO|author_disambiguation|     _getAuthorInfos: Getting author info for specified authors
+2019-08-26 11:55:47,862|   DEBUG|author_disambiguation|     _getAuthorInfos: authors=['amir-zeldes', 'yang-liu-edinburgh']
+2019-08-26 11:55:47,864|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-4502 not in self.papers
+2019-08-26 11:55:47,864|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-6022 not in self.papers
+2019-08-26 11:55:47,864|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-4918 not in self.papers
+2019-08-26 11:55:47,864|   DEBUG|author_disambiguation|     _getAuthorInfos: W19-2713 not in self.papers
+2019-08-26 11:55:47,864|   DEBUG|author_disambiguation|     _getAuthorInfos: N18-4006 not in self.papers
+2019-08-26 11:55:47,864|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-5811 not in self.papers
+2019-08-26 11:55:47,864|   DEBUG|author_disambiguation|     _getAuthorInfos: W19-2701 not in self.papers
+2019-08-26 11:55:47,864|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-0704 not in self.papers
+2019-08-26 11:55:47,865|   DEBUG|author_disambiguation|     _getAuthorInfos: len(out)=5
+2019-08-26 11:55:47,865|   DEBUG|author_disambiguation|     _getAuthorInfos: error_authors=0
+2019-08-26 11:55:47,865|   DEBUG|author_disambiguation|     _getAuthorInfos: error_papers=8
+2019-08-26 11:55:47,865| WARNING|author_disambiguation| _makeAmbiguousPairs: 8 errors getting known author papers
+2019-08-26 11:55:47,865|   DEBUG|author_disambiguation| _makeAmbiguousPairs: 5 known papers
+2019-08-26 11:55:47,865|   DEBUG|author_disambiguation| _makeAmbiguousPairs: 1 ambiguous author ids
+2019-08-26 11:55:47,866|    INFO|author_disambiguation| _makeAmbiguousPairs: Creating pairs for yang-liu-georgetown
+2019-08-26 11:55:47,866|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 3 papers
+2019-08-26 11:55:47,866|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 4 to check against
+2019-08-26 11:55:47,866|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 4 total possible pairs
+2019-08-26 11:55:47,866|   DEBUG|author_disambiguation|          _makePairs: Making 4 pairs
+2019-08-26 11:55:47,867|   DEBUG|author_disambiguation|          _makePairs: len(excluded)=1
+2019-08-26 11:55:47,867|   DEBUG|author_disambiguation|          _makePairs: len(out)=3
+2019-08-26 11:55:47,867|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2708 yang-liu-georgetown has 3 pairs
+2019-08-26 11:55:47,867|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2708 yang-liu-georgetown has 1 excluded
+2019-08-26 11:55:47,867|   DEBUG|author_disambiguation|          _makePairs: Making 4 pairs
+2019-08-26 11:55:47,869|   DEBUG|author_disambiguation|          _makePairs: len(excluded)=0
+2019-08-26 11:55:47,869|   DEBUG|author_disambiguation|          _makePairs: len(out)=4
+2019-08-26 11:55:47,869|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2710 yang-liu-georgetown has 4 pairs
+2019-08-26 11:55:47,869|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2710 yang-liu-georgetown has 0 excluded
+2019-08-26 11:55:47,870|   DEBUG|author_disambiguation|          _makePairs: Making 4 pairs
+2019-08-26 11:55:47,871|   DEBUG|author_disambiguation|          _makePairs: len(excluded)=0
+2019-08-26 11:55:47,871|   DEBUG|author_disambiguation|          _makePairs: len(out)=4
+2019-08-26 11:55:47,871|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2717 yang-liu-georgetown has 4 pairs
+2019-08-26 11:55:47,871|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2717 yang-liu-georgetown has 0 excluded
