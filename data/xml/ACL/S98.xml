@@ -1,16 +1,3 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<collection id="S98">
-  <volume id="1">
-    <meta>
-      <booktitle>Proceedings of the Pilot <fixed-case>SENSEVAL</fixed-case></booktitle>
-      <url>S98-1</url>
-      <editor><first>Adam</first><last>Kilgarriff</last></editor>
-      <editor><first>Martha</first><last>Palmer</last></editor>
-      <publisher>Association for Computational Linguistics</publisher>
-      <address>Hermonceux Castle, Sussex, UK</address>
-      <month>September</month>
-      <year>1998</year>
-    </meta>
-    <frontmatter/>
-  </volume>
-</collection>
+version https://git-lfs.github.com/spec/v1
+oid sha256:fb9c553c2ae4f8ddec46650052747052016a275bf37668787951c7f64b44c112
+size 569

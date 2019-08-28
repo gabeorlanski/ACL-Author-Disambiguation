@@ -12,3 +12,5 @@ test_results.ods
 saved_pairs.pickle
 
 tagged_pairs.pickle
+
+data/pdf_xml
