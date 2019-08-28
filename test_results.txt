@@ -1,8 +1,8 @@
 Test 0
-Precision = 99.24
-Recall = 95.37
-F1 Score = 97.27
+Precision = 75.61
+Recall = 96.88
+F1 Score = 84.93
 Test 1
-Precision = 99.50
-Recall = 96.19
-F1 Score = 97.82
+Precision = 77.50
+Recall = 93.94
+F1 Score = 84.93

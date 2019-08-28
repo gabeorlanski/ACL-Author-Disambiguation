@@ -14,10 +14,18 @@ Written by Gabriel Orlanski
 * PyYAML 5.1.2
 * Unidecode 1.1.1
 * fuzzysearch 0.6.2
+* hurry.filesize 0.9
 * lxml 4.4.0
 * nltk 3.4.4
 * numpy 1.17.0
-* scikit-learn 0.21.3	
-* scipy 1.3.1	
+* py-stringmatching 0.4.1
+* scikit-learn 0.21.3 
+* scipy 1.3.1
 * textdistance 4.1.4
-* tqdm 4.33.0	
+* tqdm 4.33.0
+
+# How to use
+
+# Acknowledgments
+
+# References

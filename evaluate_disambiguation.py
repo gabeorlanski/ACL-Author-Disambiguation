@@ -38,14 +38,22 @@ if __name__ == '__main__':
         input_handler = DisambiguationInputHandler(papers, id_to_name, author_papers, log_path=log_path,
                                                    treat_id_different_people=True)
 
-        test_targets = [x for x in author_papers.keys() if len([p for p in author_papers[x]if p in papers])> 5 and x in id_to_name ]
+        # test_targets = [x for x in author_papers.keys() if len([p for p in author_papers[x]if p in papers])> 5 and x in id_to_name ]
+        test_targets = [x.strip() for x in open("test_special_keys.txt").readlines()]
         print("INFO: {} test targets".format(len(test_targets)))
         targets = []
         for k in test_targets:
-
             rtr = []
-            test_papers = random.sample(author_papers[k], 1)
+            try:
+                if len(author_papers[k]) > 7:
+                    test_papers = random.sample(author_papers[k], 3)
+                else:
+                    test_papers = random.sample(author_papers[k],1)
+            except:
+                test_papers = random.sample(author_papers[k], 1)
             for p in test_papers:
+                if k not in papers[p]["affiliations"]:
+                    continue
                 rtr.append(input_handler.handleInput(k, [p]))
             # rtr = input_handler.handleInput(k, test_papers[k])
 
@@ -63,6 +71,8 @@ if __name__ == '__main__':
         no_same = 0
         no_different = 0
         different_auth_count = []
+        none_found = []
+        wrong = []
         print("INFO: Evaluating results")
         pbar = tqdm(total=len(results),file=sys.stdout)
         for k,info in results.items():
@@ -77,16 +87,19 @@ if __name__ == '__main__':
                 different_auth_count.append(len(info["different"]))
             if info["same"] is None:
                 no_same +=1
+                none_found.append(actual_k)
             else:
                 if actual_k != info["same"]:
                     false_positives+=1
+                    wrong.append(actual_k)
                 else:
                     correct +=1
 
 
             pbar.update()
         pbar.close()
-
+        print(none_found)
+        print(wrong)
         print("INFO: {} targets were unable to find a same author".format(no_same))
         print("INFO: {} had more than 1 different author".format(len(different_auth_count)))
         precision = correct/(correct+false_positives)
