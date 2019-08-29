@@ -16,6 +16,7 @@ Written by Gabriel Orlanski
 * fuzzysearch 0.6.2
 * hurry.filesize 0.9
 * lxml 4.4.0
+* multiprocessing 2.6.2.1
 * nltk 3.4.4
 * numpy 1.17.0
 * py-stringmatching 0.4.1
