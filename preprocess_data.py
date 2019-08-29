@@ -18,19 +18,12 @@ if __name__ == "__main__":
     gc.collect()
     config = json.load(open("config.json"))
     data_path = os.getcwd() + "/data"
-
     save_path = os.getcwd() + config["save data path"]
-    # acl_parser = ACLParser(config["ACLParserXpaths"],save_data=True,save_path=save_path,ext_directory=True)
-    # acl_parser(os.getcwd()+config["xml path"],os.getcwd()+config["name variants path"])
 
     aliases = json.load(open(data_path + "/json/aliases.json"))
     papers = json.load(open(data_path + "/json/acl_papers.json"))
     id_to_name = json.load(open(data_path + "/json/id_to_name.json"))
     same_names = [x.strip() for x in open(data_path + "/txt/same_names.txt").readlines()]
-    # parser = PDFParserWrapper(config["parsed pdf path"],save_data=True,save_dir=save_path,ext_directory=True,cores=1,batch_size=500)
-    # parser.loadData(papers, aliases, id_to_name, same_names,{})
-    # parser(os.getcwd() + "/data/pdf_xml")
-    # gc.collect()
     parsed = json.load(open(save_path + "/json/parsed_papers.json"))
     parsed = {x: Paper(**info) for x, info in parsed.items()}
     org_corpus = [[stemmer.stem(w) for w in x.strip().split()] for x in

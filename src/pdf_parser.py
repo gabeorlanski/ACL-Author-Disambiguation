@@ -178,7 +178,7 @@ class PDFParser:
         keys_with_same = []
         for person in authors_found:
             try:
-                name = getChildText(get_name(person)[0], delimiter=" ").replace("  ", " ")
+                name = getChildText(getName(person)[0], delimiter=" ").replace("  ", " ")
             except:
                 errors.append("{} issue with getting a name from an author in paper".format(pid))
                 continue

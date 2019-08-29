@@ -1,8 +1,18 @@
 Test 0
-Precision = 75.61
-Recall = 96.88
-F1 Score = 84.93
+Wrong author = ['stephen-beale', 'yue-zhang', 'peng-li', 'wei-li', 'jun-zhao', 'jing-liu', 'wei-zhang', 'lei-li', 'johannes-deleu', 'chris-develder', 'yajuan-lu', 'steven-bedrick', 'hao-zhang', 'david-weir', 'pavel-pecina', 'yonatan-belinkov', 'chikara-hashimoto', 'li-deng']
+No author = ['francis-tyers', 'paul-cook', 'richard-zens', 'andreas-vlachos', 'giuseppe-carenini', 'roman-yangarber', 'alex-waibel', 'verena-rieser', 'fei-liu', 'jason-baldridge', 'hayato-kobayashi', 'margaret-mitchell', 'svitlana-volkova', 'marius-pasca', 'maja-popovic', 'joel-tetreault', 'jaime-g-carbonell', 'patti-price', 'chew-lim-tan', 'richard-sproat', 'minh-le-nguyen', 'rui-zhang', 'christoph-teichmann', 'changning-huang', 'karin-verspoor', 'john-hale', 'david-reitter', 'david-bamman', 'nobuhiro-kaji', 'aiti-aw', 'denis-paperno', 'david-mcclosky', 'xiang-li', 'marie-candito', 'taro-watanabe', 'doug-downey', 'eunah-cho', 'felice-dellorletta', 'mitch-marcus', 'aurelie-herbelot', 'steve-young', 'veselin-stoyanov', 'shrikanth-narayanan', 'ekaterina-kochmar', 'alexis-nasr', 'nikola-ljubesic']
+Precision = 90.16
+Recall = 78.20
+F1 Score = 83.76
 Test 1
-Precision = 77.50
-Recall = 93.94
-F1 Score = 84.93
+Wrong author = ['wei-xu', 'steven-bethard', 'brian-riordan', 'peng-qi', 'stephen-beale', 'chen-li', 'wei-li', 'jian-su', 'wei-zhang', 'yu-zhang', 'alexander-koller', 'chris-develder', 'yajuan-lu', 'steven-bedrick', 'hai-zhao', 'pavel-pecina', 'yonatan-belinkov', 'steve-young', 'chikara-hashimoto', 'li-deng']
+No author = ['julia-hirschberg', 'francis-tyers', 'johanna-d-moore', 'detmar-meurers', 'jerry-r-hobbs', 'siddharth-patwardhan', 'josef-ruppenhofer', 'marius-pasca', 'aljoscha-burchardt', 'massimo-poesio', 'quoc-le', 'giorgio-satta', 'beatrice-daille', 'patti-price', 'jacob-eisenstein', 'richard-sproat', 'hao-zhou', 'lei-li', 'rajakrishnan-rajkumar', 'smaranda-muresan', 'shuly-wintner', 'abeed-sarker', 'fabienne-cap', 'bhuwan-dhingra', 'alfio-gliozzo', 'di-jin', 'michael-elhadad', 'xavier-carreras', 'vivek-kulkarni', 'xiang-li', 'milica-gasic', 'hang-li', 'mike-lewis', 'yang-feng', 'mitch-marcus', 'siu-cheung-hui', 'german-kruszewski', 'veselin-stoyanov', 'shrikanth-narayanan']
+Precision = 89.01
+Recall = 80.60
+F1 Score = 84.60
+Test 2
+Wrong author = ['brian-riordan', 'stephen-beale', 'chen-li', 'wei-li', 'tomoko-ohkuma', 'hao-zhou', 'sheng-li', 'johannes-deleu', 'chris-develder', 'wolfgang-maier', 'hai-zhao', 'hao-zhang', 'pavel-pecina', 'li-deng']
+No author = ['minh-thang-luong', 'pushpak-bhattacharyya', 'xianchao-wu', 'dragomir-radev', 'l-alfonso-urena-lopez', 'georg-rehm', 'nancy-chen', 'margaret-mitchell', 'graciela-gonzalez', 'gunter-neumann', 'josef-ruppenhofer', 'dipti-misra-sharma', 'maja-popovic', 'quoc-le', 'ashish-vaswani', 'kallirroi-georgila', 'kam-fai-wong', 'william-a-gale', 'glen-coppersmith', 'christoph-teichmann', 'k-vijay-shanker', 'anne-lyse-minard', 'michael-elhadad', 'nobuhiro-kaji', 'aiti-aw', 'manaal-faruqui', 'muyun-yang', 'shashi-narayan', 'antonio-toral', 'zhengdong-lu', 'mike-lewis', 'jakub-piskorski', 'veselin-stoyanov', 'djame-seddah', 'shrikanth-narayanan', 'karan-singla', 'josef-steinberger', 'xiaochang-peng', 'benoit-favre']
+Precision = 92.31
+Recall = 81.16
+F1 Score = 86.38

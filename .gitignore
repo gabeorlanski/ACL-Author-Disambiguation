@@ -15,3 +15,5 @@ tagged_pairs.pickle
 
 data/pdf_xml
 src/__pycache__/
+src/dense_neural_net.py
+tests/test_denseNN.py

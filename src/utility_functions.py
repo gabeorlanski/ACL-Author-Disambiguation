@@ -17,6 +17,23 @@ remove_punct = re.compile("[^\w\s]")
 
 def printStats(name, to_print, leading_char="-", indents=2, decimal_cutoff=3, line_char="=", line_width=20,
                line_adaptive=False, padding=2, default_width=6, print_func=None, printing_file=False):
+    """
+    Function to cleanly print stats
+    :param name: Name to print at beginnning
+    :param to_print: list of tuples or lists, where first element is the name of the stats, and following are the stats
+    themselves
+    :param leading_char: What should come before any stat line is printed
+    :param indents: How many indents to print with
+    :param decimal_cutoff: # of decimal places to cutoff at
+    :param line_char: Char to create lines with
+    :param line_width: default with for each element in the lines
+    :param line_adaptive: if you don't want a predifined line width, use this
+    :param padding: Amount of padding for each element
+    :param default_width: the default width of each element
+    :param print_func: function to print with, defaults to print
+    :param printing_file: file to print stats to
+    :return: None
+    """
     if not print_func:
         print_func=print
     column_width = defaultdict(lambda: default_width + padding)
@@ -59,6 +76,13 @@ def printStats(name, to_print, leading_char="-", indents=2, decimal_cutoff=3, li
 
 
 def createID(first=None, last=None, fullname=None):
+    """
+    Function to create the id
+    :param first: first name
+    :param last: last name
+    :param fullname: full name, will override first and last name
+    :return: the id
+    """
     if fullname:
         name = fullname
     else:
@@ -74,6 +98,12 @@ def createID(first=None, last=None, fullname=None):
 
 
 def convertPaperToSortable(p, year_only=False):
+    """
+    Convert the paper id to a sortable object based on year and id
+    :param p: the paper id
+    :param year_only: only get the year
+    :return: int of form year+paper number or year
+    """
     try:
         venue, pnumber = p.split("-")
     except Exception as e:
@@ -90,7 +120,14 @@ def convertPaperToSortable(p, year_only=False):
 
 
 def nameFromDict(d):
-    if not d["first"]:
+    """
+    Get the string name from a dict
+    :param d: dict that has keys "first" and "last"
+    :return: the name
+    """
+    if not d["first"] and not d["last"]:
+        return None
+    elif not d["first"]:
         return d["last"]
     elif not d["last"]:
         return d["first"]
@@ -99,10 +136,22 @@ def nameFromDict(d):
 
 
 def getChildText(e, delimiter=""):
+    """
+    Gets all text of an element
+    :param e: lxml element
+    :param delimiter: separate the text by
+    :return: child text of e separated by delimiter
+    """
     return remove_html.sub(delimiter, etree.tostring(e).decode("utf-8")).strip()
 
 
 def cleanName(n, replace_punct=True):
+    """
+    Cleans the string of any special characters
+    :param n: string
+    :param replace_punct: If you want to replace punctuation as well
+    :return: cleaned n
+    """
     if replace_punct:
         return remove_punct_ids.sub("", unidecode.unidecode(unescape(n))).replace("-", " ")
     else:
@@ -110,12 +159,25 @@ def cleanName(n, replace_punct=True):
 
 
 def chunks(l, n):
-    """Yield successive n-sized chunks from l."""
+    """
+    Create chunked data
+    # TODO: Source needed
+    :param l: iterable
+    :param n: size of each chunk
+    :return: generator of l chunked in l//n + 1 if len(l) % n > 0 chunks of size n
+    """
     for i in range(0, len(l), n):
         yield l[i:i + n]
 
 
 def ncr(n, r):
+    """
+    n choose r
+    # TODO: SOURCE NEEDED
+    :param n: int n
+    :param r: int r
+    :return: n choose r
+    """
     r = min(r, n - r)
     numer = reduce(op.mul, range(n, n - r, -1), 1)
     denom = reduce(op.mul, range(1, r + 1), 1)
@@ -123,6 +185,15 @@ def ncr(n, r):
 
 
 def createLogger(logger_name, out_file, msg_format, console_level, file_level=logging.DEBUG):
+    """
+    Creates the logger
+    :param logger_name: name of the logger
+    :param out_file: file for the logger to output too
+    :param msg_format: Log message format
+    :param console_level: Logging level of the console
+    :param file_level: Logging level of the file
+    :return: The logger object
+    """
     logger = logging.getLogger(logger_name)
     logger.setLevel(logging.DEBUG)
     fh = logging.FileHandler(out_file)
@@ -138,6 +209,14 @@ def createLogger(logger_name, out_file, msg_format, console_level, file_level=lo
 
 
 def printLogToConsole(console_level, msg, level):
+    """
+    Somewhat redundant function, but I used it a lot just to make printing strings somewhat easier. It DOES NOT send any
+    message to the logger
+    :param console_level: the logging level of the console log handler
+    :param msg: the message to send
+    :param level: the level of the message
+    :return: None
+    """
     if level == logging.INFO:
         level_str = "INFO"
     elif level == logging.DEBUG:
@@ -159,7 +238,20 @@ def printLogToConsole(console_level, msg, level):
 
 
 def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level=None, special_cases=None,
-                       include_special_rest=True, return_results=False, output_dir=None):
+                       include_special_rest=True, output_dir=None):
+    """
+    Calculate stats for compared pairs
+    :param pairs: the compared pairs
+    :param data_keys: The keys that are from CompareAuthors.compare_terms
+    :param metrics: metrics you want to return, it is a tuple in the form ("name of metric",metric function). Please note,
+    the metric function is expected to run on a list of either floats or ints
+    :param logger: the logger to log too
+    :param logger_level: the level you want to log too
+    :param special_cases: Any special cases you want to get the stats of
+    :param include_special_rest: Include the special cases in the other pairs stats
+    :param output_dir: output directory to write stats too
+    :return: None
+    """
     if metrics is None:
         metrics = [
             ("avg", np.mean),
@@ -290,7 +382,7 @@ def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level
         printStats("Special Same vs Special Different",special_same_and_different)
 
 
-def get_name(parameters):
+def getName(parameters):
     """
     Generate a model name from its parameters.
     """

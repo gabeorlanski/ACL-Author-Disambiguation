@@ -26,7 +26,7 @@ if __name__ == '__main__':
         "threshold": .4,
         "str_algorithm": ["jaro", "similarity"]
     }
-    for test_num in range(2):
+    for test_num in range(5):
         log_path = os.getcwd() + "/logs/evaluate_disambiguation.log"
         with open(log_path, "w") as f:
             pass
@@ -38,17 +38,18 @@ if __name__ == '__main__':
         input_handler = DisambiguationInputHandler(papers, id_to_name, author_papers, log_path=log_path,
                                                    treat_id_different_people=True)
 
-        # test_targets = [x for x in author_papers.keys() if len([p for p in author_papers[x]if p in papers])> 5 and x in id_to_name ]
-        test_targets = [x.strip() for x in open("test_special_keys.txt").readlines()]
+        test_targets = [x for x in author_papers.keys() if len([p for p in author_papers[x]if p in papers])> 5 and x in
+                        id_to_name ]
+        # test_targets = [x.strip() for x in open("test_special_keys.txt").readlines()]
         print("INFO: {} test targets".format(len(test_targets)))
         targets = []
         for k in test_targets:
             rtr = []
             try:
-                if len(author_papers[k]) > 7:
-                    test_papers = random.sample(author_papers[k], 3)
-                else:
-                    test_papers = random.sample(author_papers[k],1)
+                # if len(author_papers[k]) > 7:
+                    # test_papers = random.sample(author_papers[k], 3)
+                # else:
+                test_papers = random.sample(author_papers[k],1)
             except:
                 test_papers = random.sample(author_papers[k], 1)
             for p in test_papers:
@@ -81,8 +82,8 @@ if __name__ == '__main__':
                 raise ValueError("{} not in test_targets".format(actual_k))
             if len(info["different"]) == 0:
                 no_different += 1
-                # pbar.update()
-                # continue
+                pbar.update()
+                continue
             else:
                 different_auth_count.append(len(info["different"]))
             if info["same"] is None:
@@ -113,6 +114,8 @@ if __name__ == '__main__':
         print("INFO: Average different authors = {:.2f}".format(avg_diff))
         with open("test_results.txt","a") as f:
             f.write("Test {}\n".format(test_num))
+            f.write("Wrong author = {}\n".format(wrong))
+            f.write("No author = {}\n".format(none_found))
             f.write("Precision = {:.2f}\n".format(precision*100))
             f.write("Recall = {:.2f}\n".format(recall*100))
             f.write("F1 Score = {:.2f}\n".format(f1*100))
