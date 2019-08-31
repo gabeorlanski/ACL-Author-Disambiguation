@@ -4,6 +4,8 @@ Entity Disambiguation for the new ACL Anthology
 
 Written by Gabriel Orlanski
 
+[Task Board](https://app.gitkraken.com/glo/board/XWrOqOa9TgAP_xtY)
+
 # Requirements:
 #### PDF Parsing
 * [GROBID PDF parser](https://github.com/kermitt2/grobid)
