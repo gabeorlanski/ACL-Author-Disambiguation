@@ -1,2 +1,2 @@
-*.json filter=lfs diff=lfs merge=lfs -text
-*.xml filter=lfs diff=lfs merge=lfs -text
+*.tei.xml filter=lfs diff=lfs merge=lfs -text
+/parsed_papers.json filter=lfs diff=lfs merge=lfs -text
