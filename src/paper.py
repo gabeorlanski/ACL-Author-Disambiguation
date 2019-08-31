@@ -69,7 +69,7 @@ class Paper:
             "sections_tokenized": self.sections_tokenized
         }
 
-    def copy(self, memodict={}):
+    def copy(self):
         return Paper(**deepcopy(self.asDict()))
 
     def createPOS(self, remove_stops=True):
