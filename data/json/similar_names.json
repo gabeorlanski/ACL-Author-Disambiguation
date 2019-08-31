@@ -1,3 +1,104 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83d7b6c534a5d11887623577135b51d86220a5dd6dfd471554a59901309196b8
-size 2039
+{
+    "james-allan": [
+        "james-allen"
+    ],
+    "james-allen": [
+        "james-allan"
+    ],
+    "alexandre-andreewsky": [
+        "alexander-andreyewsky"
+    ],
+    "alexander-andreyewsky": [
+        "alexandre-andreewsky"
+    ],
+    "andrew-bennett": [
+        "andrew-bennetts"
+    ],
+    "andrew-bennetts": [
+        "andrew-bennett"
+    ],
+    "rajesh-bhat": [
+        "rajesh-bhatt"
+    ],
+    "rajesh-bhatt": [
+        "rajesh-bhat"
+    ],
+    "kalina-bontcheva": [
+        "katina-bontcheva"
+    ],
+    "katina-bontcheva": [
+        "kalina-bontcheva"
+    ],
+    "john-d-burger": [
+        "john-f-burger"
+    ],
+    "john-f-burger": [
+        "john-d-burger"
+    ],
+    "jaime-g-carbonell": [
+        "jaime-r-carbonell"
+    ],
+    "jaime-r-carbonell": [
+        "jaime-g-carbonell"
+    ],
+    "john-a-carroll": [
+        "john-b-carroll"
+    ],
+    "john-b-carroll": [
+        "john-a-carroll"
+    ],
+    "jan-hajic": [
+        "jan-hajic-jr"
+    ],
+    "jan-hajic-jr": [
+        "jan-hajic"
+    ],
+    "stephen-c-levinson": [
+        "stephen-e-levinson"
+    ],
+    "stephen-e-levinson": [
+        "stephen-c-levinson"
+    ],
+    "david-d-mcdonald": [
+        "david-w-mcdonald"
+    ],
+    "david-w-mcdonald": [
+        "david-d-mcdonald"
+    ],
+    "robert-e-mercer": [
+        "robert-l-mercer"
+    ],
+    "robert-l-mercer": [
+        "robert-e-mercer"
+    ],
+    "antonio-moreno-ribas": [
+        "antonio-moreno-ortiz",
+        "antonio-moreno-sandoval"
+    ],
+    "antonio-moreno-ortiz": [
+        "antonio-moreno-ribas",
+        "antonio-moreno-sandoval"
+    ],
+    "antonio-moreno-sandoval": [
+        "antonio-moreno-ortiz",
+        "antonio-moreno-ribas"
+    ],
+    "minh-quang-pham": [
+        "minh-quang-nhat-pham"
+    ],
+    "minh-quang-nhat-pham": [
+        "minh-quang-pham"
+    ],
+    "john-phillips": [
+        "jon-phillips"
+    ],
+    "jon-phillips": [
+        "john-phillips"
+    ],
+    "alex-rudnick": [
+        "alexander-rudnicky"
+    ],
+    "alexander-rudnicky": [
+        "alex-rudnick"
+    ]
+}

@@ -536,6 +536,7 @@ class PDFParserWrapper:
         if same_names is None or not isinstance(same_names, list):
             self.logger.error("same_names is {}".format(type(same_names)))
             raise ValueError("same_names must be a list")
+
         self.same_names = deepcopy(same_names)
         self.org_names = []
         self.department_names = []
@@ -546,11 +547,16 @@ class PDFParserWrapper:
         self.parsed = {}
         if load_parsed:
             try:
-                tmp_parsed_path = os.getcwd() + save_dir
+                tmp_parsed_path = os.getcwd()
+                if save_dir is None:
+                    tmp_parsed_path = tmp_parsed_path + "/data/"
+                else:
+                    tmp_parsed_path = tmp_parsed_path + save_dir
                 if ext_directory:
                     tmp_parsed_path = tmp_parsed_path + "/json/"
                 parsed = json.load(open(tmp_parsed_path + "parsed_papers.json"))
                 self.parsed = {x:Paper(**parsed[x]) for x in parsed.keys()}
+                self.organizations = json.load(open(tmp_parsed_path+"organizations.json"))
             except Exception as e:
                 self.logger.warning("load_parsed was passed, but could not load the parsed_papers.json")
                 self.logger.exception(e)
