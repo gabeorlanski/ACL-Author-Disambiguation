@@ -56,9 +56,15 @@ txt_distance_jaro_winkler = JaroWinkler()
 
 
 class PDFParser:
-    def __init__(self, aliases, papers, id_to_name, same_names, sim_cutoff):
+    def __init__(self, aliases, id_to_name, same_names, sim_cutoff):
+        """
+        PDF Parser, parses XML Output of GROBID
+        :param aliases: the dictionary of aliases. Key is alias, value is id it relates to
+        :param id_to_name: dictionary of ids to their name. key is id, value is id
+        :param same_names: list of names that were marked as same names
+        :param sim_cutoff: Similarity cutoff for the best match when matching author names to known authors of a paper
+        """
         self.aliases = aliases
-        self.papers = papers
         self.id_to_name = id_to_name
         self.same_names = same_names
         self.similarity_cutoff = sim_cutoff
@@ -454,42 +460,107 @@ class PDFParser:
 
 
 class PDFParserWrapper:
-    def __init__(self, parsed_path, save_data=False, save_dir="/data",
-                 ext_directory=False, similarity_cutoff=.75, manual_fixes=None, print_errors=False,
+    def __init__(self, papers, aliases, id_to_name, same_names, parsed_path, manual_fixes=None, load_parsed=True,
+                 save_data=False, save_dir="/data",
+                 ext_directory=False, similarity_cutoff=.75, print_errors=False,
                  file_log_level=logging.DEBUG, console_log_level=logging.ERROR, log_format=None, log_path=None,
-                 cores=4, parse_parallel_cutoff=1000, batch_size=200, issue_keys=None, guess_email_and_aff=False,
-                 guess_min=.5, combine_orgs=True, combine_orgs_cutoff=.8, use_org_most_common=True):
-        if issue_keys is None:
-            issue_keys = []
+                 cores=4, parse_parallel_cutoff=1000, batch_size=200, guess_email_and_aff=False,
+                 guess_min=.5, combine_orgs=False, combine_orgs_cutoff=.8, use_org_most_common=True):
+        """
+        Wrapper for the PDF Parser, allows parallel pdf parsing at the expense of memory
+        :param parsed_path: path to parsed pdfs
+        :param load_parsed: Use existing parsed_papers.json
+        :param save_data: Save data to disk
+        :param save_dir: directory where you want data saved
+        :param ext_directory: Save each file extension in their own directory (ex create a json directory in the
+        save_data path)
+        :param similarity_cutoff: cutoff for how similar a name must be to assign it to the author name
+        :param manual_fixes: manual fixes you want to make to the parsed paper. Check manual_fixes_needed.csv
+        :param print_errors: Print errors to console
+        :param file_log_level: Logging level of file
+        :param console_log_level: Logging level of console
+        :param log_format: Log message format
+        :param log_path: path to log file
+        :param cores: Number of cores/processes to use
+        :param parse_parallel_cutoff: minimum number of papers needed to run in parallel, ignored if cores=1
+        :param batch_size: Batch size for parallel processing
+        :param guess_email_and_aff: Try to guess emails and affiliations based on frequency. NOT IMPLEMENTED YET
+        :param guess_min: minimum number of occurrences to guess. NOT IMPLEMENTED YET
+        :param combine_orgs: Combine orgs that are possibly the same. NOT IMPLEMENTED YET
+        :param combine_orgs_cutoff: Minimum similarity between two orgs to combine them. NOT IMPLEMENTED YET
+        :param use_org_most_common: Use the most common address for an organization
+        """
         self.save_data = save_data
         if not log_format:
             log_format = '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s'
         if not log_path:
             log_path = os.getcwd() + "/logs/preprocess_data.log"
+        self.console_log_level = console_log_level
+        self.logger = createLogger("pdf_parser", log_path, log_format, console_log_level,
+                                   file_log_level)
+        self.logger.debug("{} aliases".format(len(aliases)))
+        self.logger.debug("{} papers".format(len(papers)))
+        self.logger.debug("{} ids".format(len(id_to_name)))
+        if manual_fixes is not None:
+            self.logger.debug("{} manual_fixes".format(len(manual_fixes)))
+        else:
+            self.logger.debug("0 manual_fixes")
         self.parsed_path = parsed_path
-        self.issue_keys = issue_keys
-        self.aliases = {}
-        self.papers = {}
-        self.id_to_name = {}
-        self.final_papers = {}
+
+        if not isinstance(aliases, dict):
+            self.logger.error("aliases is {}".format(type(aliases)))
+            raise ValueError("aliases must be a dict")
+        self.aliases = deepcopy(aliases)
+
+        if not isinstance(papers,dict):
+            self.logger.error("papers is {}".format(type(papers)))
+            raise ValueError("papers must be a dict")
+        if isinstance(papers[list(papers.keys())[0]], Paper):
+            self.papers = {x.pid: papers[x].copy() for x in papers.keys()}
+        else:
+            self.papers = {x: Paper(**papers[x]) for x in papers.keys()}
+
+        if not isinstance(id_to_name,dict):
+            self.logger.error("id_to_name is {}".format(type(id_to_name)))
+            raise ValueError("id_to_name must be a dict")
+        self.id_to_name = deepcopy(id_to_name)
+
+        if manual_fixes is not None and not isinstance(manual_fixes,dict):
+            self.logger.error("manual_fixes is {}".format(type(manual_fixes)))
+            raise ValueError("manual_fixes must be a dict")
+        if not manual_fixes:
+            self.manual_fixes = {}
+        else:
+            self.manual_fixes = deepcopy(manual_fixes)
+
+        if same_names is None or not isinstance(same_names, list):
+            self.logger.error("same_names is {}".format(type(same_names)))
+            raise ValueError("same_names must be a list")
+        self.same_names = deepcopy(same_names)
         self.org_names = []
         self.department_names = []
         self.organizations = {}
         self.possible_affiliations = {}
         self.author_papers = defaultdict(list)
-        self.same_names = {}
+
         self.parsed = {}
+        if load_parsed:
+            try:
+                tmp_parsed_path = os.getcwd() + save_dir
+                if ext_directory:
+                    tmp_parsed_path = tmp_parsed_path + "/json/"
+                parsed = json.load(open(tmp_parsed_path + "parsed_papers.json"))
+                self.parsed = {x:Paper(**parsed[x]) for x in parsed.keys()}
+            except Exception as e:
+                self.logger.warning("load_parsed was passed, but could not load the parsed_papers.json")
+                self.logger.exception(e)
+
         self.save_data = save_data
         self.save_dir = save_dir
         self.ext_directory = ext_directory
         self.similarity_cutoff = similarity_cutoff
         self.print_errors = print_errors
         self.incomplete_papers = []
-        self.console_log_level = console_log_level
-        if not manual_fixes:
-            self.manual_fixes = {}
-        self.logger = createLogger("pdf_parser", log_path, log_format, console_log_level,
-                                   file_log_level)
         self.cores = cores
         self.parse_parallel_cutoff = parse_parallel_cutoff
         self.batch_size = batch_size
@@ -498,15 +569,6 @@ class PDFParserWrapper:
         self.combine_orgs = combine_orgs
         self.combine_orgs_cutoff = combine_orgs_cutoff
         self.org_most_common = use_org_most_common
-
-    def loadData(self, papers, aliases, id_to_name, same_names, manual_fixes=None):
-        if manual_fixes is None:
-            manual_fixes = {}
-        self.papers = {x: Paper(**papers[x]) for x in papers.keys()}
-        self.aliases = deepcopy(aliases)
-        self.id_to_name = deepcopy(id_to_name)
-        self.same_names = deepcopy(same_names)
-        self.manual_fixes = deepcopy(manual_fixes)
 
     def _dataErrorCheck(self):
         if not self.papers:
@@ -538,6 +600,21 @@ class PDFParserWrapper:
         if debug_cutoff:
             parsed_pdfs = parsed_pdfs[:debug_cutoff]
 
+        # Check if files are already parsed
+        to_use = []
+        to_check = []
+        for p in parsed_pdfs:
+            try:
+                if p.split(".")[0] in self.parsed:
+                    to_check.append(p)
+                else:
+                    to_use.append(p)
+            except Exception as e:
+                self.logger.debug("p.split(\".\")[0] failed for {}".format(p))
+                self.logger.exception(e)
+
+        self.logger.debug("to_check={}".format(to_check))
+        self.logger.debug("to_use={}".format(len(to_use)))
         # Set up variables for later stats/errors stuff
         errors = []
         errors_pre_parse = 0
@@ -847,7 +924,7 @@ class PDFParserWrapper:
                         new_address[k] = org_info[k]
                     old_aff["address"] = new_address
                     self.parsed[p].affiliations[a]["affiliation"] = deepcopy(old_aff)
-                    authors_affected.append([p,a])
+                    authors_affected.append([p, a])
                 fix_pbar.update()
             fix_pbar.close()
             self.logger.debug("{} Authors affected".format(len(authors_affected)))
@@ -855,3 +932,7 @@ class PDFParserWrapper:
 
         else:
             self.organizations = tmp_organizations_info
+
+    def _validatePaper(self, paper_dict):
+        # TODO: Implement this
+        return True
