@@ -863,7 +863,7 @@ class PDFParserWrapper:
             ujson.dump(papers_print, f)
 
         with open(json_path + "/organizations.json", "w") as f:
-            json.dump(self.organizations, f, indent=4)
+            json.dump(self.organizations, f, indent=4, sort_keys=True)
         with open(json_path + "/effective_org_info.json", "w") as f:
             json.dump(self.effective_org_info, f, indent=4)
         with open(json_path + "/author_papers.json", "w") as f:
@@ -968,7 +968,19 @@ class PDFParserWrapper:
         org_pbar.close()
         printLogToConsole(self.console_log_level, "Combining information in each organization", logging.INFO)
         self.logger.info("Combining information in each organization")
-        self.organizations = deepcopy(tmp_organizations_info)
+        if self.cores == 1:
+            org_pbar = tqdm(total=len(tmp_organizations_info), file=sys.stdout)
+            for k in tmp_organizations_info.keys():
+                self.organizations[k] = self._combineOrgInfo([k, tmp_organizations_info[k]])
+                org_pbar.update()
+            org_pbar.close()
+        else:
+            with mp.Pool(self.cores) as Pool:
+                org_args = [[k, v] for k, v in tmp_organizations_info.items()]
+                res = list(
+                    tqdm(Pool.imap_unordered(self._combineOrgInfo, org_args), total=len(org_args), file=sys.stdout))
+            for k, r in res:
+                self.organizations[k] = r
         # TODO: Implement way to combine orgs
         self.org_names = list(set(self.org_names))
         self.department_names = list(set(self.department_names))
@@ -1096,14 +1108,14 @@ class PDFParserWrapper:
         for k, v in info.items():
             if k != "count" and k != "type" and k != "name":
                 orig_count = sorted(v.items(), key=lambda x: x[1], reverse=True)
-                unique_elements = set()
+                unique_elements = {}
                 new_counter = Counter()
                 for i, c in orig_count:
                     if i is not None:
 
                         all_tokens = split_address.split(i)
                         for token in all_tokens:
-                            if token is None:
+                            if token is None or not token:
                                 continue
 
                             token = token.strip()
@@ -1111,11 +1123,22 @@ class PDFParserWrapper:
                                 t = states[token]
                             else:
                                 t = token
-                            if t.lower() in unique_elements:
+                            if t in unique_elements:
+                                new_counter[t] += c
+                            elif t.lower() in unique_elements:
+                                new_counter[unique_elements[t.lower()]] += c
+                            else:
                                 all_elements = "".join([x[0] for x in new_counter.items()])
-                                close_match = fuzzysearch.find_near_matches(t, all_elements, max_l_dist=1)
+                                try:
+                                    close_match = fuzzysearch.find_near_matches(t, all_elements, max_l_dist=1)
+                                except Exception as e:
+                                    raise e
                                 if len(close_match) == 0:
-                                    raise Exception("No similar to to {}".format(t))
+                                    close_match = fuzzysearch.find_near_matches(t.lower(), all_elements, max_l_dist=1)
+                                    if len(close_match) == 0:
+                                        close_match = []
+                                        unique_elements[t.lower()] = t
+                                        new_counter[t] += c
                                 matches_already_used = set()
                                 for m in close_match:
                                     match = all_elements[m.start:m.end]
@@ -1123,9 +1146,6 @@ class PDFParserWrapper:
                                         continue
                                     new_counter[match] += c
                                     matches_already_used.add(match)
-                            else:
-                                unique_elements.add(t.lower())
-                                new_counter[t] += c
 
                     else:
                         new_counter[i] += c
