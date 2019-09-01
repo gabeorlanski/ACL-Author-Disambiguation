@@ -1,0 +1,4 @@
+2019-08-31 21:10:40,179|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:10:40,180|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:10:40,180|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:10:40,180|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes

@@ -1,3 +1,3066 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11b7f05036d5bd1636a11cf4429483e9f93c2c4d915f10ad97bb97c9a7810db2
-size 106919
+{
+    "P19-1642": {
+        "pid": "P19-1642",
+        "title": "Latent Variable Model for Multi-modal Translation",
+        "abstract": "In this work, we propose to model the interaction between visual and textual features for multi-modal neural machine translation (MMT) through a latent variable model. This latent variable can be seen as a multi-modal stochastic embedding of an image and its description in a foreign language. It is used in a target-language decoder and also to predict image features. Importantly, our model formulation utilises visual and textual inputs during training but does not require that images be available at test time. We show that our latent variable MMT formulation improves considerably over strong baselines, including a multi-task learning approach (Elliott and Kadar, 2017) and a conditional variational auto-encoder approach (Toyama et al., 2016). Finally, we show improvements due to (i) predicting image features in addition to only conditioning on them, (ii) imposing a constraint on the KL term to promote models with non-negligible mutual information between inputs and latent variable, and (iii) by training on additional target-language image descriptions (i.e. synthetic data).",
+        "authors": {
+            "wilker-aziz": "Wilker Aziz",
+            "miguel-rios": "Miguel Rios",
+            "iacer-calixto": "Iacer Calixto"
+        },
+        "unknown": [],
+        "affiliations": {
+            "iacer-calixto": {
+                "email": "iacer.calixto@uva.nl",
+                "affiliation": {
+                    "address": {
+                        "postCode": null,
+                        "region": null,
+                        "settlement": null,
+                        "country": null
+                    },
+                    "info": {
+                        "department": [],
+                        "institution": [
+                            "ILLC The University of Amsterdam"
+                        ]
+                    },
+                    "id": "illc-the-university-of-amsterdam",
+                    "type": [
+                        "institution"
+                    ]
+                }
+            },
+            "miguel-rios": {
+                "email": null,
+                "affiliation": {
+                    "address": {
+                        "postCode": null,
+                        "region": null,
+                        "settlement": null,
+                        "country": null
+                    },
+                    "info": {
+                        "department": [],
+                        "institution": [
+                            "ILLC The University of Amsterdam"
+                        ]
+                    },
+                    "id": "illc-the-university-of-amsterdam",
+                    "type": [
+                        "institution"
+                    ]
+                }
+            },
+            "wilker-aziz": {
+                "email": "w.aziz@uva.nl",
+                "affiliation": {
+                    "address": {
+                        "postCode": null,
+                        "region": null,
+                        "settlement": null,
+                        "country": null
+                    },
+                    "info": {
+                        "department": [],
+                        "institution": [
+                            "ILLC The University of Amsterdam"
+                        ]
+                    },
+                    "id": "illc-the-university-of-amsterdam",
+                    "type": [
+                        "institution"
+                    ]
+                }
+            }
+        },
+        "title_tokenized": [
+            "Latent",
+            "Variable",
+            "Model",
+            "Multi-modal",
+            "Translation"
+        ],
+        "citations": [
+            {
+                "title": "Fixing a Broken ELBO",
+                "type": "a",
+                "authors": [
+                    "Alexander A Alemi",
+                    "Ben Poole",
+                    "Ian Fischer",
+                    "Joshua V Dillon",
+                    "Rif A Saurous",
+                    "Kevin Murphy"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 35th International Conference on Machine Learning ICML 2018",
+                "volume": null,
+                "issue": null,
+                "date": 2018,
+                "date_type": "published"
+            },
+            {
+                "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+                "type": "a",
+                "authors": [
+                    "Dzmitry Bahdanau",
+                    "Kyunghyun Cho",
+                    "Yoshua Bengio"
+                ],
+                "pub_type": "m",
+                "pub_title": "International Conference on Learning Representations",
+                "volume": null,
+                "issue": null,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "Findings of the Third Shared Task on Multimodal Machine Translation",
+                "type": "a",
+                "authors": [
+                    "Loic Barrault",
+                    "Fethi Bougares",
+                    "Lucia Specia",
+                    "Chiraag Lala",
+                    "Desmond Elliott",
+                    "Stella Frank"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the Third Conference on Machine Translation Shared Task Papers",
+                "volume": null,
+                "issue": null,
+                "date": 2018,
+                "date_type": "published"
+            },
+            {
+                "title": "Results of the WMT17 Metrics Shared Task",
+                "type": "a",
+                "authors": [
+                    "Ondrej Bojar",
+                    "Yvette Graham",
+                    "Amir Kamran"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the Second Conference on Machine Translation",
+                "volume": null,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "LIUM CVC Submissions for WMT17 Multimodal Translation Task",
+                "type": "a",
+                "authors": [
+                    "Ozan Caglayan",
+                    "Walid Aransa",
+                    "Adrien Bardet",
+                    "Mercedes Garcia Martinez",
+                    "Fethi Bougares",
+                    "Loic Barrault",
+                    "Marc Masana",
+                    "Luis Herranz",
+                    "Joost Van De Weijer"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the Second Conference on Machine Translation",
+                "volume": null,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "Incorporating Global Visual Features into Attention based Neural Machine Translation",
+                "type": "a",
+                "authors": [
+                    "Iacer Calixto",
+                    "Qun Liu"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+                "volume": null,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "Doubly Attentive Decoder for Multi modal Neural Machine Translation",
+                "type": "a",
+                "authors": [
+                    "Iacer Calixto",
+                    "Qun Liu",
+                    "Nick Campbell"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics",
+                "volume": 1,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "Meteor Universal Language Specific Translation Evaluation for Any Target Language",
+                "type": "a",
+                "authors": [
+                    "Michael Denkowski",
+                    "Alon Lavie"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the EACL 2014 Workshop on Statistical Machine Translation",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Autoencoding variational neural machine translation",
+                "type": "a",
+                "authors": [
+                    "Bryan Eikema",
+                    "Wilker Aziz"
+                ],
+                "pub_type": "m",
+                "pub_title": "4th Workshop on Representation Learning for NLP",
+                "volume": null,
+                "issue": null,
+                "date": 2019,
+                "date_type": "published"
+            },
+            {
+                "title": "Findings of the second shared task on multimodal machine translation and multilingual image description",
+                "type": "a",
+                "authors": [
+                    "Desmond Elliott",
+                    "Stella Frank",
+                    "Loic Barrault",
+                    "Fethi Bougares",
+                    "Lucia Specia"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the Second Conference on Machine Translation",
+                "volume": null,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "Multi30K Multilingual English German Image Descriptions",
+                "type": "a",
+                "authors": [
+                    "Desmond Elliott",
+                    "Stella Frank",
+                    "Khalil Simaaposan",
+                    "Lucia Specia"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 5th Workshop on Vision and Language",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Asian Federation of Natural Language Processing",
+                "type": "a",
+                "authors": [
+                    "Desmond Elliott",
+                    "Kadar"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the Eighth International Joint Conference on Natural Language Processing",
+                "volume": 1,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "Fast R CNN",
+                "type": "a",
+                "authors": [
+                    "Ross Girshick"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2015 IEEE International Conference on Computer Vision ICCV ICCV 15",
+                "volume": null,
+                "issue": null,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "Multimodal Pivots for Image Caption Translation",
+                "type": "a",
+                "authors": [
+                    "Julian Hitschler",
+                    "Shigehiko Schamoni",
+                    "Stefan Riezler"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics",
+                "volume": 1,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Long short term memory",
+                "type": "a",
+                "authors": [
+                    "Sepp Hochreiter",
+                    "Jurgen Schmidhuber"
+                ],
+                "pub_type": "j",
+                "pub_title": "Neural Comput",
+                "volume": 9,
+                "issue": 8,
+                "date": 1997,
+                "date_type": "published"
+            },
+            {
+                "title": "Attentionbased Multimodal Neural Machine Translation",
+                "type": "a",
+                "authors": [
+                    "Po Yao Huang",
+                    "Frederick Liu",
+                    "Sz Rung Shiang",
+                    "Jean Oh",
+                    "Chris Dyer"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the First Conference on Machine Translation",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "An introduction to variational methods for graphical models",
+                "type": "a",
+                "authors": [
+                    "Michaeli",
+                    "Zoubin Jordan",
+                    "Ghahramani",
+                    "Tommis",
+                    "Lawrencek Jaakkola",
+                    "Saul"
+                ],
+                "pub_type": "m",
+                "pub_title": "Machine Learning",
+                "volume": 37,
+                "issue": null,
+                "date": 1999,
+                "date_type": "published"
+            },
+            {
+                "title": "Improved variational inference with inverse autoregressive flow",
+                "type": "a",
+                "authors": [
+                    "P Diederik",
+                    "Tim Kingma",
+                    "Rafal Salimans",
+                    "Xi Jozefowicz",
+                    "Ilya Chen",
+                    "Max Sutskever",
+                    "Welling"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Neural Information Processing Systems",
+                "volume": 29,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Autoencoding variational bayes",
+                "type": "a",
+                "authors": [
+                    "P Diederik",
+                    "Max Kingma",
+                    "Welling"
+                ],
+                "pub_type": "m",
+                "pub_title": "International Conference on Learning Representations",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "OpenNMT Open source toolkit for neural machine translation",
+                "type": "a",
+                "authors": [
+                    "Guillaume Klein",
+                    "Yoon Kim",
+                    "Yuntian Deng",
+                    "Jean Senellart",
+                    "Alexander M Rush"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proc ACL",
+                "volume": null,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "Attention Strategies for Multi Source Sequenceto Sequence Learning",
+                "type": "a",
+                "authors": [
+                    "Jindrich Libovicky",
+                    "Jindrich Helcl"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics",
+                "volume": 2,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "Ondrej Bojar and Pavel Pecina 2016 CUNI System for WMT16 Automatic Post Editing and Multimodal Translation Tasks",
+                "type": "a",
+                "authors": [
+                    "Jindrich Libovicky",
+                    "Jindrich Helcl",
+                    "Marek Tlusty"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the First Conference on Machine Translation",
+                "volume": null,
+                "issue": null,
+                "date": null,
+                "date_type": null
+            },
+            {
+                "title": "Multi Task Sequence to Sequence Learning",
+                "type": "a",
+                "authors": [
+                    "Minh Thang Luong",
+                    "Quoc V Le",
+                    "Ilya Sutskever",
+                    "Oriol Vinyals",
+                    "Lukasz Kaiser"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the International Conference on Learning Representations ICLR",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Effective Approaches to Attention based Neural Machine Translation",
+                "type": "a",
+                "authors": [
+                    "Thang Luong",
+                    "Hieu Pham",
+                    "Christopher D Manning"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing EMNLP",
+                "volume": null,
+                "issue": null,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "BLEU A Method for Automatic Evaluation of Machine Translation",
+                "type": "a",
+                "authors": [
+                    "Kishore Papineni",
+                    "Salim Roukos",
+                    "Todd Ward",
+                    "Wei Jing Zhu"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 40th Annual Meeting on Association for Computational Linguistics ACL 02",
+                "volume": null,
+                "issue": null,
+                "date": 2002,
+                "date_type": "published"
+            },
+            {
+                "title": "chrF character n gram Fscore for automatic MT evaluation",
+                "type": "a",
+                "authors": [
+                    "Maja Popovic"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the Tenth Workshop on Statistical Machine Translation",
+                "volume": null,
+                "issue": null,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "Variational autoencoder for deep learning of images labels and captions",
+                "type": "a",
+                "authors": [
+                    "Yunchen Pu",
+                    "Zhe Gan",
+                    "Ricardo Henao",
+                    "Xin Yuan",
+                    "Chunyuan Li",
+                    "Andrew Stevens",
+                    "Lawrence Carin"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Neural Information Processing Systems",
+                "volume": 29,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Stochastic backpropagation and approximate inference in deep generative models",
+                "type": "a",
+                "authors": [
+                    "Danilo Jimenez Rezende",
+                    "Shakir Mohamed",
+                    "Daan Wierstra"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 31th International Conference on Machine Learning ICML",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "ImageNet Large Scale Visual Recognition Challenge",
+                "type": "a",
+                "authors": [
+                    "Olga Russakovsky",
+                    "Jia Deng",
+                    "Hao Su",
+                    "Jonathan Krause",
+                    "Sanjeev Satheesh",
+                    "Sean Ma",
+                    "Zhiheng Huang",
+                    "Andrej Karpathy",
+                    "Aditya Khosla",
+                    "Michael Bernstein",
+                    "Alexander C Berg",
+                    "Li Fei Fei"
+                ],
+                "pub_type": "j",
+                "pub_title": "International Journal of Computer Vision IJCV",
+                "volume": 115,
+                "issue": 3,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "A stochastic decoder for neural machine translation",
+                "type": "a",
+                "authors": [
+                    "Philip Schulz",
+                    "Wilker Aziz",
+                    "Trevor Cohn"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics",
+                "volume": 1,
+                "issue": null,
+                "date": 2018,
+                "date_type": "published"
+            },
+            {
+                "title": "Improving Neural Machine Translation Models with Monolingual Data",
+                "type": "a",
+                "authors": [
+                    "Rico Sennrich",
+                    "Barry Haddow",
+                    "Alexandra Birch"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics",
+                "volume": 1,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Neural Machine Translation of Rare Words with Subword Units",
+                "type": "a",
+                "authors": [
+                    "Rico Sennrich",
+                    "Barry Haddow",
+                    "Alexandra Birch"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics",
+                "volume": 1,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Generative neural machine translation",
+                "type": "a",
+                "authors": [
+                    "Harshil Shah",
+                    "David Barber"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Neural Information Processing Systems 31",
+                "volume": null,
+                "issue": null,
+                "date": 2018,
+                "date_type": "published"
+            },
+            {
+                "title": "SHEF Multimodal Grounding Machine Translation on Images",
+                "type": "a",
+                "authors": [
+                    "Kashif Shah",
+                    "Josiah Wang",
+                    "Lucia Specia"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the First Conference on Machine Translation",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Very deep convolutional networks for large scale image recognition",
+                "type": "a",
+                "authors": [
+                    "K Simonyan",
+                    "A Zisserman"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the International Conference on Learning Representations ICLR",
+                "volume": null,
+                "issue": null,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "Learning structured output representation using deep conditional generative models",
+                "type": "a",
+                "authors": [
+                    "Kihyuk Sohn",
+                    "Honglak Lee",
+                    "Xinchen Yan"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Neural Information Processing Systems 28",
+                "volume": null,
+                "issue": null,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "A Shared Task on Multimodal Machine Translation and Crosslingual Image Description",
+                "type": "a",
+                "authors": [
+                    "Lucia Specia",
+                    "Stella Frank",
+                    "Khalil Simaaposan",
+                    "Desmond Elliott"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the First Conference on Machine Translation WMT 2016 colocated with ACL 2016",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Fitting sentence level translation evaluation with many dense features",
+                "type": "a",
+                "authors": [
+                    "Milos Stanojevic",
+                    "Khalil Simaaposan"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing EMNLP",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Sequence to sequence learning with neural networks",
+                "type": "a",
+                "authors": [
+                    "Ilya Sutskever",
+                    "Oriol Vinyals",
+                    "Quoc V Le"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Neural Information Processing Systems",
+                "volume": 27,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Rethinking the inception architecture for computer vision",
+                "type": "a",
+                "authors": [
+                    "C Szegedy",
+                    "V Vanhoucke",
+                    "S Ioffe",
+                    "J Shlens",
+                    "Z Wojna"
+                ],
+                "pub_type": "m",
+                "pub_title": "2016 IEEE Conference on Computer Vision and Pattern Recognition CVPR",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Doubly stochastic variational bayes for nonconjugate inference",
+                "type": "a",
+                "authors": [
+                    "Michalis Titsias",
+                    "Miguel Lazaro Gredilla"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 31st International Conference on Machine Learning ICML 14",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Diverse and accurate image description using a variational auto encoder with an additive gaussian encoding space",
+                "type": "a",
+                "authors": [
+                    "Liwei Wang",
+                    "Alexander Schwing",
+                    "Svetlana Lazebnik"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Neural Information Processing Systems",
+                "volume": 30,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "From image descriptions to visual denotations New similarity metrics for semantic inference over event descriptions",
+                "type": "a",
+                "authors": [
+                    "Peter Young",
+                    "Alice Lai",
+                    "Micah Hodosh",
+                    "Julia Hockenmaier"
+                ],
+                "pub_type": "j",
+                "pub_title": "Transactions of the Association for Computational Linguistics",
+                "volume": 2,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Variational neural machine translation",
+                "type": "a",
+                "authors": [
+                    "Biao Zhang",
+                    "Deyi Xiong",
+                    "Hong Duan",
+                    "Min Zhang"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            }
+        ],
+        "citations_tokenized": [
+            "similarity",
+            "computer",
+            "Pivots",
+            "Tasks",
+            "multilingual",
+            "Strategies",
+            "Fitting",
+            "recognition",
+            "OpenNMT",
+            "Attentive",
+            "image",
+            "output",
+            "Incorporating",
+            "learning",
+            "space",
+            "Scale",
+            "large",
+            "System",
+            "captions",
+            "sentence",
+            "Machine",
+            "autoencoder",
+            "Metrics",
+            "Post",
+            "visual",
+            "2016",
+            "Ondrej",
+            "From",
+            "New",
+            "Improved",
+            "flow",
+            "inference",
+            "Processing",
+            "Very",
+            "source",
+            "Findings",
+            "CVC",
+            "Sequenceto",
+            "Models",
+            "Words",
+            "backpropagation",
+            "Source",
+            "structured",
+            "nonconjugate",
+            "Federation",
+            "Jointly",
+            "generative",
+            "approximate",
+            "Global",
+            "introduction",
+            "Challenge",
+            "many",
+            "auto",
+            "Image",
+            "scale",
+            "Multi",
+            "Sequence",
+            "LIUM",
+            "Description",
+            "Doubly",
+            "A",
+            "German",
+            "Third",
+            "Asian",
+            "labels",
+            "automatic",
+            "Long",
+            "Target",
+            "ELBO",
+            "architecture",
+            "decoder",
+            "variational",
+            "short",
+            "inverse",
+            "autoregressive",
+            "Rare",
+            "Grounding",
+            "Fast",
+            "Stochastic",
+            "Diverse",
+            "bayes",
+            "event",
+            "chrF",
+            "convolutional",
+            "deep",
+            "Editing",
+            "Universal",
+            "Rethinking",
+            "Align",
+            "Data",
+            "memory",
+            "MT",
+            "n",
+            "representation",
+            "Monolingual",
+            "semantic",
+            "multimodal",
+            "Decoder",
+            "Learning",
+            "Approaches",
+            "level",
+            "Bojar",
+            "description",
+            "Subword",
+            "Features",
+            "Task",
+            "Generative",
+            "gaussian",
+            "CUNI",
+            "networks",
+            "conditional",
+            "encoding",
+            "vision",
+            "neural",
+            "Natural",
+            "WMT17",
+            "Multi30K",
+            "BLEU",
+            "second",
+            "Shared",
+            "CNN",
+            "images",
+            "Specific",
+            "Submissions",
+            "inception",
+            "Evaluation",
+            "Broken",
+            "Open",
+            "stochastic",
+            "R",
+            "methods",
+            "Visual",
+            "Fscore",
+            "Pavel",
+            "Multilingual",
+            "term",
+            "denotations",
+            "sequence",
+            "gram",
+            "additive",
+            "evaluation",
+            "Images",
+            "Recognition",
+            "Attentionbased",
+            "using",
+            "accurate",
+            "toolkit",
+            "features",
+            "ImageNet",
+            "Language",
+            "Translate",
+            "Automatic",
+            "Caption",
+            "Results",
+            "An",
+            "Large",
+            "WMT16",
+            "Attention",
+            "models",
+            "machine",
+            "descriptions",
+            "Units",
+            "based",
+            "Multimodal",
+            "Neural",
+            "Translation",
+            "Pecina",
+            "Fixing",
+            "English",
+            "Method",
+            "character",
+            "shared",
+            "translation",
+            "Autoencoding",
+            "Crosslingual",
+            "Improving",
+            "dense",
+            "Any",
+            "Effective",
+            "metrics",
+            "graphical",
+            "Variational",
+            "task",
+            "Meteor",
+            "modal",
+            "SHEF",
+            "Descriptions",
+            "encoder"
+        ],
+        "sections": {
+            "1": {
+                "title": "Introduction"
+            },
+            "2": {
+                "title": "Variational Multi modal NMT"
+            },
+            "3": {
+                "title": "Experiments",
+                "1": "Datasets",
+                "2": "Baselines",
+                "3": "Translated Multi30k",
+                "4": "Back translated Comparable Multi30k",
+                "5": "Ablative experiments",
+                "6": "Discussion"
+            },
+            "4": {
+                "title": "Related work"
+            },
+            "5": {
+                "title": "Conclusions and Future work"
+            }
+        },
+        "sections_tokenized": [
+            "translated",
+            "baselines",
+            "datasets",
+            "multi30k",
+            "back",
+            "work",
+            "discussion",
+            "introduction",
+            "conclusions",
+            "variational",
+            "multi",
+            "nmt",
+            "future",
+            "ablative",
+            "related",
+            "modal",
+            "experiments",
+            "comparable"
+        ]
+    },
+    "C16-1050": {
+        "pid": "C16-1050",
+        "title": "Appraising UMLS Coverage for Summarizing Medical Evidence",
+        "abstract": "When making clinical decisions, practitioners need to rely on the most relevant evidence available. However, accessing a vast body of medical evidence and confronting with the issue of information overload can be challenging and time consuming. This paper proposes an effective summarizer for medical evidence by utilizing both UMLS and WordNet. Given a clinical query and a set of relevant abstracts, our aim is to generate a fluent, well-organized, and compact summary that answers the query. Analysis via ROUGE metrics shows that using WordNet as a general-purpose lexicon helps to capture the concepts not covered by the UMLS Metathesaurus, and hence significantly increases the performance. The effectiveness of our proposed approach is demonstrated by conducting a set of experiments over a specialized evidence-based medicine (EBM) corpus - which has been gathered and annotated for the purpose of biomedical text summarization.",
+        "authors": {
+            "elaheh-shafieibavani": "Elaheh ShafieiBavani",
+            "mohammad-ebrahimi": "Mohammad Ebrahimi",
+            "raymond-wong": "Raymond Wong",
+            "fang-chen": "Fang Chen"
+        },
+        "unknown": [],
+        "affiliations": {
+            "elaheh-shafieibavani": {
+                "email": "elahehs@cse.unsw.edu.au",
+                "affiliation": {
+                    "address": {
+                        "postCode": "Data61 CSIRO",
+                        "region": null,
+                        "settlement": "Sydney, Sydney",
+                        "country": "Australia, Australia"
+                    },
+                    "info": {
+                        "department": [],
+                        "institution": [
+                            "University of New South Wales"
+                        ]
+                    },
+                    "id": "university-of-new-south-wales",
+                    "type": [
+                        "institution"
+                    ]
+                }
+            },
+            "mohammad-ebrahimi": {
+                "email": "mohammade@cse.unsw.edu.au",
+                "affiliation": {
+                    "address": {
+                        "postCode": "Data61 CSIRO",
+                        "region": null,
+                        "settlement": "Sydney, Sydney",
+                        "country": "Australia, Australia"
+                    },
+                    "info": {
+                        "department": [],
+                        "institution": [
+                            "University of New South Wales"
+                        ]
+                    },
+                    "id": "university-of-new-south-wales",
+                    "type": [
+                        "institution"
+                    ]
+                }
+            },
+            "raymond-wong": {
+                "email": "wong@cse.unsw.edu.au",
+                "affiliation": {
+                    "address": {
+                        "postCode": "Data61 CSIRO",
+                        "region": null,
+                        "settlement": "Sydney, Sydney",
+                        "country": "Australia, Australia"
+                    },
+                    "info": {
+                        "department": [],
+                        "institution": [
+                            "University of New South Wales"
+                        ]
+                    },
+                    "id": "university-of-new-south-wales",
+                    "type": [
+                        "institution"
+                    ]
+                }
+            },
+            "fang-chen": {
+                "email": null,
+                "affiliation": {
+                    "address": {
+                        "postCode": "Data61 CSIRO",
+                        "region": null,
+                        "settlement": "Sydney, Sydney",
+                        "country": "Australia, Australia"
+                    },
+                    "info": {
+                        "department": [],
+                        "institution": [
+                            "University of New South Wales"
+                        ]
+                    },
+                    "id": "university-of-new-south-wales",
+                    "type": [
+                        "institution"
+                    ]
+                }
+            }
+        },
+        "title_tokenized": [
+            "Appraising",
+            "UMLS",
+            "Coverage",
+            "Summarizing",
+            "Medical",
+            "Evidence"
+        ],
+        "citations": [
+            {
+                "title": "Biomedical question answering A survey",
+                "type": "a",
+                "authors": [
+                    "J Sofia",
+                    "Hyoil Athenikos",
+                    "Han"
+                ],
+                "pub_type": "j",
+                "pub_title": "Computer Methods and Programs in Biomedicine",
+                "volume": 99,
+                "issue": 1,
+                "date": 2010,
+                "date_type": "published"
+            },
+            {
+                "title": "Chinese whispers An efficient graph clustering algorithm and its application to natural language processing problems",
+                "type": "a",
+                "authors": [
+                    "Chris Biemann"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the first Workshop on Graph Based Methods for Natural Language Processing",
+                "volume": null,
+                "issue": null,
+                "date": 2006,
+                "date_type": "published"
+            },
+            {
+                "title": "The unified medical language system umls Integrating biomedical terminology",
+                "type": "a",
+                "authors": [
+                    "Olivier Bodenreider"
+                ],
+                "pub_type": "j",
+                "pub_title": "Nucleic Acids Research",
+                "volume": 32,
+                "issue": 1,
+                "date": 2004,
+                "date_type": "published"
+            },
+            {
+                "title": "Keyphrase extraction for n best reranking in multi sentence compression",
+                "type": "a",
+                "authors": [
+                    "Florian Boudin",
+                    "Emmanuel Morin"
+                ],
+                "pub_type": "m",
+                "pub_title": "North American Chapter",
+                "volume": null,
+                "issue": null,
+                "date": 2013,
+                "date_type": "published"
+            },
+            {
+                "title": "Askhermes An online question answering system for complex clinical questions",
+                "type": "a",
+                "authors": [
+                    "Yonggang Cao",
+                    "Feifan Liu",
+                    "Pippa Simpson",
+                    "Lamont Antieau",
+                    "Andrew Bennett",
+                    "J James",
+                    "John Cimino",
+                    "Hong Ely",
+                    "Yu"
+                ],
+                "pub_type": "j",
+                "pub_title": "Journal of Biomedical Informatics",
+                "volume": 44,
+                "issue": 2,
+                "date": 2011,
+                "date_type": "published"
+            },
+            {
+                "title": "Improving graph based random walks for complex question answering using syntactic shallow semantic and extended string subsequence kernels",
+                "type": "a",
+                "authors": [
+                    "Yllias Chali",
+                    "A Sadid",
+                    "Shafiq R Joty Hasan"
+                ],
+                "pub_type": "j",
+                "pub_title": "Information Processing  Management",
+                "volume": 47,
+                "issue": 6,
+                "date": 2011,
+                "date_type": "published"
+            },
+            {
+                "title": "How do primary care physicians seek answers to clinical questions a literature review",
+                "type": "a",
+                "authors": [
+                    "C H Herma",
+                    "Coumou",
+                    "Frans J Meijman"
+                ],
+                "pub_type": "j",
+                "pub_title": "Journal of the Medical Library Association",
+                "volume": 94,
+                "issue": 1,
+                "date": 2006,
+                "date_type": "published"
+            },
+            {
+                "title": "Answering clinical questions with knowledge based and statistical techniques",
+                "type": "a",
+                "authors": [
+                    "Dina Demner Fushman",
+                    "Jimmy Lin"
+                ],
+                "pub_type": "j",
+                "pub_title": "Computational Linguistics",
+                "volume": 33,
+                "issue": 1,
+                "date": 2007,
+                "date_type": "published"
+            },
+            {
+                "title": "Lexrank Graph based lexical centrality as salience in text summarization",
+                "type": "a",
+                "authors": [
+                    "Gunes Erkan",
+                    "Dragomir R Radev"
+                ],
+                "pub_type": "j",
+                "pub_title": "Journal of Artificial Intelligence Research",
+                "volume": null,
+                "issue": null,
+                "date": 2004,
+                "date_type": "published"
+            },
+            {
+                "title": "Multi sentence compression Finding shortest paths in word graphs",
+                "type": "a",
+                "authors": [
+                    "Katja Filippova"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 23rd International Conference on Computational Linguistics",
+                "volume": null,
+                "issue": null,
+                "date": 2010,
+                "date_type": "published"
+            },
+            {
+                "title": "Abstraction summarization or managing the biomedical research literature",
+                "type": "a",
+                "authors": [
+                    "Marcelo Fiszman",
+                    "C Thomas",
+                    "Halil Rindflesch",
+                    "Kilicoglu"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the HLT NAACL Workshop on Computational Lexical Semantics",
+                "volume": null,
+                "issue": null,
+                "date": 2004,
+                "date_type": "published"
+            },
+            {
+                "title": "Evidence based medicine a new approach to teaching the practice of medicine",
+                "type": "a",
+                "authors": [],
+                "pub_type": "j",
+                "pub_title": "The Journal of the American Medical Association",
+                "volume": 268,
+                "issue": 17,
+                "date": 1992,
+                "date_type": "published"
+            },
+            {
+                "title": "Medical information retrieval An instance of domain specific search",
+                "type": "a",
+                "authors": [
+                    "Allan Hanbury"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 35th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                "volume": null,
+                "issue": null,
+                "date": 2012,
+                "date_type": "published"
+            },
+            {
+                "title": "Factors associated with success in searching medline and applying evidence to answer clinical questions",
+                "type": "a",
+                "authors": [
+                    "Katherine William R Hersh",
+                    "Crabtree",
+                    "H David",
+                    "Lynetta Hickam",
+                    "Sacherek",
+                    "P Charles",
+                    "Patricia Friedman",
+                    "Craig Tidmarsh",
+                    "Dale Mosbaek",
+                    "Kraemer"
+                ],
+                "pub_type": "j",
+                "pub_title": "Journal of the American Medical Informatics Association",
+                "volume": 9,
+                "issue": 3,
+                "date": 2002,
+                "date_type": "published"
+            },
+            {
+                "title": "Using wordnet synonym substitution to enhance umls source integration",
+                "type": "a",
+                "authors": [
+                    "Kuo Chuan",
+                    "James Huang",
+                    "Michael Geller",
+                    "Yehoshua Halper",
+                    "Junchuan Perl",
+                    "Xu"
+                ],
+                "pub_type": "j",
+                "pub_title": "Artificial Intelligence in Medicine",
+                "volume": 46,
+                "issue": 2,
+                "date": 2009,
+                "date_type": "published"
+            },
+            {
+                "title": "Rouge A package for automatic evaluation of summaries",
+                "type": "a",
+                "authors": [
+                    "Chin Yew Lin"
+                ],
+                "pub_type": "m",
+                "pub_title": "Text summarization branches out Proceedings of the ACL 04 workshop",
+                "volume": 8,
+                "issue": null,
+                "date": 2004,
+                "date_type": "published"
+            },
+            {
+                "title": "Improving search over electronic health records using umls based query expansion through random walks",
+                "type": "a",
+                "authors": [
+                    "David Martinez",
+                    "Arantxa Otegi"
+                ],
+                "pub_type": "j",
+                "pub_title": "Journal of Biomedical Informatics",
+                "volume": 51,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "A corpus for research in text processing for evidence based medicine",
+                "type": "a",
+                "authors": [
+                    "Diego Molla",
+                    "Maria Elena Santiago Martinez",
+                    "Abeed Sarker",
+                    "Cecile Paris"
+                ],
+                "pub_type": "j",
+                "pub_title": "Language Resources and Evaluation",
+                "volume": null,
+                "issue": null,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "Statistical machine translation with local language models",
+                "type": "a",
+                "authors": [
+                    "Christof Monz"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the Conference on Empirical Methods in Natural Language Processing",
+                "volume": null,
+                "issue": null,
+                "date": 2011,
+                "date_type": "published"
+            },
+            {
+                "title": "From senses to texts An all in one graph based approach for measuring semantic similarity",
+                "type": "a",
+                "authors": [
+                    "Mohammad Taher",
+                    "Pilehvar",
+                    "Roberto Navigli"
+                ],
+                "pub_type": "j",
+                "pub_title": "Artificial Intelligence",
+                "volume": 228,
+                "issue": null,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "A semantic graph based approach to biomedical summarisation",
+                "type": "a",
+                "authors": [
+                    "Laura Plaza",
+                    "Alberto Diaz",
+                    "Pablo Gervas"
+                ],
+                "pub_type": "j",
+                "pub_title": "Artificial Intelligence in Medicine",
+                "volume": 53,
+                "issue": 1,
+                "date": 2011,
+                "date_type": "published"
+            },
+            {
+                "title": "The use of domain specific concepts in biomedical text summarization",
+                "type": "a",
+                "authors": [
+                    "Hyoil Lawrence H Reeve",
+                    "Ari D Han",
+                    "Brooks"
+                ],
+                "pub_type": "j",
+                "pub_title": "Information Processing  Management",
+                "volume": 43,
+                "issue": 6,
+                "date": 2007,
+                "date_type": "published"
+            },
+            {
+                "title": "Evidence based medicine what it is and what it isnt",
+                "type": "a",
+                "authors": [
+                    "L David",
+                    "Sackett",
+                    "M C William",
+                    "Ja Muir Rosenberg",
+                    "Brian Gray",
+                    "Haynes",
+                    "Scott Richardson"
+                ],
+                "pub_type": "j",
+                "pub_title": "British Medical Journal",
+                "volume": 312,
+                "issue": 7023,
+                "date": 1996,
+                "date_type": "published"
+            },
+            {
+                "title": "Automatic evidence quality prediction to support evidencebased decision making",
+                "type": "a",
+                "authors": [
+                    "Abeed Sarker",
+                    "Diego Molla",
+                    "Cecile Paris"
+                ],
+                "pub_type": "j",
+                "pub_title": "Artificial Intelligence in Medicine",
+                "volume": 64,
+                "issue": 2,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "Query oriented evidence extraction to support evidence based medicine practice",
+                "type": "a",
+                "authors": [
+                    "Abeed Sarker",
+                    "Diego Molla",
+                    "Cecile Paris"
+                ],
+                "pub_type": "j",
+                "pub_title": "Journal of Biomedical Informatics",
+                "volume": 59,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Fastsum fast and accurate query based multi document summarization",
+                "type": "a",
+                "authors": [
+                    "Frank Schilder",
+                    "Ravikumar Kondadadi"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 46th Annual Meeting of the Association for Computational Linguistics on Human Language Technologies Short Papers",
+                "volume": null,
+                "issue": null,
+                "date": 2008,
+                "date_type": "published"
+            },
+            {
+                "title": "An efficient approach for multi sentence compression",
+                "type": "a",
+                "authors": [
+                    "Elaheh Shafieibavani",
+                    "Mohammad Ebrahimi",
+                    "Raymond Wong",
+                    "Fang Chen"
+                ],
+                "pub_type": "m",
+                "pub_title": "JMLR Workshop and Conference Proceedings",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "A query based summarization service from multiple news sources",
+                "type": "a",
+                "authors": [
+                    "Elaheh Shafieibavani",
+                    "Mohammad Ebrahimi",
+                    "Raymond Wong",
+                    "Fang Chen"
+                ],
+                "pub_type": "m",
+                "pub_title": "Services Computing SCC 2016 IEEE International Conference on",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Question answering summarization of multiple biomedical documents",
+                "type": "a",
+                "authors": [
+                    "Zhongmin Shi",
+                    "Gabor Melli",
+                    "Yang Wang",
+                    "Yudong Liu",
+                    "Baohua Gu",
+                    "M Mehdi",
+                    "Anoop Kashani",
+                    "Fred Sarkar",
+                    "Popowich"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Artificial Intelligence",
+                "volume": null,
+                "issue": null,
+                "date": 2007,
+                "date_type": "published"
+            },
+            {
+                "title": "Srilm an extensible language modeling toolkit",
+                "type": "a",
+                "authors": [
+                    "Andreas Stolcke"
+                ],
+                "pub_type": "m",
+                "pub_title": "INTERSPEECH",
+                "volume": null,
+                "issue": null,
+                "date": 2002,
+                "date_type": "published"
+            },
+            {
+                "title": "Feature rich part of speech tagging with a cyclic dependency network",
+                "type": "a",
+                "authors": [
+                    "Kristina Toutanova",
+                    "Dan Klein",
+                    "D Christopher",
+                    "Yoram Manning",
+                    "Singer"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2003 Conference of the North American Chapter",
+                "volume": 1,
+                "issue": null,
+                "date": 2003,
+                "date_type": "published"
+            },
+            {
+                "title": "Automatically extracting information needs from ad hoc clinical questions",
+                "type": "a",
+                "authors": [
+                    "Hong Yu",
+                    "Yonggang Cao"
+                ],
+                "pub_type": "m",
+                "pub_title": "American Medical Informatics Association",
+                "volume": null,
+                "issue": null,
+                "date": 2008,
+                "date_type": "published"
+            }
+        ],
+        "citations_tokenized": [
+            "physicians",
+            "answering",
+            "similarity",
+            "paths",
+            "research",
+            "practice",
+            "query",
+            "Chinese",
+            "Askhermes",
+            "extended",
+            "application",
+            "Statistical",
+            "natural",
+            "needs",
+            "hoc",
+            "care",
+            "salience",
+            "modeling",
+            "shallow",
+            "retrieval",
+            "sentence",
+            "domain",
+            "quality",
+            "word",
+            "From",
+            "evidence",
+            "new",
+            "fast",
+            "network",
+            "instance",
+            "source",
+            "cyclic",
+            "health",
+            "multiple",
+            "Graph",
+            "approach",
+            "How",
+            "use",
+            "processing",
+            "concepts",
+            "news",
+            "information",
+            "Lexrank",
+            "speech",
+            "applying",
+            "isnt",
+            "seek",
+            "primary",
+            "Question",
+            "text",
+            "searching",
+            "records",
+            "integration",
+            "medicine",
+            "Answering",
+            "online",
+            "search",
+            "Multi",
+            "oriented",
+            "A",
+            "making",
+            "Feature",
+            "automatic",
+            "best",
+            "substitution",
+            "Integrating",
+            "teaching",
+            "algorithm",
+            "texts",
+            "Srilm",
+            "prediction",
+            "problems",
+            "measuring",
+            "Medical",
+            "survey",
+            "kernels",
+            "local",
+            "extensible",
+            "ad",
+            "electronic",
+            "senses",
+            "umls",
+            "multi",
+            "associated",
+            "tagging",
+            "Biomedical",
+            "Rouge",
+            "n",
+            "enhance",
+            "summarization",
+            "document",
+            "string",
+            "one",
+            "semantic",
+            "random",
+            "syntactic",
+            "language",
+            "wordnet",
+            "synonym",
+            "evidencebased",
+            "reranking",
+            "answers",
+            "extraction",
+            "Query",
+            "documents",
+            "rich",
+            "whispers",
+            "questions",
+            "terminology",
+            "answer",
+            "summaries",
+            "techniques",
+            "medline",
+            "complex",
+            "walks",
+            "evaluation",
+            "using",
+            "literature",
+            "accurate",
+            "system",
+            "toolkit",
+            "shortest",
+            "managing",
+            "summarisation",
+            "statistical",
+            "compression",
+            "Automatic",
+            "corpus",
+            "expansion",
+            "Abstraction",
+            "Keyphrase",
+            "review",
+            "knowledge",
+            "centrality",
+            "Evidence",
+            "package",
+            "support",
+            "decision",
+            "An",
+            "Fastsum",
+            "subsequence",
+            "service",
+            "unified",
+            "clinical",
+            "extracting",
+            "graph",
+            "Finding",
+            "question",
+            "machine",
+            "models",
+            "based",
+            "medical",
+            "specific",
+            "sources",
+            "efficient",
+            "biomedical",
+            "Factors",
+            "translation",
+            "success",
+            "Improving",
+            "Using",
+            "Automatically",
+            "part",
+            "dependency",
+            "clustering",
+            "The",
+            "graphs",
+            "lexical"
+        ],
+        "sections": {
+            "1": {
+                "title": "Introduction"
+            },
+            "2": {
+                "title": "Background"
+            },
+            "3": {
+                "title": "Data and Preprocessing"
+            },
+            "4": {
+                "title": "The Proposed Approach",
+                "1": "Measuring Semantic Similarity using WordNet and UMLS",
+                "2": "Constructing Similarity Graph",
+                "3": "Clustering Relevant Sentences",
+                "4": "Word Graph based Summarization of EBM"
+            },
+            "5": {
+                "title": "Experiments"
+            },
+            "6": {
+                "title": "Conclusions"
+            }
+        },
+        "sections_tokenized": [
+            "using",
+            "conclusions",
+            "similarity",
+            "introduction",
+            "summarization",
+            "semantic",
+            "sentences",
+            "wordnet",
+            "constructing",
+            "background",
+            "proposed",
+            "graph",
+            "data",
+            "relevant",
+            "word",
+            "based",
+            "preprocessing",
+            "measuring",
+            "approach",
+            "ebm",
+            "umls",
+            "clustering",
+            "experiments"
+        ]
+    },
+    "P15-1150": {
+        "pid": "P15-1150",
+        "title": "Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks",
+        "abstract": "Because of their superior ability to preserve sequence information over time, Long Short-Term Memory (LSTM) networks, a type of recurrent neural network with a more complex computational unit, have obtained strong results on a variety of sequence modeling tasks. The only underlying LSTM structure that has been explored so far is a linear chain. However, natural language exhibits syntactic properties that would naturally combine words to phrases. We introduce the Tree-LSTM, a generalization of LSTMs to tree-structured network topologies. TreeLSTMs outperform all existing systems and strong LSTM baselines on two tasks: predicting the semantic relatedness of two sentences (SemEval 2014, Task 1) and sentiment classification (Stanford Sentiment Treebank).",
+        "authors": {
+            "christopher-d-manning": "Christopher D. Manning",
+            "richard-socher": "Richard Socher",
+            "kai-sheng-tai": "Kai Sheng Tai"
+        },
+        "unknown": [],
+        "affiliations": {
+            "kai-sheng-tai": {
+                "email": null,
+                "affiliation": {
+                    "id": null,
+                    "type": [],
+                    "info": null
+                }
+            },
+            "richard-socher": {
+                "email": "richard@metamind.io",
+                "affiliation": {
+                    "address": {},
+                    "info": {
+                        "department": [
+                            "MetaMind Inc"
+                        ],
+                        "name": []
+                    },
+                    "id": null,
+                    "type": []
+                }
+            },
+            "christopher-d-manning": {
+                "email": "manning@stanford.edu",
+                "affiliation": {
+                    "id": null,
+                    "type": [],
+                    "info": null
+                }
+            }
+        },
+        "title_tokenized": [
+            "Improved",
+            "Semantic",
+            "Representations",
+            "From",
+            "Tree-Structured",
+            "Long",
+            "Short-Term",
+            "Memory",
+            "Networks"
+        ],
+        "citations": [
+            {
+                "title": "Neural machine translation by jointly learning to align and translate",
+                "type": "a",
+                "authors": [
+                    "Dzmitry Bahdanau",
+                    "Kyunghyun Cho",
+                    "Yoshua Bengio"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 3rd International Conference on Learning Representations",
+                "volume": null,
+                "issue": null,
+                "date": 2015,
+                "date_type": "published"
+            },
+            {
+                "title": "Learning long term dependencies with gradient descent is difficult",
+                "type": "a",
+                "authors": [
+                    "Yoshua Bengio",
+                    "Patrice Simard",
+                    "Paolo Frasconi"
+                ],
+                "pub_type": "j",
+                "pub_title": "IEEE Transactions on Neural Networks",
+                "volume": 5,
+                "issue": 2,
+                "date": 1994,
+                "date_type": "published"
+            },
+            {
+                "title": "The Meaning Factory Formal semantics for recognizing textual entailment and determining semantic similarity",
+                "type": "a",
+                "authors": [
+                    "Johannes Bjerva",
+                    "Johan Bos",
+                    "Rob Van Der Goot",
+                    "Malvina Nissim"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 8th International Workshop on Semantic Evaluation",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "A convolutional neural network for modelling sentences",
+                "type": "a",
+                "authors": [
+                    "Phil Blunsom",
+                    "Edward Grefenstette",
+                    "Nal Kalchbrenner"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "A fast and accurate dependency parser using neural networks",
+                "type": "a",
+                "authors": [
+                    "Danqi Chen",
+                    "Christopher D Manning"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Natural language processing almost from scratch",
+                "type": "a",
+                "authors": [
+                    "Ronan Collobert",
+                    "Jason Weston",
+                    "Leon Bottou",
+                    "Michael Karlen",
+                    "Koray Kavukcuoglu",
+                    "Pavel Kuksa"
+                ],
+                "pub_type": "j",
+                "pub_title": "The Journal of Machine Learning Research",
+                "volume": 12,
+                "issue": null,
+                "date": 2011,
+                "date_type": "published"
+            },
+            {
+                "title": "Adaptive subgradient methods for online learning and stochastic optimization",
+                "type": "a",
+                "authors": [
+                    "John Duchi",
+                    "Elad Hazan",
+                    "Yoram Singer"
+                ],
+                "pub_type": "j",
+                "pub_title": "The Journal of Machine Learning Research",
+                "volume": 12,
+                "issue": null,
+                "date": 2011,
+                "date_type": "published"
+            },
+            {
+                "title": "Finding structure in time",
+                "type": "a",
+                "authors": [
+                    "Jeffrey L Elman"
+                ],
+                "pub_type": "j",
+                "pub_title": "Cognitive science",
+                "volume": 14,
+                "issue": 2,
+                "date": 1990,
+                "date_type": "published"
+            },
+            {
+                "title": "PPDB The Paraphrase Database",
+                "type": "a",
+                "authors": [
+                    "Juri Ganitkevitch",
+                    "Benjamin Van Durme",
+                    "Chris Callison Burch"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of HLT NAACL",
+                "volume": null,
+                "issue": null,
+                "date": 2013,
+                "date_type": "published"
+            },
+            {
+                "title": "Learning task dependent distributed representations by backpropagation through structure",
+                "type": "a",
+                "authors": [
+                    "Christoph Goller",
+                    "Andreas Kuchler"
+                ],
+                "pub_type": "m",
+                "pub_title": "IEEE International Conference on Neural Networks",
+                "volume": null,
+                "issue": null,
+                "date": 1996,
+                "date_type": "published"
+            },
+            {
+                "title": "Hybrid speech recognition with deep bidirectional LSTM",
+                "type": "a",
+                "authors": [
+                    "Alex Graves",
+                    "Navdeep Jaitly",
+                    "A R Mohamed"
+                ],
+                "pub_type": "m",
+                "pub_title": "IEEE Workshop on Automatic Speech Recognition and Understanding ASRU",
+                "volume": null,
+                "issue": null,
+                "date": 2013,
+                "date_type": "published"
+            },
+            {
+                "title": "Multi step regression learning for compositional distributional semantics",
+                "type": "a",
+                "authors": [
+                    "Edward Grefenstette",
+                    "Georgiana Dinu",
+                    "Yaozhong Zhang",
+                    "Mehrnoosh Sadrzadeh",
+                    "Marco Baroni"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 10th International Conference on Computational Semantics",
+                "volume": null,
+                "issue": null,
+                "date": 2013,
+                "date_type": "published"
+            },
+            {
+                "title": "The vanishing gradient problem during learning recurrent neural nets and problem solutions",
+                "type": "a",
+                "authors": [
+                    "Sepp Hochreiter"
+                ],
+                "pub_type": "j",
+                "pub_title": "International Journal of Uncertainty Fuzziness and Knowledge Based Systems",
+                "volume": 6,
+                "issue": 2,
+                "date": 1998,
+                "date_type": "published"
+            },
+            {
+                "title": "Long Short Term Memory",
+                "type": "a",
+                "authors": [
+                    "Sepp Hochreiter",
+                    "Jurgen Schmidhuber"
+                ],
+                "pub_type": "j",
+                "pub_title": "Neural Computation",
+                "volume": 9,
+                "issue": 8,
+                "date": 1997,
+                "date_type": "published"
+            },
+            {
+                "title": "Improving word representations via global context and multiple word prototypes",
+                "type": "a",
+                "authors": [
+                    "Eric H Huang",
+                    "Richard Socher",
+                    "Christopher D Manning",
+                    "Andrew Y Ng"
+                ],
+                "pub_type": "m",
+                "pub_title": "Annual Meeting of the Association for Computational Linguistics ACL",
+                "volume": null,
+                "issue": null,
+                "date": 2012,
+                "date_type": "published"
+            },
+            {
+                "title": "Deep recursive neural networks for compositionality in language",
+                "type": "a",
+                "authors": [
+                    "Ozan Irsoy",
+                    "Claire Cardie"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Neural Information Processing Systems",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "UNAL NLP Combining soft cardinality features for semantic textual similarity relatedness and entailment",
+                "type": "a",
+                "authors": [
+                    "Sergio Jimenez",
+                    "George Duenas",
+                    "Julia Baquero",
+                    "Alexander Gelbukh"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 8th International Workshop on Semantic Evaluation",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Convolutional neural networks for sentence classification",
+                "type": "a",
+                "authors": [
+                    "Yoon Kim"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing EMNLP",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Accurate unlexicalized parsing",
+                "type": "a",
+                "authors": [
+                    "Dan Klein",
+                    "Christopher D Manning"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 41st Annual Meeting on Association for Computational Linguistics",
+                "volume": null,
+                "issue": null,
+                "date": 2003,
+                "date_type": "published"
+            },
+            {
+                "title": "Illinois LH A denotational and distributional approach to semantics",
+                "type": "a",
+                "authors": [
+                    "Alice Lai",
+                    "Julia Hockenmaier"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 8th International Workshop on Semantic Evaluation",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "A solution to Platos problem The latent semantic analysis theory of acquisition induction and representation of knowledge",
+                "type": "a",
+                "authors": [
+                    "Thomas K Landauer",
+                    "Susan T Dumais"
+                ],
+                "pub_type": "j",
+                "pub_title": "Psychological review",
+                "volume": 104,
+                "issue": 2,
+                "date": 1997,
+                "date_type": "published"
+            },
+            {
+                "title": "Distributed representations of sentences and documents",
+                "type": "a",
+                "authors": [
+                    "Quoc Le",
+                    "Tomas Mikolov"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 31st International Conference on Machine Learning",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "SemEval 2014 Task 1 Evaluation of compositional distributional semantic models on full sentences through semantic relatedness and textual entailment",
+                "type": "a",
+                "authors": [
+                    "Marco Marelli",
+                    "Luisa Bentivogli",
+                    "Marco Baroni",
+                    "Raffaella Bernardi",
+                    "Stefano Menini",
+                    "Roberto Zamparelli"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 8th International Workshop on Semantic Evaluation",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Distributed representations of words and phrases and their compositionality",
+                "type": "a",
+                "authors": [
+                    "Tomas Mikolov",
+                    "Ilya Sutskever",
+                    "Kai Chen",
+                    "Greg S Corrado",
+                    "Jeff Dean"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Neural Information Processing Systems",
+                "volume": null,
+                "issue": null,
+                "date": 2013,
+                "date_type": "published"
+            },
+            {
+                "title": "Composition in distributional models of semantics",
+                "type": "a",
+                "authors": [
+                    "Jeff Mitchell",
+                    "Mirella Lapata"
+                ],
+                "pub_type": "j",
+                "pub_title": "Cognitive science",
+                "volume": 34,
+                "issue": 8,
+                "date": 2010,
+                "date_type": "published"
+            },
+            {
+                "title": "Glove Global vectors for word representation",
+                "type": "a",
+                "authors": [
+                    "Jeffrey Pennington",
+                    "Richard Socher",
+                    "Christopher D Manning"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2014 Conference on Empiricial Methods in Natural Language Processing",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Learning representations by back propagating errors",
+                "type": "a",
+                "authors": [
+                    "David E Rumelhart",
+                    "Geoffrey E Hinton",
+                    "Ronald J Williams"
+                ],
+                "pub_type": "j",
+                "pub_title": "Cognitive",
+                "volume": 5,
+                "issue": null,
+                "date": 1988,
+                "date_type": "published"
+            },
+            {
+                "title": "Semantic compositionality through recursive matrixvector spaces",
+                "type": "a",
+                "authors": [
+                    "Richard Socher",
+                    "Brody Huval",
+                    "D Christopher",
+                    "Andrew Y Manning",
+                    "Ng"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning EMNLP",
+                "volume": null,
+                "issue": null,
+                "date": 2012,
+                "date_type": "published"
+            },
+            {
+                "title": "Grounded compositional semantics for finding and describing images with sentences",
+                "type": "a",
+                "authors": [
+                    "Richard Socher",
+                    "Andrej Karpathy",
+                    "V Quoc",
+                    "Christopher D Le",
+                    "Andrew Y Manning",
+                    "Ng"
+                ],
+                "pub_type": "j",
+                "pub_title": "Transactions of the Association for Computational Linguistics",
+                "volume": 2,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Parsing natural scenes and natural language with recursive neural networks",
+                "type": "a",
+                "authors": [
+                    "Richard Socher",
+                    "Cliff C Lin",
+                    "Chris Manning",
+                    "Andrew Y Ng"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 28th International Conference on Machine Learning",
+                "volume": null,
+                "issue": null,
+                "date": 2011,
+                "date_type": "published"
+            },
+            {
+                "title": "Recursive deep models for semantic compositionality over a sentiment treebank",
+                "type": "a",
+                "authors": [
+                    "Richard Socher",
+                    "Alex Perelygin",
+                    "Y Jean",
+                    "Jason Wu",
+                    "Chuang",
+                    "D Christopher",
+                    "Manning",
+                    "Y Andrew",
+                    "Christopher Ng",
+                    "Potts"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing",
+                "volume": null,
+                "issue": null,
+                "date": 2013,
+                "date_type": "published"
+            },
+            {
+                "title": "Dropout A simple way to prevent neural networks from overfitting",
+                "type": "a",
+                "authors": [
+                    "Nitish Srivastava",
+                    "Geoffrey Hinton",
+                    "Alex Krizhevsky",
+                    "Ilya Sutskever",
+                    "Ruslan Salakhutdinov"
+                ],
+                "pub_type": "j",
+                "pub_title": "Journal of Machine Learning Research",
+                "volume": 15,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Modeling documents with a Deep Boltzmann Machine",
+                "type": "a",
+                "authors": [
+                    "Nitish Srivastava",
+                    "Ruslan Salakhutdinov",
+                    "Geoffrey Hinton"
+                ],
+                "pub_type": "m",
+                "pub_title": "Uncertainty in Artificial Intelligence",
+                "volume": null,
+                "issue": null,
+                "date": 2013,
+                "date_type": "published"
+            },
+            {
+                "title": "Sequence to sequence learning with neural networks",
+                "type": "a",
+                "authors": [
+                    "Ilya Sutskever",
+                    "Oriol Vinyals",
+                    "Quoc Vv Le"
+                ],
+                "pub_type": "m",
+                "pub_title": "Advances in Neural Information Processing Systems",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Word representations A simple and general method for semi supervised learning",
+                "type": "a",
+                "authors": [
+                    "Joseph Turian",
+                    "Lev Ratinov",
+                    "Yoshua Bengio"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics",
+                "volume": null,
+                "issue": null,
+                "date": 2010,
+                "date_type": "published"
+            },
+            {
+                "title": "Compositional matrix space models for sentiment analysis",
+                "type": "a",
+                "authors": [
+                    "Ainur Yessenalina",
+                    "Claire Cardie"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing EMNLP",
+                "volume": null,
+                "issue": null,
+                "date": 2011,
+                "date_type": "published"
+            },
+            {
+                "title": "ECNU One stone two birds Ensemble of heterogenous measures for semantic relatedness and textual entailment",
+                "type": "a",
+                "authors": [
+                    "Jiang Zhao",
+                    "Tian Tian Zhu",
+                    "Man Lan"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 8th International Workshop on Semantic Evaluation",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            }
+        ],
+        "citations_tokenized": [
+            "optimization",
+            "similarity",
+            "sentiment",
+            "recognition",
+            "Semantic",
+            "natural",
+            "learning",
+            "space",
+            "UNAL",
+            "Dropout",
+            "SemEval",
+            "analysis",
+            "semantics",
+            "sentence",
+            "Machine",
+            "One",
+            "word",
+            "two",
+            "birds",
+            "heterogenous",
+            "translate",
+            "fast",
+            "network",
+            "Hybrid",
+            "Recursive",
+            "Paraphrase",
+            "words",
+            "multiple",
+            "supervised",
+            "structure",
+            "Short",
+            "approach",
+            "Modeling",
+            "processing",
+            "backpropagation",
+            "measures",
+            "distributed",
+            "way",
+            "classification",
+            "speech",
+            "dependencies",
+            "Formal",
+            "1",
+            "overfitting",
+            "Global",
+            "align",
+            "Adaptive",
+            "unlexicalized",
+            "online",
+            "Ensemble",
+            "compositionality",
+            "Multi",
+            "Sequence",
+            "Memory",
+            "Database",
+            "soft",
+            "A",
+            "entailment",
+            "Distributed",
+            "Platos",
+            "Boltzmann",
+            "Accurate",
+            "Glove",
+            "errors",
+            "Long",
+            "treebank",
+            "scenes",
+            "matrixvector",
+            "finding",
+            "theory",
+            "determining",
+            "difficult",
+            "bidirectional",
+            "textual",
+            "regression",
+            "relatedness",
+            "phrases",
+            "describing",
+            "recognizing",
+            "recursive",
+            "back",
+            "Combining",
+            "long",
+            "recurrent",
+            "vectors",
+            "Word",
+            "convolutional",
+            "deep",
+            "Convolutional",
+            "vanishing",
+            "PPDB",
+            "scratch",
+            "prototypes",
+            "representation",
+            "Illinois",
+            "Parsing",
+            "Compositional",
+            "semantic",
+            "sentences",
+            "LH",
+            "language",
+            "Learning",
+            "compositional",
+            "Meaning",
+            "2014",
+            "Task",
+            "networks",
+            "step",
+            "solution",
+            "neural",
+            "Natural",
+            "Factory",
+            "Term",
+            "modelling",
+            "images",
+            "semi",
+            "stone",
+            "documents",
+            "Evaluation",
+            "method",
+            "Composition",
+            "denotational",
+            "stochastic",
+            "general",
+            "methods",
+            "spaces",
+            "cardinality",
+            "matrix",
+            "LSTM",
+            "full",
+            "term",
+            "parser",
+            "ECNU",
+            "context",
+            "distributional",
+            "sequence",
+            "jointly",
+            "representations",
+            "using",
+            "solutions",
+            "accurate",
+            "gradient",
+            "features",
+            "global",
+            "parsing",
+            "knowledge",
+            "problem",
+            "prevent",
+            "via",
+            "Finding",
+            "subgradient",
+            "machine",
+            "models",
+            "time",
+            "dependent",
+            "induction",
+            "Neural",
+            "nets",
+            "descent",
+            "simple",
+            "translation",
+            "almost",
+            "Improving",
+            "propagating",
+            "Grounded",
+            "acquisition",
+            "dependency",
+            "Deep",
+            "task",
+            "latent",
+            "The",
+            "NLP"
+        ],
+        "sections": {
+            "1": {
+                "title": "Introduction"
+            },
+            "2": {
+                "title": "Long Short Term Memory Networks",
+                "1": "Overview",
+                "2": "Variants"
+            },
+            "3": {
+                "title": "Tree Structured LSTMs",
+                "1": "Child Sum Tree LSTMs",
+                "2": "N  ary Tree LSTMs"
+            },
+            "4": {
+                "title": "Models",
+                "1": "Tree LSTM Classification",
+                "2": "Semantic Relatedness of Sentence Pairs"
+            },
+            "5": {
+                "title": "Experiments",
+                "1": "Sentiment Classification",
+                "2": "Semantic Relatedness",
+                "3": "Hyperparameters and Training Details"
+            },
+            "6": {
+                "title": "Results",
+                "1": "Sentiment Classification",
+                "2": "Semantic Relatedness"
+            },
+            "7": {
+                "1": "Modeling Semantic Relatedness",
+                "2": "Effect of Sentence Length"
+            },
+            "8": {
+                "title": "Related Work"
+            },
+            "9": {
+                "title": "Conclusion"
+            }
+        },
+        "sections_tokenized": [
+            "ary",
+            "memory",
+            "introduction",
+            "n",
+            "sentiment",
+            "training",
+            "semantic",
+            "effect",
+            "related",
+            "modeling",
+            "lstm",
+            "networks",
+            "hyperparameters",
+            "results",
+            "child",
+            "sentence",
+            "models",
+            "work",
+            "variants",
+            "short",
+            "length",
+            "relatedness",
+            "sum",
+            "overview",
+            "details",
+            "term",
+            "long",
+            "lstms",
+            "structured",
+            "tree",
+            "classification",
+            "conclusion",
+            "experiments",
+            "pairs"
+        ]
+    },
+    "S19-2016": {
+        "pid": "S19-2016",
+        "title": "T&#252;pa at SemEval-2019 Task1: (Almost) feature-free Semantic Parsing",
+        "abstract": "Our submission for Task 1 \u2018Cross-lingual Semantic Parsing with UCCA\u2019 at SemEval-2018 is a feed-forward neural network that builds upon an existing state-of-the-art transition-based directed acyclic graph parser. We replace most of its features by deep contextualized word embeddings and introduce an approximation to represent non-terminal nodes in the graph as an aggregation of their terminal children. We further demonstrate how augmenting data using the baseline systems provides a consistent advantage in all open submission tracks. We submitted results to all open tracks (English, in- and out-of-domain, German in-domain and French in-domain, low-resource). Our system achieves competitive performance in all settings besides the French, where we did not augment the data. Post-evaluation experiments showed that data augmentation is especially crucial in this setting.",
+        "authors": {
+            "tobias-putz": "Tobias P\u00fctz",
+            "kevin-glocker": "Kevin Glocker"
+        },
+        "unknown": [],
+        "affiliations": {
+            "tobias-putz": {
+                "email": "tobias.puetz@student.uni-tuebingen.de",
+                "affiliation": {
+                    "address": {
+                        "postCode": "D-72074",
+                        "region": null,
+                        "settlement": "T\u00fcbingen",
+                        "country": "Germany"
+                    },
+                    "info": {
+                        "department": [
+                            "Department of Linguistics"
+                        ],
+                        "institution": [
+                            "University of Tubingen"
+                        ]
+                    },
+                    "id": "university-of-tubingen",
+                    "type": [
+                        "institution"
+                    ]
+                }
+            },
+            "kevin-glocker": {
+                "email": "kevin.glocker@student.uni-tuebingen.de",
+                "affiliation": {
+                    "address": {
+                        "postCode": "D-72074",
+                        "region": null,
+                        "settlement": "T\u00fcbingen",
+                        "country": "Germany"
+                    },
+                    "info": {
+                        "department": [],
+                        "institution": [
+                            "University of Tubingen"
+                        ]
+                    },
+                    "id": "university-of-tubingen",
+                    "type": [
+                        "institution"
+                    ]
+                }
+            }
+        },
+        "title_tokenized": [
+            "Tupa",
+            "SemEval-2019",
+            "Task1",
+            "Almost",
+            "feature-free",
+            "Semantic",
+            "Parsing"
+        ],
+        "citations": [
+            {
+                "title": "Universal conceptual cognitive annotation UCCA",
+                "type": "a",
+                "authors": [
+                    "Omri Abend",
+                    "Ari Rappoport"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics",
+                "volume": 1,
+                "issue": null,
+                "date": 2013,
+                "date_type": "published"
+            },
+            {
+                "title": "Towards better UD parsing Deep contextualized word embeddings ensemble and treebank concatenation",
+                "type": "a",
+                "authors": [
+                    "Wanxiang Che",
+                    "Yijia Liu",
+                    "Yuxuan Wang",
+                    "Bo Zheng",
+                    "Ting Liu"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the CoNLL 2018 Shared Task Multilingual Parsing from Raw Text to Universal Dependencies",
+                "volume": null,
+                "issue": null,
+                "date": 2018,
+                "date_type": "published"
+            },
+            {
+                "title": "One billion word benchmark for measuring progress in statistical language modeling",
+                "type": "a",
+                "authors": [
+                    "Ciprian Chelba",
+                    "Tomas Mikolov",
+                    "Mike Schuster",
+                    "Qi Ge"
+                ],
+                "pub_type": "m",
+                "pub_title": "Fifteenth Annual Conference of the International Speech Communication Association",
+                "volume": null,
+                "issue": null,
+                "date": 2014,
+                "date_type": "published"
+            },
+            {
+                "title": "Word vectors reuse and replicability Towards a community repository of large text resources",
+                "type": "a",
+                "authors": [
+                    "Murhaf Fares",
+                    "Andrey Kutuzov",
+                    "Stephan Oepen",
+                    "Erik Velldal"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the 21st Nordic Conference on Computational Linguistics",
+                "volume": null,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "A transition based directed acyclic graph parser for UCCA",
+                "type": "a",
+                "authors": [
+                    "Daniel Hershcovich",
+                    "Omri Abend",
+                    "Ari Rappoport"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proc of ACL",
+                "volume": null,
+                "issue": null,
+                "date": 2017,
+                "date_type": "published"
+            },
+            {
+                "title": "Multitask parsing across semantic representations",
+                "type": "a",
+                "authors": [
+                    "Daniel Hershcovich",
+                    "Omri Abend",
+                    "Ari Rappoport"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proc of ACL",
+                "volume": null,
+                "issue": null,
+                "date": 2018,
+                "date_type": "published"
+            },
+            {
+                "title": "2016 ccg2lambda A compositional semantics system",
+                "type": "a",
+                "authors": [
+                    "Pascual Martinez Gomez",
+                    "Koji Mineshima",
+                    "Yusuke Miyao",
+                    "Daisuke Bekki"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of ACL 2016 System Demonstrations",
+                "volume": null,
+                "issue": null,
+                "date": null,
+                "date_type": null
+            },
+            {
+                "title": "Non entailed subsequences as a challenge for natural language inference",
+                "type": "a",
+                "authors": [
+                    "T Richard",
+                    "Tal Mccoy",
+                    "Linzen"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the Society for Computation in Linguistics",
+                "volume": 2,
+                "issue": null,
+                "date": 2019,
+                "date_type": "published"
+            },
+            {
+                "title": "Universal dependencies v1 A multilingual treebank collection",
+                "type": "a",
+                "authors": [
+                    "Joakim Nivre",
+                    "Marie Catherine De Marneffe",
+                    "Filip Ginter",
+                    "Yoav Goldberg",
+                    "Jan Hajic",
+                    "Christopher Manning",
+                    "Ryan Mcdonald",
+                    "Slav Petrov",
+                    "Sampo Pyysalo"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proceedings of the Tenth International Conference on Language Resources and Evaluation LREC16",
+                "volume": null,
+                "issue": null,
+                "date": 2016,
+                "date_type": "published"
+            },
+            {
+                "title": "Deep contextualized word representations",
+                "type": "a",
+                "authors": [
+                    "Matthew E Peters",
+                    "Mark Neumann",
+                    "Mohit Iyyer",
+                    "Matt Gardner",
+                    "Christopher Clark",
+                    "Kenton Lee",
+                    "Luke Zettlemoyer"
+                ],
+                "pub_type": "m",
+                "pub_title": "Proc of NAACL",
+                "volume": null,
+                "issue": null,
+                "date": 2018,
+                "date_type": "published"
+            },
+            {
+                "title": "Dropout a simple way to prevent neural networks from overfitting",
+                "type": "a",
+                "authors": [
+                    "Nitish Srivastava",
+                    "Geoffrey Hinton",
+                    "Alex Krizhevsky",
+                    "Ilya Sutskever",
+                    "Ruslan Salakhutdinov"
+                ],
+                "pub_type": "j",
+                "pub_title": "The Journal of Machine Learning Research",
+                "volume": 15,
+                "issue": 1,
+                "date": 2014,
+                "date_type": "published"
+            }
+        ],
+        "citations_tokenized": [
+            "UCCA",
+            "Universal",
+            "overfitting",
+            "text",
+            "system",
+            "ccg2lambda",
+            "multilingual",
+            "better",
+            "statistical",
+            "semantic",
+            "annotation",
+            "natural",
+            "repository",
+            "progress",
+            "parsing",
+            "language",
+            "community",
+            "directed",
+            "A",
+            "modeling",
+            "compositional",
+            "transition",
+            "entailed",
+            "Dropout",
+            "large",
+            "prevent",
+            "Non",
+            "acyclic",
+            "networks",
+            "subsequences",
+            "neural",
+            "treebank",
+            "graph",
+            "Multitask",
+            "One",
+            "semantics",
+            "contextualized",
+            "embeddings",
+            "challenge",
+            "based",
+            "word",
+            "2016",
+            "billion",
+            "v1",
+            "ensemble",
+            "measuring",
+            "replicability",
+            "inference",
+            "simple",
+            "conceptual",
+            "benchmark",
+            "reuse",
+            "collection",
+            "Towards",
+            "UD",
+            "Deep",
+            "parser",
+            "way",
+            "Word",
+            "concatenation",
+            "vectors",
+            "resources",
+            "dependencies",
+            "cognitive",
+            "representations",
+            "across"
+        ],
+        "sections": {
+            "1": {
+                "title": "Introduction"
+            },
+            "2": {
+                "title": "Background"
+            },
+            "3": {
+                "title": "Silver Data"
+            },
+            "4": {
+                "title": "System",
+                "1": "Representing Non Terminals",
+                "2": "Hyperparameters"
+            },
+            "5": {
+                "title": "Results and Discussion"
+            },
+            "6": {
+                "title": "Further Experiments",
+                "1": "Silver Data",
+                "2": "Non Terminal Representation",
+                "3": "Bigger means better"
+            },
+            "7": {
+                "title": "Conclusion"
+            }
+        },
+        "sections_tokenized": [
+            "bigger",
+            "data",
+            "system",
+            "discussion",
+            "introduction",
+            "terminal",
+            "representation",
+            "hyperparameters",
+            "background",
+            "results",
+            "silver",
+            "means",
+            "better",
+            "non",
+            "terminals",
+            "conclusion",
+            "experiments",
+            "representing"
+        ]
+    }
+}
