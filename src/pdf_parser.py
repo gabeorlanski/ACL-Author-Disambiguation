@@ -468,7 +468,7 @@ class PDFParser:
 
 class PDFParserWrapper:
     def __init__(self, papers, aliases, id_to_name, same_names, manual_fixes=None, load_parsed=False,
-                 allow_load_parsed_errors=True, save_data=False, save_dir="/data", ext_directory=False,
+                 allow_load_parsed_errors=True, save_data=False, save_path="/data", ext_directory=False,
                  similarity_cutoff=.75, print_errors=False, file_log_level=logging.DEBUG,
                  console_log_level=logging.ERROR, log_format=None, log_path=None, cores=4, parse_parallel_cutoff=1000,
                  batch_size=200, guess_email_and_aff=False, guess_min=.5, combine_orgs=False, combine_orgs_cutoff=.8,
@@ -482,7 +482,7 @@ class PDFParserWrapper:
         :param load_parsed: Use existing parsed_papers.json
         :param allow_load_parsed_errors: If an error should be thrown if loading parsed failed, Mainly for debugging
         :param save_data: Save data to disk
-        :param save_dir: directory where you want data saved
+        :param save_path: directory where you want data saved
         :param ext_directory: Save each file extension in their own directory (ex create a json directory in the
         save_data path)
         :param similarity_cutoff: cutoff for how similar a name must be to assign it to the author name
@@ -553,7 +553,7 @@ class PDFParserWrapper:
         self.same_names = deepcopy(same_names)
 
         self.save_data = save_data
-        self.save_dir = save_dir
+        self.save_dir = save_path
         self.ext_directory = ext_directory
         self.org_names = []
         self.department_names = []
@@ -566,10 +566,10 @@ class PDFParserWrapper:
         if load_parsed:
             try:
                 tmp_parsed_path = os.getcwd()
-                if save_dir is None:
+                if save_path is None:
                     tmp_parsed_path = tmp_parsed_path + "/data"
                 else:
-                    tmp_parsed_path = tmp_parsed_path + save_dir
+                    tmp_parsed_path = tmp_parsed_path + save_path
                 tmp_txt_path = deepcopy(tmp_parsed_path)
                 if self.ext_directory:
                     tmp_txt_path = tmp_txt_path + "/txt/"

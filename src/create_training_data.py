@@ -129,7 +129,7 @@ def getAuthorInfo(args):
 
 class CreateTrainingData:
     def __init__(self, papers, incomplete_papers, special_keys=None, save_data=False, ext_directory=False,
-                 save_dir=None, diff_same_ratio=2.0, author_cutoff=10, name_similarity_cutoff=.6,
+                 save_path=None, diff_same_ratio=2.0, author_cutoff=10, name_similarity_cutoff=.6,
                  pair_distribution="random", separate_chars=1, separate_words=1, algorithm="jaro-similarity",
                  exclude=None, rand_seed=None, cores=4, batch_size=25000, allow_exact_special=False,
                  min_batch_len=100000, file_log_level=logging.DEBUG, console_log_level=logging.WARNING, log_format=None,
@@ -143,7 +143,7 @@ class CreateTrainingData:
         defaults to empty list)
         :param save_data: Save data for later use (Bool, default is false)
         :param ext_directory: Save data into directories based on their file type (Bool, defaults to false)
-        :param save_dir: Directory to save data (str, defaults to none)
+        :param save_path: Directory to save data (str, defaults to none)
         :param diff_same_ratio: Ratio of same pairs to different pairs, and vice-versa. (float, default is 2)
         :param author_cutoff: Cutoff authors based on paper count (int, default is 10)
         :param name_similarity_cutoff: Exclude pairs if their names arent similar enough (float, default is .6)
@@ -186,7 +186,7 @@ class CreateTrainingData:
         self.cores = cores
         self.save_data = save_data
         self.ext_directory = ext_directory
-        self.save_dir = save_dir
+        self.save_dir = save_path
         self.dif_same_ratio = diff_same_ratio
         self.author_cutoff = author_cutoff
         self.name_similarity_cutoff = name_similarity_cutoff
