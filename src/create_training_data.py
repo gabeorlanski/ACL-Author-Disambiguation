@@ -123,19 +123,18 @@ def getAuthorInfo(args):
     out["citations"] = paper.citations
     out["citations_tokenized"] = paper.citations_tokenized
     out["sections"] = paper.sections
-    out["sections_tokenized"]=paper.sections_tokenized
+    out["sections_tokenized"] = paper.sections_tokenized
     return pair_key, out
 
 
 class CreateTrainingData:
     def __init__(self, papers, incomplete_papers, special_keys=None, save_data=False, ext_directory=False,
-                 save_dir=None, dif_same_ratio=2.0, author_cutoff=10, name_similarity_cutoff=.6,
+                 save_dir=None, diff_same_ratio=2.0, author_cutoff=10, name_similarity_cutoff=.6,
                  pair_distribution="random", separate_chars=1, separate_words=1, algorithm="jaro-similarity",
-                 exclude=None, rand_seed=None, cores=4, batch_size=25000,
-                 allow_exact_special=False, min_batch_len=100000, file_log_level=logging.DEBUG,
-                 console_log_level=logging.WARNING, log_format=None, log_path=None, debug_mode=False,
-                 drop_null_authors=True, print_compare_stats=False, compare_args=None, compare_batch_size=2000,
-                 remove_single_author=False, require_exact_match=False):
+                 exclude=None, rand_seed=None, cores=4, batch_size=25000, allow_exact_special=False,
+                 min_batch_len=100000, file_log_level=logging.DEBUG, console_log_level=logging.WARNING, log_format=None,
+                 log_path=None, DEBUG_MODE=False, drop_null_authors=True, print_compare_stats=False, compare_args=None,
+                 compare_batch_size=2000, remove_single_author=False, require_exact_match=False):
         """
         Initialize the class
         :param papers: The parsed papers you want to use (dict of Paper objects)
@@ -145,7 +144,7 @@ class CreateTrainingData:
         :param save_data: Save data for later use (Bool, default is false)
         :param ext_directory: Save data into directories based on their file type (Bool, defaults to false)
         :param save_dir: Directory to save data (str, defaults to none)
-        :param dif_same_ratio: Ratio of same pairs to different pairs, and vice-versa. (float, default is 2)
+        :param diff_same_ratio: Ratio of same pairs to different pairs, and vice-versa. (float, default is 2)
         :param author_cutoff: Cutoff authors based on paper count (int, default is 10)
         :param name_similarity_cutoff: Exclude pairs if their names arent similar enough (float, default is .6)
         :param pair_distribution: how to distribute pairs to meet ratio Options are 'random' and 'sim distribution'.
@@ -164,7 +163,7 @@ class CreateTrainingData:
         :param console_log_level: logging level to console (logging.levels, default is debug)
         :param log_format: format of log messages (str)
         :param log_path: path to log files(str, default is '/logs/preprocess_data.log'
-        :param debug_mode: debugging mode (bool, default is false)
+        :param DEBUG_MODE: debugging mode (bool, default is false)
         :param drop_null_authors: drop authors with either no email or no affiliation (bool, default is True)
         :param print_compare_stats: print the indepth stats of comparisons. This WILL slow
         down the program by a lot(bool, default is False)
@@ -188,7 +187,7 @@ class CreateTrainingData:
         self.save_data = save_data
         self.ext_directory = ext_directory
         self.save_dir = save_dir
-        self.dif_same_ratio = dif_same_ratio
+        self.dif_same_ratio = diff_same_ratio
         self.author_cutoff = author_cutoff
         self.name_similarity_cutoff = name_similarity_cutoff
         self.author_papers = defaultdict(list)
@@ -206,7 +205,7 @@ class CreateTrainingData:
         self.csv_path = self.save_dir
         self.txt_path = self.save_dir
         self.pickle_path = self.save_dir
-        self.debug_mode = debug_mode
+        self.debug_mode = DEBUG_MODE
         self.console_log_level = console_log_level
         self.drop_null_authors = drop_null_authors
         self.compare_args = compare_args
@@ -308,7 +307,7 @@ class CreateTrainingData:
             same = []
             diff = []
             special_same = []
-            special_diff= []
+            special_diff = []
             for t, pair_data in pairs_to_use:
                 is_special = False
                 for special_case in self.special_keys:
@@ -316,16 +315,14 @@ class CreateTrainingData:
                         is_special = True
                 if t == 1:
                     if is_special:
-                        special_same.append([t,pair_data])
+                        special_same.append([t, pair_data])
                     else:
-                        same.append([t,pair_data])
+                        same.append([t, pair_data])
                 elif t == 0:
                     if is_special:
-                        special_diff.append([t,pair_data])
+                        special_diff.append([t, pair_data])
                     else:
-                        diff.append([t,pair_data])
-
-
+                        diff.append([t, pair_data])
 
         """
         Take the pairs and get the info needed for them. This is done here in order to save runtime memory
@@ -389,7 +386,7 @@ class CreateTrainingData:
             for res in imap_results:
                 results.extend(res)
         total_run_end = time.time()
-        hours, rem = divmod(total_run_end- total_run_start, 3600)
+        hours, rem = divmod(total_run_end - total_run_start, 3600)
         minutes, seconds = divmod(rem, 60)
         stats = [
             ["Total Pairs Used", len(to_use)],
@@ -400,8 +397,10 @@ class CreateTrainingData:
 
         ]
         printStats("Results", stats, line_adaptive=True)
-        printLogToConsole(self.console_log_level,"Total Run time: {:0>2}:{:0>2}:{:05.2f}".format(int(hours),int(minutes),seconds),logging.INFO)
-        self.logger.info("Total Run Time: {:0>2}:{:0>2}:{:05.2f}".format(int(hours),int(minutes),seconds))
+        printLogToConsole(self.console_log_level,
+                          "Total Run time: {:0>2}:{:0>2}:{:05.2f}".format(int(hours), int(minutes), seconds),
+                          logging.INFO)
+        self.logger.info("Total Run Time: {:0>2}:{:0>2}:{:05.2f}".format(int(hours), int(minutes), seconds))
         if self.save_data:
             printLogToConsole(self.console_log_level, "Pickling results", logging.INFO)
             with open("tagged_pairs.pickle", "wb") as f:
@@ -431,7 +430,7 @@ class CreateTrainingData:
                 is_special = False
                 if any([x for x in self.special_keys if x in author]):
                     is_special = True
-                    special_case_count+=1
+                    special_case_count += 1
                 if self.drop_null_authors:
                     has_null = False
                     try:
@@ -442,7 +441,7 @@ class CreateTrainingData:
                     if not info.affiliations[author]["email"]:
                         has_null = True
                     if has_null and not is_special:
-                        dropped_null +=1
+                        dropped_null += 1
                         dropped.append([p, author])
                         pbar.update()
                         continue
@@ -474,21 +473,21 @@ class CreateTrainingData:
         for k in self.special_keys:
             special_split = " ".join(k.split("-")[:self.separate_words])
             special_split = special_split[:self.separate_chars]
-            self.logger.debug("{} special key = {}".format(k,special_split))
+            self.logger.debug("{} special key = {}".format(k, special_split))
             if special_split not in separated:
                 continue
             if special_split not in special_cases:
                 special_cases[special_split] = []
             for a in separated[special_split]:
                 if k in a:
-                    if (not self.allow_exact_special and k!=a) or self.allow_exact_special:
+                    if (not self.allow_exact_special and k != a) or self.allow_exact_special:
                         if self.require_exact_match:
                             if k == a:
                                 special_cases[special_split].append(a)
                         else:
                             special_cases[special_split].append(a)
         for k in special_cases.keys():
-            self.logger.debug("special_cases[{}] len = {}".format(k,len(special_cases[k])))
+            self.logger.debug("special_cases[{}] len = {}".format(k, len(special_cases[k])))
         return special_cases
 
     def _makeCombinations(self, i, special_cases=None, use_cutoff=True):
@@ -688,8 +687,8 @@ class CreateTrainingData:
 
     def parameterDict(self) -> dict:
         out = {
-            "separate_chars":self.separate_chars,
-            "separate words":self.separate_words,
+            "separate_chars": self.separate_chars,
+            "separate words": self.separate_words,
             "name cutoff": self.name_similarity_cutoff,
             "paper_cutoff": self.author_cutoff,
             "pair distribution": self.pair_distribution,
