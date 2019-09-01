@@ -17,10 +17,5 @@ data/pdf_xml
 
 src/__pycache__
 
-src/dense_neural_net.py
-
-tests/test_denseNN.py
-
-data/json/parsed_papers.json
-
 *.pyc
+data/json/parsed_papers.json

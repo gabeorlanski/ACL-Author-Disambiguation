@@ -1,1 +1,2 @@
 *.tei.xml filter=lfs diff=lfs merge=lfs -text
+data/json/parsed_papers.json filter=lfs diff=lfs merge=lfs -text

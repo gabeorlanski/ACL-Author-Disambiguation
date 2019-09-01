@@ -2,6 +2,8 @@ from src.utility_functions import *
 from copy import deepcopy
 from nltk import word_tokenize, corpus, pos_tag
 import re
+from src.utility_functions import removeDupes
+
 remove_punct = re.compile("[^\w\s-]")
 stop_words = corpus.stopwords.words("english")
 
@@ -36,6 +38,7 @@ class Paper:
             self.sections = sections
             self.sections_tokenized = sections_tokenized if sections_tokenized else []
         self.title_pos = title_pos
+
     def addAffiliations(self, affiliations):
         if affiliations:
             raise ValueError("affiliations is not empty")
@@ -72,21 +75,28 @@ class Paper:
     def copy(self):
         return Paper(**deepcopy(self.asDict()))
 
-    def createPOS(self, remove_stops=True):
-        title_tokenized = word_tokenize(remove_punct.sub(" ", cleanName(self.title,replace_punct=False)))
+    def loadTokenized(self, title, citations, sections):
+        self.title_tokenized = title
+        self.citations_tokenized = citations
+        self.sections_tokenized = sections
+
+    def tokenize(self, remove_stops=True):
+        title_tokenized = word_tokenize(remove_punct.sub(" ", cleanName(self.title, replace_punct=False)))
+        title_out = []
         for i, w in enumerate(title_tokenized):
-            if w not in stop_words and remove_stops:
-                self.title_tokenized.append(w)
+            if (w not in stop_words and remove_stops) or not remove_stops:
+                title_out.append(w)
         citation_titles = [word_tokenize(x["title"]) for x in self.citations if x["title"]]
+        citations_out = []
         for c in citation_titles:
             for i, w in enumerate(c):
-                if w not in stop_words and remove_stops:
-                    self.citations_tokenized.append(w)
-
-        self.citations_tokenized = list(set(self.citations_tokenized))
+                if (w not in stop_words and remove_stops) or not remove_stops:
+                    citations_out.append(w)
         section_words = []
-        for k,info in self.sections.items():
-            for n,sent in info.items():
+        for k, info in self.sections.items():
+            for n, sent in info.items():
                 section_words.extend(word_tokenize(sent.lower()))
         section_words = list(set(section_words))
-        self.sections_tokenized = [w for w in section_words if w not in stop_words]
+        section_out = [w for w in section_words if (w not in stop_words and remove_stops) or not remove_stops]
+
+        return removeDupes(title_tokenized), removeDupes(citations_out), removeDupes(section_out)

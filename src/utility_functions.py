@@ -382,7 +382,7 @@ def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level
         printStats("Special Same vs Special Different",special_same_and_different)
 
 
-def getName(parameters):
+def makeParameterName(parameters):
     """
     Generate a model name from its parameters.
     """
@@ -394,3 +394,6 @@ def getName(parameters):
             l.append((k, v))
     name = ",".join(["%s=%s" % (k, str(v).replace(',', '')) for k, v in l])
     return "".join(i for i in name if i not in "\/:*?<>|")
+
+def removeDupes(l):
+    return list(set(l))

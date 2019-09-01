@@ -699,3 +699,177 @@
 2019-08-26 12:25:09,749|   DEBUG|create_training_data|            __call__: 93 batches
 2019-08-26 12:27:19,407|   DEBUG|create_training_data|            __call__: Combining results from pool
 2019-08-26 12:27:19,409|    INFO|create_training_data|            __call__: Total Run Time: 00:09:57.11
+2019-08-31 18:05:15,745|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:05:15,745|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:05:15,745|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:05:15,745|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:07:00,549|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:07:00,550|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:07:00,550|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:07:00,550|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:07:05,723| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:07:05,723|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/dataparsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 567, in __init__
+    parsed = json.load(open(tmp_parsed_path + "parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/dataparsed_papers.json'
+2019-08-31 18:07:59,435|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:07:59,436|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:07:59,436|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:07:59,436|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:08:03,830| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:08:03,831|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/dataparsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 567, in __init__
+    parsed = json.load(open(tmp_parsed_path + "parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/dataparsed_papers.json'
+2019-08-31 18:08:03,832|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:08:03,832|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:08:03,832|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:08:03,832|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:08:03,832|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:08:03,832|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:08:03,832|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:08:03,832|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:08:07,794| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:08:07,794| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:08:07,794|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/dataparsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 567, in __init__
+    parsed = json.load(open(tmp_parsed_path + "parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/dataparsed_papers.json'
+2019-08-31 18:08:07,794|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/dataparsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 567, in __init__
+    parsed = json.load(open(tmp_parsed_path + "parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/dataparsed_papers.json'
+2019-08-31 18:12:22,395|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:12:22,396|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:12:22,396|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:12:22,396|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:16:37,578|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:16:37,579|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:16:37,579|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:16:37,579|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:16:42,474| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:16:42,474|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 572, in __init__
+    parsed = json.load(open(tmp_parsed_path + "/parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+2019-08-31 18:16:42,476|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:16:42,476|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:16:42,476|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:16:42,476|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:16:42,476|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:16:42,476|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:16:42,476|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:16:42,476|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:16:47,252| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:16:47,252| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:16:47,252|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 572, in __init__
+    parsed = json.load(open(tmp_parsed_path + "/parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+2019-08-31 18:16:47,252|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 572, in __init__
+    parsed = json.load(open(tmp_parsed_path + "/parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+2019-08-31 18:24:36,683|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:24:36,684|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:24:36,684|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:24:36,684|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:24:41,027| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:24:41,027|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 572, in __init__
+    parsed = json.load(open(tmp_parsed_path + "/parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+2019-08-31 18:24:41,028|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:24:41,028|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:24:41,029|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:24:41,029|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:24:45,154| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:24:45,154|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 572, in __init__
+    parsed = json.load(open(tmp_parsed_path + "/parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+2019-08-31 18:28:00,306|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:28:00,306|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:28:00,306|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:28:00,306|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 18:28:05,038| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 18:28:05,038|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 572, in __init__
+    parsed = json.load(open(tmp_parsed_path + "/parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+2019-08-31 18:28:05,042|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 18:28:05,042|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 18:28:05,042|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 18:28:05,042|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 20:57:47,105|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 20:57:47,105|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 20:57:47,105|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 20:57:47,105|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 20:57:50,971| WARNING|          pdf_parser|            __init__: load_parsed was passed, but could not load the parsed_papers.json
+2019-08-31 20:57:50,971|   ERROR|          pdf_parser|            __init__: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+Traceback (most recent call last):
+  File "/home/gabe/Desktop/ACL-Author-Disambiguation/src/pdf_parser.py", line 572, in __init__
+    parsed = json.load(open(tmp_parsed_path + "/parsed_papers.json"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gabe/Desktop/ACL-Author-Disambiguation/data/parsed_papers.json'
+2019-08-31 20:57:50,972|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 20:57:50,972|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 20:57:50,972|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 20:57:50,972|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 20:58:27,851|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 20:58:27,852|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 20:58:27,852|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 20:58:27,852|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:00:47,680|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:00:47,680|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:00:47,681|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:00:47,681|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:01:45,850|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:01:45,851|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:01:45,851|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:01:45,851|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:02:02,572|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:02:02,572|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:02:02,573|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:02:02,573|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:03:09,812|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:03:09,812|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:03:09,812|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:03:09,813|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:03:15,556|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:03:15,556|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:03:15,556|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:03:15,556|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:04:25,659|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:04:25,660|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:04:25,660|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:04:25,660|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:04:41,873|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:04:41,873|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:04:41,873|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:04:41,874|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:09:10,417|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:09:10,418|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:09:10,418|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:09:10,418|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:09:15,929|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:09:15,929|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:09:15,930|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:09:15,930|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:10:34,537|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:10:34,537|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:10:34,537|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:10:34,537|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
+2019-08-31 21:10:40,179|   DEBUG|          pdf_parser|            __init__: 4489 aliases
+2019-08-31 21:10:40,180|   DEBUG|          pdf_parser|            __init__: 45715 papers
+2019-08-31 21:10:40,180|   DEBUG|          pdf_parser|            __init__: 36236 ids
+2019-08-31 21:10:40,180|   DEBUG|          pdf_parser|            __init__: 0 manual_fixes
