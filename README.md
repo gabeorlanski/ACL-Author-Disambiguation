@@ -26,7 +26,7 @@ Written by Gabriel Orlanski
 * scipy 1.3.1
 * textdistance 4.1.4
 * tqdm 4.33.0
-
+* ujson 1.35
 # How to use
 ### Basic use: 
 1. Run GROBID and its python client on the pdfs

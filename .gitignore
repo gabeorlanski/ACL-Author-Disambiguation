@@ -22,3 +22,5 @@ src/dense_neural_net.py
 tests/test_denseNN.py
 
 data/json/parsed_papers.json
+
+*.pyc
