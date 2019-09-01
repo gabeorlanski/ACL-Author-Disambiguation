@@ -24,17 +24,21 @@ import json
 
 
 class VoteClassifier:
-    def __init__(self, data, classifiers, classifier_weights=None, test_fraction=8, save_path=None,
-                 model_save_path='/models/', model_name=None, special_cases=None, rand_seed=None, cutoff=None,
-                 save_pairs=False, special_only=False, console_log_level=logging.ERROR, file_log_level=logging.DEBUG,
-                 log_format=None, log_path=None, diff_same_ratio=1, train_all_estimators=False,voting="hard"):
+    def __init__(self, data, classifiers, classifier_weights=None, test_fraction=8, save_data=False,
+                 ext_directory=False, save_path=None, model_save_path='/models/', model_name=None, special_cases=None,
+                 rand_seed=None, cutoff=None, special_only=False, console_log_level=logging.ERROR,
+                 file_log_level=logging.DEBUG, log_format=None, log_path=None, diff_same_ratio=1,
+                 train_all_estimators=False, voting="hard"):
 
         if not log_format:
             log_format = '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s'
         if not log_path:
             log_path = os.getcwd() + "/logs/dnn.log"
         if not save_path:
-            self.save_path = os.getcwd() + "/data/pickle"
+            if ext_directory:
+                self.save_path = os.getcwd() + "/data/pickle"
+            else:
+                self.save_path = os.getcwd() + "/data"
         else:
             self.save_path = save_path
         self.logger = createLogger("DNN", log_path, log_format, console_log_level, file_log_level)
@@ -51,7 +55,7 @@ class VoteClassifier:
         self.logger.debug("seed is {}".format(self.rand_seed))
         self.cutoff = cutoff
         self.dif_same_ratio = diff_same_ratio
-        self.save_pairs = save_pairs
+        self.save_pairs = save_data
         self.special_only = special_only
         self.model_save_path = model_save_path
         self.model_name = model_name
@@ -178,16 +182,16 @@ class VoteClassifier:
                 to_save = [x for x in d]
                 pickle.dump(to_save, f)
 
-        if self.save_pairs:
+        if self.save_data:
             saveData(same, self.save_path + "/same.pickle")
             saveData(different, self.save_path + "/different.pickle")
             saveData(special_same, self.save_path + "/special_same.pickle")
             saveData(special_different, self.save_path + "/special_different.pickle")
             all_pairs = []
-            for k,t,_ in [*same,*different,*special_same,*special_different]:
-                all_pairs.append([k,t])
-            with open(self.save_path + "/save_pairs.pickle","wb") as f:
-                pickle.dump(all_pairs,f)
+            for k, t, _ in [*same, *different, *special_same, *special_different]:
+                all_pairs.append([k, t])
+            with open(self.save_path + "/save_pairs.pickle", "wb") as f:
+                pickle.dump(all_pairs, f)
 
         same = self.convertToUsable(same)
         different = self.convertToUsable(different)
@@ -195,8 +199,8 @@ class VoteClassifier:
         special_different = self.convertToUsable(special_different)
         same, different = self._selectPairsToUse(same, different)
         special_same, special_different = self._selectPairsToUse(special_same, special_different)
-        train,test = self._splitTrainTest(same,different,special_same,special_different)
-        special_train,special_test = self._splitTrainTest(special_same,special_different)
+        train, test = self._splitTrainTest(same, different, special_same, special_different)
+        special_train, special_test = self._splitTrainTest(special_same, special_different)
 
         printLogToConsole(self.console_log_level, "Splitting non-special pairs", logging.INFO)
         self.logger.info("Splitting non-special pairs")
@@ -204,7 +208,7 @@ class VoteClassifier:
         printLogToConsole(self.console_log_level, "Splitting special pairs", logging.INFO)
         self.logger.info("Splitting special pairs")
 
-        return train, test, special_train,special_test
+        return train, test, special_train, special_test
 
     def createModel(self, classifier_parameters):
         self.classifier_params = classifier_parameters
@@ -268,7 +272,7 @@ class VoteClassifier:
                 progress_str = "Finished fitting classifier {} in {:.2f}s".format(n, t1 - t0)
                 printLogToConsole(self.console_log_level, progress_str, logging.INFO)
                 self.logger.info(progress_str)
-        printLogToConsole(self.console_log_level,"Fitting the VotingClassifier Model",logging.INFO)
+        printLogToConsole(self.console_log_level, "Fitting the VotingClassifier Model", logging.INFO)
         self.logger.info("Fitting the VotingClassifier Model")
         self.model.fit(X, Y)
         printLogToConsole(self.console_log_level, "Finished fitting model", logging.INFO)
@@ -288,8 +292,9 @@ class VoteClassifier:
             printLogToConsole(self.console_log_level, "Results for all estimators", logging.INFO)
             self.logger.info("Results for all estimators")
             if not self.special_only:
-                printLogToConsole(self.console_log_level, "First stat line is on normal test, second is for special cases",
-                              logging.INFO)
+                printLogToConsole(self.console_log_level,
+                                  "First stat line is on normal test, second is for special cases",
+                                  logging.INFO)
             column_str = "{} {:>11} {:>11} {:>11}".format(" " * 25, "precision", "recall", "f1-score")
             printLogToConsole(self.console_log_level, column_str, logging.INFO)
             self.logger.info(column_str)
@@ -345,5 +350,5 @@ class VoteClassifier:
         with open(path + "/parameters.json", "w") as f:
             json.dump(parameters_dict, f, indent=4)
 
-        printLogToConsole(self.console_log_level,"Saved model {} to {}".format(self.model_name,path),logging.INFO)
-        self.logger.info("Saved model {} to {}".format(self.model_name,path))
+        printLogToConsole(self.console_log_level, "Saved model {} to {}".format(self.model_name, path), logging.INFO)
+        self.logger.info("Saved model {} to {}".format(self.model_name, path))
