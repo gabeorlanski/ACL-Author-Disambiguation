@@ -1,32 +1,25 @@
 import json
 from src.acl_parser import ACLParser
 from src.pdf_parser import PDFParserWrapper
-from src.create_training_data import CreateTrainingData
-from src.paper import Paper
-from src.utility_functions import createLogger
+from src.config_handler import ConfigHandler
 import os
 import gc
-from nltk.stem import PorterStemmer
-import pickle
 
 if __name__ == '__main__':
     with open(os.getcwd() + "/logs/create_data.log", 'w'):
         pass
-
+    log_path = os.getcwd() + "/logs/create_data.log"
     print("INFO: Starting Create Data")
     gc.collect()
-    config = json.load(open("config.json"))
-    data_path = os.getcwd() + "/data"
+    config_raw= json.load(open("config.json"))
+    config = ConfigHandler(config_raw,"create_data",raise_error_unknown=True)
+    acl_parser = ACLParser(**config["ACLParser"])
+    acl_parser(config["xml_path"],config["name_variants_path"])
 
-    save_path = os.getcwd() + config["save data path"]
-    acl_parser = ACLParser(config["ACLParserXpaths"],save_data=True,save_path=save_path,ext_directory=True)
-    acl_parser(os.getcwd()+config["xml path"],os.getcwd()+config["name variants path"])
-
-    aliases = json.load(open(data_path + "/json/aliases.json"))
-    papers = json.load(open(data_path + "/json/acl_papers.json"))
-    id_to_name = json.load(open(data_path + "/json/id_to_name.json"))
-    same_names = [x.strip() for x in open(data_path + "/txt/same_names.txt").readlines()]
-    parser = PDFParserWrapper(config["parsed pdf path"],save_data=True,save_dir=save_path,ext_directory=True,cores=1,batch_size=500)
-    parser.loadData(papers, aliases, id_to_name, same_names,{})
-    parser(os.getcwd() + "/data/pdf_xml")
+    aliases = json.load(open(config["aliases"]))
+    papers = json.load(open(config["acl_papers"]))
+    id_to_name = json.load(open(config["id_to_name"]))
+    same_names = [x.strip() for x in open(config["same_names"]).readlines()]
+    parser = PDFParserWrapper(papers=papers, aliases=aliases, id_to_name=id_to_name, same_names=same_names,**config["PDFParser"])
+    parser(config["parsed_pdf_path"])
     gc.collect()
