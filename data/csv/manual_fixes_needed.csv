@@ -1,33 +1,3 @@
-L16-1693,,,None,None
-L16-1693,,,None,None
-D18-1374,google-ai,google ai,None,None
-D18-1374,google-ai,google ai,None,None
-W16-4616,fabien-cromieres,fabien cromieres,fabien@pa.jst.jp,aff0
-W16-4616,sadao-kurohashi,sadao kurohashi,None,aff1
-W16-4616,fabien-cromieres,fabien cromieres,None,None
-W16-4616,sadao-kurohashi,sadao kurohashi,None,None
-N19-1191,google-ai,google ai,None,None
-N19-1191,google-ai,google ai,None,None
-W17-4508,michael-volske,michael volske,None,aff0
-W17-4508,martin-potthast,martin potthast,None,aff0
-W17-4508,shahbaz-syed,shahbaz syed,None,aff0
-W17-4508,benno-stein,benno stein,None,aff0
-W17-4508,michael-volske,michael volske,None,None
-W17-4508,martin-potthast,martin potthast,None,None
-W17-4508,shahbaz-syed,shahbaz syed,None,None
-W17-4508,benno-stein,benno stein,None,None
-W12-4515,olga-uryupina,olga uryupina,uryupina@gmail.com,aff0
-W12-4515,alessandro-moschitti,alessandro moschitti,moschitti@disi.unitn.it,aff0
-W12-4515,massimo-poesio,massimo poesio,massimo.poesio@unitn.it,aff0
-W12-4515,olga-uryupina,olga uryupina,None,None
-W12-4515,alessandro-moschitti,alessandro moschitti,None,None
-W12-4515,massimo-poesio,massimo poesio,None,None
-N19-1062,thomas-manzini,thomas manzini,thomas.manzini@microsoft.com,aff0
-N19-1062,yulia-tsvetkov,yulia tsvetkov,None,aff0
-N19-1062,alan-w-black,alan w black,None,aff0
-N19-1062,thomas-manzini,thomas manzini,None,None
-N19-1062,alan-w-black,alan w black,None,None
-N19-1062,yulia-tsvetkov,yulia tsvetkov,None,None
 W17-5709,grad-sc,grad sc,None,None
 W17-5709,inf-sys,inf sys,None,None
 W17-5709,eng,eng,None,None
@@ -75,6 +45,36 @@ W19-3217,kim-vuong,kim vuong,None,None
 W19-3217,stephanie-zimmerman,stephanie zimmerman,None,None
 P18-1131,brendan-oaposconnor,brendan oaposconnor,None,aff0
 P18-1131,brendan-oaposconnor,brendan oaposconnor,None,None
+L16-1693,,,None,None
+L16-1693,,,None,None
+D18-1374,google-ai,google ai,None,None
+D18-1374,google-ai,google ai,None,None
+W16-4616,fabien-cromieres,fabien cromieres,fabien@pa.jst.jp,aff0
+W16-4616,sadao-kurohashi,sadao kurohashi,None,aff1
+W16-4616,fabien-cromieres,fabien cromieres,None,None
+W16-4616,sadao-kurohashi,sadao kurohashi,None,None
+N19-1191,google-ai,google ai,None,None
+N19-1191,google-ai,google ai,None,None
+W17-4508,michael-volske,michael volske,None,aff0
+W17-4508,martin-potthast,martin potthast,None,aff0
+W17-4508,shahbaz-syed,shahbaz syed,None,aff0
+W17-4508,benno-stein,benno stein,None,aff0
+W17-4508,michael-volske,michael volske,None,None
+W17-4508,martin-potthast,martin potthast,None,None
+W17-4508,shahbaz-syed,shahbaz syed,None,None
+W17-4508,benno-stein,benno stein,None,None
+W12-4515,olga-uryupina,olga uryupina,uryupina@gmail.com,aff0
+W12-4515,alessandro-moschitti,alessandro moschitti,moschitti@disi.unitn.it,aff0
+W12-4515,massimo-poesio,massimo poesio,massimo.poesio@unitn.it,aff0
+W12-4515,olga-uryupina,olga uryupina,None,None
+W12-4515,alessandro-moschitti,alessandro moschitti,None,None
+W12-4515,massimo-poesio,massimo poesio,None,None
+N19-1062,thomas-manzini,thomas manzini,thomas.manzini@microsoft.com,aff0
+N19-1062,yulia-tsvetkov,yulia tsvetkov,None,aff0
+N19-1062,alan-w-black,alan w black,None,aff0
+N19-1062,thomas-manzini,thomas manzini,None,None
+N19-1062,alan-w-black,alan w black,None,None
+N19-1062,yulia-tsvetkov,yulia tsvetkov,None,None
 W89-0210,quot,quot,None,None
 W89-0210,quot,quot,None,None
 Y12-1013,hao-li,hao li,None,None
@@ -427,13 +427,6 @@ W17-3004,straintek-athens,straintek athens,None,aff0
 W17-3004,greece,greece,None,aff0
 W17-3004,straintek-athens,straintek athens,None,aff0
 W17-3004,greece,greece,None,aff0
-N04-1021,johns-hopkins,johns hopkins,None,aff0
-N04-1021,johns-hopkins,johns hopkins,None,aff0
-N04-1021,johns-hopkins,johns hopkins,None,aff0
-S19-2113,daniela-gifu,daniela gifu,None,aff0
-S19-2113,diana-trandabat,diana trandabat,None,aff0
-S19-2113,daniela-gifu,daniela gifu,None,None
-S19-2113,diana-trandabat,diana trandabat,None,None
 S18-1082,kevin-swanberg,kevin swanberg,swanb034@d.umn.edu,aff0
 S18-1082,madiha-mirza,madiha mirza,None,aff0
 S18-1082,ted-pedersen,ted pedersen,tpederse@d.umn.edu,aff0
@@ -451,6 +444,13 @@ W14-2603,lingjia-deng,lingjia deng,None,aff0
 W14-2603,janyce-wiebe,janyce wiebe,wiebe@cs.pitt.edu,aff0
 W14-2603,lingjia-deng,lingjia deng,None,None
 W14-2603,janyce-wiebe,janyce wiebe,None,None
+N04-1021,johns-hopkins,johns hopkins,None,aff0
+N04-1021,johns-hopkins,johns hopkins,None,aff0
+N04-1021,johns-hopkins,johns hopkins,None,aff0
+S19-2113,daniela-gifu,daniela gifu,None,aff0
+S19-2113,diana-trandabat,diana trandabat,None,aff0
+S19-2113,daniela-gifu,daniela gifu,None,None
+S19-2113,diana-trandabat,diana trandabat,None,None
 S19-2115,yaakov-hacohen-kerner,yaakov hacohen kerner,None,aff0
 S19-2115,ziv-ben-david,ziv ben david,None,aff0
 S19-2115,gal-didi,gal didi,galdd8@gmail.com,aff0
@@ -489,6 +489,14 @@ W18-3604,emiel-krahmer,emiel krahmer,e.j.krahmer@tilburguniversity.edu,aff0
 W18-3604,thiago-castro-ferreira,thiago castro ferreira,None,None
 W18-3604,sander-wubben,sander wubben,None,None
 W18-3604,emiel-krahmer,emiel krahmer,None,None
+S18-1152,gabor-berend,gabor berend,berendg@inf.u-szeged.hu,None
+S18-1152,marton-makrai,marton makrai,makrai.marton@nytud.mta.hu,None
+S18-1152,peter-foldiak,peter foldiak,peter.foldiak@gmail.com,None
+S18-1152,gabor-berend,gabor berend,None,None
+S18-1152,marton-makrai,marton makrai,None,None
+S18-1152,peter-foldiak,peter foldiak,None,None
+K18-1050,eth-zurich,eth zurich,None,aff0
+K18-1050,eth-zurich,eth zurich,None,aff0
 W13-2134,hareen-venigalla,hareen venigalla,hareen058@gmail.com,aff0
 W13-2134,barbara-di,barbara di,None,aff1
 W13-2134,eugenio,eugenio,None,aff1
@@ -501,14 +509,6 @@ W18-4806,onkwawenna-maracle,onkwawenna maracle,None,None
 W18-4806,kentyohkwa,kentyohkwa,None,None
 W19-2204,george-sanchez,george sanchez,fname.lname@tr.com,aff0
 W19-2204,george-sanchez,george sanchez,None,None
-S18-1152,gabor-berend,gabor berend,berendg@inf.u-szeged.hu,None
-S18-1152,marton-makrai,marton makrai,makrai.marton@nytud.mta.hu,None
-S18-1152,peter-foldiak,peter foldiak,peter.foldiak@gmail.com,None
-S18-1152,gabor-berend,gabor berend,None,None
-S18-1152,marton-makrai,marton makrai,None,None
-S18-1152,peter-foldiak,peter foldiak,None,None
-K18-1050,eth-zurich,eth zurich,None,aff0
-K18-1050,eth-zurich,eth zurich,None,aff0
 W09-3426,kyoto-japan,kyoto japan,None,None
 W09-3426,kyoto-japan,kyoto japan,None,None
 W17-1205,paolo-rosso,paolo rosso,prosso@dsic.upv.es,aff0
@@ -628,6 +628,14 @@ W16-5207,vietnam,vietnam,None,aff0
 W16-5207,ho-chi,ho chi,None,aff0
 W16-5207,minh-city,minh city,None,aff0
 W16-5207,vietnam,vietnam,None,aff0
+N19-1001,eth-zurich,eth zurich,None,None
+N19-1001,eth-zurich,eth zurich,None,None
+S19-2111,himanshu-bansal,himanshu bansal,None,None
+S19-2111,daniel-nagel,daniel nagel,None,None
+S19-2111,himanshu-bansal,himanshu bansal,None,aff0
+S19-2111,daniel-nagel,daniel nagel,None,None
+W09-3303,hong-kong,hong kong,None,aff0
+W09-3303,hong-kong,hong kong,None,aff0
 W18-3024,,,None,None
 W18-3024,,,None,None
 W18-3024,,,None,None
@@ -677,14 +685,6 @@ W18-6105,courtney-napoles,courtney napoles,None,None
 W18-6105,joel-tetreault,joel tetreault,None,None
 D17-1214,google-research,google research,None,aff0
 D17-1214,google-research,google research,None,aff0
-N19-1001,eth-zurich,eth zurich,None,None
-N19-1001,eth-zurich,eth zurich,None,None
-S19-2111,himanshu-bansal,himanshu bansal,None,None
-S19-2111,daniel-nagel,daniel nagel,None,None
-S19-2111,himanshu-bansal,himanshu bansal,None,aff0
-S19-2111,daniel-nagel,daniel nagel,None,None
-W09-3303,hong-kong,hong kong,None,aff0
-W09-3303,hong-kong,hong kong,None,aff0
 W19-5046,huiwei-zhou,huiwei zhou,None,aff0
 W19-5046,xuefei-li,xuefei li,None,aff0
 W19-5046,huiwei-zhou,huiwei zhou,None,None
@@ -897,13 +897,6 @@ P10-2070,mijail-kabadjov,mijail kabadjov,None,None
 P10-2070,ralf-steinberger,ralf steinberger,None,None
 P10-2070,mijail-kabadjov,mijail kabadjov,None,None
 P10-2070,ralf-steinberger,ralf steinberger,None,None
-P19-3004,,,None,aff0
-P19-3004,,,None,aff0
-P19-3004,,,None,aff0
-W19-3025,micah-iserman,micah iserman,None,aff0
-W19-3025,taleen-nalabandian,taleen nalabandian,None,aff0
-W19-3025,micah-iserman,micah iserman,None,None
-W19-3025,taleen-nalabandian,taleen nalabandian,None,None
 W19-1305,rezvaneh-rezapour,rezvaneh rezapour,rezapou2@illinois.edu,aff0
 W19-1305,jana-diesner,jana diesner,jdiesner@illinois.edu,aff0
 W19-1305,rezvaneh-rezapour,rezvaneh rezapour,None,None
@@ -916,6 +909,13 @@ W17-5809,wen-lian-hsu,wen lian hsu,None,aff2
 W17-5809,neha-warikoo,neha warikoo,None,None
 W17-5809,yung-chun-chang,yung chun chang,None,None
 W17-5809,wen-lian-hsu,wen lian hsu,None,None
+P19-3004,,,None,aff0
+P19-3004,,,None,aff0
+P19-3004,,,None,aff0
+W19-3025,micah-iserman,micah iserman,None,aff0
+W19-3025,taleen-nalabandian,taleen nalabandian,None,aff0
+W19-3025,micah-iserman,micah iserman,None,None
+W19-3025,taleen-nalabandian,taleen nalabandian,None,None
 P19-1586,,,None,aff0
 P19-1586,,,None,aff0
 S18-1096,edward-dearden,edward dearden,None,aff0
