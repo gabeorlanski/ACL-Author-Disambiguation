@@ -21,7 +21,8 @@ import warnings
 
 
 class ACLParser:
-    def __init__(self, xpath_config, save_data=False, save_path="/data", ext_directory=False, existing_data=None):
+    def __init__(self, xpath_config, save_data=False, save_path="/data", ext_directory=False, existing_data=None,file_log_level=logging.DEBUG,
+                 console_log_level=logging.ERROR, log_format=None, log_path=None, cores=4):
         self.aliases = {}
         self.same_name = []
         self.similar_names = {}
