@@ -18,4 +18,5 @@ data/pdf_xml
 src/__pycache__
 
 *.pyc
-data/json/parsed_papers.json
+
+logs/*

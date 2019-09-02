@@ -530,7 +530,7 @@ class PDFParserWrapper:
         if not log_format:
             log_format = '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s'
         if not log_path:
-            log_path = os.getcwd() + "/logs/preprocess_data.log"
+            log_path = os.getcwd() + "/logs/pdf_parser.log"
         self.console_log_level = console_log_level
         self.logger = createLogger("pdf_parser", log_path, log_format, console_log_level,
                                    file_log_level)

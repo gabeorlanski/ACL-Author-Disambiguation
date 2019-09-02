@@ -14,7 +14,8 @@ class ConfigHandler:
         "log_format",
         "console_log_level",
         "file_log_level",
-        "cores"
+        "cores",
+        "disable_pbars"
     ]
     pdf_parser_keys = [
         "load_parsed",
@@ -95,17 +96,22 @@ class ConfigHandler:
     excluded_keys = [
         "PDFParserXpaths"
     ]
-    dont_save = [
+    dont_overwrite = [
         "PDFParserXpaths",
         "ACLParserXpaths",
         "save_path",
         "ext_directory",
         "log_path",
         "log_format",
+        "console_log_level",
+        "file_log_level",
+        "DEBUG_MODE",
+        "disable_pbar",
     ]
-    to_readable={
-        "xpath_config":"ACLParserXpaths"
+    to_readable = {
+        "xpath_config": "ACLParserXpaths"
     }
+
     def __init__(self, config_dict, log_file, file_log_level=logging.DEBUG, console_log_level=logging.WARNING,
                  log_format=None, raise_error_unknown=False):
         self.config_dict = {}
@@ -132,7 +138,7 @@ class ConfigHandler:
         self.logger = createLogger("config_handler", log_path, log_format, console_log_level, file_log_level)
         self.console_log_level = console_log_level
         self.logger.debug("Parsing config.json")
-        self.config_dict = {**self.config_dict,**config_dict}
+        self.config_dict = {**self.config_dict, **config_dict}
         self.configs = {
             "shared": {},
             "pdf_parser": {},
@@ -146,7 +152,7 @@ class ConfigHandler:
         for k, v in config_dict.items():
             if k == "log path":
                 continue
-            tmp_k = k.replace(" ","_")
+            tmp_k = k.replace(" ", "_")
             if tmp_k in self.excluded_keys:
                 self.logger.debug("{} is in excluded, skipping it".format(tmp_k))
             else:
@@ -159,7 +165,7 @@ class ConfigHandler:
 
         configs = []
         key = key.replace(" ", "_")
-        if key in self.dont_save and override_config:
+        if key in self.dont_overwrite and override_config:
             self.logger.warning(
                 "{} is in excluded and you are trying to override it, original value will be used".format(key))
         if key in self.shared_keys:
@@ -215,7 +221,7 @@ class ConfigHandler:
                     continue
                 self.logger.debug("{} added to config {} with value {}".format(key, config, value))
                 self.configs[config][key] = value
-            if key in self.dont_save:
+            if key in self.dont_overwrite:
                 return
             if (key in self.config_dict and override_config) or key not in self.config_dict:
                 if key in self.to_readable:
@@ -260,5 +266,5 @@ class ConfigHandler:
                 to_use[self.to_readable[k]] = v
             else:
                 to_use[k] = v
-        with open("config.json","w") as f:
-            json.dump(self.config_dict,f,indent=4,sort_keys=True)
+        with open("config.json", "w") as f:
+            json.dump(self.config_dict, f, indent=4, sort_keys=True)

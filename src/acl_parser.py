@@ -12,20 +12,52 @@ from html import unescape
 import time
 from tqdm import tqdm
 import numpy as np
-from src.utility_functions import *
+from src.utility_functions import printStats, nameFromDict, createID, printLogToConsole, getChildText, \
+    remove_punct_ids, \
+    convertPaperToSortable, createLogger
 import yaml
 import logging
 import sys
 from src.paper import Paper
-import warnings
 
 
 class ACLParser:
     parameters = dict(
-        existing_data=[False,"Load already Parsed data. Doesn't override them"],
+        existing_data=[False, "Load already Parsed data. Doesn't override them"],
     )
-    def __init__(self, xpath_config=None, save_data=False, save_path="/data", ext_directory=False, existing_data=False,file_log_level=logging.DEBUG,
-                 console_log_level=logging.ERROR, log_format=None, log_path=None, cores=4):
+
+    def __init__(self, xpath_config=None, save_data=False, save_path="/data", ext_directory=False, existing_data=False,
+                 file_log_level=logging.DEBUG, console_log_level=logging.ERROR, log_format=None, log_path=None,
+                 cores=4):
+        """
+        :param xpath_config: Dictionary of xpaths to use, You MUST pass this
+        :type xpath_config: dict(str=str)
+        :param save_data: Save data for later use, defaults to False
+        :type save_data: bool
+        :param ext_directory: Save data into directories based on their file type. Is ignored if save_data is False. defaults to False.
+        :type ext_directory: bool
+        :param save_path: Directory to save data, Is ignored if save_data is False.  defaults to None
+        :type save_path: str
+        :param existing_data: Load existing data, defaults to False
+        :type existing_data: bool
+        :param file_log_level: logging level to file (default is debug)
+        :type file_log_level: logging.level
+        :param console_log_level: logging level to console (default is ERROR)
+        :type console_log_level: logging.level
+        :param log_format: format of log messages (defaults to '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s')
+        :type log_format: str
+        :param log_path: path to log files(default is '/logs/acl_parser.log')
+        :type log_path: str
+        :param cores: Doesn't Do anything, just put it in to avoid errors with how I handle configs
+        :type cores: int
+        """
+        if not log_format:
+            log_format = '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s'
+        if not log_path:
+            log_path = os.getcwd() + "/logs/acl_parser.log"
+        self.logger = createLogger("create_training_data", log_path, log_format, console_log_level,
+                                   file_log_level)
+        self.console_log_level = console_log_level
         if xpath_config is None:
             raise ValueError("no xpath_config was passed")
         self.aliases = {}
@@ -49,10 +81,19 @@ class ACLParser:
         self.check_volume = etree.XPath(xpath_config["check_volume"])
 
         self.save_data = save_data
+        if save_path[-1] == "/":
+            save_path = save_path[:-1]
         self.save_dir = save_path
         self.ext_directory = ext_directory
 
     def __call__(self, xml_path, variant_path):
+        """
+        Run the parser
+        :param xml_path: the path to a directory of xml files
+        :type xml_path: str
+        :param variant_path: path to the variants file
+        :type variant_path: str
+        """
         self.parseNameVariants(variant_path)
         self.parseACLXml(xml_path)
 
@@ -68,34 +109,45 @@ class ACLParser:
                 if not os.path.exists(txt_path):
                     os.mkdir(txt_path)
 
-            with open(json_path+"/aliases.json", "w") as f:
+            with open(json_path + "/aliases.json", "w") as f:
                 json.dump(self.aliases, f, indent=4)
-            with open(json_path+ "/id_to_name.json", "w") as f:
+            with open(json_path + "/id_to_name.json", "w") as f:
                 json.dump(self.id_to_name, f, indent=4)
 
             papers_print = {x: self.papers[x].asDict() for x in self.papers.keys()}
-            with open(json_path+"/acl_papers.json", "w") as f:
+            with open(json_path + "/acl_papers.json", "w") as f:
                 json.dump(papers_print, f, indent=4)
 
-            with open(json_path+"/conflicts.json", "w") as f:
+            with open(json_path + "/conflicts.json", "w") as f:
                 json.dump(self.conflicts, f, indent=4)
-            with open(json_path+"/known_affiliations.json", "w") as f:
+            with open(json_path + "/known_affiliations.json", "w") as f:
                 json.dump(self.affiliations, f, indent=4)
-            with open(json_path+"/similar_names.json", "w") as f:
+            with open(json_path + "/similar_names.json", "w") as f:
                 json.dump(self.similar_names, f, indent=4)
-            with open(txt_path+"/same_names.txt", "w") as f:
+            with open(txt_path + "/same_names.txt", "w") as f:
                 for i in self.same_name:
                     f.write(i + "\n")
             if json_path != txt_path:
-                print("INFO: Wrote json files to {}".format(json_path))
-                print("INFO: Wrote txt files to {}".format(txt_path))
+                printLogToConsole(self.console_log_level, "Wrote json files to {}".format(json_path), logging.INFO)
+                self.logger.info("Wrote json files to {}".format(json_path))
+                printLogToConsole(self.console_log_level, "Wrote txt files to {}".format(txt_path), logging.INFO)
+                self.logger.info("Wrote txt files to {}".format(txt_path))
             else:
-                print("INFO: Wrote ACL files to ".format(txt_path))
+                printLogToConsole(self.console_log_level, "Wrote ACL files to {}".format(txt_path), logging.INFO)
+                self.logger.info("Wrote ACL files to {}".format(txt_path))
 
     def parseNameVariants(self, variant_path):
-        raw_aliases = yaml.load(open(variant_path+ "/name_variants.yaml").read(), Loader=yaml.FullLoader)
+        """
+        Parse the name variants from the file
+        :param variant_path: Path to the name variant file. At the moment this must NOT include the actual name of the file as that is hardcoded to be name_variants.yaml
+        :type variant_path: str
+        """
+        # TODO: Implement argument to specify name of name_variants file
+        raw_aliases = yaml.load(open(variant_path + "/name_variants.yaml").read(), Loader=yaml.FullLoader)
         pbar = tqdm(total=len(raw_aliases), file=sys.stdout, dynamic_ncols=True, ascii=" =")
-        pbar.write("Parsing name_variants.yaml...")
+        printLogToConsole(self.console_log_level, "Parsing name_variant.yaml", logging.INFO, print_func=pbar.write,
+                          logger=self.logger)
+        self.logger.debug("{} raw aliases".format(len(raw_aliases)))
         for p in raw_aliases:
             first = p["canonical"]["first"]
             last = p["canonical"]["last"]
@@ -106,10 +158,13 @@ class ACLParser:
                 key = createID(first, last)
             if "comment" in p:
                 if "several people" in p["comment"].lower():
+                    self.logger.debug("{}(key={}) had 'several people' in their comment".format(name, key))
                     self.same_name.append(name)
                 else:
+                    self.logger.debug("{}(key={}) had an affiliation in their comment".format(name, key))
                     self.affiliations[key] = p["comment"]
             if "similar" in p:
+                self.logger.debug("{}(key={}) had similar in their name".format(name, key))
                 self.similar_names[key] = p["similar"]
             if "variants" in p:
                 for variant in p["variants"]:
@@ -122,11 +177,20 @@ class ACLParser:
                         self.aliases[variant["first"].lower()] = key
 
             self.id_to_name[key] = p["canonical"]
+            self.logger.debug("Added the id {} with the name {} to id_to_name".format(key, p["canonical"]))
             pbar.update()
         pbar.close()
         self.same_name = list(set(self.same_name))
 
     def parseACLXml(self, xml_path):
+        """
+        Parse the ACL XMLs to find papers. Modifies:\n
+        - id_to_name\n
+        - papers\n
+        - conflicts\n
+        :param xml_path: path to the ACL
+        :type xml_path: str
+        """
         xml_files = [f for f in os.listdir(xml_path) if os.path.isfile(os.path.join(xml_path, f)) and ".xml" in f]
         ids_to_create = 0
         found_ids = 0
@@ -136,17 +200,23 @@ class ACLParser:
         author_count = []
         people_no_id = defaultdict(list)
         pbar = tqdm(total=len(xml_files), file=sys.stdout, dynamic_ncols=True, ascii=" =")
-        pbar.write("Parsing xml files...")
+        printLogToConsole(self.console_log_level, "Parsing ACL xml files", logging.INFO, print_func=pbar.write,
+                          logger=self.logger)
+        self.logger.debug("{} xml files to parse".format(len(xml_files)))
         for f in xml_files:
+
+            self.logger.debug("Parsing {}".format(f))
             parsed = []
-            root = None
             with open(xml_path + f, "rb") as fb:
                 root = etree.XML(fb.read())
             if root is None:
-                raise pbar.write("{} could not be read".format(f))
+                printLogToConsole(self.console_log_level, "{} could not be read".format(f), logging.WARNING,
+                                  print_func=pbar.write,
+                                  logger=self.logger)
+
             for v in self.get_volumes(root):
                 parsed.extend(self.get_papers(v))
-
+            pre_papers_failed = papers_failed
             for p in parsed:
                 total_papers += 1
                 rtr, status, msg = self._parsePaper(p)
@@ -164,7 +234,11 @@ class ACLParser:
                     author_count.append(len(p_found) + a_found + len(no_ids))
                 else:
                     # pbar.write("WARNING: A paper in {} failed to parse with message {}".format(f,msg))
+                    self.logger.warning("A paper in {} failed to parse with message {}".format(f, msg))
                     papers_failed += 1
+            if papers_failed > pre_papers_failed:
+                printLogToConsole(self.console_log_level, "{} papers in {} had an issue", logging.WARNING, pbar.write,
+                                  self.logger)
             pbar.update()
         pbar.close()
 
@@ -184,6 +258,13 @@ class ACLParser:
         printStats("Results", results, line_adaptive=True)
 
     def _parsePaper(self, paper):
+        """
+        Parse a paper
+        :param paper: The paper to parse
+        :type paper: lxml.etree._Element
+        :return: The parsed paper, new ids, aliases found, people with no ids, return status, error messages
+        :rtype: [Paper(), list(str), int, list(str)],int, list(str)
+        """
         title = getChildText(self.get_title(paper)[0])
         authors = {}
         new_ids = []
@@ -256,6 +337,15 @@ class ACLParser:
                 aliases_found, no_ids], 0, None
 
     def _createNewID(self, people_no_id):
+        """
+        Go through and create new ids and modify papers in self.papers to reflect the new ids found. If there are
+        possible conflicts, it will add them to self.conflicts. and give them an integer at the end of their id. This
+        is determined by the order of their earliest paper.
+        :param people_no_id: dict of people with no id and their papers
+        :type people_no_id: {str:list(str)}
+        :return: the ids with conflicts and all temporary ids found that had the conflict ids, and a count of resolved ids
+        :rtype: collections.defaultdict(list), int
+        """
         id_to_people = defaultdict(list)
         conflicts = []
         conflict_ids = defaultdict(list)
@@ -290,7 +380,7 @@ class ACLParser:
                     str_name = name[0][1]
             for p in people_no_id[name[0]]:
                 self.papers[p].authors[_id] = str_name
-
+        self.logger.debug("Found {} possible conflicts".format(len(conflicts)))
         for conflict, name in conflicts:
             earliest_paper = []
             for p in id_to_people[conflict]:
@@ -302,7 +392,7 @@ class ACLParser:
                 key = conflict if people_count == 0 else conflict + str(people_count)
                 for p in people_no_id[a[0]]:
                     self.papers[p].authors[key] = nameFromDict(name)
-                conflict_ids[conflict].append((key," ".join(a[0])))
+                conflict_ids[conflict].append((key, " ".join(a[0])))
                 people_count += 1
 
         return conflict_ids, resolved

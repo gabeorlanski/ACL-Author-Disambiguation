@@ -208,13 +208,19 @@ def createLogger(logger_name, out_file, msg_format, console_level, file_level=lo
     return logger
 
 
-def printLogToConsole(console_level, msg, level):
+# TODO: Change the arguments to allow easier input
+def printLogToConsole(console_level, msg, level, print_func=print, logger=None, specific_level=None):
     """
     Somewhat redundant function, but I used it a lot just to make printing strings somewhat easier. It DOES NOT send any
     message to the logger
     :param console_level: the logging level of the console log handler
     :param msg: the message to send
     :param level: the level of the message
+    :param print_func: function to print with
+    :param logger: Logger to print with, Defaults to None for instances you don't want to log as well. For
+    example, if you are using a progress bar and you don't want logger messages messing it up
+    :param specific_level: If you would rather use FATAL/CRITICAL/Custom string instead of ERROR or WARN/Custom
+    string instead of WARNING, specify this
     :return: None
     """
     if level == logging.INFO:
@@ -222,19 +228,33 @@ def printLogToConsole(console_level, msg, level):
     elif level == logging.DEBUG:
         level_str = "DEBUG"
     elif level == logging.WARN:
-        level_str = "WARN"
+        level_str = "WARNING"
     elif level == logging.WARNING:
         level_str = "WARNING"
     elif level == logging.ERROR:
         level_str = "ERROR"
-    elif level == logging.CRITICAL:
-        level_str = "CRITICAL"
-    elif level == logging.FATAL:
-        level_str = "FATAL"
     else:
         raise ValueError("Invalid level passed")
+
+    specified_level = False
+    if (level_str == "WARNING" or level_str == "ERROR") and specific_level is not None:
+        level_str = specific_level
+        specified_level = True
+
+    # Checks if the level you passed is INFO or lower, used to prevent duplicate messages
     if level >= 20 and console_level > 20:
-        print("{}: {}".format(level_str, msg))
+        print_func("{}: {}".format(level_str, msg))
+        if logger is not None:
+            if level_str == "FATAL":
+                logger.fatal("{}".format(msg))
+            elif level_str == "CRITICAL":
+                logger.critical("{}".format(msg))
+            elif level_str == "WARN":
+                logger.warn("{}".format(msg))
+            elif specified_level:
+                logger.log("{}:{}".format(level_str,msg))
+            else:
+                logger.log(level, "{}".format(msg))
 
 
 def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level=None, special_cases=None,
@@ -423,6 +443,7 @@ def parseCLIArgs(args, config_handler):
         if arg == "debug":
             if arg_value:
                 args_passed["console_log_level"] = logging.DEBUG
+                args_passed["DEBUG_MODE"] = arg_value
         elif arg == "ext_dir":
             if arg_value:
                 args_passed["ext_directory"] = True
@@ -434,7 +455,7 @@ def parseCLIArgs(args, config_handler):
             if arg_value is not None:
                 args_passed[arg] = arg_value
     for k, v in args_passed.items():
-        config_handler.addArgument(k,v,override)
+        config_handler.addArgument(k, v, override)
     if save:
         config_handler.save()
     return config_handler
