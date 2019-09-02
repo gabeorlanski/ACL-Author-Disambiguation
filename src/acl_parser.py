@@ -132,12 +132,12 @@ class ACLParser:
                     f.write(i + "\n")
             if json_path != txt_path:
                 printLogToConsole(self.console_log_level, "Wrote json files to {}".format(json_path), logging.INFO,
-                                  self.logger)
+                                  logger=self.logger)
                 printLogToConsole(self.console_log_level, "Wrote txt files to {}".format(txt_path), logging.INFO,
-                                  self.logger)
+                                  logger=self.logger)
             else:
                 printLogToConsole(self.console_log_level, "Wrote ACL files to {}".format(txt_path), logging.INFO,
-                                  self.logger)
+                                  logger=self.logger)
 
     def parseNameVariants(self, variant_path):
         """

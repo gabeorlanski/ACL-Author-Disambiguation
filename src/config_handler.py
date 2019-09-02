@@ -15,7 +15,8 @@ class ConfigHandler:
         "console_log_level",
         "file_log_level",
         "cores",
-        "disable_pbars"
+        "disable_pbars",
+        "pbar_ascii"
     ]
     pdf_parser_keys = [
         "load_parsed",
@@ -267,4 +268,5 @@ class ConfigHandler:
             else:
                 to_use[k] = v
         with open("config.json", "w") as f:
-            json.dump(self.config_dict, f, indent=4, sort_keys=True)
+            json.dump(to_use, f, indent=4, sort_keys=True)
+

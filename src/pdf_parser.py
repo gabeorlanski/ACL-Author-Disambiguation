@@ -488,7 +488,7 @@ class PDFParserWrapper:
                                    "department."]
     )
 
-    def __init__(self, papers, aliases, id_to_name, same_names, manual_fixes=None, load_parsed=False,
+    def __init__(self, papers=None, aliases=None, id_to_name=None, same_names=None, manual_fixes=None, load_parsed=False,
                  allow_load_parsed_errors=True, save_data=False, save_path="/data", ext_directory=False,
                  assign_similarity_cutoff=.75, print_errors=False, file_log_level=logging.DEBUG,
                  console_log_level=logging.ERROR, log_format=None, log_path=None, cores=4, parse_parallel_cutoff=1000,

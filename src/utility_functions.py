@@ -9,7 +9,10 @@ import logging
 import numpy as np
 from tqdm import tqdm
 import sys
-
+import ujson
+from nltk import PorterStemmer
+from copy import deepcopy
+stemmer = PorterStemmer()
 remove_punct_ids = re.compile("[^\w\s-]")
 remove_html = re.compile("<[^>]*>")
 remove_punct = re.compile("[^\w\s]")
@@ -252,7 +255,7 @@ def printLogToConsole(console_level, msg, level, print_func=print, logger=None, 
             elif level_str == "WARN":
                 logger.warn("{}".format(msg))
             elif specified_level:
-                logger.log("{}:{}".format(level_str,msg))
+                logger.log("{}:{}".format(level_str, msg))
             else:
                 logger.log(level, "{}".format(msg))
 
@@ -434,7 +437,7 @@ def createCLIGroup(arguments, group_name, group_description, arg_dict):
             group.add_argument("--{}".format(k), nargs=1, type=type(default_value), default=None, help=description)
 
 
-def parseCLIArgs(args, config_handler):
+def parseCLIArgs(args, config_handler, debug_mode=False):
     args_passed = {}
     override = False
     save = False
@@ -455,7 +458,83 @@ def parseCLIArgs(args, config_handler):
             if arg_value is not None:
                 args_passed[arg] = arg_value
     for k, v in args_passed.items():
-        config_handler.addArgument(k, v, override)
+        if debug_mode:
+            print("{}={}".format(k, v))
+        else:
+            config_handler.addArgument(k, v, override)
+    if debug_mode:
+        return
     if save:
         config_handler.save()
     return config_handler
+
+
+def loadData(to_load, logger, config_handler, other_files=None, override_keys=None):
+    if not other_files:
+        other_files = []
+    if not override_keys:
+        override_keys = {}
+    out = {}
+    for file in to_load:
+        try:
+            path = config_handler[file]
+        except KeyError:
+            printLogToConsole(config_handler.console_log_level,
+                              "{} is not in config_handler, skipping".format(file), logging.WARNING,
+                              logger=logger)
+            continue
+        if not isinstance(path, str):
+            printLogToConsole(config_handler.console_log_level,
+                              "config_handler[{}] is not a string, skipping".format(file), logging.WARNING,
+                              logger=logger)
+            continue
+        logger.debug("path={}".format(path))
+        extension = path.split(".")[-1]
+        printLogToConsole(config_handler.console_log_level, "Loading {}".format(file), logging.INFO, logger=logger)
+        if "corpus" in file:
+            logger.debug("File is a corpus")
+            out[file] = [[stemmer.stem(w) for w in x.strip().split()] for x in open(path).readlines()]
+        elif extension == "json":
+            logger.debug("File has json extension")
+
+            out[file] = ujson.load(open(path))
+        elif extension == "txt":
+            logger.debug("File has txt extension")
+            out[file] = [line.strip() for line in open(path).readlines()]
+        elif extension == "csv":
+            logger.debug("File has csv extension")
+            out[file] = [line.strip().split(",") for line in open(path).readlines()]
+        else:
+            printLogToConsole(config_handler.console_log_level,
+                              "{} is an unknown extension, out[{}] is the io reader result from open".format(extension,
+                                                                                                             file),
+                              logging.INFO,
+                              logger=logger)
+            out[file] = open(path)
+
+    logger.debug("Opening other files passed")
+    for path in other_files:
+        file, extension = path.split("/")[-1].split(".")
+        printLogToConsole(config_handler.console_log_level, "Loading {}".format(file), logging.INFO, logger=logger)
+        if extension == "json":
+            logger.debug("File has json extension")
+            out[file] = ujson.load(path)
+        elif extension == "txt":
+            logger.debug("File has txt extension")
+            out[file] = [line.strip() for line in open(path).readlines()]
+        elif extension == "csv":
+            logger.debug("File has csv extension")
+            out[file] = [line.strip().split(",") for line in open(path).readlines()]
+        else:
+            printLogToConsole(config_handler.console_log_level,
+                              "{} is an unknown extension, out[{}] is the io reader result from open".format(extension,
+                                                                                                             file),
+                              logging.WARNING,
+                              logger=logger)
+            out[file] = open(path)
+    logger.debug("Overriding keys")
+    for k,n in override_keys.items():
+        logger.debug("Changing {} to {}".format(k,n))
+        out[n] = deepcopy(out[k])
+        del out[k]
+    return out
