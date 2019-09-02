@@ -456,7 +456,10 @@ def parseCLIArgs(args, config_handler, debug_mode=False):
             save = arg_value
         else:
             if arg_value is not None:
-                args_passed[arg] = arg_value
+                if isinstance(arg_value,list):
+                    args_passed[arg] = arg_value[0]
+                else:
+                    args_passed[arg] = arg_value
     for k, v in args_passed.items():
         if debug_mode:
             print("{}={}".format(k, v))

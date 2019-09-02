@@ -64,8 +64,9 @@ if __name__ == "__main__":
     }
     excluded = []
     for k, c in excluded_dict.items():
-        for _id, n in excluded:
+        for _id, n in c:
             excluded.append(_id)
+    config.addArgument("exclude",excluded)
     pair_creator = CreateTrainingData(parsed, incomplete, special_keys,compare_args=compare_authors_args, **config["CreateTrainingData"])
     gc.collect()
     pair_creator(get_info_all=True)

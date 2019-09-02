@@ -33,7 +33,7 @@ class VoteClassifier:
         rand_seed=[1,"Random seed"],
         cutoff=[1000,"Amount of data cases to use"],
         special_only=[False,"Train and test only on special cases"],
-        diff_same_ratio=[1,"Ratio of diff:same, and vice versa"],
+        diff_same_ratio=[1.0,"Ratio of diff:same, and vice versa"],
         train_all_estimators=[False,"Train every estimator provided, otherwise -"],
         voting=["hard","Voting types, either soft or hard"],
     )
@@ -54,6 +54,8 @@ class VoteClassifier:
             else:
                 self.save_path = os.getcwd() + "/data"
         else:
+            if ext_directory and "/pickle" not in save_path:
+                save_path = save_path + "/pickle"
             self.save_path = save_path
         self.logger = createLogger("DNN", log_path, log_format, console_log_level, file_log_level)
         self.console_log_level = console_log_level

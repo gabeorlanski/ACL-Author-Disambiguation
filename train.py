@@ -46,11 +46,11 @@ if __name__ == '__main__':
     scores = []
     weights = {
         "Nearest Neighbors": 1,
-        "Decision Tree": 2,
+        "Decision Tree": 3,
         "Random Forest": 2,
         "Neural Net": 2,
         "Naive Bayes": 1,
-        "AdaBoost": 3,
+        "AdaBoost": 2,
         "QDA": 1,
     }
     config.addArgument("classifier_weights",weights)
@@ -115,7 +115,7 @@ if __name__ == '__main__':
         'QDA': {},
         'Neural Net': {
             'alpha': 1,
-            'max_iters':1000
+            'max_iter':1000
         }
     }
     classifiers = [

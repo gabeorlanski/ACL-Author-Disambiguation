@@ -1,82 +1,67 @@
-2019-08-24 18:17:58,863|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=0
-2019-08-24 18:17:58,864|   DEBUG|create_training_data|   _makeCombinations: 36 combinations
-2019-08-24 18:17:58,865|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
-2019-08-24 18:17:58,865|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
-2019-08-24 18:17:58,865|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 3K
-2019-08-24 18:17:58,865|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
-2019-08-24 18:17:58,865|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(36 < 100000)
-2019-08-24 18:17:59,333|   DEBUG|create_training_data|   _makeCombinations: Removed 19 pairs
-2019-08-24 18:17:59,334|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=0
-2019-08-24 18:17:59,336|   DEBUG|create_training_data|   _makeCombinations: 36 combinations
-2019-08-24 18:17:59,336|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
-2019-08-24 18:17:59,336|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
-2019-08-24 18:17:59,337|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 3K
-2019-08-24 18:17:59,337|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
-2019-08-24 18:17:59,337|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(36 < 100000)
-2019-08-24 18:17:59,805|   DEBUG|create_training_data|   _makeCombinations: Removed 5 pairs
-2019-08-24 18:17:59,806|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=2
-2019-08-24 18:17:59,808|   DEBUG|create_training_data|   _makeCombinations: 36 combinations
-2019-08-24 18:17:59,808|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
-2019-08-24 18:17:59,808|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
-2019-08-24 18:17:59,808|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 3K
-2019-08-24 18:17:59,809|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
-2019-08-24 18:17:59,809|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(36 < 100000)
-2019-08-24 18:18:00,324|   DEBUG|create_training_data|   _makeCombinations: Removed 6 pairs
-2019-08-24 18:18:04,175|   DEBUG|create_training_data|    _getSpecialCases: student-a special key = s
-2019-08-24 18:18:04,175|   DEBUG|create_training_data|    _getSpecialCases: special_cases[s] len = 3
-2019-08-24 18:18:04,175|    INFO|create_training_data|        _prepareData: Creating pairs for authors starting with p
-2019-08-24 18:18:04,175|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=0
-2019-08-24 18:18:04,177|   DEBUG|create_training_data|   _makeCombinations: 10 combinations
-2019-08-24 18:18:04,177|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
-2019-08-24 18:18:04,177|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
-2019-08-24 18:18:04,177|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 1K
-2019-08-24 18:18:04,178|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
-2019-08-24 18:18:04,178|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(10 < 100000)
-2019-08-24 18:18:04,599|   DEBUG|create_training_data|   _makeCombinations: Removed 1 pairs
-2019-08-24 18:18:05,040|   DEBUG|create_training_data|        _prepareData: 4 pairs to add to same
-2019-08-24 18:18:05,041|   DEBUG|create_training_data|        _prepareData: 5 pairs to add to different
-2019-08-24 18:18:05,041|   DEBUG|create_training_data|        _prepareData: 4 same pairs
-2019-08-24 18:18:05,041|   DEBUG|create_training_data|        _prepareData: 5 different pairs
-2019-08-24 18:18:05,042|    INFO|create_training_data|        _prepareData: Creating pairs for authors starting with s
-2019-08-24 18:18:05,042|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=3
-2019-08-24 18:18:05,043|   DEBUG|create_training_data|   _makeCombinations: 10 combinations
-2019-08-24 18:18:05,043|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
-2019-08-24 18:18:05,043|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
-2019-08-24 18:18:05,044|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 1K
-2019-08-24 18:18:05,044|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
-2019-08-24 18:18:05,044|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(10 < 100000)
-2019-08-24 18:18:05,474|   DEBUG|create_training_data|   _makeCombinations: Removed 4 pairs
-2019-08-24 18:18:05,933|   DEBUG|create_training_data|        _prepareData: 1 pairs to add to same
-2019-08-24 18:18:05,933|   DEBUG|create_training_data|        _prepareData: 5 pairs to add to different
-2019-08-24 18:18:05,933|   DEBUG|create_training_data|        _prepareData: 5 same pairs
-2019-08-24 18:18:05,933|   DEBUG|create_training_data|        _prepareData: 10 different pairs
-2019-08-24 18:18:05,934|    INFO|create_training_data|        _prepareData: Handling special cases
-2019-08-24 18:18:05,934|    INFO|create_training_data|        _prepareData: Creating pairs for special cases that start with s
-2019-08-24 18:18:05,934|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=2
-2019-08-24 18:18:05,936|   DEBUG|create_training_data|   _makeCombinations: 3 combinations
-2019-08-24 18:18:05,936|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
-2019-08-24 18:18:05,936|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
-2019-08-24 18:18:05,936|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 312B
-2019-08-24 18:18:05,937|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
-2019-08-24 18:18:05,937|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(3 < 100000)
-2019-08-24 18:18:06,371|   DEBUG|create_training_data|   _makeCombinations: Removed 0 pairs
-2019-08-24 18:18:10,080|    INFO|create_training_data|   _selectPairsToUse: Selecting pairs to use
-2019-08-24 18:18:10,080|   DEBUG|create_training_data|   _selectPairsToUse: len(same) -> 25
-2019-08-24 18:18:10,080|   DEBUG|create_training_data|   _selectPairsToUse: len(different) -> 100
-2019-08-24 18:18:10,080|   DEBUG|create_training_data|   _selectPairsToUse: pair_count -> 50
-2019-08-24 18:18:10,081|    INFO|create_training_data|   _selectPairsToUse: Using random selection
-2019-08-24 18:18:10,081|    INFO|create_training_data|   _selectPairsToUse: Selecting pairs to use
-2019-08-24 18:18:10,081|   DEBUG|create_training_data|   _selectPairsToUse: len(same) -> 100
-2019-08-24 18:18:10,082|   DEBUG|create_training_data|   _selectPairsToUse: len(different) -> 25
-2019-08-24 18:18:10,082|   DEBUG|create_training_data|   _selectPairsToUse: pair_count -> 50
-2019-08-24 18:18:10,082|    INFO|create_training_data|   _selectPairsToUse: Using random selection
-2019-08-24 18:18:10,082|    INFO|create_training_data|   _selectPairsToUse: Selecting pairs to use
-2019-08-24 18:18:10,083|   DEBUG|create_training_data|   _selectPairsToUse: len(same) -> 100
-2019-08-24 18:18:10,083|   DEBUG|create_training_data|   _selectPairsToUse: len(different) -> 20
-2019-08-24 18:18:10,083|   DEBUG|create_training_data|   _selectPairsToUse: pair_count -> 30
-2019-08-24 18:18:10,083|    INFO|create_training_data|   _selectPairsToUse: Using random selection
-2019-08-24 18:18:10,084|    INFO|create_training_data|   _selectPairsToUse: Selecting pairs to use
-2019-08-24 18:18:10,084|   DEBUG|create_training_data|   _selectPairsToUse: len(same) -> 20
-2019-08-24 18:18:10,085|   DEBUG|create_training_data|   _selectPairsToUse: len(different) -> 100
-2019-08-24 18:18:10,085|   DEBUG|create_training_data|   _selectPairsToUse: pair_count -> 30
-2019-08-24 18:18:10,086|    INFO|create_training_data|   _selectPairsToUse: Using random selection
+2019-09-02 15:36:29,388|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=0
+2019-09-02 15:36:29,390|   DEBUG|create_training_data|   _makeCombinations: 36 combinations
+2019-09-02 15:36:29,391|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
+2019-09-02 15:36:29,391|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
+2019-09-02 15:36:29,392|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 3K
+2019-09-02 15:36:29,392|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
+2019-09-02 15:36:29,393|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(36 < 100000)
+2019-09-02 15:36:29,894|   DEBUG|create_training_data|   _makeCombinations: Removed 19 pairs
+2019-09-02 15:36:29,895|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=0
+2019-09-02 15:36:29,897|   DEBUG|create_training_data|   _makeCombinations: 36 combinations
+2019-09-02 15:36:29,898|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
+2019-09-02 15:36:29,898|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
+2019-09-02 15:36:29,899|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 3K
+2019-09-02 15:36:29,899|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
+2019-09-02 15:36:29,900|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(36 < 100000)
+2019-09-02 15:36:30,429|   DEBUG|create_training_data|   _makeCombinations: Removed 5 pairs
+2019-09-02 15:36:30,430|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=2
+2019-09-02 15:36:30,432|   DEBUG|create_training_data|   _makeCombinations: 36 combinations
+2019-09-02 15:36:30,432|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
+2019-09-02 15:36:30,433|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
+2019-09-02 15:36:30,433|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 3K
+2019-09-02 15:36:30,434|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
+2019-09-02 15:36:30,434|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(36 < 100000)
+2019-09-02 15:36:30,960|   DEBUG|create_training_data|   _makeCombinations: Removed 6 pairs
+2019-09-02 15:36:35,337|   DEBUG|create_training_data|    _getSpecialCases: student-a special key = s
+2019-09-02 15:36:35,338|   DEBUG|create_training_data|    _getSpecialCases: special_cases[s] len = 3
+2019-09-02 15:36:35,339|    INFO|create_training_data|        _prepareData: Creating pairs for authors starting with p
+2019-09-02 15:36:35,339|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=0
+2019-09-02 15:36:35,341|   DEBUG|create_training_data|   _makeCombinations: 10 combinations
+2019-09-02 15:36:35,342|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
+2019-09-02 15:36:35,342|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
+2019-09-02 15:36:35,342|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 1K
+2019-09-02 15:36:35,343|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
+2019-09-02 15:36:35,343|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(10 < 100000)
+2019-09-02 15:36:35,831|   DEBUG|create_training_data|   _makeCombinations: Removed 1 pairs
+2019-09-02 15:36:36,320|   DEBUG|create_training_data|        _prepareData: 4 pairs to add to same
+2019-09-02 15:36:36,321|   DEBUG|create_training_data|        _prepareData: 5 pairs to add to different
+2019-09-02 15:36:36,321|   DEBUG|create_training_data|        _prepareData: 4 same pairs
+2019-09-02 15:36:36,322|   DEBUG|create_training_data|        _prepareData: 5 different pairs
+2019-09-02 15:36:36,323|    INFO|create_training_data|        _prepareData: Creating pairs for authors starting with s
+2019-09-02 15:36:36,323|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=3
+2019-09-02 15:36:36,325|   DEBUG|create_training_data|   _makeCombinations: 10 combinations
+2019-09-02 15:36:36,325|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
+2019-09-02 15:36:36,325|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
+2019-09-02 15:36:36,326|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 1K
+2019-09-02 15:36:36,326|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
+2019-09-02 15:36:36,327|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(10 < 100000)
+2019-09-02 15:36:36,829|   DEBUG|create_training_data|   _makeCombinations: Removed 4 pairs
+2019-09-02 15:36:37,318|   DEBUG|create_training_data|        _prepareData: 1 pairs to add to same
+2019-09-02 15:36:37,319|   DEBUG|create_training_data|        _prepareData: 5 pairs to add to different
+2019-09-02 15:36:37,319|   DEBUG|create_training_data|        _prepareData: 5 same pairs
+2019-09-02 15:36:37,319|   DEBUG|create_training_data|        _prepareData: 10 different pairs
+2019-09-02 15:36:37,320|    INFO|create_training_data|        _prepareData: Handling special cases
+2019-09-02 15:36:37,320|    INFO|create_training_data|        _prepareData: Creating pairs for special cases that start with s
+2019-09-02 15:36:37,321|   DEBUG|create_training_data|   _makeCombinations: len(special_cases)=2
+2019-09-02 15:36:37,322|   DEBUG|create_training_data|   _makeCombinations: 3 combinations
+2019-09-02 15:36:37,323|   DEBUG|create_training_data|   _makeCombinations: 0 special combinations
+2019-09-02 15:36:37,323|   DEBUG|create_training_data|   _makeCombinations: Max combination size 104 bytes
+2019-09-02 15:36:37,323|   DEBUG|create_training_data|   _makeCombinations: Size of combinations 312B
+2019-09-02 15:36:37,324|    INFO|create_training_data|   _makeCombinations: Removing pairs that are not valid
+2019-09-02 15:36:37,324|   DEBUG|create_training_data|   _makeCombinations: total combinations is less than min batch length(3 < 100000)
+2019-09-02 15:36:38,334|   DEBUG|create_training_data|   _makeCombinations: Removed 0 pairs
+2019-09-02 15:36:42,734|    INFO|create_training_data|   _selectPairsToUse: Selecting pairs to use
+2019-09-02 15:36:42,734|   DEBUG|create_training_data|   _selectPairsToUse: len(same) -> 25
+2019-09-02 15:36:42,735|   DEBUG|create_training_data|   _selectPairsToUse: len(different) -> 100
+2019-09-02 15:36:42,735|   DEBUG|create_training_data|   _selectPairsToUse: pair_count -> 25
+2019-09-02 15:36:42,736|    INFO|create_training_data|   _selectPairsToUse: Using random selection

@@ -147,7 +147,7 @@ class CreateTrainingData:
     )
 
     def __init__(self, papers, incomplete_papers, special_keys=None, save_data=False, ext_directory=False,
-                 save_path=None, diff_same_ratio=1.0, author_cutoff=1, name_similarity_cutoff=.95,
+                 save_path=None, diff_same_ratio=1.0, author_cutoff=0, name_similarity_cutoff=.95,
                  pair_distribution="random", separate_chars=1, separate_words=1, algorithm="jaro-similarity",
                  exclude=None, rand_seed=None, cores=4, batch_size=25000, allow_exact_special=True,
                  min_batch_len=100000, file_log_level=logging.DEBUG, console_log_level=logging.WARNING, log_format=None,
@@ -251,6 +251,7 @@ class CreateTrainingData:
         self.print_compare_stats = print_compare_stats
         self.remove_single_author = remove_single_author
         self.require_exact_match = require_exact_match
+        self.logger.debug("{} authors in self.excluded".format(len(self.exclude)))
         gc.collect()
 
     def __call__(self, pairs_to_use=None, authors_to_use=None, debug_retrieve_info=None, get_info_all=False,
@@ -449,8 +450,11 @@ class CreateTrainingData:
                 continue
             for author in info.affiliations.keys():
                 self.all_author_papers[author].append(p)
-                if author in self.exclude or (not self.allow_exact_special and any([x for x in self.special_keys if
-                                                                                    x == author])):
+                if author in self.exclude:
+                    pbar.update()
+                    excluded.append((p, author))
+                    continue
+                if not self.allow_exact_special and any([x for x in self.special_keys if x == author]):
                     pbar.update()
                     excluded.append((p, author))
                     continue
