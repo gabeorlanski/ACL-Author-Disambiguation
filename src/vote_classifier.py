@@ -24,6 +24,20 @@ import json
 
 
 class VoteClassifier:
+    parameters = dict(
+        classifier_weights=[{},"Weights for each classifier"],
+        test_fraction=[8,"Amount to split data into train and test. ex test_fraction=8 train=7/8 * data, test=1/7*data"],
+        model_save_path=['/models/',"Path where to save models"],
+        model_name=["VC1","Model Name"],
+        special_cases=[[],"Special cases you want to evaluate"],
+        rand_seed=[1,"Random seed"],
+        cutoff=[1000,"Amount of data cases to use"],
+        special_only=[False,"Train and test only on special cases"],
+        diff_same_ratio=[1,"Ratio of diff:same, and vice versa"],
+        train_all_estimators=[False,"Train every estimator provided, otherwise -"],
+        voting=["hard","Voting types, either soft or hard"],
+    )
+
     def __init__(self, data, classifiers, classifier_weights=None, test_fraction=8, save_data=False,
                  ext_directory=False, save_path=None, model_save_path='/models/', model_name=None, special_cases=None,
                  rand_seed=None, cutoff=None, special_only=False, console_log_level=logging.ERROR,
@@ -55,7 +69,7 @@ class VoteClassifier:
         self.logger.debug("seed is {}".format(self.rand_seed))
         self.cutoff = cutoff
         self.dif_same_ratio = diff_same_ratio
-        self.save_pairs = save_data
+        self.save_data = save_data
         self.special_only = special_only
         self.model_save_path = model_save_path
         self.model_name = model_name

@@ -250,7 +250,7 @@ class ConfigHandler:
         files = ["id_to_name.json", "parsed_papers.json", "aliases.json", "same_names.txt", "acl_papers.json",
                  "incomplete_papers.txt", "department_corpus.txt", "org_corpus.txt", "conflicts.json",
                  "organizations.json", "effective_org_info.json", "author_papers.json", "similar_names.json",
-                 "known_affiliations.json","test_special_keys.txt","conflict_author_parsed.txt"]
+                 "known_affiliations.json","test_special_keys.txt","conflict_author_parsed.txt","tagged_pairs.pickle"]
 
         for f in files:
             file_name, extension = f.split(".")

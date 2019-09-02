@@ -480,7 +480,7 @@ class PDFParserWrapper:
         guess_min=[.5, "minimum number of occurrences to guess."],
         combine_orgs=[False, "Combine orgs that are possibly the same."],
         combine_orgs_cutoff=[.8, "Minimum similarity between two orgs to combine them."],
-        use_org_most_common=[True, "Use the most common address for an organization"],
+        use_org_most_common=[False, "Use the most common address for an organization"],
         known_affiliations=[False, "Use known affiliations from name_variants.yaml"],
         attempt_fix_parser_errors=[False,
                                    "Attempt to remove possible parser errors by looking if parts of the parsed data "
@@ -493,7 +493,7 @@ class PDFParserWrapper:
                  assign_similarity_cutoff=.75, print_errors=False, file_log_level=logging.DEBUG,
                  console_log_level=logging.ERROR, log_format=None, log_path=None, cores=4, parse_parallel_cutoff=1000,
                  parse_batch_size=200, guess_email_and_aff=False, guess_min=.5, combine_orgs=False, combine_orgs_cutoff=.8,
-                 use_org_most_common=True, known_affiliations=False, attempt_fix_parser_errors=False):
+                 use_org_most_common=False, known_affiliations=False, attempt_fix_parser_errors=False):
         """
         Wrapper for the PDF Parser, allows parallel pdf parsing at the expense of memory
         :param papers: Dict of Paper objets or dicts
@@ -523,8 +523,7 @@ class PDFParserWrapper:
         :param use_org_most_common: Use the most common address for an organization
         :param known_affiliations: Use known affiliations from name_variants.yaml NOT IMPLEMENTED YET
         :param attempt_fix_parser_errors: Attempt to remove possible parser errors by looking if parts of the parsed
-        data appear in other entries. Items that would be affected are organization, email, department. NOT
-        IMPLEMENTED YET
+        data appear in other entries. Items that would be affected are organization, email, department.
         """
         self.save_data = save_data
         if not log_format:
@@ -988,20 +987,23 @@ class PDFParserWrapper:
             org_pbar.update()
         org_pbar.close()
         printLogToConsole(self.console_log_level, "Combining information in each organization", logging.INFO)
-        self.logger.info("Combining information in each organization")
-        if self.cores == 1:
-            org_pbar = tqdm(total=len(tmp_organizations_info), file=sys.stdout)
-            for k in tmp_organizations_info.keys():
-                self.organizations[k] = self._combineOrgInfo([k, tmp_organizations_info[k]])
-                org_pbar.update()
-            org_pbar.close()
+        if self.attempt_fix_parse:
+            self.logger.info("Combining information in each organization")
+            if self.cores == 1:
+                org_pbar = tqdm(total=len(tmp_organizations_info), file=sys.stdout)
+                for k in tmp_organizations_info.keys():
+                    self.organizations[k] = self._combineOrgInfo([k, tmp_organizations_info[k]])
+                    org_pbar.update()
+                org_pbar.close()
+            else:
+                with mp.Pool(self.cores) as Pool:
+                    org_args = [[k, v] for k, v in tmp_organizations_info.items()]
+                    res = list(
+                        tqdm(Pool.imap_unordered(self._combineOrgInfo, org_args), total=len(org_args), file=sys.stdout))
+                for k, r in res:
+                    self.organizations[k] = r
         else:
-            with mp.Pool(self.cores) as Pool:
-                org_args = [[k, v] for k, v in tmp_organizations_info.items()]
-                res = list(
-                    tqdm(Pool.imap_unordered(self._combineOrgInfo, org_args), total=len(org_args), file=sys.stdout))
-            for k, r in res:
-                self.organizations[k] = r
+            self.organizations=deepcopy(tmp_organizations_info)
         # TODO: Implement way to combine orgs
         self.org_names = list(set(self.org_names))
         self.department_names = list(set(self.department_names))

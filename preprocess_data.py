@@ -10,7 +10,7 @@ import argparse
 
 stemmer = PorterStemmer()
 arguments = argparse.ArgumentParser(
-    description="Parse ACL files and parsed PDF xml files. You can specify these in config.json instead of using "
+    description="Process papers using CreateTrainingData. You can specify these in config.json instead of using "
                 "command line arguments",
     formatter_class=argparse.MetavarTypeHelpFormatter)
 shared_group = arguments.add_argument_group("Universal",
