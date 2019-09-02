@@ -31,58 +31,36 @@
     ],
     "classifier_weights": {
         "Nearest Neighbors": 1,
-        "Decision Tree": 4,
-        "Random Forest": 4,
+        "Decision Tree": 3,
+        "Random Forest": 2,
         "Neural Net": 2,
         "Naive Bayes": 1,
-        "AdaBoost": 3,
+        "AdaBoost": 2,
         "QDA": 1
     },
     "classifier_params": {
         "Nearest Neighbors": {
-            "algorithm": "ball_tree",
-            "leaf_size": 10,
-            "metric": "manhattan",
-            "n_neighbors": 9,
-            "p": 1,
-            "weights": "uniform"
+            "n_neighbors": 7
         },
         "Decision Tree": {
-            "max_depth": 5,
-            "max_features": 5,
-            "min_samples_leaf": 4,
-            "min_samples_split": 2,
-            "min_weight_fraction_leaf": 0.0
+            "max_depth": 5
         },
         "Random Forest": {
             "max_depth": 5,
             "max_features": 5,
-            "min_samples_leaf": 5,
-            "min_samples_split": 2,
-            "min_weight_fraction_leaf": 0.0,
-            "warm_start": false
+            "n_estimators": 10
         },
-        "AdaBoost": {
-            "algorithm": "SAMME",
-            "learning_rate": 1.0,
-            "n_estimators": 100
-        },
+        "AdaBoost": {},
         "Naive Bayes": {},
-        "QDA": {
-            "tol": 0.25
-        },
+        "QDA": {},
         "Neural Net": {
-            "activation": "identity",
-            "alpha": 0.14285714285714285,
-            "learning_rate": "adaptive",
-            "power_t": 0.6,
-            "solver": "adam",
-            "tol": 0.3333333333333333
+            "alpha": 1,
+            "max_iter": 1000
         }
     },
     "special_only": false,
-    "test_fraction": 8,
-    "rand_seed": 8867,
-    "diff_same_ratio": 1,
+    "test_fraction": 3,
+    "rand_seed": 9537,
+    "diff_same_ratio": 0.9,
     "cutoff": null
 }
