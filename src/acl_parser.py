@@ -34,7 +34,8 @@ class ACLParser:
         :type xpath_config: dict(str=str)
         :param save_data: Save data for later use, defaults to False
         :type save_data: bool
-        :param ext_directory: Save data into directories based on their file type. Is ignored if save_data is False. defaults to False.
+        :param ext_directory: Save data into directories based on their file type. Is ignored if save_data is False.
+        defaults to False.
         :type ext_directory: bool
         :param save_path: Directory to save data, Is ignored if save_data is False.  defaults to None
         :type save_path: str
@@ -44,7 +45,8 @@ class ACLParser:
         :type file_log_level: logging.level
         :param console_log_level: logging level to console (default is ERROR)
         :type console_log_level: logging.level
-        :param log_format: format of log messages (defaults to '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s')
+        :param log_format: format of log messages (defaults to '%(asctime)s|%(levelname)8s|%(module)20s|%(
+        funcName)20s: %(message)s')
         :type log_format: str
         :param log_path: path to log files(default is '/logs/acl_parser.log')
         :type log_path: str
@@ -68,7 +70,8 @@ class ACLParser:
         self.papers = {}
         self.conflicts = defaultdict(list)
         self.parser = etree.HTMLParser(encoding="utf-8")
-
+        self.use_existing_data = existing_data
+        self.cores = cores
         # Xpaths used for parsing the paper xml
         self.get_volumes = etree.XPath(xpath_config["volumes"])
         self.get_papers = etree.XPath(xpath_config["papers"])
@@ -128,18 +131,19 @@ class ACLParser:
                 for i in self.same_name:
                     f.write(i + "\n")
             if json_path != txt_path:
-                printLogToConsole(self.console_log_level, "Wrote json files to {}".format(json_path), logging.INFO)
-                self.logger.info("Wrote json files to {}".format(json_path))
-                printLogToConsole(self.console_log_level, "Wrote txt files to {}".format(txt_path), logging.INFO)
-                self.logger.info("Wrote txt files to {}".format(txt_path))
+                printLogToConsole(self.console_log_level, "Wrote json files to {}".format(json_path), logging.INFO,
+                                  self.logger)
+                printLogToConsole(self.console_log_level, "Wrote txt files to {}".format(txt_path), logging.INFO,
+                                  self.logger)
             else:
-                printLogToConsole(self.console_log_level, "Wrote ACL files to {}".format(txt_path), logging.INFO)
-                self.logger.info("Wrote ACL files to {}".format(txt_path))
+                printLogToConsole(self.console_log_level, "Wrote ACL files to {}".format(txt_path), logging.INFO,
+                                  self.logger)
 
     def parseNameVariants(self, variant_path):
         """
         Parse the name variants from the file
-        :param variant_path: Path to the name variant file. At the moment this must NOT include the actual name of the file as that is hardcoded to be name_variants.yaml
+        :param variant_path: Path to the name variant file. At the moment this must NOT include the actual name of
+        the file as that is hardcoded to be name_variants.yaml
         :type variant_path: str
         """
         # TODO: Implement argument to specify name of name_variants file
@@ -177,7 +181,7 @@ class ACLParser:
                         self.aliases[variant["first"].lower()] = key
 
             self.id_to_name[key] = p["canonical"]
-            self.logger.debug("Added the id {} with the name {} to id_to_name".format(key, p["canonical"]))
+            self.logger.debug("Added the id {} with the name {} to id_to_name".format(key, name))
             pbar.update()
         pbar.close()
         self.same_name = list(set(self.same_name))
@@ -237,7 +241,9 @@ class ACLParser:
                     self.logger.warning("A paper in {} failed to parse with message {}".format(f, msg))
                     papers_failed += 1
             if papers_failed > pre_papers_failed:
-                printLogToConsole(self.console_log_level, "{} papers in {} had an issue", logging.WARNING, pbar.write,
+                printLogToConsole(self.console_log_level,
+                                  "{} papers in {} had an issue".format(papers_failed - pre_papers_failed, f),
+                                  logging.WARNING, pbar.write,
                                   self.logger)
             pbar.update()
         pbar.close()
@@ -343,7 +349,8 @@ class ACLParser:
         is determined by the order of their earliest paper.
         :param people_no_id: dict of people with no id and their papers
         :type people_no_id: {str:list(str)}
-        :return: the ids with conflicts and all temporary ids found that had the conflict ids, and a count of resolved ids
+        :return: the ids with conflicts and all temporary ids found that had the conflict ids, and a count of
+        resolved ids
         :rtype: collections.defaultdict(list), int
         """
         id_to_people = defaultdict(list)
