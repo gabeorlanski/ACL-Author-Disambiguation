@@ -2,7 +2,7 @@ import json
 from src.acl_parser import ACLParser
 from src.pdf_parser import PDFParserWrapper
 from src.config_handler import ConfigHandler
-from src.utility_functions import createCLIGroup, parseCLIArgs
+from src.utility_functions import createCLIGroup, parseCLIArgs, loadData
 import os
 import gc
 import argparse
@@ -48,11 +48,8 @@ if __name__ == '__main__':
     acl_parser = ACLParser(**config["ACLParser"])
     acl_parser(config["xml_path"], config["name_variants_path"])
 
-    aliases = json.load(open(config["aliases"]))
-    papers = json.load(open(config["acl_papers"]))
-    id_to_name = json.load(open(config["id_to_name"]))
-    same_names = [x.strip() for x in open(config["same_names"]).readlines()]
-    parser = PDFParserWrapper(papers=papers, aliases=aliases, id_to_name=id_to_name, same_names=same_names,
+    data = loadData(["aliases","acl_papers","id_to_name","same_names"],config.logger,config,override_keys={"acl_papers":"papers"})
+    parser = PDFParserWrapper(**data,
                               **config["PDFParser"])
     parser(config["parsed_pdf_path"])
     gc.collect()
