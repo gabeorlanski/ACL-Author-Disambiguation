@@ -7,7 +7,7 @@ from src.utility_functions import createLogger
 import os
 import gc
 from nltk.stem import PorterStemmer
-import pickle
+
 stemmer = PorterStemmer()
 
 if __name__ == "__main__":

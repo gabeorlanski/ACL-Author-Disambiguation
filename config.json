@@ -36,7 +36,7 @@
   },
   "xml path": "/data/xml/ACL/",
   "name variants path": "/data",
-  "directories for file type": true,
+  "ext directory": true,
   "save path": "/data",
   "save data": true,
   "parsed pdf path": "/data/pdf_xml",
