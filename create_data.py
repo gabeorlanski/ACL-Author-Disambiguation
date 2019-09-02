@@ -4,6 +4,10 @@ from src.pdf_parser import PDFParserWrapper
 from src.config_handler import ConfigHandler
 import os
 import gc
+import argparse
+arguments = argparse.ArgumentParser(description="Parse ACL files and parsed PDF xml files")
+shared_group = arguments.add_argument_group("Universal","Universal Arguments")
+shared_group.add_argument("")
 
 if __name__ == '__main__':
     with open(os.getcwd() + "/logs/create_data.log", 'w'):

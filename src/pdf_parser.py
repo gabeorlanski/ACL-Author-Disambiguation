@@ -467,6 +467,27 @@ class PDFParser:
 
 
 class PDFParserWrapper:
+    # The main reason I did this was to have an easy way to generate command line arguments with are parse,
+    # and maybe for later saving said parameters
+    parameters = dict(
+        load_parsed=False,
+        allow_load_parsed_errors=True,
+        similarity_cutoff=.75,
+        print_errors=False,
+        parse_parallel_cutoff=1000,
+        batch_size=200,
+        guess_email_and_aff=False,
+        guess_min=.5,
+        combine_orgs=False,
+        combine_orgs_cutoff=.8,
+        use_org_most_common=True,
+        known_affiliations=None,
+        attempt_fix_parser_errors=False
+    )
+    parameter_descriptions = dict(
+        
+    )
+
     def __init__(self, papers, aliases, id_to_name, same_names, manual_fixes=None, load_parsed=False,
                  allow_load_parsed_errors=True, save_data=False, save_path="/data", ext_directory=False,
                  similarity_cutoff=.75, print_errors=False, file_log_level=logging.DEBUG,
@@ -475,7 +496,7 @@ class PDFParserWrapper:
                  use_org_most_common=True, known_affiliations=None, attempt_fix_parser_errors=False):
         """
         Wrapper for the PDF Parser, allows parallel pdf parsing at the expense of memory
-        :param paeprs: Dict of Paper objets or dicts
+        :param papers: Dict of Paper objets or dicts
         :param aliases: dict of aliases where key is alias, value is corresponding id
         :param id_to_name: dict of ids where key is id and value is name
         :param same_names: list of names that have been marked as different people who have the same name

@@ -95,10 +95,14 @@ class ConfigHandler:
     excluded_keys = [
         "PDFParserXpaths"
     ]
-    readable_dict = {
-        "directories for file type": "ext_directory",
-        "save path": "save_path"
-    }
+    dont_save = [
+        "PDFParserXpaths",
+        "ACLParserXpaths",
+        "save_path",
+        "ext_directory",
+        "log_path",
+        "log_format",
+    ]
 
     def __init__(self, config_dict, log_file, file_log_level=logging.DEBUG, console_log_level=logging.WARNING,
                  log_format=None, raise_error_unknown=False):
@@ -112,78 +116,68 @@ class ConfigHandler:
             if "\\" in log_path:
                 print("ERROR: log path={}".format(log_path))
                 raise ValueError("\\ in the log path, currently file paths with '\\' are not supported")
-            if log_path[0] !="/":
-                log_path= "/"+log_path
+            if log_path[0] != "/":
+                log_path = "/" + log_path
             if log_path[-1] != "/":
                 log_path = log_path + "/"
-            log_path = os.getcwd()+log_path + "{}.log".format(log_file)
+            log_path = os.getcwd() + log_path + "{}.log".format(log_file)
             config_dict["log path"] = log_path
         self.raise_error_unknown = raise_error_unknown
         self.logger = createLogger("config_handler", log_path, log_format, console_log_level, file_log_level)
         self.console_log_level = console_log_level
         self.logger.debug("Parsing config.json")
-
-        self.pdf_parser_config = {}
-        self.acl_parser_config = {}
-        self.create_training_config = {}
-        self.vote_classifier_config = {}
-        self.author_disambiguation_config = {}
-        self.shared_config = {}
-        self.path_config = {}
+        self.config_dict = config_dict
+        self.configs = {
+            "shared": {},
+            "pdf_parser": {},
+            "acl_parser": {},
+            "create_training": {},
+            "vote_classifier": {},
+            "author_disambiguation": {},
+            "paths": {},
+        }
         for k, v in config_dict.items():
             if k in self.excluded_keys:
                 self.logger.debug("{} is in excluded, skipping it".format(k))
             else:
                 self.addArgument(k, v)
-        if "save_path" not in self.shared_config:
+        if "save_path" not in self.configs["shared"]:
             raise KeyError("save_path is not in shared config")
         self._createExtraPaths()
 
-    def addArgument(self, key, value):
-        if key in self.readable_dict:
-            key = self.readable_dict[key]
+    def addArgument(self, key, value, override_config=False):
 
+        configs = []
         key = key.replace(" ", "_")
-        valid_argument = False
+        if key in self.dont_save and override_config:
+            self.logger.warning(
+                "{} is in excluded and you are trying to override it, original value will be used".format(key))
         if key in self.shared_keys:
             if "path" in key:
                 if value[-1] != "/":
-                    value = value+"/"
+                    value = value + "/"
                 if os.getcwd() not in value:
                     if value[0] != "/":
                         value = "/" + value
-                    value = os.getcwd()+value
-
-            self.logger.debug("{} with value {} is in shared".format(key, value))
-            self.shared_config[key] = value
-            valid_argument = True
+                    value = os.getcwd() + value
+            configs.append("shared")
 
         if key in self.pdf_parser_keys:
-            self.logger.debug("{} with value {} is in PDFParser".format(key, value))
-            self.pdf_parser_config[key] = value
-            valid_argument = True
+            configs.append("pdf_parser")
 
         if key in self.acl_parser_keys:
             if key == "ACLParserXpaths":
                 key = "xpath_config"
-            self.logger.debug("{} with value {} is in ACLParser".format(key, value))
-            self.acl_parser_config[key] = value
-            valid_argument = True
+            configs.append("acl_parser")
 
         if key in self.create_training_data_keys:
-            self.logger.debug("{} with value {} is in CreateTrainingData".format(key, value))
-            self.create_training_config[key] = value
-            valid_argument = True
+            configs.append("create_training")
 
         if key in self.vote_classifier_keys:
-            self.logger.debug("{} with value {} is in VoteClassifier".format(key, value))
-            self.vote_classifier_keys[key] = value
-            valid_argument = True
+            configs.append("vote_classifier")
 
         if key in self.author_disambiguation_keys:
-            self.logger.debug("{} with value {} is in AuthorDisambiguation".format(key, value))
-            self.author_disambiguation_config[key] = value
-            valid_argument = True
+            configs.append("author_disambiguation")
 
         if key in self.path_keys:
             if "\\" in value:
@@ -191,33 +185,49 @@ class ConfigHandler:
                 raise ValueError("\\ in the {}, currently file paths with '\\' are not supported".format(key))
             if os.getcwd() not in value:
                 if value[0] != "/":
-                    value = "/"+value
-                value = os.getcwd()+value
+                    value = "/" + value
+                value = os.getcwd() + value
             if value[-1] != "/":
                 value = value + "/"
-            self.logger.debug("Found path {} with value {}".format(key, value))
-            self.path_config[key] = value
-            valid_argument = True
+            configs.append("paths")
 
-        if not valid_argument:
+        if len(configs) == 0:
             if self.raise_error_unknown:
                 raise ValueError("{} is not a valid argument".format(key))
             else:
                 self.logger.warning("{} is not a valid argument, value will be ignored".format(key))
+        else:
+            for config in configs:
+                if key in self.configs and not override_config:
+                    self.logger.debug(
+                        "{} was not added to {} because it already was there and override_config=False".format(key,
+                                                                                                               config))
+                    continue
+                elif key in self.dont_save:
+                    self.logger.debug(
+                        "{} was not added to {} because it is excluded".format(key,config))
+                    continue
+                self.logger.debug("{} added to config {} with value {}".format(key, config, value))
+                self.configs[config][key] = value
+            if key in self.dont_save:
+                return
+            if (key in self.config_dict and override_config) or key not in self.config_dict:
+                self.logger.debug("Added {} to config dict".format(key.replace("_", " ")))
+                self.config_dict[key.replace("_", " ")] = value
 
     def __getitem__(self, item):
         if item == "PDFParser":
-            return {**self.shared_config, **self.pdf_parser_config}
+            return {**self.configs["shared"], **self.configs["pdf_parser"]}
         elif item == "ACLParser":
-            return {**self.shared_config, **self.acl_parser_config}
+            return {**self.configs["shared"], **self.configs["acl_parser"]}
         elif item == "CreateTrainingData":
-            return {**self.shared_config, **self.create_training_config}
+            return {**self.configs["shared"], **self.configs["create_training"]}
         elif item == "VoteClassifier":
-            return {**self.shared_config, **self.vote_classifier_config}
+            return {**self.configs["shared"], **self.configs["vote_classifier"]}
         elif item == "AuthorDisambiguation":
-            return {**self.shared_config, **self.author_disambiguation_config}
-        elif item in self.path_config:
-            return self.path_config[item]
+            return {**self.configs["shared"], **self.configs["author_disambiguation"]}
+        elif item in self.configs["paths"]:
+            return self.configs["paths"][item]
         else:
             raise KeyError("{} is not a valid key to use with []".format(item))
 
@@ -229,7 +239,12 @@ class ConfigHandler:
 
         for f in files:
             file_name, extension = f.split(".")
-            if "ext_directory" in self.shared_config:
-                self.path_config[file_name] = self.shared_config["save_path"] + "{}/{}".format(extension, f)
+            if "ext_directory" in self.configs["shared"] and self.configs["shared"]["ext_directory"]:
+                self.configs["paths"][file_name] = self.configs["shared"]["save_path"] + "{}/{}".format(extension, f)
             else:
-                self.path_config[file_name] = self.shared_config["save_path"] + "{}".format(f)
+                self.configs["paths"][file_name] = self.configs["shared"]["save_path"] + "{}".format(f)
+
+    def save(self):
+        self.logger.debug("Saving config for future use")
+        with open("config.json","w") as f:
+            json.dump(self.config_dict,f,indent=4,sort_keys=True)

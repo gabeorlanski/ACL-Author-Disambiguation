@@ -21,6 +21,9 @@ import warnings
 
 
 class ACLParser:
+    parameters = dict(
+        existing_data=None,
+    )
     def __init__(self, xpath_config=None, save_data=False, save_path="/data", ext_directory=False, existing_data=None,file_log_level=logging.DEBUG,
                  console_log_level=logging.ERROR, log_format=None, log_path=None, cores=4):
         if xpath_config is None:
