@@ -1,14 +1,8 @@
-import fuzzysearch
-import unidecode
-from html import unescape
-from textdistance import JaroWinkler
-import numpy as np
-from src.utility_functions import *
+from src.utility_functions import chunks, cleanName, convertPaperToSortable, createLogger, ncr, printLogToConsole, \
+    printStats
 from src.compare_authors import CompareAuthors, getAlgo
-from src.paper import Paper
 import time
 import multiprocessing as mp
-from src.worker import Worker
 import sys
 from tqdm import tqdm
 from collections import defaultdict
@@ -17,6 +11,7 @@ import gc
 import pickle
 import os
 import logging
+import json
 from hurry.filesize import size, si
 
 
@@ -128,13 +123,36 @@ def getAuthorInfo(args):
 
 
 class CreateTrainingData:
+    parameters = dict(
+        special_keys=[[], "Any special keys you want to guarantee are in the training data"],
+        diff_same_ratio=[1.0, "Ratio of same pairs to different pairs, and vice-versa."],
+        author_cutoff=[1, "Cutoff authors based on paper count"],
+        name_similarity_cutoff=[.95, "Exclude pairs if their names aren't similar enough"],
+        pair_distribution=["random",
+                           "how to distribute pairs to meet ratio Options are 'random' and 'sim distribution'.sim "
+                           "distribution tries to get an even number of pairs based on how similar their names are "],
+        separate_chars=[1, "How many chars you want to use in the pair dict"],
+        separate_words=[1, "# of words to use in the pair dict"],
+        algorithm=["jaro-similarity", "string similarity algorithm"],
+        exclude=[[], "authors to exclude"],
+        rand_seed=[1, "Random seed"],
+        batch_size=[25000, "Size of batches"],
+        min_batch_len=[100000, "Minimum number of combinations to use batches"],
+        allow_exact_special=[True, "Do not Allow ids that are exactly equal to special cases"],
+        drop_null_authors=[True, "Disable Dropping authors with either no email or no affiliation"],
+        print_compare_stats=[False, " print the indepth stats of comparisons."],
+        compare_batch_size=[2000, "size of batches for comparing authors, only has an effect when cores > 1"],
+        remove_single_author=[False, "Remove papers with only 1 author"],
+        require_exact_match=[False, "If special cases must be exact match"]
+    )
+
     def __init__(self, papers, incomplete_papers, special_keys=None, save_data=False, ext_directory=False,
-                 save_path=None, diff_same_ratio=2.0, author_cutoff=10, name_similarity_cutoff=.6,
+                 save_path=None, diff_same_ratio=1.0, author_cutoff=1, name_similarity_cutoff=.95,
                  pair_distribution="random", separate_chars=1, separate_words=1, algorithm="jaro-similarity",
-                 exclude=None, rand_seed=None, cores=4, batch_size=25000, allow_exact_special=False,
+                 exclude=None, rand_seed=None, cores=4, batch_size=25000, allow_exact_special=True,
                  min_batch_len=100000, file_log_level=logging.DEBUG, console_log_level=logging.WARNING, log_format=None,
                  log_path=None, DEBUG_MODE=False, drop_null_authors=True, print_compare_stats=False, compare_args=None,
-                 compare_batch_size=2000, remove_single_author=False, require_exact_match=False):
+                 compare_batch_size=1000, remove_single_author=False, require_exact_match=False):
         """
         Initialize the class
         :param papers: The parsed papers you want to use (dict of Paper objects)
@@ -146,7 +164,7 @@ class CreateTrainingData:
         :param save_path: Directory to save data (str, defaults to none)
         :param diff_same_ratio: Ratio of same pairs to different pairs, and vice-versa. (float, default is 2)
         :param author_cutoff: Cutoff authors based on paper count (int, default is 10)
-        :param name_similarity_cutoff: Exclude pairs if their names arent similar enough (float, default is .6)
+        :param name_similarity_cutoff: Exclude pairs if their names aren't similar enough (float, default is .6)
         :param pair_distribution: how to distribute pairs to meet ratio Options are 'random' and 'sim distribution'.
         sim distribution tries to get an even number of pairs based on how similar their names are (default is random)
         :param separate_chars: How many chars you want to use in the pair dict (int, default is 1)
@@ -177,7 +195,8 @@ class CreateTrainingData:
         if not log_format:
             log_format = '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s'
         if not log_path:
-            log_path = os.getcwd() + "/logs/preprocess_data.log"
+            log_path = os.getcwd() + "/logs/create_training_data.log"
+
         self.papers = papers
         self.incomplete_papers = incomplete_papers
         self.special_keys = special_keys
@@ -190,7 +209,8 @@ class CreateTrainingData:
         self.dif_same_ratio = diff_same_ratio
         self.author_cutoff = author_cutoff
         self.name_similarity_cutoff = name_similarity_cutoff
-        self.author_papers = defaultdict(list)
+        self.all_author_papers = defaultdict(list)
+        self.valid_author_papers = defaultdict(list)
         self.pair_distribution = pair_distribution
         if rand_seed:
             random.seed(rand_seed)
@@ -231,9 +251,11 @@ class CreateTrainingData:
         self.print_compare_stats = print_compare_stats
         self.remove_single_author = remove_single_author
         self.require_exact_match = require_exact_match
+        gc.collect()
 
     def __call__(self, pairs_to_use=None, authors_to_use=None, debug_retrieve_info=None, get_info_all=False,
                  debug_asserts=False):
+        gc.collect()
         total_run_start = time.time()
         if pairs_to_use and authors_to_use:
             self.logger.warning(
@@ -259,9 +281,9 @@ class CreateTrainingData:
                 add_author = False
                 if authors_to_use and i[1] in authors_to_use:
                     add_author = True
-                elif len(self.author_papers[i[1]]) >= self.author_cutoff or i[1] in self.special_keys:
+                elif len(self.valid_author_papers[i[1]]) >= self.author_cutoff or i[1] in self.special_keys:
                     add_author = True
-                elif len(self.author_papers[i[1]]) < self.author_cutoff:
+                elif len(self.valid_author_papers[i[1]]) < self.author_cutoff:
                     below_cutoff += 1
                 if i[1] in self.special_keys:
                     add_author = True
@@ -402,8 +424,12 @@ class CreateTrainingData:
                           logging.INFO)
         self.logger.info("Total Run Time: {:0>2}:{:0>2}:{:05.2f}".format(int(hours), int(minutes), seconds))
         if self.save_data:
-            printLogToConsole(self.console_log_level, "Pickling results", logging.INFO)
-            with open("tagged_pairs.pickle", "wb") as f:
+            printLogToConsole(self.console_log_level, "Writing author_papers.json", logging.INFO, logger=self.logger)
+            with open(self.json_path+"/author_papers.json","w") as f:
+                json.dump(self.all_author_papers,f,indent=4, sort_keys=True)
+            printLogToConsole(self.console_log_level, "Pickling results", logging.INFO,logger=self.logger)
+
+            with open(self.pickle_path+"/tagged_pairs.pickle", "wb") as f:
                 pickle.dump(results, f)
 
     def _populateConstants(self):
@@ -422,6 +448,7 @@ class CreateTrainingData:
                 pbar.update()
                 continue
             for author in info.affiliations.keys():
+                self.all_author_papers[author].append(p)
                 if author in self.exclude or (not self.allow_exact_special and any([x for x in self.special_keys if
                                                                                     x == author])):
                     pbar.update()
@@ -448,7 +475,7 @@ class CreateTrainingData:
 
                 task_count += 1
                 out.append([info, author])
-                self.author_papers[author].append(p)
+                self.valid_author_papers[author].append(p)
             pbar.update()
         pbar.close()
         self.logger.debug("{} Authors excluded".format(len(excluded)))

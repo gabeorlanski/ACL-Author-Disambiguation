@@ -226,9 +226,9 @@ class TestCreateTrainingData(TestCase):
                     test_auth_counts[author].append(k)
 
         for a in test_auth_counts:
-            self.assertAlmostEqual(len(pair_creator.author_papers[a]), len(test_auth_counts[a]))
+            self.assertAlmostEqual(len(pair_creator.valid_author_papers[a]), len(test_auth_counts[a]))
             for p in test_auth_counts[a]:
-                self.assertTrue(p in pair_creator.author_papers[a])
+                self.assertTrue(p in pair_creator.valid_author_papers[a])
 
     def test__getAuthorInfo(self):
         log_path = self.log_path + 'get_author_info.log'

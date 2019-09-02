@@ -1,6 +1,3 @@
-"""
-Written by Gabriel Orlanski
-"""
 from lxml import etree
 from io import StringIO
 import json
