@@ -470,30 +470,30 @@ class PDFParserWrapper:
     # The main reason I did this was to have an easy way to generate command line arguments with are parse,
     # and maybe for later saving said parameters
     parameters = dict(
-        load_parsed=False,
-        allow_load_parsed_errors=True,
-        similarity_cutoff=.75,
-        print_errors=False,
-        parse_parallel_cutoff=1000,
-        batch_size=200,
-        guess_email_and_aff=False,
-        guess_min=.5,
-        combine_orgs=False,
-        combine_orgs_cutoff=.8,
-        use_org_most_common=True,
-        known_affiliations=None,
-        attempt_fix_parser_errors=False
-    )
-    parameter_descriptions = dict(
-        
+        load_parsed=[False, "Use existing parsed_papers.json"],
+        allow_load_parsed_errors=[True, "If an error should be thrown if loading parsed failed, Mainly for debugging"],
+        assign_similarity_cutoff=[.75, "cutoff for how similar a name must be to assign it to the author name"],
+        print_errors=[False, "Print errors to console"],
+        parse_parallel_cutoff=[1000, "minimum number of papers needed to run in parallel, ignored if cores=1"],
+        parse_batch_size=[200, "Batch size for parallel processing"],
+        guess_email_and_aff=[False, "Try to guess emails and affiliations based on frequency."],
+        guess_min=[.5, "minimum number of occurrences to guess."],
+        combine_orgs=[False, "Combine orgs that are possibly the same."],
+        combine_orgs_cutoff=[.8, "Minimum similarity between two orgs to combine them."],
+        use_org_most_common=[True, "Use the most common address for an organization"],
+        known_affiliations=[False, "Use known affiliations from name_variants.yaml"],
+        attempt_fix_parser_errors=[False,
+                                   "Attempt to remove possible parser errors by looking if parts of the parsed data "
+                                   "appear in other entries. Items that would be affected are organization, email, "
+                                   "department."]
     )
 
     def __init__(self, papers, aliases, id_to_name, same_names, manual_fixes=None, load_parsed=False,
                  allow_load_parsed_errors=True, save_data=False, save_path="/data", ext_directory=False,
-                 similarity_cutoff=.75, print_errors=False, file_log_level=logging.DEBUG,
+                 assign_similarity_cutoff=.75, print_errors=False, file_log_level=logging.DEBUG,
                  console_log_level=logging.ERROR, log_format=None, log_path=None, cores=4, parse_parallel_cutoff=1000,
-                 batch_size=200, guess_email_and_aff=False, guess_min=.5, combine_orgs=False, combine_orgs_cutoff=.8,
-                 use_org_most_common=True, known_affiliations=None, attempt_fix_parser_errors=False):
+                 parse_batch_size=200, guess_email_and_aff=False, guess_min=.5, combine_orgs=False, combine_orgs_cutoff=.8,
+                 use_org_most_common=True, known_affiliations=False, attempt_fix_parser_errors=False):
         """
         Wrapper for the PDF Parser, allows parallel pdf parsing at the expense of memory
         :param papers: Dict of Paper objets or dicts
@@ -506,7 +506,7 @@ class PDFParserWrapper:
         :param save_path: directory where you want data saved
         :param ext_directory: Save each file extension in their own directory (ex create a json directory in the
         save_data path)
-        :param similarity_cutoff: cutoff for how similar a name must be to assign it to the author name
+        :param assign_similarity_cutoff: cutoff for how similar a name must be to assign it to the author name
         :param manual_fixes: manual fixes you want to make to the parsed paper. Check manual_fixes_needed.csv
         :param print_errors: Print errors to console
         :param file_log_level: Logging level of file
@@ -515,7 +515,7 @@ class PDFParserWrapper:
         :param log_path: path to log file
         :param cores: Number of cores/processes to use
         :param parse_parallel_cutoff: minimum number of papers needed to run in parallel, ignored if cores=1
-        :param batch_size: Batch size for parallel processing
+        :param parse_batch_size: Batch size for parallel processing
         :param guess_email_and_aff: Try to guess emails and affiliations based on frequency. NOT IMPLEMENTED YET
         :param guess_min: minimum number of occurrences to guess. NOT IMPLEMENTED YET
         :param combine_orgs: Combine orgs that are possibly the same. NOT IMPLEMENTED YET
@@ -626,11 +626,11 @@ class PDFParserWrapper:
                 if not allow_load_parsed_errors:
                     raise e
 
-        self.similarity_cutoff = similarity_cutoff
+        self.similarity_cutoff = assign_similarity_cutoff
         self.print_errors = print_errors
         self.cores = cores
         self.parse_parallel_cutoff = parse_parallel_cutoff
-        self.batch_size = batch_size
+        self.batch_size = parse_batch_size
         self.guess_email_and_aff = guess_email_and_aff
         self.guess_min = guess_min
         self.combine_orgs = combine_orgs

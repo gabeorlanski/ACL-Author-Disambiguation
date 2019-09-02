@@ -19,10 +19,10 @@ class ConfigHandler:
     pdf_parser_keys = [
         "load_parsed",
         "allow_load_parsed_errors",
-        "similarity_cutoff",
+        "assign_similarity_cutoff",
         "print_errors",
         "parse_parallel_cutoff",
-        "batch_size",
+        "parse_batch_size",
         "guess_email_and_aff",
         "guess_min",
         "combine_orgs_cutoff",
@@ -103,14 +103,18 @@ class ConfigHandler:
         "log_path",
         "log_format",
     ]
-
+    to_readable={
+        "xpath_config":"ACLParserXpaths"
+    }
     def __init__(self, config_dict, log_file, file_log_level=logging.DEBUG, console_log_level=logging.WARNING,
                  log_format=None, raise_error_unknown=False):
+        self.config_dict = {}
         if not log_format:
             log_format = '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s'
+            self.config_dict["log_format"] = log_format
         if "log path" not in config_dict:
             log_path = os.getcwd() + "/logs/{}.log".format(log_file)
-            config_dict["log path"] = log_path
+            self.config_dict["log path"] = log_path
         else:
             log_path = config_dict["log path"]
             if "\\" in log_path:
@@ -121,12 +125,14 @@ class ConfigHandler:
             if log_path[-1] != "/":
                 log_path = log_path + "/"
             log_path = os.getcwd() + log_path + "{}.log".format(log_file)
-            config_dict["log path"] = log_path
+            del config_dict["log path"]
+            self.config_dict["log path"] = log_path
+
         self.raise_error_unknown = raise_error_unknown
         self.logger = createLogger("config_handler", log_path, log_format, console_log_level, file_log_level)
         self.console_log_level = console_log_level
         self.logger.debug("Parsing config.json")
-        self.config_dict = config_dict
+        self.config_dict = {**self.config_dict,**config_dict}
         self.configs = {
             "shared": {},
             "pdf_parser": {},
@@ -136,11 +142,15 @@ class ConfigHandler:
             "author_disambiguation": {},
             "paths": {},
         }
+        self.configs["shared"]["log_path"] = self.config_dict["log path"]
         for k, v in config_dict.items():
-            if k in self.excluded_keys:
-                self.logger.debug("{} is in excluded, skipping it".format(k))
+            if k == "log path":
+                continue
+            tmp_k = k.replace(" ","_")
+            if tmp_k in self.excluded_keys:
+                self.logger.debug("{} is in excluded, skipping it".format(tmp_k))
             else:
-                self.addArgument(k, v)
+                self.addArgument(tmp_k, v)
         if "save_path" not in self.configs["shared"]:
             raise KeyError("save_path is not in shared config")
         self._createExtraPaths()
@@ -198,20 +208,18 @@ class ConfigHandler:
                 self.logger.warning("{} is not a valid argument, value will be ignored".format(key))
         else:
             for config in configs:
-                if key in self.configs and not override_config:
+                if key in self.configs[config] and not override_config:
                     self.logger.debug(
                         "{} was not added to {} because it already was there and override_config=False".format(key,
                                                                                                                config))
-                    continue
-                elif key in self.dont_save:
-                    self.logger.debug(
-                        "{} was not added to {} because it is excluded".format(key,config))
                     continue
                 self.logger.debug("{} added to config {} with value {}".format(key, config, value))
                 self.configs[config][key] = value
             if key in self.dont_save:
                 return
             if (key in self.config_dict and override_config) or key not in self.config_dict:
+                if key in self.to_readable:
+                    key = self.to_readable[key]
                 self.logger.debug("Added {} to config dict".format(key.replace("_", " ")))
                 self.config_dict[key.replace("_", " ")] = value
 
@@ -246,5 +254,11 @@ class ConfigHandler:
 
     def save(self):
         self.logger.debug("Saving config for future use")
+        to_use = {}
+        for k, v in self.config_dict.items():
+            if k in self.to_readable:
+                to_use[self.to_readable[k]] = v
+            else:
+                to_use[k] = v
         with open("config.json","w") as f:
             json.dump(self.config_dict,f,indent=4,sort_keys=True)

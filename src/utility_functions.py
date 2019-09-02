@@ -35,7 +35,7 @@ def printStats(name, to_print, leading_char="-", indents=2, decimal_cutoff=3, li
     :return: None
     """
     if not print_func:
-        print_func=print
+        print_func = print
     column_width = defaultdict(lambda: default_width + padding)
     for s in to_print:
         for i in range(len(s)):
@@ -243,7 +243,8 @@ def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level
     Calculate stats for compared pairs
     :param pairs: the compared pairs
     :param data_keys: The keys that are from CompareAuthors.compare_terms
-    :param metrics: metrics you want to return, it is a tuple in the form ("name of metric",metric function). Please note,
+    :param metrics: metrics you want to return, it is a tuple in the form ("name of metric",metric function). Please
+    note,
     the metric function is expected to run on a list of either floats or ints
     :param logger: the logger to log too
     :param logger_level: the level you want to log too
@@ -262,7 +263,7 @@ def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level
 
     def getStats(d):
         key_stats = {x: [] for x in data_keys}
-        pbar = tqdm(total=len(d),file=sys.stdout)
+        pbar = tqdm(total=len(d), file=sys.stdout)
         for i in d:
             for j, v in enumerate(i):
                 try:
@@ -277,7 +278,7 @@ def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level
         out = {}
         for k in key_stats.keys():
             calculated_dict = {}
-            for name,algorithm in metrics:
+            for name, algorithm in metrics:
                 calculated_dict[name] = algorithm(key_stats[k])
             out[k] = calculated_dict
         return out
@@ -329,7 +330,7 @@ def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level
 
     def singleMetrics(a):
         args_print_stats = []
-        pbar = tqdm(total=len(data_keys)*len(metrics),file=sys.stdout)
+        pbar = tqdm(total=len(data_keys) * len(metrics), file=sys.stdout)
         for i in data_keys:
             s = stats[a]
             for name, _ in metrics:
@@ -342,7 +343,7 @@ def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level
         pbar.close()
         return args_print_stats
 
-    def differenceStats(a,b):
+    def differenceStats(a, b):
         args_print_stats = []
         pbar = tqdm(total=len(data_keys) * len(metrics), file=sys.stdout)
         for i in data_keys:
@@ -355,31 +356,33 @@ def calculatePairStats(pairs, data_keys, metrics=None, logger=None, logger_level
                 d_value = d[i][name]
                 if not d_value:
                     d_value = 0
-                stat_str = "{} {}".format(i,name)
-                args_print_stats.append([stat_str,abs(s_value-d_value)])
+                stat_str = "{} {}".format(i, name)
+                args_print_stats.append([stat_str, abs(s_value - d_value)])
                 pbar.update()
         pbar.close()
         return args_print_stats
+
     # print("INFO: Getting stats for same")
     # same_stats = singleMetrics("same")
     # print("INFO: Getting stats for different")
     # different_stats = singleMetrics("different")
     print("INFO: Getting stats for same vs different")
-    same_different = differenceStats("same","different")
+    same_different = differenceStats("same", "different")
     print("INFO: Getting stats for special same vs special different")
-    special_same_and_different = differenceStats("special same","special different")
+    special_same_and_different = differenceStats("special same", "special different")
     if output_dir:
-        with open(output_dir+"/same_different.txt","w") as f:
+        with open(output_dir + "/same_different.txt", "w") as f:
 
-            printStats("Same vs Different",same_different,print_func=f.write,printing_file=True)
-        with open(output_dir+"/special_same_special_different.txt","w") as f:
+            printStats("Same vs Different", same_different, print_func=f.write, printing_file=True)
+        with open(output_dir + "/special_same_special_different.txt", "w") as f:
 
-            printStats("Special Same vs Special Different",special_same_and_different,print_func=f.write,printing_file=True)
+            printStats("Special Same vs Special Different", special_same_and_different, print_func=f.write,
+                       printing_file=True)
     else:
         # printStats("Same", same_stats)
         # printStats("Different", different_stats)
         printStats("Same vs Different", same_different)
-        printStats("Special Same vs Special Different",special_same_and_different)
+        printStats("Special Same vs Special Different", special_same_and_different)
 
 
 def makeParameterName(parameters):
@@ -395,5 +398,43 @@ def makeParameterName(parameters):
     name = ",".join(["%s=%s" % (k, str(v).replace(',', '')) for k, v in l])
     return "".join(i for i in name if i not in "\/:*?<>|")
 
+
 def removeDupes(l):
     return list(set(l))
+
+
+def createCLIGroup(arguments, group_name, group_description, arg_dict):
+    group = arguments.add_argument_group(group_name, group_description)
+    for k, v in arg_dict.items():
+        default_value, description = v
+        if isinstance(default_value, bool):
+            group.add_argument("--{}".format(k), nargs="?", const=not default_value, type=type(default_value),
+                               default=None, help=description)
+        else:
+            group.add_argument("--{}".format(k), nargs=1, type=type(default_value), default=None, help=description)
+
+
+def parseCLIArgs(args, config_handler):
+    args_passed = {}
+    override = False
+    save = False
+    for arg in vars(args):
+        arg_value = getattr(args, arg)
+        if arg == "debug":
+            if arg_value:
+                args_passed["console_log_level"] = logging.DEBUG
+        elif arg == "ext_dir":
+            if arg_value:
+                args_passed["ext_directory"] = True
+        elif arg == "overwrite_config":
+            override = arg_value
+        elif arg == "save_config":
+            save = arg_value
+        else:
+            if arg_value is not None:
+                args_passed[arg] = arg_value
+    for k, v in args_passed.items():
+        config_handler.addArgument(k,v,override)
+    if save:
+        config_handler.save()
+    return config_handler
