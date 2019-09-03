@@ -12,6 +12,7 @@ import sys
 import ujson
 from nltk import PorterStemmer
 from copy import deepcopy
+
 stemmer = PorterStemmer()
 remove_punct_ids = re.compile("[^\w\s-]")
 remove_html = re.compile("<[^>]*>")
@@ -456,7 +457,7 @@ def parseCLIArgs(args, config_handler, debug_mode=False):
             save = arg_value
         else:
             if arg_value is not None:
-                if isinstance(arg_value,list):
+                if isinstance(arg_value, list):
                     args_passed[arg] = arg_value[0]
                 else:
                     args_passed[arg] = arg_value
@@ -536,8 +537,28 @@ def loadData(to_load, logger, config_handler, other_files=None, override_keys=No
                               logger=logger)
             out[file] = open(path)
     logger.debug("Overriding keys")
-    for k,n in override_keys.items():
-        logger.debug("Changing {} to {}".format(k,n))
+    for k, n in override_keys.items():
+        logger.debug("Changing {} to {}".format(k, n))
         out[n] = deepcopy(out[k])
         del out[k]
     return out
+
+
+def createCLIShared(arguments):
+    shared_group = arguments.add_argument_group("Universal",
+                                                "Universal Arguments shared across all modules. Once you have decided on "
+                                                "which arguments you want, save them so you don't need to pass them "
+                                                "each time you run the program")
+    shared_group.add_argument("--n", dest="cores", type=int, help="Number of workers to use", default=None)
+    shared_group.add_argument("--out_dir", dest="save_path", type=str, default=None, help="Path to save to")
+    shared_group.add_argument("--ext_dir", dest="ext_dir", nargs="?", const=True, type=bool,
+                              help="Create a directory for each file type",
+                              default=None)
+    shared_group.add_argument("--d", dest="debug", type=bool, nargs="?", const=True, default=None,
+                              help="Print debug messages to console. WARNING: This will mess up progress bars")
+    shared_group.add_argument("--log_path", dest="log_path", type=str, default=None, help="Path to log files")
+    shared_group.add_argument("-s", dest="save_config", nargs="?", const=True, type=bool, default=False,
+                              help="Save current arguments to config.json")
+    shared_group.add_argument("-o", dest="overwrite_config", nargs="?", const=True, type=bool,
+                              default=False,
+                              help="Overwrite arguments found in config.json")
