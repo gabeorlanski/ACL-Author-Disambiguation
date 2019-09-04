@@ -55,7 +55,7 @@ if __name__ == '__main__':
             for p in test_papers:
                 if k not in papers[p]["affiliations"]:
                     continue
-                rtr.append(input_handler.handleInput(k, [p]))
+                rtr.append(input_handler.createTarget(k, [p]))
             # rtr = input_handler.handleInput(k, test_papers[k])
 
             if isinstance(rtr, list):

@@ -26,6 +26,9 @@ class TargetCreator:
         self.treat_id_different_people = treat_id_different_people
         self.papers = {}
         for k, p in papers.items():
+            if isinstance(p, Paper):
+                self.papers = papers
+                break
             self.papers[k] = Paper(**p)
         self.id_to_name = deepcopy(id_to_name)
         self.author_papers = deepcopy(author_papers)
@@ -98,7 +101,7 @@ class TargetCreator:
 
         return new_id
 
-    def handleInput(self, user_target, papers=None, override_id=None):
+    def createTarget(self, user_target, papers=None, override_id=None):
         if papers is None:
             if self.treat_id_different_people:
                 rtr_ids = []

@@ -396,6 +396,7 @@ class ACLParser:
                 key = conflict if people_count == 0 else conflict + str(people_count)
                 for p in people_no_id[a[0]]:
                     self.papers[p].authors[key] = nameFromDict(name)
+                self.id_to_name[key] = name
                 conflict_ids[conflict].append((key, " ".join(a[0])))
                 people_count += 1
 

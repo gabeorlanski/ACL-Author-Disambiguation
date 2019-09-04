@@ -22,8 +22,6 @@ class InputHandler:
         self.id_to_name = id_to_name
         self.names = defaultdict(list)
         for k, name in id_to_name.items():
-            if k == "yang-liu-georgetown":
-                print("DEBUG")
             name_cleaned =cleanName(remove_weird_notes.sub(" ", nameFromDict(name)).replace("  ", " ")).replace("  "," ")
             self.names[name_cleaned].append(k)
         self.save_data = save_data
@@ -314,7 +312,7 @@ class InputHandler:
         else:
             self.override_authors[a] = [x for x in self.names[name] if x != a]
             self.logger.debug("{} authors added to override_authors".format(len(self.names[name])))
-            
+
     def _displayOverride(self):
         printLogToConsole(self.console_log_level, "Override Authors: ", logging.INFO,logger=self.logger)
         for k in self.override_authors.keys():
