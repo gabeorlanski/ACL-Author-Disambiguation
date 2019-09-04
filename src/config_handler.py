@@ -87,6 +87,13 @@ class ConfigHandler:
         "train_all_estimators",
         "voting",
     ]
+    target_creator_keys = [
+        "treat_id_different_people",
+        "raise_error_check_remove"
+    ]
+    input_handler_keys= [
+        "target_path"
+    ]
     path_keys = [
         "xml_path",
         "name_variants_path",
@@ -147,6 +154,8 @@ class ConfigHandler:
             "create_training": {},
             "vote_classifier": {},
             "author_disambiguation": {},
+            "target_creator": {},
+            "input_handler": {},
             "paths": {},
         }
         self.configs["shared"]["log_path"] = self.config_dict["log path"]
@@ -196,6 +205,11 @@ class ConfigHandler:
         if key in self.author_disambiguation_keys:
             configs.append("author_disambiguation")
 
+        if key in self.target_creator_keys:
+            configs.append("target_creator")
+        if key in self.input_handler_keys:
+            configs.append("input_handler")
+
         if key in self.path_keys:
             if "\\" in value:
                 self.logger.error("{}={}".format(key, value))
@@ -241,6 +255,10 @@ class ConfigHandler:
             return {**self.configs["shared"], **self.configs["vote_classifier"]}
         elif item == "AuthorDisambiguation":
             return {**self.configs["shared"], **self.configs["author_disambiguation"]}
+        elif item == "TargetCreator":
+            return {**self.configs["shared"], **self.configs["target_creator"]}
+        elif item == "InputHandler":
+            return {**self.configs["shared"], **self.configs["input_handler"]}
         elif item in self.configs["paths"]:
             return self.configs["paths"][item]
         else:

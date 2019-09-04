@@ -1,7 +1,7 @@
 from tqdm import tqdm
 import numpy as np
 from src.author_disambiguation import AuthorDisambiguation
-from src.disambiguation_input_handler import DisambiguationInputHandler
+from src.target_creator import TargetCreator
 import json
 import os
 import sys
@@ -35,8 +35,8 @@ if __name__ == '__main__':
         id_to_name = json.load(open(data_path + "/json/id_to_name.json"))
         papers = json.load(open(data_path + "/json/parsed_papers.json"))
 
-        input_handler = DisambiguationInputHandler(papers, id_to_name, author_papers, log_path=log_path,
-                                                   treat_id_different_people=True)
+        input_handler = TargetCreator(papers, id_to_name, author_papers, log_path=log_path,
+                                      treat_id_different_people=True)
 
         test_targets = [x for x in author_papers.keys() if len([p for p in author_papers[x]if p in papers])> 5 and x in
                         id_to_name ]

@@ -16,10 +16,28 @@ import gc
 
 
 class AuthorDisambiguation:
+    parameters = dict(
+        threshold=[.1, "Minimum similarity threshold for considering an author_id as the same as the target"],
+        name_similarity_cutoff=[.9, "Minimum string similarity of the other name when "],
+        str_algorithm=["jaro-similarity", ""],
+        model_name=["VC1", "Name of the model to use"],
+        model_path=["", "Path to the model, defaults to 'cwd+/models/'"],
+        create_new_author=[False, "Create new authors if no similar authors are found"],
+        compare_cutoff=[3, "Minimum papers for an id to compare it to the target"],
+        tie_breaker=["max", "Method to use for breaking ties when more than one id is above the threshold"],
+        sim_overrides=[False, "Name similarity score overrides initials not being the same. For example: \nAuthor a id = "
+                              "'auth-a-org' and name is 'John (Williams) Doe\nTarget is 'auth-a' and name is 'John Doe'\n With "
+                              "true it will override the difference in initials by using the similarity of the names"],
+        allow_authors_not_in_override=[True, "When passing targets to call, Disable allowing authors who do not have "
+                                             "predefined authors to compare"],
+        same_paper_diff_people=[True, "Disable removing ids who share papers with the target"],
+        use_probabilities=[False, "Use probabilities instead of predictions, only works if the model allows this"]
+    )
+
     def __init__(self, papers=None, author_papers=None, compare_args=None, id_to_name=None,
                  console_log_level=logging.ERROR, file_log_level=logging.DEBUG, log_format=None, log_path=None,
-                 save_data=False, ext_directory=False, save_dir=None, threshold=.75, name_similarity_cutoff=.9,
-                 str_algorithm="jaro-similarity", model=None, model_name="VC1",model_path=None, skip_same_papers=False,
+                 save_data=False, ext_directory=False, save_path=None, threshold=.75, name_similarity_cutoff=.9,
+                 str_algorithm="jaro-similarity", model=None, model_name="VC1", model_path=None,
                  create_new_author=False, compare_cutoff=3, tie_breaker="max", cores=4, DEBUG_MODE=False,
                  sim_overrides=False, allow_authors_not_in_override=True, same_paper_diff_people=True, use_probabilities=False):
         if not log_format:
@@ -33,7 +51,7 @@ class AuthorDisambiguation:
         if self.model is None:
             if not model_path:
                 model_path = os.getcwd()
-            self.model = pickle.load(open("{}/models/{}/model.pickle".format(model_path,model_name), "rb"))
+            self.model = pickle.load(open("{}/models/{}/model.pickle".format(model_path, model_name), "rb"))
         try:
             if self.model.voting == "hard" and use_probabilities:
                 self.logger.warning("hard voting does not support probabilities")
@@ -145,14 +163,13 @@ class AuthorDisambiguation:
             self.author_papers = author_papers if author_papers else {}
         self.compare_terms = len(CompareAuthors.compare_terms)
         self.save_data = save_data
-        self.save_dir = save_dir
+        self.save_dir = save_path
         self.ext_directory = ext_directory
         self.threshold = threshold
         self.name_similarity_cutoff = name_similarity_cutoff
         algo_name, measure = str_algorithm.split("-")
         self.author_name = {x: nameFromDict(self.id_to_name[x]) for x in self.id_to_name.keys()}
         self.cores = cores
-        self.skip_same_papers = skip_same_papers
         self.str_algorithm = getAlgo(algo_name, measure)
         self.create_new_author = create_new_author
         self.compare_cutoff = compare_cutoff
@@ -172,6 +189,8 @@ class AuthorDisambiguation:
         self.logger.debug("\tsim_overrides={}".format(self.sim_overrides))
         self.logger.debug("\tsame_paper_diff_people={}".format(self.same_paper_diff_people))
         self.logger.debug("\tuse_probabilities={}".format(self.use_probabilities))
+        if self.compare_cutoff != 3:
+            self.logger.warning("Non-default value for compare_cutoff, currently this is not implemented")
 
     def _findData(self, file_name):
         file_ext = file_name.split(".")[-1]
@@ -244,7 +263,7 @@ class AuthorDisambiguation:
 
     @staticmethod
     def _getSimilarAuthors(args):
-        target_id, target_author,author_name,str_algorithm, name_similarity_cutoff,sim_overrides=args
+        target_id, target_author, author_name, str_algorithm, name_similarity_cutoff, sim_overrides = args
         out = []
 
         target_initials = [w[0] for w in target_author.split()]
@@ -252,11 +271,11 @@ class AuthorDisambiguation:
         warnings = []
         debug = []
         authors_use = []
-        for _id,name in author_name.items():
+        for _id, name in author_name.items():
             first_letter = name[0].lower()
             if first_letter == target_author[0].lower():
-                authors_use.append([_id,name])
-        debug.append("{} authors with the same first letter as {}".format(len(authors_use),target_id))
+                authors_use.append([_id, name])
+        debug.append("{} authors with the same first letter as {}".format(len(authors_use), target_id))
         for _id, name in authors_use:
             cleaned_name = cleanName(name).lower()
 
@@ -274,7 +293,7 @@ class AuthorDisambiguation:
             #   the author it is looking at is luyang-liu.
             #   It would pass the similarity test, but we know it is not the same because the first name is
             if str_algorithm(cleaned_name.split()[0],
-                                  target_author.split()[0]) * 100 < name_similarity_cutoff * 100:
+                             target_author.split()[0]) * 100 < name_similarity_cutoff * 100:
                 if pass_sim_test:
                     warnings.append(
                         "{} passed the similarity test, but does not have the same first name".format(_id))
@@ -313,7 +332,7 @@ class AuthorDisambiguation:
                 debug.append("{} is similar to {}".format(_id, target_id))
                 out.append(_id)
         debug.append("Found {} similar authors".format(len(out)))
-        return target_id,out,warnings,debug
+        return target_id, out, warnings, debug
 
     def _makePairs(self, target_info, auth_infos):
 
@@ -337,7 +356,7 @@ class AuthorDisambiguation:
         self.logger.debug("len(out)={}".format(len(out)))
         return out, excluded
 
-    def _determineCorrectAuthor(self, model_results,evaluate=False):
+    def _determineCorrectAuthor(self, model_results, evaluate=False):
         percent_same = []
         self.logger.debug("len(model_results)={}".format(len(model_results)))
         for k, values in model_results.items():
@@ -369,11 +388,11 @@ class AuthorDisambiguation:
                 sums_above_threshold = [[x[0], sum(model_results[x[0]])] for x in above_threshold]
                 if evaluate:
                     return max(sums_above_threshold, key=lambda x: x[0])[0], percent_same
-                return max(sums_above_threshold, key=lambda x: x[0])[0],  above_threshold
+                return max(sums_above_threshold, key=lambda x: x[0])[0], above_threshold
             elif self.tie_breaker == "max_percent":
                 if evaluate:
                     return max(above_threshold, key=lambda x: x[0])[0], percent_same
-                return max(above_threshold, key=lambda x: x[0])[0],  above_threshold
+                return max(above_threshold, key=lambda x: x[0])[0], above_threshold
             else:
                 self.logger.error("tie_breaker is not a valid tie breaker")
                 self.logger.exception(ValueError("{} is not a valid tie breaker".format(self.tie_breaker)))
@@ -401,42 +420,42 @@ class AuthorDisambiguation:
         known_different = {}
         if self.same_paper_diff_people:
             self.logger.debug("Removing excluded")
-            to_compare,known_different =  self._removeKnownDifferent(to_compare,excluded)
+            to_compare, known_different = self._removeKnownDifferent(to_compare, excluded)
 
         compare_results = self._compareAmbiguousPairs(to_compare)
         compare_results = self._consolidateResults(compare_results)
-        predictions,probabilities = self._makePredictions(compare_results)
+        predictions, probabilities = self._makePredictions(compare_results)
 
         if self.use_probabilities:
             to_use = {}
             for k, info in probabilities.items():
-                to_use[k] = {x:[y[1] for y in info[x]] for x in info.keys()}
+                to_use[k] = {x: [y[1] for y in info[x]] for x in info.keys()}
         else:
             to_use = predictions
 
         warning_auth = []
         correct_dict = defaultdict(dict)
-        printLogToConsole(self.console_log_level,"Determining the correct author",logging.INFO)
+        printLogToConsole(self.console_log_level, "Determining the correct author", logging.INFO)
         self.logger.info("Determining the correct author")
-        pbar = tqdm(total=len(predictions),file=sys.stdout)
+        pbar = tqdm(total=len(predictions), file=sys.stdout)
         for k, pred in to_use.items():
             self.logger.debug("{}")
-            correct, above_thres = self._determineCorrectAuthor(pred,evaluation_mode)
-            correct_dict[k]["same"]=correct
+            correct, above_thres = self._determineCorrectAuthor(pred, evaluation_mode)
+            correct_dict[k]["same"] = correct
             correct_dict[k]["different"] = [x for x in pred.keys() if x != correct]
-            self.logger.debug("{} was determined to be the same as {}".format(k,correct))
+            self.logger.debug("{} was determined to be the same as {}".format(k, correct))
             if evaluation_mode:
                 correct_dict[k]["percent_same"] = above_thres
             if len(above_thres) != 1 and not evaluation_mode:
                 self.logger.debug("Added {} to warnings".format(k))
-                warning_auth.append([k,above_thres])
+                warning_auth.append([k, above_thres])
             correct_dict[k]["papers_affected"] = ambiguous_papers[k]
             pbar.update()
         pbar.close()
         printLogToConsole(self.console_log_level, "Writing results to results.json", logging.INFO)
         self.logger.info("Writing results to results.json")
-        with open("results.json","w") as f:
-            json.dump(correct_dict,f,indent=4,sort_keys=True)
+        with open("results.json", "w") as f:
+            json.dump(correct_dict, f, indent=4, sort_keys=True)
 
         return correct_dict
 
@@ -511,21 +530,23 @@ class AuthorDisambiguation:
             if a in excluded:
                 self.logger.debug("Skipping {} because it is in excluded".format(a))
                 continue
-            args.append([a, ambiguous_author_names[a],self.author_name,self.str_algorithm,self.name_similarity_cutoff,self.sim_overrides])
-        printLogToConsole(self.console_log_level, "Getting similar authors in parallel with {} cores".format(self.cores),logging.INFO)
+            args.append([a, ambiguous_author_names[a], self.author_name, self.str_algorithm, self.name_similarity_cutoff,
+                         self.sim_overrides])
+        printLogToConsole(self.console_log_level, "Getting similar authors in parallel with {} cores".format(self.cores),
+                          logging.INFO)
         self.logger.info("Getting similar authors in parallel with {} cores".format(self.cores))
         sim_authors = []
         with mp.Pool(self.cores) as Pool:
-            imap_results = list(tqdm(Pool.imap_unordered(self._getSimilarAuthors,args),total=len(args),file=sys.stdout))
-            for target, auth, warnings,debug in imap_results:
-                sim_authors.append([target,auth])
+            imap_results = list(tqdm(Pool.imap_unordered(self._getSimilarAuthors, args), total=len(args), file=sys.stdout))
+            for target, auth, warnings, debug in imap_results:
+                sim_authors.append([target, auth])
                 for i in warnings:
                     self.logger.warning(i)
                 for i in debug:
                     self.logger.debug(i)
 
         pbar = tqdm(total=len(sim_authors), file=sys.stdout)
-        for a,auths in sim_authors:
+        for a, auths in sim_authors:
 
             if a in override_authors:
                 self.logger.exception(ValueError("{} is in need authors, but is already in override_authors".format(a)))
@@ -689,12 +710,12 @@ class AuthorDisambiguation:
             author_compare_results[author] = author_results
         return author_compare_results
 
-    def _makePredictions(self,author_arrays):
-        printLogToConsole(self.console_log_level,"Predicting same authors",logging.INFO)
+    def _makePredictions(self, author_arrays):
+        printLogToConsole(self.console_log_level, "Predicting same authors", logging.INFO)
         self.logger.info("Predicting same authors")
         predictions = defaultdict(dict)
         probabilities = defaultdict(dict)
-        pbar = tqdm(total=len(author_arrays),file=sys.stdout)
+        pbar = tqdm(total=len(author_arrays), file=sys.stdout)
         for target, info in author_arrays.items():
             pbar.write("INFO: Predicting same authors to {}".format(target))
             self.logger.info("Predicting same authors to {}".format(target))
@@ -704,9 +725,8 @@ class AuthorDisambiguation:
                 try:
                     probabilities[target][author] = self.model.predict_proba(results).tolist()
                 except:
-                    self.logger.warning("Could not get probabilities for {} - {} ".format(target,author))
+                    self.logger.warning("Could not get probabilities for {} - {} ".format(target, author))
             pbar.update()
         pbar.close()
 
-        return predictions,probabilities
-
+        return predictions, probabilities

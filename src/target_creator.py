@@ -8,10 +8,15 @@ import os
 from src.paper import Paper
 
 
-class DisambiguationInputHandler:
+class TargetCreator:
+    parameters = dict(
+        treat_id_different_people=[False, "When inputting targets, treat every paper associated with the id as an unique person"],
+        raise_error_check_remove=[False, "Raise an exception when error check fails"]
+    )
+
     def __init__(self, papers, id_to_name, author_papers, treat_id_different_people=False,
                  console_log_level=logging.ERROR, file_log_level=logging.DEBUG, log_format=None, log_path=None,
-                 raise_error_check_remove=False):
+                 raise_error_check_remove=False, save_data=False, ext_directory=False, save_path=None, cores=4):
         if not log_format:
             log_format = '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s'
         if not log_path:
@@ -48,10 +53,10 @@ class DisambiguationInputHandler:
 
             self.papers[p].authors[new_id] = old_auth_name
             self.papers[p].affiliations[new_id] = old_aff
-            paper_changed_count +=1
-        self.logger.debug("{} papers changed from {} to {}".format(paper_changed_count,old_id,new_id))
+            paper_changed_count += 1
+        self.logger.debug("{} papers changed from {} to {}".format(paper_changed_count, old_id, new_id))
         if len(self.author_papers[old_id]) == 0:
-            printLogToConsole(self.console_log_level,"Checking if {} is same to remove".format(old_id),logging.INFO)
+            printLogToConsole(self.console_log_level, "Checking if {} is same to remove".format(old_id), logging.INFO)
             self.logger.info("Checking if {} is same to remove".format(old_id))
             self._checkSafeRemove(old_id)
 
@@ -81,19 +86,19 @@ class DisambiguationInputHandler:
         self.logger.debug("Handling target {}".format(target))
         if override_id is None:
             self.author_id_suffix[target] += 1
-            tmp_id = target+str(self.author_id_suffix[target])
+            tmp_id = target + str(self.author_id_suffix[target])
             while tmp_id in self.author_papers:
-                self.author_id_suffix[target] +=1
+                self.author_id_suffix[target] += 1
                 tmp_id = target + str(self.author_id_suffix[target])
             new_id = tmp_id
         else:
             new_id = override_id
 
-        self._updatePapers(target,new_id,papers)
+        self._updatePapers(target, new_id, papers)
 
         return new_id
 
-    def handleInput(self,user_target,papers=None,override_id=None):
+    def handleInput(self, user_target, papers=None, override_id=None):
         if papers is None:
             if self.treat_id_different_people:
                 rtr_ids = []
@@ -101,7 +106,7 @@ class DisambiguationInputHandler:
                     self.logger.warning("treat_id_different_people is not False, ignoring override_id")
                 for p in self.author_papers[user_target]:
                     self.logger.debug("handling paper {}".format(p))
-                    new_id = self._handleTarget(user_target,[p],None)
+                    new_id = self._handleTarget(user_target, [p], None)
                     rtr_ids.append(new_id)
                     self.logger.debug("new_id={}".format(new_id))
                 return rtr_ids
@@ -109,4 +114,4 @@ class DisambiguationInputHandler:
                 return self._handleTarget(user_target, papers, override_id)
 
         else:
-            return self._handleTarget(user_target,papers,override_id)
+            return self._handleTarget(user_target, papers, override_id)
