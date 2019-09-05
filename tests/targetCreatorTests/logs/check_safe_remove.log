@@ -1,30 +1,58 @@
-2019-09-05 12:41:50,022|   DEBUG|      config_handler|            __init__: Parsing config.json
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: xpath_config added to config acl_parser with value {'volumes': '//volume', 'papers': './paper', 'titles': './title', 'authors': './author', 'abstracts': './abstract/text()', 'pids': './url/text()', 'first_name': './first/text()', 'last_name': './last/text()', 'check_volume': './frontmatter/url'}
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: Added ACLParserXpaths to config dict
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|            __init__: PDFParserXpaths is in excluded, skipping it
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: xml_path added to config paths with value /home/gabe/Desktop/research-main/data/xml/ACL/
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: Added xml path to config dict
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: name_variants_path added to config paths with value /home/gabe/Desktop/research-main/data/
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: Added name variants path to config dict
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: ext_directory added to config shared with value True
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: save_path added to config shared with value /home/gabe/Desktop/research-main/data/
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: save_path added to config paths with value /home/gabe/Desktop/research-main/data/
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: save_data added to config shared with value True
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: Added save data to config dict
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: parsed_pdf_path added to config paths with value /home/gabe/Desktop/research-main/data/pdf_xml/
-2019-09-05 12:41:50,023|   DEBUG|      config_handler|         addArgument: Added parsed pdf path to config dict
-2019-09-05 12:41:50,024|   DEBUG|      config_handler|         addArgument: use_org_most_common added to config pdf_parser with value True
-2019-09-05 12:41:50,024|   DEBUG|      config_handler|         addArgument: attempt_fix_parser_errors added to config pdf_parser with value True
-2019-09-05 12:41:50,024|   DEBUG|      config_handler|         addArgument: raise_error_check_remove added to config target_creator with value False
-2019-09-05 12:41:50,024|   DEBUG|      config_handler|         addArgument: Added raise error check remove to config dict
-2019-09-05 12:41:50,024|   DEBUG|      config_handler|         addArgument: treat_id_different_people added to config target_creator with value True
-2019-09-05 12:41:50,024|   DEBUG|      config_handler|         addArgument: Added treat id different people to config dict
-2019-09-05 12:41:50,027|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove hua-wu
-2019-09-05 12:41:50,028| WARNING|      target_creator|    _checkSafeRemove: hua-wu is still in paper P16-1159, but has no papers associated with him
-2019-09-05 12:41:50,028|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove heng-yu
-2019-09-05 12:41:50,028| WARNING|      target_creator|    _checkSafeRemove: heng-yu is still in paper D15-1210, but has no papers associated with him
-2019-09-05 12:41:50,028| WARNING|      target_creator|    _checkSafeRemove: heng-yu is still in paper P16-1097, but has no papers associated with him
-2019-09-05 12:41:50,028|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove meng-zhang
-2019-09-05 12:41:50,028| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper D17-1207, but has no papers associated with him
-2019-09-05 12:41:50,028| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper P17-1179, but has no papers associated with him
-2019-09-05 12:41:50,028| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper C16-1300, but has no papers associated with him
+2019-09-05 15:30:51,937|   DEBUG|      config_handler|            __init__: Parsing config.json
+2019-09-05 15:30:51,937|   DEBUG|      config_handler|         addArgument: xpath_config added to config acl_parser with value {'volumes': '//volume', 'papers': './paper', 'titles': './title', 'authors': './author', 'abstracts': './abstract/text()', 'pids': './url/text()', 'first_name': './first/text()', 'last_name': './last/text()', 'check_volume': './frontmatter/url'}
+2019-09-05 15:30:51,937|   DEBUG|      config_handler|         addArgument: Added ACLParserXpaths to config dict
+2019-09-05 15:30:51,937|   DEBUG|      config_handler|            __init__: PDFParserXpaths is in excluded, skipping it
+2019-09-05 15:30:51,937|   DEBUG|      config_handler|         addArgument: xml_path added to config paths with value /home/gabe/Desktop/research-main/data/xml/ACL/
+2019-09-05 15:30:51,937|   DEBUG|      config_handler|         addArgument: Added xml path to config dict
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: name_variants_path added to config paths with value /home/gabe/Desktop/research-main/data/
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: Added name variants path to config dict
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: ext_directory added to config shared with value True
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: save_path added to config shared with value /home/gabe/Desktop/research-main/data/
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: save_path added to config paths with value /home/gabe/Desktop/research-main/data/
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: save_data added to config shared with value True
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: Added save data to config dict
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: parsed_pdf_path added to config paths with value /home/gabe/Desktop/research-main/data/pdf_xml/
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: Added parsed pdf path to config dict
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: use_org_most_common added to config pdf_parser with value True
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: attempt_fix_parser_errors added to config pdf_parser with value True
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: raise_error_check_remove added to config target_creator with value False
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: Added raise error check remove to config dict
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: treat_id_different_people added to config target_creator with value True
+2019-09-05 15:30:51,938|   DEBUG|      config_handler|         addArgument: Added treat id different people to config dict
+2019-09-05 15:30:51,944|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove hua-wu
+2019-09-05 15:30:51,944| WARNING|      target_creator|    _checkSafeRemove: hua-wu is still in paper P16-1159, but has no papers associated with him
+2019-09-05 15:30:51,944|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove heng-yu
+2019-09-05 15:30:51,944| WARNING|      target_creator|    _checkSafeRemove: heng-yu is still in paper D15-1210, but has no papers associated with him
+2019-09-05 15:30:51,944| WARNING|      target_creator|    _checkSafeRemove: heng-yu is still in paper P16-1097, but has no papers associated with him
+2019-09-05 15:30:51,944|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove meng-zhang
+2019-09-05 15:30:51,945| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper D17-1207, but has no papers associated with him
+2019-09-05 15:30:51,945| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper P17-1179, but has no papers associated with him
+2019-09-05 15:30:51,945| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper C16-1300, but has no papers associated with him
+2019-09-05 15:30:51,945|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove yun-chen
+2019-09-05 15:30:51,945| WARNING|      target_creator|    _checkSafeRemove: yun-chen is still in paper P17-1176, but has no papers associated with him
+2019-09-05 15:30:51,945|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove victor-ok-li
+2019-09-05 15:30:51,945| WARNING|      target_creator|    _checkSafeRemove: victor-ok-li is still in paper P17-1176, but has no papers associated with him
+2019-09-05 15:30:52,183|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove hua-wu
+2019-09-05 15:30:52,183|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove hua-wu
+2019-09-05 15:30:52,183|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove heng-yu
+2019-09-05 15:30:52,183|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove heng-yu
+2019-09-05 15:30:52,183| WARNING|      target_creator|    _checkSafeRemove: heng-yu is still in paper D15-1210, but has no papers associated with him
+2019-09-05 15:30:52,183| WARNING|      target_creator|    _checkSafeRemove: heng-yu is still in paper D15-1210, but has no papers associated with him
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: heng-yu is still in paper P16-1097, but has no papers associated with him
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: heng-yu is still in paper P16-1097, but has no papers associated with him
+2019-09-05 15:30:52,184|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove meng-zhang
+2019-09-05 15:30:52,184|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove meng-zhang
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper D17-1207, but has no papers associated with him
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper D17-1207, but has no papers associated with him
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper P17-1179, but has no papers associated with him
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper P17-1179, but has no papers associated with him
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper C16-1300, but has no papers associated with him
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: meng-zhang is still in paper C16-1300, but has no papers associated with him
+2019-09-05 15:30:52,184|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove yun-chen
+2019-09-05 15:30:52,184|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove yun-chen
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: yun-chen is still in paper P17-1176, but has no papers associated with him
+2019-09-05 15:30:52,184| WARNING|      target_creator|    _checkSafeRemove: yun-chen is still in paper P17-1176, but has no papers associated with him
+2019-09-05 15:30:52,184|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove victor-ok-li
+2019-09-05 15:30:52,184|   DEBUG|      target_creator|    _checkSafeRemove: Checking if it is safe to remove victor-ok-li
+2019-09-05 15:30:52,185| WARNING|      target_creator|    _checkSafeRemove: victor-ok-li still has 1 papers associated with him, but has no papers associated with him
+2019-09-05 15:30:52,185| WARNING|      target_creator|    _checkSafeRemove: victor-ok-li still has 1 papers associated with him, but has no papers associated with him

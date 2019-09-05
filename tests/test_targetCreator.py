@@ -31,6 +31,8 @@ class TestTargetCreator(TestCase):
             "hua-wu",
             "heng-yu",
             "meng-zhang",
+            "yun-chen",
+            "victor-ok-li"
         ]
         # config = ConfigHandler(self.config_raw,"setup_test_target_creator")
         # data = loadData([ "id_to_name", "author_papers"],config.logger,config)
@@ -45,6 +47,7 @@ class TestTargetCreator(TestCase):
                 self.author_papers[a].append(p)
             for a,n in v.authors.items():
                 self.id_to_name[a] = n
+
 
     @ignore_warnings
     def test_init(self):
@@ -91,13 +94,38 @@ class TestTargetCreator(TestCase):
                 self.fail()
             self.assertEqual([],target_creator.error_papers)
             self.assertEqual(author_papers_copy[a],target_creator.author_papers[a])
-
+        paper_copy = {x:v.copy() for x,v in self.papers.items()}
         author_papers_copy["test-a"] = deepcopy(author_papers_copy["hua-wu"])
-        del author_papers_copy["hua-wu"]
-        target_creator = TargetCreator(self.papers, self.id_to_name, author_papers_copy, **config["TargetCreator"])
+        author_papers_copy["hua-wu"] = []
+        test_paper_a = paper_copy["P16-1159"]
+        test_paper_a.affiliations["test_a"] = test_paper_a.affiliations["hua-wu"]
+        test_paper_a.authors["test_a"] = test_paper_a.authors["hua-wu"]
+        del test_paper_a.authors["hua-wu"]
+        del test_paper_a.affiliations["hua-wu"]
+        test_paper_b = paper_copy["P17-1176"]
+        test_paper_b.affiliations["test_c"] = test_paper_b.affiliations["victor-ok-li"]
+        test_paper_b.authors["test_c"] = test_paper_b.authors["victor-ok-li"]
+        del test_paper_b.authors["victor-ok-li"]
+        del test_paper_b.affiliations["victor-ok-li"]
+        test_paper_b.affiliations["test_b"] = test_paper_b.affiliations["yun-chen"]
+        del test_paper_b.affiliations["yun-chen"]
+        paper_copy["P17-1176"] = test_paper_b
+        target_creator = TargetCreator(paper_copy, self.id_to_name, author_papers_copy, **config["TargetCreator"])
+        for a in self.test_authors:
+            can_remove, errors = target_creator._checkSafeRemove(a)
+            if a == "hua-wu":
 
-
-
+                self.assertEqual(0,can_remove)
+                self.assertEqual([],errors)
+            elif a == "yun-chen":
+                self.assertEqual(-1, can_remove)
+                self.assertEqual(["P17-1176"],errors)
+            elif a == "victor-ok-li":
+                self.assertEqual(-2, can_remove)
+                self.assertEqual(["P17-1176"],errors)
+            else:
+                self.assertEqual(-1, can_remove)
+            self.assertEqual(author_papers_copy[a],target_creator.author_papers[a])
     @ignore_warnings
     def test__handleTarget(self):
         with open(os.getcwd()+self.log_path + "handle_target.log", "w") as f:
