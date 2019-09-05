@@ -54,6 +54,10 @@ class Paper:
             return False
         return True
 
+    def __ne__(self, other):
+        return not self == other
+
+
     def isAuthor(self, author) -> bool:
         return author in self.authors
 

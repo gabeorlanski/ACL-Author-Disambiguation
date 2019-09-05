@@ -40,5 +40,7 @@
   "save path": "/data",
   "save data": true,
   "parsed pdf path": "/data/pdf_xml",
-  "log path": "/logs/"
+  "log path": "/logs/",
+  "use_org_most_common":true,
+  "attempt_fix_parser_errors": true
 }

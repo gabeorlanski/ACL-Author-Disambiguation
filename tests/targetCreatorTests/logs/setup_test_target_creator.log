@@ -1,0 +1,30 @@
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|            __init__: Parsing config.json
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|         addArgument: xpath_config added to config acl_parser with value {'volumes': '//volume', 'papers': './paper', 'titles': './title', 'authors': './author', 'abstracts': './abstract/text()', 'pids': './url/text()', 'first_name': './first/text()', 'last_name': './last/text()', 'check_volume': './frontmatter/url'}
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|         addArgument: Added ACLParserXpaths to config dict
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|            __init__: PDFParserXpaths is in excluded, skipping it
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|         addArgument: xml_path added to config paths with value /home/gabe/Desktop/research-main/data/xml/ACL/
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|         addArgument: Added xml path to config dict
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|         addArgument: name_variants_path added to config paths with value /home/gabe/Desktop/research-main/data/
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|         addArgument: Added name variants path to config dict
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|         addArgument: ext_directory added to config shared with value True
+2019-09-05 11:59:33,169|   DEBUG|      config_handler|         addArgument: save_path added to config shared with value /home/gabe/Desktop/research-main/data/
+2019-09-05 11:59:33,170|   DEBUG|      config_handler|         addArgument: save_path added to config paths with value /home/gabe/Desktop/research-main/data/
+2019-09-05 11:59:33,170|   DEBUG|      config_handler|         addArgument: save_data added to config shared with value True
+2019-09-05 11:59:33,170|   DEBUG|      config_handler|         addArgument: Added save data to config dict
+2019-09-05 11:59:33,170|   DEBUG|      config_handler|         addArgument: parsed_pdf_path added to config paths with value /home/gabe/Desktop/research-main/data/pdf_xml/
+2019-09-05 11:59:33,170|   DEBUG|      config_handler|         addArgument: Added parsed pdf path to config dict
+2019-09-05 11:59:33,170|   DEBUG|      config_handler|         addArgument: use_org_most_common added to config pdf_parser with value True
+2019-09-05 11:59:33,170|   DEBUG|      config_handler|         addArgument: attempt_fix_parser_errors added to config pdf_parser with value True
+2019-09-05 11:59:33,170|   DEBUG|      config_handler|         addArgument: raise_error_check_remove added to config target_creator with value True
+2019-09-05 11:59:33,170|   DEBUG|      config_handler|         addArgument: Added raise error check remove to config dict
+2019-09-05 11:59:33,170|   DEBUG|   utility_functions|            loadData: path=/home/gabe/Desktop/research-main/data/json/parsed_papers.json
+2019-09-05 11:59:33,170|    INFO|   utility_functions|   printLogToConsole: Loading parsed_papers
+2019-09-05 11:59:33,170|   DEBUG|   utility_functions|            loadData: File has json extension
+2019-09-05 11:59:58,671|   DEBUG|   utility_functions|            loadData: path=/home/gabe/Desktop/research-main/data/json/id_to_name.json
+2019-09-05 11:59:58,672|    INFO|   utility_functions|   printLogToConsole: Loading id_to_name
+2019-09-05 11:59:58,672|   DEBUG|   utility_functions|            loadData: File has json extension
+2019-09-05 11:59:58,729|   DEBUG|   utility_functions|            loadData: path=/home/gabe/Desktop/research-main/data/json/author_papers.json
+2019-09-05 11:59:58,729|    INFO|   utility_functions|   printLogToConsole: Loading author_papers
+2019-09-05 11:59:58,729|   DEBUG|   utility_functions|            loadData: File has json extension
+2019-09-05 11:59:58,752|   DEBUG|   utility_functions|            loadData: Opening other files passed
+2019-09-05 11:59:58,752|   DEBUG|   utility_functions|            loadData: Overriding keys

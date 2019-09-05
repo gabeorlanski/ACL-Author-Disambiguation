@@ -34,8 +34,10 @@ class TargetCreator:
         self.author_papers = deepcopy(author_papers)
         self.author_id_suffix = Counter()
         self.raise_error_check_remove = raise_error_check_remove
+        self.removed_names = {}
+        self.error_papers =[]
 
-    def _updatePapers(self, old_id, new_id, papers):
+    def _updatePapers(self, old_id, new_id, papers=None):
         if not papers:
             papers = self.author_papers[old_id]
         if new_id in self.author_papers:
@@ -61,29 +63,43 @@ class TargetCreator:
         if len(self.author_papers[old_id]) == 0:
             printLogToConsole(self.console_log_level, "Checking if {} is same to remove".format(old_id), logging.INFO)
             self.logger.info("Checking if {} is same to remove".format(old_id))
-            self._checkSafeRemove(old_id)
+            can_remove, error_papers = self._checkSafeRemove(old_id)
+            if can_remove == 0:
+                old_name = self.id_to_name.pop(old_id)
+                self.removed_names[old_id] = old_name
+                del self.author_papers[old_id]
+            elif can_remove == -1:
+                self._handleNonRemaining(old_id, error_papers)
+            else:
+                self._handleExtraRemaining(old_id,error_papers)
 
     def _checkSafeRemove(self, _id):
-        can_remove = True
+        can_remove = 0
+        out = []
         self.logger.debug("Checking if it is safe to remove {}".format(_id))
-        pbar = tqdm(total=len(self.papers), file=sys.stdout)
         for p in self.papers:
-            if _id in self.papers[p].affiliations or self.papers[_id].authors:
-                can_remove = False
+            if p in self.error_papers:
+                self.logger.debug("{} is in error_papers, continuing")
+                continue
+            if _id in self.papers[p].affiliations or _id in self.papers[p].authors:
+                out.append(p)
+                can_remove = -1
                 error_str = "{} is still in paper {}, but has no papers associated with him".format(_id, p)
                 if self.raise_error_check_remove:
                     raise ValueError(error_str)
                 else:
                     self.logger.warning(error_str)
-                    self.author_papers[_id].append(p)
-                pbar.update()
-        pbar.close()
-        if can_remove:
-            removed_name = self.id_to_name.pop(_id)
-            removed_papers = self.author_papers.pop(_id)
-            if len(removed_papers) > 0:
-                raise ValueError("removed_papers is not empty")
-            self.logger.debug("removed_name={}".format(removed_name))
+        if can_remove == 0:
+            remaining_papers = self.author_papers[_id]
+            out = remaining_papers
+            if len(remaining_papers) > 0:
+                if self.raise_error_check_remove:
+                    raise ValueError("remaining_papers is not empty")
+                else:
+                    self.logger.warning(
+                        "{} still has {} papers associated with him, but has no papers associated with him".format(_id, len(remaining_papers)))
+                    can_remove = -2
+        return can_remove, out
 
     def _handleTarget(self, target, papers, override_id):
         self.logger.debug("Handling target {}".format(target))
@@ -106,7 +122,7 @@ class TargetCreator:
             if self.treat_id_different_people:
                 rtr_ids = []
                 if override_id is not None:
-                    self.logger.warning("treat_id_different_people is not False, ignoring override_id")
+                    self.logger.warning("treat_id_different_people is not None, ignoring override_id")
                 for p in self.author_papers[user_target]:
                     self.logger.debug("handling paper {}".format(p))
                     new_id = self._handleTarget(user_target, [p], None)
@@ -114,7 +130,36 @@ class TargetCreator:
                     self.logger.debug("new_id={}".format(new_id))
                 return rtr_ids
             else:
-                return self._handleTarget(user_target, papers, override_id)
+                return self._handleTarget(user_target, self.author_papers[user_target], override_id)
 
         else:
             return self._handleTarget(user_target, papers, override_id)
+
+    def _handleExtraRemaining(self, old_id,papers):
+        for p in papers:
+            if p not in papers:
+                self.logger.debug("{} is not in papers".format(p))
+                continue
+            if old_id in self.papers[p].unknown:
+                self.error_papers.append(p)
+                self.logger.debug("{} is in {}'s unknown, adding to error_papers".format(old_id,p))
+                try:
+                    self.author_papers[old_id].remove(p)
+                except:
+                    pass
+            elif old_id in self.papers[p].authors and old_id not in self.papers[p].affiliations:
+                self.error_papers.append(p)
+                self.logger.debug("{} is in {}'s authors, but not in affiliations".format(old_id,p))
+                self.author_papers[old_id].remove(p)
+        if self.author_papers[old_id] == 0:
+            self.logger.debug("{} has no papers, removing".format(old_id))
+            old_name = self.id_to_name[old_id]
+            self.removed_names[old_id] = old_name
+        else:
+            self.createTarget(old_id)
+
+    def _handleNonRemaining(self,old_id,papers):
+        self.logger.debug("old_id={}".format(old_id))
+        self.logger.debug("papers={}".format(papers))
+        self.author_papers[old_id].extend(papers)
+        self.createTarget(old_id)
