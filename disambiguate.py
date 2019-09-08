@@ -42,21 +42,33 @@ if __name__ == '__main__':
     incomplete = data["incomplete_papers"]
     special_keys = data["test_special_keys"]
     input_handler = InputHandler(parsed, author_papers, id_to_name, **config["InputHandler"])
-    input_handler.handleUserInput()
+    # input_handler.handleUserInput()
+    input_handler.targets = [
+        "francisco-m-couto1",
+        "qin-lu1",
+        "manuel-carlos-diaz-galiano1",
+        "luis-nieto-pina1",
+        "yang-liu",
+        "luciano-del-corro1",
+        "izzeddin-gur1",
+        "gia-h-ngo1",
+    ]
     target_creator = TargetCreator(parsed, id_to_name, author_papers)
     targets = []
     for k in input_handler.targets:
         for p in author_papers[k]:
             if k not in parsed[p].affiliations:
                 continue
-            targets.append(target_creator.createTarget(k, [p]))
+            targets.extend(target_creator.createTarget(k, [p]))
         # rtr = input_handler.handleInput(k, test_papers[k])
+    target_papers, target_authors, target_ids = target_creator.fillData()
     compare_authors_args = {
         "company_corpus": org_corpus,
         "department_corpus": department_corpus,
-        "threshold": .4
+        "threshold": .4,
+        "str_algorithm":["jaro","similarity"]
     }
-    disambiguation = AuthorDisambiguation(target_creator.papers, target_creator.author_papers, compare_authors_args, target_creator.id_to_name,
+    disambiguation = AuthorDisambiguation(papers=target_papers, author_papers=target_authors, compare_args=compare_authors_args, id_to_name=target_ids,
                                           **config["AuthorDisambiguation"])
 
     results = disambiguation(targets)

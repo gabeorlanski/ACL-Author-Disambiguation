@@ -64,7 +64,7 @@ class TargetCreator:
 
         self.logger.debug("Adding {} papers".format(len(papers)))
         for p in papers:
-            if p not in self.papers[p]:
+            if p not in self.papers:
                 self.logger.warning("{} is not parsed, skipping".format(p))
                 continue
             paper = self.papers[p]
@@ -128,7 +128,7 @@ class TargetCreator:
             paper.affiliations[new_id] = old_aff
 
             self.new_papers[pid] = paper
-            self.new_author_papers[new_id].append(paper)
+            self.new_author_papers[new_id].append(pid)
 
     def _handleTarget(self, target, papers):
         self.logger.debug("Handling target {}".format(target))
@@ -163,7 +163,7 @@ class TargetCreator:
                 rtr_ids = []
                 for p in self.author_papers[user_target]:
                     self.logger.debug("handling paper {}".format(p))
-                    new_id = self._handleTarget(user_target, [p], None)
+                    new_id = self._handleTarget(user_target, [p])
                     rtr_ids.append(new_id)
                     self.logger.debug("new_id={}".format(new_id))
                 return rtr_ids

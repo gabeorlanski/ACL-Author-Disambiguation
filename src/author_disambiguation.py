@@ -36,7 +36,7 @@ class AuthorDisambiguation:
 
     def __init__(self, papers=None, author_papers=None, compare_args=None, id_to_name=None,
                  console_log_level=logging.ERROR, file_log_level=logging.DEBUG, log_format=None, log_path=None,
-                 save_data=False, ext_directory=False, save_path=None, threshold=.75, name_similarity_cutoff=.9,
+                 save_data=False, ext_directory=False, save_path=None, threshold=.2, name_similarity_cutoff=.92,
                  str_algorithm="jaro-similarity", model=None, model_name="VC1", model_path=None,
                  create_new_author=False, compare_cutoff=3, tie_breaker="max", cores=4, DEBUG_MODE=False,
                  sim_overrides=False, allow_authors_not_in_override=True, same_paper_diff_people=True, use_probabilities=False):
@@ -315,7 +315,8 @@ class AuthorDisambiguation:
                     warnings.append("target name ={}".format(target_id))
                     warnings.append("author name ={}".format(name))
                 continue
-            for i in range(len(target_initials)):
+
+            for i in range(min(len(target_initials),len(cleaned_initials))):
                 if target_initials[i] != cleaned_initials[i]:
                     same_initials = False
                     break

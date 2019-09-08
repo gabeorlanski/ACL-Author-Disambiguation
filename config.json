@@ -42,5 +42,7 @@
   "parsed pdf path": "/data/pdf_xml",
   "log path": "/logs/",
   "use_org_most_common":true,
-  "attempt_fix_parser_errors": true
+  "attempt_fix_parser_errors": true,
+  "treat id different people": true,
+  "name_similarity_cutoff":0.92
 }
