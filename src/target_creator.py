@@ -113,6 +113,9 @@ class TargetCreator:
                     raise ValueError("{} is already in {}".format(new_id, pid))
                 else:
                     self.logger.debug("Adding {} to {}'s papers".format(pid, new_id))
+                    if pid not in self.new_papers:
+                        self.logger.debug("Adding paper {} to papers".format(pid))
+                        self.new_papers[pid] = paper
                     self.new_author_papers[new_id].append(pid)
                     continue
 
@@ -127,25 +130,15 @@ class TargetCreator:
             self.new_papers[pid] = paper
             self.new_author_papers[new_id].append(paper)
 
-    def _handleTarget(self, target, papers, override_id):
+    def _handleTarget(self, target, papers):
         self.logger.debug("Handling target {}".format(target))
-        if override_id is None:
+
+        self.author_id_suffix[target] += 1
+        tmp_id = target + str(self.author_id_suffix[target])
+        while tmp_id in self.author_papers:
             self.author_id_suffix[target] += 1
             tmp_id = target + str(self.author_id_suffix[target])
-            while tmp_id in self.author_papers:
-                self.author_id_suffix[target] += 1
-                tmp_id = target + str(self.author_id_suffix[target])
-            new_id = tmp_id
-        else:
-            if override_id in self.new_author_papers or override_id in self.author_papers:
-                self.logger.warning("{} is already in author papers".format(override_id))
-                if self.raise_error:
-                    raise ValueError("{} is already in use".format(override_id))
-                else:
-                    self.logger.debug("Calling _handleTarget without override")
-                    return self._handleTarget(target, papers, None)
-            else:
-                new_id = override_id
+        new_id = tmp_id
 
         self._updatePapers(target, new_id, papers)
         old_name = self.id_to_name[target]
@@ -164,12 +157,10 @@ class TargetCreator:
         self.old_ids.add(target)
         return new_id
 
-    def createTarget(self, user_target, papers=None, override_id=None):
+    def createTarget(self, user_target, papers=None):
         if papers is None:
             if self.treat_id_different_people:
                 rtr_ids = []
-                if override_id is not None:
-                    self.logger.warning("treat_id_different_people is not None, ignoring override_id")
                 for p in self.author_papers[user_target]:
                     self.logger.debug("handling paper {}".format(p))
                     new_id = self._handleTarget(user_target, [p], None)
@@ -177,10 +168,10 @@ class TargetCreator:
                     self.logger.debug("new_id={}".format(new_id))
                 return rtr_ids
             else:
-                return self._handleTarget(user_target, self.author_papers[user_target], override_id)
+                return [self._handleTarget(user_target, self.author_papers[user_target])]
 
         else:
-            return self._handleTarget(user_target, papers, override_id)
+            return [self._handleTarget(user_target, papers)]
 
     def fillData(self):
         printLogToConsole(self.console_log_level, "Adding rest of data to new author papers", logging.INFO)

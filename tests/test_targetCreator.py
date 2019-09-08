@@ -9,6 +9,7 @@ from src.target_creator import TargetCreator
 from tqdm import tqdm
 from copy import deepcopy
 
+
 def ignore_warnings(test_func):
     def do_test(self, *args, **kwargs):
         with warnings.catch_warnings():
@@ -29,15 +30,36 @@ class TestTargetCreator(TestCase):
         self.log_path = self.config_raw["log path"]
         self.test_authors = [
             "hua-wu",
-            "heng-yu",
-            "meng-zhang",
             "yun-chen",
-            "victor-ok-li"
+            "victor-ok-li",
+            "linfeng-song",
+            "peng-li",
+            "tatsuya-izuha",
+            "yun-huang",
+            "xuan-jing-huang",
+            "qiang-wang"
+        ]
+        self.test_papers = [
+            "W18-5212",
+            "P18-1150",
+            "C18-1314",
+            "P16-1159",
+            "P17-1176",
+            "W11-1911",
+            "C14-1179",
+            "P07-1089"
+        ]
+        self.test_multiple_auth = [
+            "P17-1776",
+            "C14-1179"
+        ]
+        self.test_non_parsed = [
+            "S19-2016"
         ]
         # config = ConfigHandler(self.config_raw,"setup_test_target_creator")
         # data = loadData([ "id_to_name", "author_papers"],config.logger,config)
-        self.parsed_raw = json.load(open(os.getcwd()+"/tests/authorDisambiguationTests/test_papers.json"))
-        self.papers = {x:Paper(**v) for x,v in self.parsed_raw.items()}
+        self.parsed_raw = json.load(open(os.getcwd() + "/tests/authorDisambiguationTests/test_papers.json"))
+        self.papers = {x: Paper(**v) for x, v in self.parsed_raw.items()}
         self.author_papers = {}
         self.id_to_name = {}
         for p, v in self.papers.items():
@@ -45,23 +67,22 @@ class TestTargetCreator(TestCase):
                 if a not in self.author_papers:
                     self.author_papers[a] = []
                 self.author_papers[a].append(p)
-            for a,n in v.authors.items():
+            for a, n in v.authors.items():
                 self.id_to_name[a] = n
-
 
     @ignore_warnings
     def test_init(self):
         print("INFO: Testing init")
-        with open(os.getcwd()+self.log_path + "init.log", "w") as f:
+        with open(os.getcwd() + self.log_path + "init.log", "w") as f:
             pass
         config = ConfigHandler(self.config_raw, "init")
-        test_raw = TargetCreator(self.parsed_raw,self.id_to_name,self.author_papers,**config["TargetCreator"])
+        test_raw = TargetCreator(self.parsed_raw, self.id_to_name, self.author_papers, **config["TargetCreator"])
         for k in self.parsed_raw.keys():
             if k not in test_raw.papers:
                 print("{} is missing from TargetCreator.papers when passed raw papers".format(k))
                 self.fail()
-        test_paper_class = TargetCreator(self.papers,self.id_to_name,self.author_papers,**config["TargetCreator"])
-        for k,v in self.papers.items():
+        test_paper_class = TargetCreator(self.papers, self.id_to_name, self.author_papers, **config["TargetCreator"])
+        for k, v in self.papers.items():
             if k not in test_paper_class.papers:
                 print("{} is missing from TargetCreator.papers when passed dict of Paper classes".format(k))
                 self.fail()
@@ -70,72 +91,43 @@ class TestTargetCreator(TestCase):
                 self.fail()
 
     @ignore_warnings
-    def test__updatePapersBasic(self):
-        with open(os.getcwd()+self.log_path+"basic_update_paper.log", "w") as f:
+    def test_updatePapers(self):
+        print("INFO: Testing updatePapers")
+        with open(os.getcwd() + self.log_path + "update_papers.log", "w") as f:
             pass
-        config = ConfigHandler(self.config_raw,"basic_update_paper")
-        self.fail()
-
-    @ignore_warnings
-    def test__checkSafeRemove(self):
-        print("INFO: Testing checkSafeRemove")
-        with open(os.getcwd()+self.log_path + "check_safe_remove.log", "w") as f:
-            pass
-        config = ConfigHandler(self.config_raw, "check_safe_remove")
+        config = ConfigHandler(self.config_raw, "update_papers")
         author_papers_copy = deepcopy(self.author_papers)
-        target_creator = TargetCreator(self.papers,self.id_to_name,self.author_papers,**config["TargetCreator"])
-        for a in self.test_authors:
-            can_remove, errors = target_creator._checkSafeRemove(a)
-            if can_remove ==0:
-                print("{} was judged as safe to remove when it should not be".format(a))
-                self.fail()
-            elif can_remove != -1:
-                print("{} was judged as not being in any papers when it should be".format(a))
-                self.fail()
-            self.assertEqual([],target_creator.error_papers)
-            self.assertEqual(author_papers_copy[a],target_creator.author_papers[a])
-        paper_copy = {x:v.copy() for x,v in self.papers.items()}
-        author_papers_copy["test-a"] = deepcopy(author_papers_copy["hua-wu"])
-        author_papers_copy["hua-wu"] = []
-        test_paper_a = paper_copy["P16-1159"]
-        test_paper_a.affiliations["test_a"] = test_paper_a.affiliations["hua-wu"]
-        test_paper_a.authors["test_a"] = test_paper_a.authors["hua-wu"]
-        del test_paper_a.authors["hua-wu"]
-        del test_paper_a.affiliations["hua-wu"]
-        test_paper_b = paper_copy["P17-1176"]
-        test_paper_b.affiliations["test_c"] = test_paper_b.affiliations["victor-ok-li"]
-        test_paper_b.authors["test_c"] = test_paper_b.authors["victor-ok-li"]
-        del test_paper_b.authors["victor-ok-li"]
-        del test_paper_b.affiliations["victor-ok-li"]
-        test_paper_b.affiliations["test_b"] = test_paper_b.affiliations["yun-chen"]
-        del test_paper_b.affiliations["yun-chen"]
-        paper_copy["P17-1176"] = test_paper_b
-        target_creator = TargetCreator(paper_copy, self.id_to_name, author_papers_copy, **config["TargetCreator"])
-        for a in self.test_authors:
-            can_remove, errors = target_creator._checkSafeRemove(a)
-            if a == "hua-wu":
+        papers_copy = {x: Paper(**v.asDict()) for x, v in self.papers.items()}
+        tests = [
+            ["qiang-wang","qiang-wang1",None], # No papers passed
+            ['hua-wu',"hua-wu1", ['P16-1159']], # Error papers
+            ['yun-chen',"yun-chen1", ['P16-1159']], # Not in paper
+            ['yun-chen',"yun-chen1", ['P17-1176']], # Will fail first, already in. Then should pass
+            ['victor-ok-li',"victor-ok-li1", ['P17-1176']], # Paper already done
+            ['linfeng-song',"linfeng-sing1", ['W11-1911']], # Paper is done, but not in author papers
+            ['peng-li',"peng-li1", ['C14-1179']],
+            ["xuan-jing-huang","fail-test",["P19-1642"]],
+            ['fail-test', "yun-huang1", ['S19-2016']],
+        ]
 
-                self.assertEqual(0,can_remove)
-                self.assertEqual([],errors)
-            elif a == "yun-chen":
-                self.assertEqual(-1, can_remove)
-                self.assertEqual(["P17-1176"],errors)
-            elif a == "victor-ok-li":
-                self.assertEqual(-2, can_remove)
-                self.assertEqual(["P17-1176"],errors)
-            else:
-                self.assertEqual(-1, can_remove)
-            self.assertEqual(author_papers_copy[a],target_creator.author_papers[a])
+        target_creator = TargetCreator(papers_copy,self.id_to_name,author_papers_copy)
+        a = tests[0]
+        target_creator._updatePapers(*a)
+
+
+
+
+
     @ignore_warnings
     def test__handleTarget(self):
-        with open(os.getcwd()+self.log_path + "handle_target.log", "w") as f:
+        with open(os.getcwd() + self.log_path + "handle_target.log", "w") as f:
             pass
         config = ConfigHandler(self.config_raw, "handle_target")
         self.fail()
 
     @ignore_warnings
     def test_createTarget(self):
-        with open(os.getcwd()+self.log_path + "handle_target.log", "w") as f:
+        with open(os.getcwd() + self.log_path + "handle_target.log", "w") as f:
             pass
         config = ConfigHandler(self.config_raw, "handle_target")
         self.fail()
