@@ -267,12 +267,15 @@ class AuthorDisambiguation:
         out = []
 
         target_initials = [w[0] for w in target_author.split()]
-
+        target_author = target_author.lower()
         warnings = []
         debug = []
         authors_use = []
         for _id, name in author_name.items():
-            first_letter = name[0].lower()
+            try:
+                first_letter = name[0].lower()
+            except Exception as e:
+                raise e
             if first_letter == target_author[0].lower():
                 authors_use.append([_id, name])
         debug.append("{} authors with the same first letter as {}".format(len(authors_use), target_id))
@@ -567,12 +570,15 @@ class AuthorDisambiguation:
 
     def _makeCheckAuthors(self, check_author):
         out = []
+        self.logger.debug("check_author={}".format(check_author))
         for i in check_author:
+            self.logger.debug("Checking {}".format(i))
             try:
                 for p in self.author_papers[i]:
                     out.append((p, i))
             except:
                 self.logger.warning("{} was not found in self.author_papers".format(i))
+        self.logger.debug("out={}".format(out))
         return out
 
     def _makeAmbiguousPairs(self, ambiguous_papers, check_authors, authors_to_get):
