@@ -1,204 +1,288 @@
-2019-08-26 11:48:27,332| WARNING|author_disambiguation|            __init__: Running in DEBUG_MODE
-2019-08-26 11:48:27,334|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:27,334|   DEBUG|author_disambiguation|            __init__: 	compare_args=[]
-2019-08-26 11:48:27,334|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:27,334|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.9
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|            __init__: 	unique authors=0
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|           _findData: Looking for file blah.json
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/blah.json exists
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/blah.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:27,335|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:27,336|   DEBUG|author_disambiguation|           _findData: Cound not find file
-2019-08-26 11:48:27,336|   DEBUG|author_disambiguation|           _findData: Looking for file parsed_papers.json
-2019-08-26 11:48:27,336|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/parsed_papers.json exists
-2019-08-26 11:48:27,336|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/parsed_papers.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:27,336|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:27,336|   DEBUG|author_disambiguation|           _findData: Found parsed_papers.json in subdirectory json
-2019-08-26 11:48:34,044|   DEBUG|author_disambiguation|           _findData: Looking for file id_to_name.json
-2019-08-26 11:48:34,044|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/id_to_name.json exists
-2019-08-26 11:48:34,044|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/id_to_name.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:34,044|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:34,044|   DEBUG|author_disambiguation|           _findData: Found id_to_name.json in subdirectory json
-2019-08-26 11:48:34,146|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.9
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	unique authors=3
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
-2019-08-26 11:48:34,147|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:34,148|    INFO|author_disambiguation|     _getAuthorInfos: Getting author info for specified authors
-2019-08-26 11:48:34,148|   DEBUG|author_disambiguation|     _getAuthorInfos: authors=['yang-liu-ict', 'luyang-liu', 'bob-newman', 'yang-liu']
-2019-08-26 11:48:34,151|   DEBUG|author_disambiguation|     _getAuthorInfos: A0-0000 not in self.papers
-2019-08-26 11:48:34,151| WARNING|author_disambiguation|     _getAuthorInfos: yang-liu is not in self.author_papers
-2019-08-26 11:48:34,152|   DEBUG|author_disambiguation|     _getAuthorInfos: len(out)=2
-2019-08-26 11:48:34,152|   DEBUG|author_disambiguation|     _getAuthorInfos: error_authors=1
-2019-08-26 11:48:34,152|   DEBUG|author_disambiguation|     _getAuthorInfos: error_papers=1
-2019-08-26 11:48:35,827|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
-2019-08-26 11:48:35,827|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
-2019-08-26 11:48:35,827|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:35,827|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:35,828|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
-2019-08-26 11:48:36,033|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:36,034|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
-2019-08-26 11:48:36,034|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:36,034|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:36,034|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:36,034|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
-2019-08-26 11:48:36,034|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
-2019-08-26 11:48:36,034|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:36,034|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:36,035|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
-2019-08-26 11:48:36,035|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:36,036|   DEBUG|author_disambiguation|  _getSimilarAuthors: Finding similar authors to yang liu
-2019-08-26 11:48:36,221|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-edinburgh is similar to yang liu
-2019-08-26 11:48:36,221|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-icsi is similar to yang liu
-2019-08-26 11:48:36,221|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-ict is similar to yang liu
-2019-08-26 11:48:36,221|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu is similar to yang liu
-2019-08-26 11:48:36,934|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-li is similar to yang liu
-2019-08-26 11:48:39,361|   DEBUG|author_disambiguation|  _getSimilarAuthors: Found 5 similar authors
-2019-08-26 11:48:39,361|   DEBUG|author_disambiguation|  _getSimilarAuthors: Finding similar authors to yang liu
-2019-08-26 11:48:39,547|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-edinburgh is similar to yang liu
-2019-08-26 11:48:39,548|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-icsi is similar to yang liu
-2019-08-26 11:48:39,548|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-ict is similar to yang liu
-2019-08-26 11:48:39,548|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu is similar to yang liu
-2019-08-26 11:48:39,548|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-georgetown was added due to overriding with sim score
-2019-08-26 11:48:39,548|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-georgetown is similar to yang liu
-2019-08-26 11:48:40,262|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-li is similar to yang liu
-2019-08-26 11:48:42,706|   DEBUG|author_disambiguation|  _getSimilarAuthors: Found 6 similar authors
-2019-08-26 11:48:42,707|   DEBUG|author_disambiguation|  _getSimilarAuthors: Finding similar authors to eugenio martinez camara
-2019-08-26 11:48:47,896|   DEBUG|author_disambiguation|  _getSimilarAuthors: Found 0 similar authors
-2019-08-26 11:48:49,298|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
-2019-08-26 11:48:49,298|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
-2019-08-26 11:48:49,298|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:49,298|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:49,298|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
-2019-08-26 11:48:49,548|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:49,548|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
-2019-08-26 11:48:49,548|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:49,548|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:49,548|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:49,548|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
-2019-08-26 11:48:49,549|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
-2019-08-26 11:48:49,549|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:49,549|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:49,549|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
-2019-08-26 11:48:49,549|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:49,550|   DEBUG|author_disambiguation|          _makePairs: Making 6 pairs
-2019-08-26 11:48:49,552|   DEBUG|author_disambiguation|          _makePairs: len(excluded)=1
-2019-08-26 11:48:49,552|   DEBUG|author_disambiguation|          _makePairs: len(out)=5
-2019-08-26 11:48:50,916|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
-2019-08-26 11:48:50,917|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
-2019-08-26 11:48:50,917|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:50,917|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:50,917|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
-2019-08-26 11:48:51,162|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:51,162|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
-2019-08-26 11:48:51,162|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:51,162|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:51,162|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:51,162|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
-2019-08-26 11:48:51,162|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
-2019-08-26 11:48:51,163|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:51,163|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:51,163|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
-2019-08-26 11:48:51,163|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:51,164|   DEBUG|author_disambiguation| _errorCheckCallArgs: Checking target_authors and override_authors for errors
-2019-08-26 11:48:51,164|   DEBUG|author_disambiguation| _errorCheckCallArgs: yang-liu is not in override_authors, adding to need_authors
-2019-08-26 11:48:51,164|   ERROR|author_disambiguation| _errorCheckCallArgs: abc-de is in override_authors and not in target_authors
+2019-09-09 10:50:04,314| WARNING|author_disambiguation|            __init__: Running in DEBUG_MODE
+2019-09-09 10:50:04,314|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:04,314|   DEBUG|author_disambiguation|            __init__: 	compare_args=[]
+2019-09-09 10:50:04,314|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:04,314|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:04,314|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.92
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|            __init__: 	unique authors=0
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|           _findData: Looking for file blah.json
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/blah.json exists
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/blah.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|           _findData: Cound not find file
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|           _findData: Looking for file parsed_papers.json
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/parsed_papers.json exists
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/parsed_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:04,315|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:04,316|   DEBUG|author_disambiguation|           _findData: Found parsed_papers.json in subdirectory json
+2019-09-09 10:50:10,062|   DEBUG|author_disambiguation|           _findData: Looking for file id_to_name.json
+2019-09-09 10:50:10,062|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/id_to_name.json exists
+2019-09-09 10:50:10,062|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/id_to_name.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:10,062|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:10,062|   DEBUG|author_disambiguation|           _findData: Found id_to_name.json in subdirectory json
+2019-09-09 10:50:10,147|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:10,147|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:10,147|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.92
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|            __init__: 	unique authors=3
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:10,148|    INFO|author_disambiguation|     _getAuthorInfos: Getting author info for specified authors
+2019-09-09 10:50:10,148|   DEBUG|author_disambiguation|     _getAuthorInfos: authors=['yang-liu-ict', 'luyang-liu', 'bob-newman', 'yang-liu']
+2019-09-09 10:50:10,150|   DEBUG|author_disambiguation|     _getAuthorInfos: A0-0000 not in self.papers
+2019-09-09 10:50:10,150| WARNING|author_disambiguation|     _getAuthorInfos: yang-liu is not in self.author_papers
+2019-09-09 10:50:10,151|   DEBUG|author_disambiguation|     _getAuthorInfos: len(out)=2
+2019-09-09 10:50:10,151|   DEBUG|author_disambiguation|     _getAuthorInfos: error_authors=1
+2019-09-09 10:50:10,151|   DEBUG|author_disambiguation|     _getAuthorInfos: error_papers=1
+2019-09-09 10:50:11,332|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:50:11,332|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:50:11,332|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:11,332|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:11,332|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:50:11,505|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:11,505|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:11,505|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:11,505|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:11,505|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:11,505|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:50:11,506|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:50:11,506|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:11,506|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:11,506|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
+2019-09-09 10:50:11,506|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:11,506|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:13,047|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:50:13,048|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:50:13,048|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:13,048|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:13,048|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:50:13,245|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:13,245|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:13,246|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:13,247|   DEBUG|author_disambiguation|          _makePairs: Making 6 pairs
+2019-09-09 10:50:13,249|   DEBUG|author_disambiguation|          _makePairs: len(excluded)=1
+2019-09-09 10:50:13,249|   DEBUG|author_disambiguation|          _makePairs: len(out)=5
+2019-09-09 10:50:14,401|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:50:14,401|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:50:14,401|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:14,401|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:14,401|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:50:14,599|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:14,599|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:14,599|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:14,599|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:14,600|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:14,600|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:50:14,600|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:50:14,600|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:14,600|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:14,600|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
+2019-09-09 10:50:14,600|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:14,600|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:14,602|   DEBUG|author_disambiguation| _errorCheckCallArgs: Checking target_authors and override_authors for errors
+2019-09-09 10:50:14,602|   DEBUG|author_disambiguation| _errorCheckCallArgs: yang-liu is not in override_authors, adding to need_authors
+2019-09-09 10:50:14,602|   ERROR|author_disambiguation| _errorCheckCallArgs: abc-de is in override_authors and not in target_authors
 NoneType: None
-2019-08-26 11:48:51,167|   DEBUG|author_disambiguation| _errorCheckCallArgs: Checking target_authors and override_authors for errors
-2019-08-26 11:48:51,167|   ERROR|author_disambiguation| _errorCheckCallArgs: 'abcsasd-adad not in author_papers'
+2019-09-09 10:50:14,605|   DEBUG|author_disambiguation| _errorCheckCallArgs: Checking target_authors and override_authors for errors
+2019-09-09 10:50:14,605|   ERROR|author_disambiguation| _errorCheckCallArgs: 'abcsasd-adad not in author_papers'
 NoneType: None
-2019-08-26 11:48:51,170|   DEBUG|author_disambiguation| _errorCheckCallArgs: Checking target_authors and override_authors for errors
-2019-08-26 11:48:51,170|   DEBUG|author_disambiguation| _errorCheckCallArgs: luyang-liu is not in override_authors, adding to need_authors
-2019-08-26 11:48:51,170|   DEBUG|author_disambiguation| _errorCheckCallArgs: yang-liu is in override_authors, adding to has_authors
-2019-08-26 11:48:52,526|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
-2019-08-26 11:48:52,527|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
-2019-08-26 11:48:52,527|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:52,527|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:52,527|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
-2019-08-26 11:48:52,763|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:52,763|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
-2019-08-26 11:48:52,763|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:52,763|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:52,764|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:52,764|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
-2019-08-26 11:48:52,764|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
-2019-08-26 11:48:52,764|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:52,764|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:52,764|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
-2019-08-26 11:48:52,764|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:54,216|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
-2019-08-26 11:48:54,216|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
-2019-08-26 11:48:54,216|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:54,216|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:54,217|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
-2019-08-26 11:48:54,417|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:54,417|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
-2019-08-26 11:48:54,418|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:54,418|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:54,419|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:54,419|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
-2019-08-26 11:48:54,419|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
-2019-08-26 11:48:54,419|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:54,420|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:54,420|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
-2019-08-26 11:48:54,420|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:54,421| WARNING|author_disambiguation|_makeAmbiguousAuthors: eugenio-martinez-camara is not in id_to_name
-2019-08-26 11:48:54,422|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: Skipping eugenio-martinez-camara because it is in excluded
-2019-08-26 11:48:54,422|   DEBUG|author_disambiguation|  _getSimilarAuthors: Finding similar authors to yang liu
-2019-08-26 11:48:54,623|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-edinburgh is similar to yang liu
-2019-08-26 11:48:54,624|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-icsi is similar to yang liu
-2019-08-26 11:48:54,624|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-ict is similar to yang liu
-2019-08-26 11:48:54,624|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-georgetown was added due to overriding with sim score
-2019-08-26 11:48:54,624|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-georgetown is similar to yang liu
-2019-08-26 11:48:55,388|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-li is similar to yang liu
-2019-08-26 11:48:57,648|   DEBUG|author_disambiguation|  _getSimilarAuthors: Found 5 similar authors
-2019-08-26 11:48:59,052|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
-2019-08-26 11:48:59,052|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
-2019-08-26 11:48:59,052|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:59,053|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:59,053|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
-2019-08-26 11:48:59,247|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:59,248|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
-2019-08-26 11:48:59,248|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:59,248|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:59,249|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:59,249|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
-2019-08-26 11:48:59,249|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
-2019-08-26 11:48:59,249|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:59,250|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:59,250|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
-2019-08-26 11:48:59,250|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:59,252|    INFO|author_disambiguation| _makeAmbiguousPairs: Creating pairs for ambiguous authors
-2019-08-26 11:48:59,253|    INFO|author_disambiguation|     _getAuthorInfos: Getting author info for specified authors
-2019-08-26 11:48:59,253|   DEBUG|author_disambiguation|     _getAuthorInfos: authors=['amir-zeldes', 'yang-liu-edinburgh']
-2019-08-26 11:48:59,254|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-4502 not in self.papers
-2019-08-26 11:48:59,254|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-6022 not in self.papers
-2019-08-26 11:48:59,254|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-4918 not in self.papers
-2019-08-26 11:48:59,254|   DEBUG|author_disambiguation|     _getAuthorInfos: W19-2713 not in self.papers
-2019-08-26 11:48:59,255|   DEBUG|author_disambiguation|     _getAuthorInfos: N18-4006 not in self.papers
-2019-08-26 11:48:59,255|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-5811 not in self.papers
-2019-08-26 11:48:59,255|   DEBUG|author_disambiguation|     _getAuthorInfos: W19-2701 not in self.papers
-2019-08-26 11:48:59,255|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-0704 not in self.papers
-2019-08-26 11:48:59,256|   DEBUG|author_disambiguation|     _getAuthorInfos: len(out)=5
-2019-08-26 11:48:59,256|   DEBUG|author_disambiguation|     _getAuthorInfos: error_authors=0
-2019-08-26 11:48:59,257|   DEBUG|author_disambiguation|     _getAuthorInfos: error_papers=8
-2019-08-26 11:48:59,257| WARNING|author_disambiguation| _makeAmbiguousPairs: 8 errors getting known author papers
-2019-08-26 11:48:59,257|   DEBUG|author_disambiguation| _makeAmbiguousPairs: 5 known papers
-2019-08-26 11:48:59,257|   DEBUG|author_disambiguation| _makeAmbiguousPairs: 1 ambiguous author ids
-2019-08-26 11:48:59,258|    INFO|author_disambiguation| _makeAmbiguousPairs: Creating pairs for yang-liu-georgetown
-2019-08-26 11:48:59,258|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 3 papers
-2019-08-26 11:48:59,258|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 4 to check against
-2019-08-26 11:48:59,258|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 4 total possible pairs
-2019-08-26 11:48:59,259|   DEBUG|author_disambiguation|          _makePairs: Making 4 pairs
+2019-09-09 10:50:14,607|   DEBUG|author_disambiguation| _errorCheckCallArgs: Checking target_authors and override_authors for errors
+2019-09-09 10:50:14,608|   DEBUG|author_disambiguation| _errorCheckCallArgs: luyang-liu is not in override_authors, adding to need_authors
+2019-09-09 10:50:14,608|   DEBUG|author_disambiguation| _errorCheckCallArgs: yang-liu is in override_authors, adding to has_authors
+2019-09-09 10:50:15,779|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:50:15,779|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:50:15,779|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:15,779|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:15,779|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:50:15,970|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:15,971|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:15,971|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:15,971|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:15,971|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:15,971|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:50:15,971|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:50:15,971|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:15,971|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:15,972|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=False
+2019-09-09 10:50:15,972|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:15,972|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:17,151|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:50:17,151|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:50:17,151|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:17,151|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:17,151|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:50:17,313|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:17,313|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:17,313|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:17,313|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:17,313|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:17,314|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:50:17,314|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:50:17,314|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:17,314|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:17,314|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
+2019-09-09 10:50:17,314|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:17,314|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:17,315|    INFO|author_disambiguation| _consolidateResults: Consolidating Compare results
+2019-09-09 10:50:17,317|   DEBUG|author_disambiguation| _consolidateResults: Converting to np arrays
+2019-09-09 10:50:17,317|   DEBUG|author_disambiguation| _consolidateResults: Converting yang-liu-georgetown results
+2019-09-09 10:50:17,317|   DEBUG|author_disambiguation| _consolidateResults: Consolidating results from yang-liu-edinburgh
+2019-09-09 10:50:17,317|   DEBUG|author_disambiguation| _consolidateResults: Converting yang-liu-edinburgh results
+2019-09-09 10:50:17,317|   DEBUG|author_disambiguation| _consolidateResults: Consolidating results from amir-zeldes
+2019-09-09 10:50:18,474|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:50:18,475|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:50:18,475|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:18,475|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:18,475|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:50:18,635|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:18,635|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:18,635|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:18,635|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:18,635|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:18,636|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:50:18,636|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:50:18,636|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:18,636|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:18,636|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
+2019-09-09 10:50:18,636|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:18,637|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:18,638|    INFO|author_disambiguation|_makeAmbiguousAuthors: Getting similar authors in parallel with 4 cores
+2019-09-09 10:50:18,841|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: 1151 authors with the same first letter as eugenio-martinez-camara
+2019-09-09 10:50:18,842|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: eugenio-martinez-camara1 is similar to eugenio-martinez-camara
+2019-09-09 10:50:18,842|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: Found 1 similar authors
+2019-09-09 10:50:18,842| WARNING|author_disambiguation|_makeAmbiguousAuthors: yan-liu passed the similarity test, but does not have the same first name
+2019-09-09 10:50:18,842| WARNING|author_disambiguation|_makeAmbiguousAuthors: author name =Yan Liu
+2019-09-09 10:50:18,842|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: 1703 authors with the same first letter as yang-liu
+2019-09-09 10:50:18,843|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-edinburgh is similar to yang-liu
+2019-09-09 10:50:18,843|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-icsi is similar to yang-liu
+2019-09-09 10:50:18,843|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-ict is similar to yang-liu
+2019-09-09 10:50:18,843|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-georgetown was added due to overriding with sim score
+2019-09-09 10:50:18,843|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-georgetown is similar to yang-liu
+2019-09-09 10:50:18,843|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-li is similar to yang-liu
+2019-09-09 10:50:18,843|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: Found 5 similar authors
+2019-09-09 10:50:18,854|    INFO|author_disambiguation|_makeAmbiguousAuthors: Checking similar authors to eugenio-martinez-camara
+2019-09-09 10:50:18,855|    INFO|author_disambiguation|_makeAmbiguousAuthors: Checking similar authors to yang-liu
+2019-09-09 10:50:20,061|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:50:20,061|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:50:20,061|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:20,062|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:20,062|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:50:20,240|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:20,240|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:20,241|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:20,241|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:20,241|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:20,241|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:50:20,241|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:50:20,241|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:20,242|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:20,242|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
+2019-09-09 10:50:20,242|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:20,242|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:20,243|    INFO|author_disambiguation| _makeAmbiguousPairs: Creating pairs for ambiguous authors
+2019-09-09 10:50:20,244|    INFO|author_disambiguation|     _getAuthorInfos: Getting author info for specified authors
+2019-09-09 10:50:20,244|   DEBUG|author_disambiguation|     _getAuthorInfos: authors=['amir-zeldes', 'yang-liu-edinburgh']
+2019-09-09 10:50:20,245|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-4502 not in self.papers
+2019-09-09 10:50:20,245|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-0704 not in self.papers
+2019-09-09 10:50:20,245|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-6022 not in self.papers
+2019-09-09 10:50:20,245|   DEBUG|author_disambiguation|     _getAuthorInfos: W19-2713 not in self.papers
+2019-09-09 10:50:20,245|   DEBUG|author_disambiguation|     _getAuthorInfos: W19-2701 not in self.papers
+2019-09-09 10:50:20,246|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-4918 not in self.papers
+2019-09-09 10:50:20,246|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-5811 not in self.papers
+2019-09-09 10:50:20,246|   DEBUG|author_disambiguation|     _getAuthorInfos: N18-4006 not in self.papers
+2019-09-09 10:50:20,247|   DEBUG|author_disambiguation|     _getAuthorInfos: len(out)=5
+2019-09-09 10:50:20,247|   DEBUG|author_disambiguation|     _getAuthorInfos: error_authors=0
+2019-09-09 10:50:20,247|   DEBUG|author_disambiguation|     _getAuthorInfos: error_papers=8
+2019-09-09 10:50:20,247| WARNING|author_disambiguation| _makeAmbiguousPairs: 8 errors getting known author papers
+2019-09-09 10:50:20,247|   DEBUG|author_disambiguation| _makeAmbiguousPairs: 5 known papers
+2019-09-09 10:50:20,248|   DEBUG|author_disambiguation| _makeAmbiguousPairs: 1 ambiguous author ids
+2019-09-09 10:50:20,248|    INFO|author_disambiguation| _makeAmbiguousPairs: Creating pairs for yang-liu-georgetown
+2019-09-09 10:50:20,248|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 3 papers
+2019-09-09 10:50:20,248|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 4 to check against
+2019-09-09 10:50:20,248|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 4 total possible pairs
+2019-09-09 10:50:20,249|   DEBUG|author_disambiguation|          _makePairs: Making 4 pairs
+2019-09-09 10:50:20,250|   DEBUG|author_disambiguation|          _makePairs: len(excluded)=1
+2019-09-09 10:50:20,250|   DEBUG|author_disambiguation|          _makePairs: len(out)=3
+2019-09-09 10:50:20,250|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2708 yang-liu-georgetown has 3 pairs
+2019-09-09 10:50:20,250|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2708 yang-liu-georgetown has 1 excluded
+2019-09-09 10:50:20,251|   DEBUG|author_disambiguation|          _makePairs: Making 4 pairs
+2019-09-09 10:50:20,251|   DEBUG|author_disambiguation|          _makePairs: len(excluded)=0
+2019-09-09 10:50:20,252|   DEBUG|author_disambiguation|          _makePairs: len(out)=4
+2019-09-09 10:50:20,252|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2710 yang-liu-georgetown has 4 pairs
+2019-09-09 10:50:20,252|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2710 yang-liu-georgetown has 0 excluded
+2019-09-09 10:50:20,252|   DEBUG|author_disambiguation|          _makePairs: Making 4 pairs
+2019-09-09 10:50:20,254|   DEBUG|author_disambiguation|          _makePairs: len(excluded)=0
+2019-09-09 10:50:20,254|   DEBUG|author_disambiguation|          _makePairs: len(out)=4
+2019-09-09 10:50:20,254|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2717 yang-liu-georgetown has 4 pairs
+2019-09-09 10:50:20,255|   DEBUG|author_disambiguation| _makeAmbiguousPairs: W19-2717 yang-liu-georgetown has 0 excluded
+2019-09-09 10:50:21,449|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:50:21,450|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:50:21,450|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:21,450|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:21,451|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:50:21,620|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:21,620|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:21,621|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:21,621|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:21,621|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:21,621|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:50:21,621|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:50:21,622|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:21,622|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:21,622|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
+2019-09-09 10:50:21,622|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:21,622|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:21,661|    INFO|author_disambiguation| _consolidateResults: Consolidating Compare results
+2019-09-09 10:50:21,662|   DEBUG|author_disambiguation| _consolidateResults: Converting to np arrays
+2019-09-09 10:50:21,663|   DEBUG|author_disambiguation| _consolidateResults: Converting yang-liu-ict results
+2019-09-09 10:50:21,663|   DEBUG|author_disambiguation| _consolidateResults: Consolidating results from yajuan-lu
+2019-09-09 10:50:21,663|   DEBUG|author_disambiguation| _consolidateResults: Consolidating results from yong-cheng
+2019-09-09 10:50:21,663|   DEBUG|author_disambiguation| _consolidateResults: Consolidating results from yang-liu-icsi
+2019-09-09 10:50:21,664|   DEBUG|author_disambiguation| _consolidateResults: Consolidating results from yang-liu-ict
+2019-09-09 10:50:21,664|    INFO|author_disambiguation|    _makePredictions: Predicting same authors
+2019-09-09 10:50:21,665|    INFO|author_disambiguation|    _makePredictions: Predicting same authors to yang-liu-ict
+2019-09-09 10:50:21,666|   DEBUG|author_disambiguation|    _makePredictions: Making predictions for yajuan-lu
+2019-09-09 10:50:21,691|   DEBUG|author_disambiguation|    _makePredictions: Making predictions for yong-cheng
+2019-09-09 10:50:21,717|   DEBUG|author_disambiguation|    _makePredictions: Making predictions for yang-liu-icsi
+2019-09-09 10:50:21,742|   DEBUG|author_disambiguation|    _makePredictions: Making predictions for yang-liu-ict
+2019-09-09 10:50:22,930|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:50:22,930|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:50:22,931|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:50:22,931|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:50:22,931|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:50:23,097|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:50:23,098|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:50:23,098|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:50:23,098|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:50:23,098|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:50:23,099|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:50:23,099|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:50:23,099|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:50:23,099|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:50:23,100|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
+2019-09-09 10:50:23,100|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:50:23,100|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:50:23,101|   DEBUG|author_disambiguation|_removeKnownDifferent: Getting all authors who are in excluded
+2019-09-09 10:50:23,102|   DEBUG|author_disambiguation|_removeKnownDifferent: Removing pairs that have the excluded authors
+2019-09-09 10:50:23,102|   DEBUG|author_disambiguation|_removeKnownDifferent: Removed W19-2710 yang-liu-georgetown W19-2708 amir-zeldes from the pairs b/c it was in known_different
+2019-09-09 10:50:23,102|   DEBUG|author_disambiguation|_removeKnownDifferent: Removed W19-2717 yang-liu-georgetown W19-2708 amir-zeldes from the pairs b/c it was in known_different

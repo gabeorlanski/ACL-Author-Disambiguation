@@ -184,27 +184,33 @@ class TestTargetCreator(TestCase):
             pass
         config = ConfigHandler(self.config_raw, "fill_data")
         target_creator = TargetCreator(self.parsed_raw, self.id_to_name, self.author_papers, **config["TargetCreator"])
+        test_papers = []
+        for x in self.test_authors:
+            test_papers.extend(self.author_papers[x])
         rtr = []
         for a in self.test_authors:
             rtr.extend(target_creator.createTarget(a))
         papers, auth_papers, id_to_name = target_creator.fillData()
         for a in self.test_authors:
-            self.assertTrue(a not in auth_papers)
-            self.assertTrue(a not in id_to_name)
+            if a in auth_papers:
+                print(a)
+                self.assertTrue(a not in auth_papers)
+                self.assertTrue(a not in id_to_name)
         for a in rtr:
             self.assertTrue(a in auth_papers)
             self.assertTrue(a in id_to_name)
 
-        for p in self.test_papers:
+        for p in test_papers:
             if p not in papers:
                 print(p)
+                self.fail()
             self.assertTrue(p in papers)
             found_one = False
             for a in rtr:
-                if a in papers[p].authors and a in papers[p].affiliations:
-                    found_one = True
-                    self.assertTrue(p in auth_papers[a])
-                    self.assertEqual(id_to_name[a], papers[p].authors[a])
-                    break
+                actual_id = a[:-1]
+                if actual_id in papers[p].affiliations or actual_id in papers[p].authors:
+                    self.fail("{} is in paper {} when it should not be".format(actual_id,p))
+                if p in auth_papers[a]:
+                    found_one=True
             if not found_one:
-                self.fail()
+                self.fail("{} was not found in any authors' papers".format(p))

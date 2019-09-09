@@ -1,64 +1,39 @@
-2019-08-26 11:48:54,216|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
-2019-08-26 11:48:54,216|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
-2019-08-26 11:48:54,216|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:54,216|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:54,217|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
-2019-08-26 11:48:54,417|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:54,417|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
-2019-08-26 11:48:54,418|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:54,418|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:54,419|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:54,419|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
-2019-08-26 11:48:54,419|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
-2019-08-26 11:48:54,419|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:54,420|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:54,420|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
-2019-08-26 11:48:54,420|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:54,421| WARNING|author_disambiguation|_makeAmbiguousAuthors: eugenio-martinez-camara is not in id_to_name
-2019-08-26 11:48:54,422|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: Skipping eugenio-martinez-camara because it is in excluded
-2019-08-26 11:48:54,422|   DEBUG|author_disambiguation|  _getSimilarAuthors: Finding similar authors to yang liu
-2019-08-26 11:48:54,623|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-edinburgh is similar to yang liu
-2019-08-26 11:48:54,624|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-icsi is similar to yang liu
-2019-08-26 11:48:54,624|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-ict is similar to yang liu
-2019-08-26 11:48:54,624|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-georgetown was added due to overriding with sim score
-2019-08-26 11:48:54,624|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-liu-georgetown is similar to yang liu
-2019-08-26 11:48:55,388|   DEBUG|author_disambiguation|  _getSimilarAuthors: yang-li is similar to yang liu
-2019-08-26 11:48:57,648|   DEBUG|author_disambiguation|  _getSimilarAuthors: Found 5 similar authors
-2019-08-26 11:48:59,052|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
-2019-08-26 11:48:59,052|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
-2019-08-26 11:48:59,052|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
-2019-08-26 11:48:59,053|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
-2019-08-26 11:48:59,053|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
-2019-08-26 11:48:59,247|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
-2019-08-26 11:48:59,248|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
-2019-08-26 11:48:59,248|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
-2019-08-26 11:48:59,248|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
-2019-08-26 11:48:59,249|   DEBUG|author_disambiguation|            __init__: 	threshold=0.75
-2019-08-26 11:48:59,249|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
-2019-08-26 11:48:59,249|   DEBUG|author_disambiguation|            __init__: 	unique authors=15375
-2019-08-26 11:48:59,249|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
-2019-08-26 11:48:59,250|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
-2019-08-26 11:48:59,250|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
-2019-08-26 11:48:59,250|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
-2019-08-26 11:48:59,252|    INFO|author_disambiguation| _makeAmbiguousPairs: Creating pairs for ambiguous authors
-2019-08-26 11:48:59,253|    INFO|author_disambiguation|     _getAuthorInfos: Getting author info for specified authors
-2019-08-26 11:48:59,253|   DEBUG|author_disambiguation|     _getAuthorInfos: authors=['amir-zeldes', 'yang-liu-edinburgh']
-2019-08-26 11:48:59,254|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-4502 not in self.papers
-2019-08-26 11:48:59,254|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-6022 not in self.papers
-2019-08-26 11:48:59,254|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-4918 not in self.papers
-2019-08-26 11:48:59,254|   DEBUG|author_disambiguation|     _getAuthorInfos: W19-2713 not in self.papers
-2019-08-26 11:48:59,255|   DEBUG|author_disambiguation|     _getAuthorInfos: N18-4006 not in self.papers
-2019-08-26 11:48:59,255|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-5811 not in self.papers
-2019-08-26 11:48:59,255|   DEBUG|author_disambiguation|     _getAuthorInfos: W19-2701 not in self.papers
-2019-08-26 11:48:59,255|   DEBUG|author_disambiguation|     _getAuthorInfos: W18-0704 not in self.papers
-2019-08-26 11:48:59,256|   DEBUG|author_disambiguation|     _getAuthorInfos: len(out)=5
-2019-08-26 11:48:59,256|   DEBUG|author_disambiguation|     _getAuthorInfos: error_authors=0
-2019-08-26 11:48:59,257|   DEBUG|author_disambiguation|     _getAuthorInfos: error_papers=8
-2019-08-26 11:48:59,257| WARNING|author_disambiguation| _makeAmbiguousPairs: 8 errors getting known author papers
-2019-08-26 11:48:59,257|   DEBUG|author_disambiguation| _makeAmbiguousPairs: 5 known papers
-2019-08-26 11:48:59,257|   DEBUG|author_disambiguation| _makeAmbiguousPairs: 1 ambiguous author ids
-2019-08-26 11:48:59,258|    INFO|author_disambiguation| _makeAmbiguousPairs: Creating pairs for yang-liu-georgetown
-2019-08-26 11:48:59,258|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 3 papers
-2019-08-26 11:48:59,258|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 4 to check against
-2019-08-26 11:48:59,258|   DEBUG|author_disambiguation| _makeAmbiguousPairs: yang-liu-georgetown has 4 total possible pairs
-2019-08-26 11:48:59,259|   DEBUG|author_disambiguation|          _makePairs: Making 4 pairs
+2019-09-09 10:57:48,769|   DEBUG|author_disambiguation|           _findData: Looking for file author_papers.json
+2019-09-09 10:57:48,769|   DEBUG|author_disambiguation|           _findData: Checking if /home/gabe/Desktop/research-main/data/author_papers.json exists
+2019-09-09 10:57:48,770|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/author_papers.json does not exist, moving on to checking if json is a directory
+2019-09-09 10:57:48,770|   DEBUG|author_disambiguation|           _findData: /home/gabe/Desktop/research-main/data/json is a valid directory, not checking if file exists
+2019-09-09 10:57:48,770|   DEBUG|author_disambiguation|           _findData: Found author_papers.json in subdirectory json
+2019-09-09 10:57:49,083|   DEBUG|author_disambiguation|            __init__: AuthorDisambiguation initialized with arguments:
+2019-09-09 10:57:49,083|   DEBUG|author_disambiguation|            __init__: 	compare_args=['company_corpus', 'department_corpus', 'threshold', 'str_algorithm']
+2019-09-09 10:57:49,083|   DEBUG|author_disambiguation|            __init__: 	algorithm=jaro
+2019-09-09 10:57:49,083|   DEBUG|author_disambiguation|            __init__: 	measure=similarity
+2019-09-09 10:57:49,083|   DEBUG|author_disambiguation|            __init__: 	threshold=0.2
+2019-09-09 10:57:49,083|   DEBUG|author_disambiguation|            __init__: 	name_similarity_cutoff=0.95
+2019-09-09 10:57:49,083|   DEBUG|author_disambiguation|            __init__: 	unique authors=15177
+2019-09-09 10:57:49,083|   DEBUG|author_disambiguation|            __init__: 	compare_cutoff=3
+2019-09-09 10:57:49,083|   DEBUG|author_disambiguation|            __init__: 	tie_breaker=max
+2019-09-09 10:57:49,084|   DEBUG|author_disambiguation|            __init__: 	sim_overrides=True
+2019-09-09 10:57:49,084|   DEBUG|author_disambiguation|            __init__: 	same_paper_diff_people=True
+2019-09-09 10:57:49,084|   DEBUG|author_disambiguation|            __init__: 	use_probabilities=False
+2019-09-09 10:57:49,085|   DEBUG|author_disambiguation|   _makeCheckAuthors: check_author=['bo-li']
+2019-09-09 10:57:49,085|   DEBUG|author_disambiguation|   _makeCheckAuthors: Checking bo-li
+2019-09-09 10:57:49,085|   DEBUG|author_disambiguation|   _makeCheckAuthors: out=[('P19-1130', 'bo-li'), ('D18-1212', 'bo-li'), ('C18-1025', 'bo-li')]
+2019-09-09 10:57:49,086|    INFO|author_disambiguation|_makeAmbiguousAuthors: Getting similar authors in parallel with 4 cores
+2019-09-09 10:57:49,400| WARNING|author_disambiguation|_makeAmbiguousAuthors: yan-liu passed the similarity test, but does not have the same first name
+2019-09-09 10:57:49,400| WARNING|author_disambiguation|_makeAmbiguousAuthors: author name =Yan Liu
+2019-09-09 10:57:49,400|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: 1703 authors with the same first letter as yang-liu
+2019-09-09 10:57:49,400|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-edinburgh is similar to yang-liu
+2019-09-09 10:57:49,401|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-icsi is similar to yang-liu
+2019-09-09 10:57:49,401|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-ict is similar to yang-liu
+2019-09-09 10:57:49,401|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-georgetown was added due to overriding with sim score
+2019-09-09 10:57:49,401|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-liu-georgetown is similar to yang-liu
+2019-09-09 10:57:49,401|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: yang-li is similar to yang-liu
+2019-09-09 10:57:49,401|   DEBUG|author_disambiguation|_makeAmbiguousAuthors: Found 5 similar authors
+2019-09-09 10:57:49,503|    INFO|author_disambiguation|_makeAmbiguousAuthors: Checking similar authors to yang-liu
+2019-09-09 10:57:49,503|   DEBUG|author_disambiguation|   _makeCheckAuthors: check_author=['yang-liu-edinburgh', 'yang-liu-icsi', 'yang-liu-ict', 'yang-liu-georgetown', 'yang-li']
+2019-09-09 10:57:49,503|   DEBUG|author_disambiguation|   _makeCheckAuthors: Checking yang-liu-edinburgh
+2019-09-09 10:57:49,503|   DEBUG|author_disambiguation|   _makeCheckAuthors: Checking yang-liu-icsi
+2019-09-09 10:57:49,503|   DEBUG|author_disambiguation|   _makeCheckAuthors: Checking yang-liu-ict
+2019-09-09 10:57:49,503|   DEBUG|author_disambiguation|   _makeCheckAuthors: Checking yang-liu-georgetown
+2019-09-09 10:57:49,503|   DEBUG|author_disambiguation|   _makeCheckAuthors: Checking yang-li
+2019-09-09 10:57:49,504|   DEBUG|author_disambiguation|   _makeCheckAuthors: out=[('P15-2047', 'yang-liu-edinburgh'), ('Q18-1005', 'yang-liu-edinburgh'), ('N19-1173', 'yang-liu-edinburgh'), ('N04-4018', 'yang-liu-icsi'), ('W13-1914', 'yang-liu-icsi'), ('P15-2009', 'yang-liu-icsi'), ('P06-1021', 'yang-liu-icsi'), ('N09-1070', 'yang-liu-icsi'), ('W13-1720', 'yang-liu-icsi'), ('W11-1411', 'yang-liu-icsi'), ('N15-1145', 'yang-liu-icsi'), ('D17-1231', 'yang-liu-icsi'), ('P11-1074', 'yang-liu-icsi'), ('I11-1164', 'yang-liu-icsi'), ('D08-1102', 'yang-liu-icsi'), ('P12-1058', 'yang-liu-icsi'), ('N03-3007', 'yang-liu-icsi'), ('K17-3015', 'yang-liu-icsi'), ('I11-1109', 'yang-liu-icsi'), ('P11-1034', 'yang-liu-icsi'), ('P09-2066', 'yang-liu-icsi'), ('D12-1046', 'yang-liu-icsi'), ('C18-1150', 'yang-liu-icsi'), ('C18-1314', 'yang-liu-icsi'), ('C16-1054', 'yang-liu-icsi'), ('P14-3012', 'yang-liu-icsi'), ('N07-2026', 'yang-liu-icsi'), ('P11-2091', 'yang-liu-icsi'), ('W19-4416', 'yang-liu-icsi'), ('D14-1076', 'yang-liu-icsi'), ('Q14-1027', 'yang-liu-icsi'), ('W18-5212', 'yang-liu-icsi'), ('W11-1721', 'yang-liu-icsi'), ('Q13-1004', 'yang-liu-icsi'), ('W19-4450', 'yang-liu-icsi'), ('D13-1156', 'yang-liu-icsi'), ('P11-2013', 'yang-liu-icsi'), ('P17-1139', 'yang-liu-ict'), ('C10-2136', 'yang-liu-ict'), ('D18-1041', 'yang-liu-ict'), ('Q18-1029', 'yang-liu-ict'), ('P17-1176', 'yang-liu-ict'), ('P09-1065', 'yang-liu-ict'), ('P13-1084', 'yang-liu-ict'), ('D15-1144', 'yang-liu-ict'), ('W14-2403', 'yang-liu-ict'), ('D15-1210', 'yang-liu-ict'), ('C12-2122', 'yang-liu-ict'), ('D09-1106', 'yang-liu-ict'), ('D09-1115', 'yang-liu-ict'), ('J10-3002', 'yang-liu-ict'), ('D17-1207', 'yang-liu-ict'), ('P05-1057', 'yang-liu-ict'), ('C10-2059', 'yang-liu-ict'), ('P15-2093', 'yang-liu-ict'), ('P17-1106', 'yang-liu-ict'), ('C10-1080', 'yang-liu-ict'), ('C14-1179', 'yang-liu-ict'), ('P09-2035', 'yang-liu-ict'), ('P10-2003', 'yang-liu-ict'), ('W11-1911', 'yang-liu-ict'), ('P06-1077', 'yang-liu-ict'), ('C10-1135', 'yang-liu-ict'), ('D08-1010', 'yang-liu-ict'), ('P17-1179', 'yang-liu-ict'), ('C16-1300', 'yang-liu-ict'), ('C12-1176', 'yang-liu-ict'), ('P07-1089', 'yang-liu-ict'), ('P19-1623', 'yang-liu-ict'), ('D12-1109', 'yang-liu-ict'), ('P16-1008', 'yang-liu-ict'), ('P16-1097', 'yang-liu-ict'), ('D18-1049', 'yang-liu-ict'), ('Q17-1007', 'yang-liu-ict'), ('P18-1163', 'yang-liu-ict'), ('P16-1159', 'yang-liu-ict'), ('W19-2710', 'yang-liu-georgetown'), ('W19-2717', 'yang-liu-georgetown'), ('W19-2708', 'yang-liu-georgetown'), ('N19-1080', 'yang-li'), ('P18-1121', 'yang-li')]

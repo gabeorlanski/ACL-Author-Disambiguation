@@ -1,7 +1,8 @@
-2019-08-26 11:48:34,151| WARNING|author_disambiguation|     _getAuthorInfos: yang-liu is not in self.author_papers
-2019-08-26 11:48:51,164|   ERROR|author_disambiguation| _errorCheckCallArgs: abc-de is in override_authors and not in target_authors
+2019-09-09 10:50:10,150| WARNING|author_disambiguation|     _getAuthorInfos: yang-liu is not in self.author_papers
+2019-09-09 10:50:14,602|   ERROR|author_disambiguation| _errorCheckCallArgs: abc-de is in override_authors and not in target_authors
 NoneType: None
-2019-08-26 11:48:51,167|   ERROR|author_disambiguation| _errorCheckCallArgs: 'abcsasd-adad not in author_papers'
+2019-09-09 10:50:14,605|   ERROR|author_disambiguation| _errorCheckCallArgs: 'abcsasd-adad not in author_papers'
 NoneType: None
-2019-08-26 11:48:54,421| WARNING|author_disambiguation|_makeAmbiguousAuthors: eugenio-martinez-camara is not in id_to_name
-2019-08-26 11:48:59,257| WARNING|author_disambiguation| _makeAmbiguousPairs: 8 errors getting known author papers
+2019-09-09 10:50:18,842| WARNING|author_disambiguation|_makeAmbiguousAuthors: yan-liu passed the similarity test, but does not have the same first name
+2019-09-09 10:50:18,842| WARNING|author_disambiguation|_makeAmbiguousAuthors: author name =Yan Liu
+2019-09-09 10:50:20,247| WARNING|author_disambiguation| _makeAmbiguousPairs: 8 errors getting known author papers

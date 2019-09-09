@@ -15,13 +15,14 @@ class TargetCreator:
         skip_error_papers=[False,
                            "Skip papers that had an error for one author id, even if the author id in question was not the one that caused the "
                            "paper to be added to error_papers"],
-        one_target_per_paper=[False, "Allow only a single target per paper"]
+        one_target_per_paper=[False, "Allow only a single target per paper"],
+        remove_all_papers=[False, "Remove all papers associated with the target or leave papers not specified"]
     )
 
     def __init__(self, papers, id_to_name, author_papers, treat_id_different_people=False,
                  console_log_level=logging.ERROR, file_log_level=logging.DEBUG, log_format=None, log_path=None,
                  raise_error=False, skip_error_papers=False, one_target_per_paper=False, save_data=False, ext_directory=False, save_path=None,
-                 cores=4):
+                 cores=4, remove_all_papers=False):
         if not log_format:
             log_format = '%(asctime)s|%(levelname)8s|%(module)20s|%(funcName)20s: %(message)s'
         if not log_path:
@@ -50,6 +51,7 @@ class TargetCreator:
         self.ext_directory = ext_directory
         self.save_path = save_path
         self.cores = cores
+        self.remove_all_papers = remove_all_papers
 
     def _updatePapers(self, old_id, new_id, papers=None):
         if old_id not in self.author_papers:
@@ -126,9 +128,7 @@ class TargetCreator:
             del paper.authors[old_id]
             paper.authors[new_id] = old_auth
             paper.affiliations[new_id] = old_aff
-
             self.new_papers[pid] = paper
-            self.new_author_papers[new_id].append(pid)
 
     def _handleTarget(self, target, papers):
         self.logger.debug("Handling target {}".format(target))
@@ -176,30 +176,49 @@ class TargetCreator:
     def fillData(self):
         printLogToConsole(self.console_log_level, "Adding rest of data to new author papers", logging.INFO)
         self.logger.info("Adding rest of data to new author papers")
-        auth_pbar = tqdm(total=len(self.author_papers), file=sys.stdout)
-        for a in self.author_papers.keys():
-            if a in self.new_author_papers:
-                self.logger.debug("Skipping author {}, in new_author_papers".format(a))
-            elif a in self.old_ids:
-                self.logger.debug("Skipping author {}, in old_ids".format(a))
-            else:
-                if a not in self.id_to_name:
-                    self.logger.warning("{} is in author_papers but not in id_to_name".format(a))
-                else:
-                    self.new_author_papers[a] = deepcopy(self.author_papers[a])
-                    self.new_id_to_name[a] = self.id_to_name[a]
-            auth_pbar.update()
-        auth_pbar.close()
+        skipped_papers = 0
+        # auth_pbar = tqdm(total=len(self.author_papers), file=sys.stdout)
+        # skipped_old_ids = 0
+        # skipped_author_papers = 0
+        # for a in self.author_papers.keys():
+        #     if a in self.new_author_papers:
+        #         if self.new_author_papers[a] != self.author_papers[a]:
+        #             papers_to_add = [x for x in self.author_papers[a] if x not in self.new_author_papers[a]]
+        #             self.new_author_papers[a].extend(papers_to_add)
+        #             self.logger.debug("{} is in new author papers, but need to add {} papers".format(a,len(papers_to_add)))
+        #
+        #         else:
+        #             skipped_author_papers+=1
+        #         # self.logger.debug("Skipping author {}, in new_author_papers".format(a))
+        #     elif a in self.old_ids:
+        #         if self.remove_all_papers:
+        #             skipped_old_ids+=1
+        #         # self.logger.debug("Skipping author {}, in old_ids".format(a))
+        #     else:
+        #         if a not in self.id_to_name:
+        #             self.logger.warning("{} is in author_papers but not in id_to_name".format(a))
+        #         else:
+        #             self.new_author_papers[a] = deepcopy(self.author_papers[a])
+        #             self.new_id_to_name[a] = self.id_to_name[a]
+        #     auth_pbar.update()
+        # auth_pbar.close()
+        # self.logger.debug("Skipped {} authors due to being in new_author_papers".format(skipped_author_papers))
+        # self.logger.debug("Skipped {} authors due to being in old_ids".format(skipped_old_ids))
         printLogToConsole(self.console_log_level, "Adding papers", logging.INFO, logger=self.logger)
         paper_pbar = tqdm(total=len(self.papers), file=sys.stdout)
         for pid, paper in self.papers.items():
-            if pid in self.new_papers:
-                self.logger.debug("{} is already in self.new_papers".format(pid))
-            elif pid in self.error_papers:
+            if pid in self.error_papers:
                 self.logger.debug("{} is in error_papers, but not in self.new_papers".format(pid))
             else:
-                self.new_papers[pid] = paper
+                if pid in self.new_papers:
+                    paper = self.new_papers[pid]
+                else:
+                    self.new_papers[pid] = paper
+                for a in paper.affiliations.keys():
+                    if a not in self.new_id_to_name:
+                        self.new_id_to_name[a] = self.id_to_name[a]
+                    if pid not in self.new_author_papers[a]:
+                        self.new_author_papers[a].append(pid)
             paper_pbar.update()
         paper_pbar.close()
-
         return self.new_papers, self.new_author_papers, self.new_id_to_name
