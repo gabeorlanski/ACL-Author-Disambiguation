@@ -2,7 +2,7 @@ from unittest import TestCase
 from src.compare_authors import CompareAuthors
 from src.utility_functions import *
 from src.create_training_data import getAuthorInfo
-from src.author_disambiguation import AuthorDisambiguation
+from src.author_disambiguation import AuthorDisambiguation,getAlgo
 import logging
 import os
 import warnings
@@ -179,7 +179,15 @@ class TestAuthorDisambiguation(TestCase):
         author_processor = AuthorDisambiguation(papers=self.test_papers, id_to_name=self.id_to_name,
                                                 compare_args=self.compare_authors_args, log_path=log_path,
                                                 name_similarity_cutoff=.95)
-        res = author_processor._getSimilarAuthors("yang-liu", "yang liu")
+        args = [
+            "yang-liu",
+            "yang liu",
+            author_processor.author_name,
+            getAlgo("jaro","similarity"),
+            .95,
+            False
+        ]
+        _,res,_,_ = author_processor._getSimilarAuthors(args)
         self.compareList(expected, res)
         expected_2 = [
             "yang-liu-georgetown",
@@ -189,10 +197,13 @@ class TestAuthorDisambiguation(TestCase):
             "yang-liu-icsi",
             "yang-li"
         ]
+        args[-1] = True
         author_processor.sim_overrides = True
-        res = author_processor._getSimilarAuthors("yang-liu", "yang liu")
+        _,res,_,_ = author_processor._getSimilarAuthors(args)
         self.compareList(expected_2, res)
-        print(author_processor._getSimilarAuthors("eugenio-martinez-camara1", "Eugenio Martinez Camara".lower()))
+        args[0] = "eugenio-martinez-camara1"
+        args[1] = "eugenio martinez camara"
+        print(author_processor._getSimilarAuthors(args))
 
     @ignore_warnings
     def test__makePairs(self):
@@ -263,19 +274,25 @@ class TestAuthorDisambiguation(TestCase):
             pass
         author_processor = AuthorDisambiguation(papers=self.test_papers, id_to_name=self.id_to_name,
                                                 compare_args=self.compare_authors_args, log_path=log_path,
-                                                name_similarity_cutoff=.95)
+                                                name_similarity_cutoff=.95, threshold=.7)
         res, above = author_processor._determineCorrectAuthor(test_1)
         self.assertEqual("a", res)
-        self.assertEqual(1, above)
+        self.assertEqual([], above)
         res, above = author_processor._determineCorrectAuthor(test_2)
         self.assertEqual("b", res)
-        self.assertEqual(2, above)
+        self.assertEqual([['a', 0.8], ['b', 0.9]], above)
         res, above = author_processor._determineCorrectAuthor(test_3)
         self.assertIsNone(res)
-        self.assertEqual(0, above)
+        self.assertEqual([['a', 0.3],
+                          ['b', 0.1],
+                          ['c', 0.1],
+                          ['d', 0.1],
+                          ['e', 0.1],
+                          ['f', 0.1],
+                          ['g', 0.1]], above)
         res, above = author_processor._determineCorrectAuthor(test_4)
         self.assertEqual("b", res)
-        self.assertEqual(2, above)
+        self.assertEqual([['a', 5/6], ['b', .8]], above)
 
     @ignore_warnings
     def test_checkCallErrors(self):
@@ -372,17 +389,17 @@ class TestAuthorDisambiguation(TestCase):
             "luyang-liu": ["bo-li"]
         }
         test_has_authors = ["luyang-liu"]
-        test_no_authors = ["eugenio-martinez-camara", "yang-liu"]
+        test_no_authors = ["yang-liu"]
         expected_authors_to_get = ["bo-li",
                                    "yang-liu-georgetown",
                                    "yang-liu-edinburgh",
                                    "yang-liu-ict",
                                    "yang-liu-icsi",
                                    "yang-li"]
-        expected_excluded = ["eugenio-martinez-camara"]
+        expected_excluded = []
         expected_names = {
             "yang-liu": "yang liu",
-            "luyang-liu": "luyang liu"
+            "luyang-liu": "luyang liu",
         }
         expected_author_papers = {
             "luyang-liu": [
@@ -393,11 +410,6 @@ class TestAuthorDisambiguation(TestCase):
                 "I13-1154",
                 "C12-2073"
             ],
-            "eugenio-martinez-camara": [
-                "W17-6927",
-                "W17-0908",
-                "W18-6227"
-            ]
         }
         tmp_authors = []
         for i in expected_authors_to_get:
@@ -423,7 +435,9 @@ class TestAuthorDisambiguation(TestCase):
             self.compareList(ambiguous_author_papers[a], expected_author_papers[a])
             self.assertTrue(a not in author_processor.author_papers)
         for k, n in ambiguous_author_names.items():
-            self.assertTrue(k in expected_names)
+            if k not in expected_names:
+                print(k)
+                self.assertTrue(k in expected_names)
             self.assertEqual(expected_names[k], n)
 
         self.compareList(authors_get_info, expected_authors_to_get)
@@ -609,16 +623,16 @@ class TestAuthorDisambiguation(TestCase):
             pass
         author_processor = AuthorDisambiguation(papers=self.test_papers, id_to_name=self.id_to_name,
                                                 compare_args=self.compare_authors_args, log_path=log_path,
-                                                name_similarity_cutoff=.95, sim_overrides=True,model_path=os.getcwd(),model_name="SoftVoting")
+                                                name_similarity_cutoff=.95, sim_overrides=True, model_path=os.getcwd(), model_name="SoftVoting")
 
         test_target = ["D17-1207", "yang-liu-ict"]
         test = [
             ["C10-2059", "yajuan-lu"],
             ["P16-1159", "yong-cheng"],
             ["P09-2066", "yang-liu-icsi"],
-            ["D14-1076","yang-liu-icsi"],
-            ["D15-1210","yang-liu-ict"],
-            ["P16-1159","yang-liu-ict"]
+            ["D14-1076", "yang-liu-icsi"],
+            ["D15-1210", "yang-liu-ict"],
+            ["P16-1159", "yang-liu-ict"]
         ]
         info_dict = {
             test_target[0] + " " + test_target[1]: getAuthorInfo([self.test_papers[test_target[0]], test_target[1]])[1]
@@ -629,16 +643,18 @@ class TestAuthorDisambiguation(TestCase):
             pairs.append([" ".join([*test_target, p, n]), info_dict[" ".join(test_target)], info_dict[p + " " + n]])
         comparator = CompareAuthors(**self.compare_authors_args)
         key, res = author_processor._compareAuthors([comparator, " ".join(test_target), pairs])
-        test_compare_results ={key: res}
+        test_compare_results = {
+            key: res
+        }
         consolidated = author_processor._consolidateResults(test_compare_results)
-        predictions,probabilities = author_processor._makePredictions(consolidated)
-        for k,info in predictions.items():
+        predictions, probabilities = author_processor._makePredictions(consolidated)
+        for k, info in predictions.items():
             self.assertTrue(k in probabilities)
-            for a, predict in info.keys():
+            for a, predict in info.items():
                 # self.assertTrue( a in probabilities[k])
-                if a =="yang-liu-icsi" or a == "yang-liu-ict":
-                    self.assertEqual(2,len(predict))
+                if a == "yang-liu-icsi" or a == "yang-liu-ict":
+                    self.assertEqual(2, len(predict))
                     # self.assertEqual(2, len(probabilities[k][a]))
                 else:
-                    self.assertEqual(1,len(predict))
+                    self.assertEqual(1, len(predict))
                     # self.assertEqual(1,len(probabilities[k][a]))

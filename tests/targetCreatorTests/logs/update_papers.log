@@ -1,26 +1,3 @@
-2019-09-08 15:10:26,222|   DEBUG|      config_handler|            __init__: Parsing config.json
-2019-09-08 15:10:26,223|   DEBUG|      config_handler|         addArgument: xpath_config added to config acl_parser with value {'volumes': '//volume', 'papers': './paper', 'titles': './title', 'authors': './author', 'abstracts': './abstract/text()', 'pids': './url/text()', 'first_name': './first/text()', 'last_name': './last/text()', 'check_volume': './frontmatter/url'}
-2019-09-08 15:10:26,223|   DEBUG|      config_handler|         addArgument: Added ACLParserXpaths to config dict
-2019-09-08 15:10:26,223|   DEBUG|      config_handler|            __init__: PDFParserXpaths is in excluded, skipping it
-2019-09-08 15:10:26,223|   DEBUG|      config_handler|         addArgument: xml_path added to config paths with value /home/gabe/Desktop/research-main/data/xml/ACL/
-2019-09-08 15:10:26,223|   DEBUG|      config_handler|         addArgument: Added xml path to config dict
-2019-09-08 15:10:26,223|   DEBUG|      config_handler|         addArgument: name_variants_path added to config paths with value /home/gabe/Desktop/research-main/data/
-2019-09-08 15:10:26,223|   DEBUG|      config_handler|         addArgument: Added name variants path to config dict
-2019-09-08 15:10:26,223|   DEBUG|      config_handler|         addArgument: ext_directory added to config shared with value True
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: save_path added to config shared with value /home/gabe/Desktop/research-main/data/
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: save_path added to config paths with value /home/gabe/Desktop/research-main/data/
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: save_data added to config shared with value True
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: Added save data to config dict
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: parsed_pdf_path added to config paths with value /home/gabe/Desktop/research-main/data/pdf_xml/
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: Added parsed pdf path to config dict
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: use_org_most_common added to config pdf_parser with value True
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: attempt_fix_parser_errors added to config pdf_parser with value True
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: raise_error added to config target_creator with value False
-2019-09-08 15:10:26,224|   DEBUG|      config_handler|         addArgument: Added raise error to config dict
-2019-09-08 15:10:26,225|   DEBUG|      config_handler|         addArgument: treat_id_different_people added to config target_creator with value True
-2019-09-08 15:10:26,225|   DEBUG|      config_handler|         addArgument: Added treat id different people to config dict
-2019-09-08 15:10:26,225|   DEBUG|      config_handler|         addArgument: skip_error_papers added to config target_creator with value True
-2019-09-08 15:10:26,225|   DEBUG|      config_handler|         addArgument: Added skip error papers to config dict
 2019-09-08 15:10:26,258|   DEBUG|      config_handler|            __init__: Parsing config.json
 2019-09-08 15:10:26,259|   DEBUG|      config_handler|         addArgument: xpath_config added to config acl_parser with value {'volumes': '//volume', 'papers': './paper', 'titles': './title', 'authors': './author', 'abstracts': './abstract/text()', 'pids': './url/text()', 'first_name': './first/text()', 'last_name': './last/text()', 'check_volume': './frontmatter/url'}
 2019-09-08 15:10:26,259|   DEBUG|      config_handler|         addArgument: Added ACLParserXpaths to config dict
@@ -45,38 +22,20 @@
 2019-09-08 15:10:26,261|   DEBUG|      config_handler|         addArgument: skip_error_papers added to config target_creator with value True
 2019-09-08 15:10:26,262|   DEBUG|      config_handler|         addArgument: Added skip error papers to config dict
 2019-09-08 15:10:26,268|   DEBUG|      target_creator|       _updatePapers: No papers passed, using self.author_papers[qiang-wang]
-2019-09-08 15:10:26,268|   DEBUG|      target_creator|       _updatePapers: No papers passed, using self.author_papers[qiang-wang]
-2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
 2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
 2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding W19-4416 with new id qiang-wang1
-2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding W19-4416 with new id qiang-wang1
-2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
 2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
 2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding P16-1159 with new id hua-wu1
-2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding P16-1159 with new id hua-wu1
-2019-09-08 15:10:26,269| WARNING|      target_creator|       _updatePapers: Skipping paper P16-1159 because it is in error_papers
 2019-09-08 15:10:26,269| WARNING|      target_creator|       _updatePapers: Skipping paper P16-1159 because it is in error_papers
 2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
-2019-09-08 15:10:26,269|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
-2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Adding P16-1159 with new id yun-chen1
 2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Adding P16-1159 with new id yun-chen1
 2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Did not find yun-chen in P16-1159
-2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Did not find yun-chen in P16-1159
-2019-09-08 15:10:26,270| WARNING|      target_creator|       _updatePapers: yun-chen is not in P16-1159's authors or affiliations, skipping and adding to error_papers
 2019-09-08 15:10:26,270| WARNING|      target_creator|       _updatePapers: yun-chen is not in P16-1159's authors or affiliations, skipping and adding to error_papers
 2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
-2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
-2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Adding P17-1176 with new id yun-chen1
 2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Adding P17-1176 with new id yun-chen1
 2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
-2019-09-08 15:10:26,270|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
-2019-09-08 15:10:26,271|   DEBUG|      target_creator|       _updatePapers: Adding P17-1176 with new id victor-ok-li1
 2019-09-08 15:10:26,271|   DEBUG|      target_creator|       _updatePapers: Adding P17-1176 with new id victor-ok-li1
 2019-09-08 15:10:26,271|   DEBUG|      target_creator|       _updatePapers: P17-1176 already has a target, but will still add the target victor-ok-li1
-2019-09-08 15:10:26,271|   DEBUG|      target_creator|       _updatePapers: P17-1176 already has a target, but will still add the target victor-ok-li1
-2019-09-08 15:10:26,271|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
 2019-09-08 15:10:26,271|   DEBUG|      target_creator|       _updatePapers: Adding 1 papers
 2019-09-08 15:10:26,271| WARNING|      target_creator|       _updatePapers: P19-1642 is not parsed, skipping
-2019-09-08 15:10:26,271| WARNING|      target_creator|       _updatePapers: P19-1642 is not parsed, skipping
-2019-09-08 15:10:26,271| WARNING|      target_creator|       _updatePapers: fail-test is not in author papers
 2019-09-08 15:10:26,271| WARNING|      target_creator|       _updatePapers: fail-test is not in author papers
