@@ -13,6 +13,8 @@ import pickle
 from copy import deepcopy
 import multiprocessing as mp
 import gc
+import re
+remove_numbers = re.compile("\d")
 
 
 class AuthorDisambiguation:
@@ -268,6 +270,8 @@ class AuthorDisambiguation:
 
         target_initials = [w[0] for w in target_author.split()]
         target_author = target_author.lower()
+        old_target_id = deepcopy(target_id)
+        target_id = remove_numbers.sub("",target_id)
         warnings = []
         debug = []
         authors_use = []
@@ -276,6 +280,7 @@ class AuthorDisambiguation:
                 first_letter = name[0].lower()
             except Exception as e:
                 raise e
+            name = name.lower()
             if first_letter == target_author[0].lower():
                 authors_use.append([_id, name])
         debug.append("{} authors with the same first letter as {}".format(len(authors_use), target_id))
@@ -336,7 +341,7 @@ class AuthorDisambiguation:
                 debug.append("{} is similar to {}".format(_id, target_id))
                 out.append(_id)
         debug.append("Found {} similar authors".format(len(out)))
-        return target_id, out, warnings, debug
+        return old_target_id, out, warnings, debug
 
     def _makePairs(self, target_info, auth_infos):
 
@@ -543,11 +548,14 @@ class AuthorDisambiguation:
         with mp.Pool(self.cores) as Pool:
             imap_results = list(tqdm(Pool.imap_unordered(self._getSimilarAuthors, args), total=len(args), file=sys.stdout))
             for target, auth, warnings, debug in imap_results:
+                self.logger.debug("Adding authors from {}".format(target))
+                self.logger.debug("len(auth)={}".format(len(auth)))
                 sim_authors.append([target, auth])
                 for i in warnings:
                     self.logger.warning(i)
                 for i in debug:
                     self.logger.debug(i)
+        self.logger.debug("len(sim_authors)={}".format(len(sim_authors)))
 
         pbar = tqdm(total=len(sim_authors), file=sys.stdout)
         for a, auths in sim_authors:
@@ -563,6 +571,8 @@ class AuthorDisambiguation:
             else:
                 authors_get_info.extend(auths)
                 check_author_keys[a] = self._makeCheckAuthors(auths)
+                if len(check_author_keys[a]) == 0:
+                    self.logger.debug("{} had at least 1 similar author, but nothing in check author keys".format(a))
             pbar.update()
         pbar.close()
         authors_get_info = list(set(authors_get_info))

@@ -91,7 +91,8 @@ class ConfigHandler:
         "treat_id_different_people",
         "raise_error",
         "skip_error_papers",
-        "one_target_per_paper"
+        "one_target_per_paper",
+        "remove_all_papers"
     ]
     input_handler_keys= [
         "target_path"
